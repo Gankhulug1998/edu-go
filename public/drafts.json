@@ -1,0 +1,512 @@
+[
+  {
+    "character": "林",
+    "pinyin": "lín",
+    "meaning": "ой",
+    "structure": {
+      "parts": [{"char":"木","label":"мод"},{"char":"木","label":"мод"}],
+      "result": {"char":"林","label":"ой"}
+    },
+    "story": "Нэг мод бол 木. Хоёр мод нийлээд 林 буюу ой, төгөл гэсэн санаа болно.",
+    "example": {"word":"森林","pinyin":"sēnlín","translation":"ой мод"},
+    "mnemonic": {"parts":["木","木"],"result":"林","meaning":"ой"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 林 (forest), built from two 'tree' radicals 木+木. Subject: EXACTLY TWO prominent identical pine trees standing tall side-by-side in the foreground as the clear focal point, soft morning sun rays between their trunks, gentle East Asian landscape behind. Composition must read as a PAIR of trees. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram showing visual transformation: one small cartoon tree on the LEFT, a thin arrow in the MIDDLE, TWO cartoon trees standing side-by-side on the RIGHT. Clean white background. Style of a children's school textbook diagram. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: two simple green pine trees standing side-by-side, single subject centered on pure white background. Friendly, easy to recognize at small size. No text, no watermark."
+    }
+  },
+  {
+    "character": "森",
+    "pinyin": "sēn",
+    "meaning": "ой бөглөө",
+    "structure": {
+      "parts": [{"char":"木","label":"мод"},{"char":"木","label":"мод"},{"char":"木","label":"мод"}],
+      "result": {"char":"森","label":"ой бөглөө"}
+    },
+    "story": "Гурван мод нэг дор нийлээд 森 — маш олон модтой, нягт бөглөө ой гэсэн утга болно.",
+    "example": {"word":"森林","pinyin":"sēnlín","translation":"ой мод"},
+    "mnemonic": {"parts":["木","木","木"],"result":"森","meaning":"ой бөглөө"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 森 (dense forest), built from THREE 'tree' radicals 木+木+木. Subject: EXACTLY THREE prominent pine trees arranged in a clear triangular composition — two in front and one taller behind — creating a small dense grove. The three trees must be the unmistakable focus. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: TWO cartoon trees on the LEFT (representing 林), thin arrow in MIDDLE, THREE trees clustered together on the RIGHT (forming 森). Clean white background, school-textbook diagram style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: three simple green pine trees clustered together in a triangle, single subject centered on pure white background. Recognizable as 'dense forest'. No text, no watermark."
+    }
+  },
+  {
+    "character": "明",
+    "pinyin": "míng",
+    "meaning": "гэрэлтэй",
+    "structure": {
+      "parts": [{"char":"日","label":"нар"},{"char":"月","label":"сар"}],
+      "result": {"char":"明","label":"гэрэлтэй"}
+    },
+    "story": "Тэнгэрт хоёр гэрэлтүүлэгч — нар, сар хамт байвал орчин маш гэгээтэй, тод гэрэлтэй болно. 日+月=明.",
+    "example": {"word":"明天","pinyin":"míngtiān","translation":"маргааш"},
+    "mnemonic": {"parts":["日","月"],"result":"明","meaning":"гэрэлтэй"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 明 (bright), built from 'sun' 日 + 'moon' 月. Subject: a single peaceful sky with BOTH the SUN on the LEFT and a CRESCENT MOON on the RIGHT clearly visible at the same time, doubling the light over a calm landscape. The viewer must immediately see SUN + MOON together. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a round SUN on the LEFT, plus sign in the MIDDLE, a CRESCENT MOON on the RIGHT, with gentle light rays radiating outward indicating brightness. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a sun and a crescent moon side-by-side as a single pictogram, warm golden color, centered on pure white background. Reads as 'brightness'. No text, no watermark."
+    }
+  },
+  {
+    "character": "休",
+    "pinyin": "xiū",
+    "meaning": "амрах",
+    "structure": {
+      "parts": [{"char":"亻","label":"хүн"},{"char":"木","label":"мод"}],
+      "result": {"char":"休","label":"амрах"}
+    },
+    "story": "Ядарсан хүн (亻) том мод (木) дор тулж амарна. 亻+木=休, амрах гэсэн утга.",
+    "example": {"word":"休息","pinyin":"xiūxi","translation":"амрах, чөлөө"},
+    "mnemonic": {"parts":["亻","木"],"result":"休","meaning":"амрах"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 休 (rest), built from 'person' 亻 + 'tree' 木. Subject: ONE traveler sitting on the ground LEANING their back against the TRUNK of a single large tree, eyes peacefully closed, hat tilted forward, content smile. The PERSON+TREE pairing must be the immediate visual reading. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a stick-figure PERSON on the LEFT, plus sign in MIDDLE, a TREE on the RIGHT, with the result showing a person leaning against the tree. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple human figure peacefully sitting against a tree trunk, single subject centered on pure white background. Reads as 'rest'. No text, no watermark."
+    }
+  },
+  {
+    "character": "好",
+    "pinyin": "hǎo",
+    "meaning": "сайн",
+    "structure": {
+      "parts": [{"char":"女","label":"эмэгтэй"},{"char":"子","label":"хүүхэд"}],
+      "result": {"char":"好","label":"сайн"}
+    },
+    "story": "Ээж (女) хүүхдээ (子) тэвэрсэн дүр — энэ нь сайн, аз жаргалтай гэсэн утгыг илэрхийлнэ. 女+子=好.",
+    "example": {"word":"你好","pinyin":"nǐ hǎo","translation":"сайн уу"},
+    "mnemonic": {"parts":["女","子"],"result":"好","meaning":"сайн"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 好 (good), built from 'woman' 女 + 'child' 子. Subject: a MOTHER on the LEFT holding her small CHILD on the RIGHT in her warm embrace, both smiling tenderly. The mother-and-child pair must be the unmistakable subject. Soft warm light, family love. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a WOMAN figure on the LEFT, plus sign in MIDDLE, a small CHILD figure on the RIGHT, result showing them embracing. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: silhouette of a mother holding a child, warm rose color, single subject centered on pure white background. Reads as 'good/loving'. No text, no watermark."
+    }
+  },
+  {
+    "character": "安",
+    "pinyin": "ān",
+    "meaning": "тайван",
+    "structure": {
+      "parts": [{"char":"宀","label":"дээвэр"},{"char":"女","label":"эмэгтэй"}],
+      "result": {"char":"安","label":"тайван"}
+    },
+    "story": "Гэрийн дээвэр (宀) дор эмэгтэй (女) сууж байна — аюулгүй, тайван амгалан. 宀+女=安.",
+    "example": {"word":"安全","pinyin":"ānquán","translation":"аюулгүй"},
+    "mnemonic": {"parts":["宀","女"],"result":"安","meaning":"тайван"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 安 (peaceful/safe), built from 'roof' 宀 + 'woman' 女. Subject: ONE woman sitting calmly INSIDE a traditional Asian house, the curved ROOF clearly framing her from ABOVE, warm soft interior lighting, sense of shelter and safety. The 'woman-under-roof' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a ROOF shape ⌒ on the LEFT, plus sign in MIDDLE, a WOMAN figure on the RIGHT, result showing the woman sitting peacefully under the roof. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple house with a curved peaceful roof, a small dot inside representing a person, single subject centered on pure white background. Reads as 'peace/safety'. No text, no watermark."
+    }
+  },
+  {
+    "character": "家",
+    "pinyin": "jiā",
+    "meaning": "гэр",
+    "structure": {
+      "parts": [{"char":"宀","label":"дээвэр"},{"char":"豕","label":"гахай"}],
+      "result": {"char":"家","label":"гэр"}
+    },
+    "story": "Эрт цагт дээвэр (宀) дор тэжээвэр гахайтай (豕) айл бол баян, бүрэн бүтэн гэрийн дүр байсан. 宀+豕=家.",
+    "example": {"word":"家人","pinyin":"jiārén","translation":"гэр бүл"},
+    "mnemonic": {"parts":["宀","豕"],"result":"家","meaning":"гэр"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 家 (home), built from 'roof' 宀 + 'pig' 豕 — the ancient etymology of a domestic pig under shelter. Subject: a small pet pig peacefully resting INSIDE a traditional Asian farmhouse, with the curved ROOF clearly visible ABOVE the pig, cozy warm interior. The 'pig-under-roof' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a ROOF shape ⌒ on the LEFT, plus sign in MIDDLE, a small PIG figure on the RIGHT, result showing the pig peacefully under the roof. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a small traditional house with a sloped curved roof, warm earth color, single subject centered on pure white background. Reads as 'home'. No text, no watermark."
+    }
+  },
+  {
+    "character": "男",
+    "pinyin": "nán",
+    "meaning": "эрэгтэй",
+    "structure": {
+      "parts": [{"char":"田","label":"талбай"},{"char":"力","label":"хүч"}],
+      "result": {"char":"男","label":"эрэгтэй"}
+    },
+    "story": "Тариалангийн талбай (田) дээр хүч (力) гарган ажилладаг хүн — эрэгтэй гэсэн утга. 田+力=男.",
+    "example": {"word":"男人","pinyin":"nánrén","translation":"эрэгтэй хүн"},
+    "mnemonic": {"parts":["田","力"],"result":"男","meaning":"эрэгтэй"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 男 (man), built from 'field' 田 + 'strength' 力. Subject: a strong muscular farmer standing actively in a rice paddy field, the rectangular GRID PATTERN of the field is clearly visible at his feet and around him, his STRONG ARMS or shoulders emphasized. The 'strength + field' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a grid pattern representing a FIELD on the LEFT, plus sign in MIDDLE, a flexed ARM showing STRENGTH on the RIGHT, result showing a strong figure standing in the field. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a strong human figure with flexed arms standing on a field grid pattern, single subject centered on pure white background. Reads as 'man'. No text, no watermark."
+    }
+  },
+  {
+    "character": "从",
+    "pinyin": "cóng",
+    "meaning": "дагах",
+    "structure": {
+      "parts": [{"char":"人","label":"хүн"},{"char":"人","label":"хүн"}],
+      "result": {"char":"从","label":"дагах"}
+    },
+    "story": "Нэг хүний (人) араас нөгөө хүн (人) дагаж явна — 'дагах' гэсэн санааны дүрс. 人+人=从.",
+    "example": {"word":"从来","pinyin":"cónglái","translation":"урьд хэзээ ч"},
+    "mnemonic": {"parts":["人","人"],"result":"从","meaning":"дагах"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 从 (follow), built from two 'person' 人 radicals. Subject: EXACTLY TWO people walking single-file on a path — one in FRONT, one clearly walking DIRECTLY BEHIND the front person, the back one looking at the front person's back. The 'following' action must be immediately readable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: ONE stick figure on the LEFT walking right, plus sign in MIDDLE, ANOTHER stick figure on the RIGHT walking right, result showing the second walking behind the first. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: two simple human silhouettes walking in single-file line, one clearly behind the other, single subject centered on pure white background. Reads as 'follow'. No text, no watermark."
+    }
+  },
+  {
+    "character": "众",
+    "pinyin": "zhòng",
+    "meaning": "олон",
+    "structure": {
+      "parts": [{"char":"人","label":"хүн"},{"char":"人","label":"хүн"},{"char":"人","label":"хүн"}],
+      "result": {"char":"众","label":"олон"}
+    },
+    "story": "Гурван хүн (人+人+人) нэг дор цугласан — олон түмэн, хурал гэсэн утга. 人+人+人=众.",
+    "example": {"word":"群众","pinyin":"qúnzhòng","translation":"олон түмэн"},
+    "mnemonic": {"parts":["人","人","人"],"result":"众","meaning":"олон"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 众 (crowd), built from THREE 'person' 人 radicals. Subject: EXACTLY THREE people standing close together in a tight small group huddle, viewed from a slightly elevated angle, clearly distinguishable as three individuals forming a tiny crowd. The 'three people together' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: TWO figures on the LEFT (representing 从), arrow in MIDDLE, THREE figures clustered closely on the RIGHT (forming 众). Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: three simple human silhouettes clustered closely in a small group, single subject centered on pure white background. Reads as 'crowd'. No text, no watermark."
+    }
+  },
+  {
+    "character": "炎",
+    "pinyin": "yán",
+    "meaning": "халуун",
+    "structure": {
+      "parts": [{"char":"火","label":"гал"},{"char":"火","label":"гал"}],
+      "result": {"char":"炎","label":"халуун"}
+    },
+    "story": "Гал (火) дээр гал (火) давхарласан — маш халуун, шатсан халалт гэсэн утга. 火+火=炎.",
+    "example": {"word":"炎热","pinyin":"yánrè","translation":"маш халуун"},
+    "mnemonic": {"parts":["火","火"],"result":"炎","meaning":"халуун"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 炎 (intense heat/flame), built from two 'fire' 火 radicals stacked. Subject: TWO large blazing FLAMES STACKED VERTICALLY — one flame burning above another flame — creating an extreme heat tower against a dark night background, glowing intense orange and red. The 'fire-above-fire' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a single FLAME shape on the LEFT, plus sign in MIDDLE, TWO flames stacked vertically on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: two flame shapes stacked vertically, warm orange and red color, single subject centered on pure white background. Reads as 'intense heat'. No text, no watermark."
+    }
+  },
+  {
+    "character": "出",
+    "pinyin": "chū",
+    "meaning": "гарах",
+    "structure": {
+      "parts": [{"char":"山","label":"уул"},{"char":"山","label":"уул"}],
+      "result": {"char":"出","label":"гарах"}
+    },
+    "story": "Уул (山) дээгүүр өөр уул цухуйж 'гарч ирэх' дүрс. 山+山=出, гарах гэсэн утга.",
+    "example": {"word":"出门","pinyin":"chūmén","translation":"гэрээс гарах"},
+    "mnemonic": {"parts":["山","山"],"result":"出","meaning":"гарах"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 出 (emerge/go out), built from two 'mountain' 山 shapes stacked. Subject: ONE mountain peak clearly EMERGING and rising UP from BEHIND another mountain peak in the foreground, the back peak visibly thrusting up and out into the sky. The 'one mountain coming out from another' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: ONE triangular mountain on the LEFT, plus sign in MIDDLE, TWO mountains with one rising out from behind the other on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: two mountain triangles with one peak clearly emerging upward from behind the other, single subject centered on pure white background. Reads as 'emerge/go out'. No text, no watermark."
+    }
+  },
+  {
+    "character": "本",
+    "pinyin": "běn",
+    "meaning": "үндэс",
+    "structure": {
+      "parts": [{"char":"木","label":"мод"},{"char":"一","label":"шугам (доод)"}],
+      "result": {"char":"本","label":"үндэс"}
+    },
+    "story": "Модны (木) доод хэсэг дээр нэмэлт шугам (一) тавьсан — үндэс, гарал, эх гэсэн утга. 木+一=本.",
+    "example": {"word":"日本","pinyin":"Rìběn","translation":"Япон"},
+    "mnemonic": {"parts":["木","一"],"result":"本","meaning":"үндэс"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 本 (root/origin), built from 'tree' 木 + a horizontal mark at its BASE. Subject: a single large ancient tree with its prominent EXPOSED GNARLED ROOTS spreading wide at the base, the ROOT SYSTEM emphasized as the clear visual focus, while the trunk and crown are slightly faded. The 'tree-base highlighted' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a tree shape on the LEFT, plus sign in MIDDLE, the same tree on the RIGHT with a thick horizontal line highlighted at its BASE/roots. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple tree with prominent spreading roots emphasized, brown root color, single subject centered on pure white background. Reads as 'root/origin'. No text, no watermark."
+    }
+  },
+  {
+    "character": "末",
+    "pinyin": "mò",
+    "meaning": "үзүүр",
+    "structure": {
+      "parts": [{"char":"木","label":"мод"},{"char":"一","label":"шугам (дээд)"}],
+      "result": {"char":"末","label":"үзүүр"}
+    },
+    "story": "Модны (木) дээд талд шугам (一) тавьсан — оройн үзүүр, төгсгөл гэсэн утга. 木+一=末.",
+    "example": {"word":"周末","pinyin":"zhōumò","translation":"амралтын өдөр"},
+    "mnemonic": {"parts":["木","一"],"result":"末","meaning":"үзүүр"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 末 (tip/end), built from 'tree' 木 + a horizontal mark at its TOP. Subject: a tree viewed from below looking UP, with focus on the very TIPS of its highest branches reaching into the sky, the upper canopy/branch tips emphasized and highlighted by bright sunlight while the trunk recedes. The 'tree-top highlighted' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a tree shape on the LEFT, plus sign in MIDDLE, the same tree on the RIGHT with a thick horizontal line highlighted at the very TOP of its branches. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple tree with the very tips of its top branches emphasized/glowing, single subject centered on pure white background. Reads as 'tip/end'. No text, no watermark."
+    }
+  },
+  {
+    "character": "早",
+    "pinyin": "zǎo",
+    "meaning": "эрт",
+    "structure": {
+      "parts": [{"char":"日","label":"нар"},{"char":"十","label":"загвар"}],
+      "result": {"char":"早","label":"эрт"}
+    },
+    "story": "Нар (日) үерт мандаж өвсний зурвас (十) дээгүүр гарч ирэх — өглөө эрт цаг. 日+十=早.",
+    "example": {"word":"早上","pinyin":"zǎoshang","translation":"өглөө"},
+    "mnemonic": {"parts":["日","十"],"result":"早","meaning":"эрт"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 早 (early morning), built from 'sun' 日 + horizontal/vertical stroke. Subject: the SUN rising just above thin grass plants or low vegetation, very early dewy morning, the sun positioned LOW directly ABOVE the plant tops. The 'sun-above-grass' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a SUN on the LEFT, plus sign in MIDDLE, a small grass/cross shape on the RIGHT, result showing the sun sitting above the grass shape. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a sun shape positioned directly above a simple horizontal/grass line, warm golden color, single subject centered on pure white background. Reads as 'early morning'. No text, no watermark."
+    }
+  },
+  {
+    "character": "旦",
+    "pinyin": "dàn",
+    "meaning": "үүр",
+    "structure": {
+      "parts": [{"char":"日","label":"нар"},{"char":"一","label":"уулсын зурвас"}],
+      "result": {"char":"旦","label":"үүр"}
+    },
+    "story": "Нар (日) уулын зурвасаас (一) дээш гарч ирж байна — үүр цайх. 日+一=旦.",
+    "example": {"word":"元旦","pinyin":"Yuándàn","translation":"Шинэ жилийн өдөр"},
+    "mnemonic": {"parts":["日","一"],"result":"旦","meaning":"үүр"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 旦 (dawn/sunrise), built from 'sun' 日 + horizon line. Subject: the sun emerging HALF-VISIBLE from BEHIND a very clear flat HORIZON LINE (sea or distant plains), exactly half of the sun above the line, the horizon perfectly straight and crisp. The 'sun-resting-on-horizon' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a SUN on the LEFT, plus sign in MIDDLE, a long horizontal HORIZON LINE on the RIGHT, result showing the sun half-risen above the horizon line. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a half-sun shape rising above a strong horizontal line, warm golden color, single subject centered on pure white background. Reads as 'dawn'. No text, no watermark."
+    }
+  },
+  {
+    "character": "字",
+    "pinyin": "zì",
+    "meaning": "үсэг",
+    "structure": {
+      "parts": [{"char":"宀","label":"дээвэр"},{"char":"子","label":"хүүхэд"}],
+      "result": {"char":"字","label":"үсэг"}
+    },
+    "story": "Дээвэр (宀) дор хүүхэд (子) суугаа байгаа — гэртээ үсэг бичиг сурч буйн бэлгэдэл. 宀+子=字.",
+    "example": {"word":"汉字","pinyin":"hànzì","translation":"хятад үсэг"},
+    "mnemonic": {"parts":["宀","子"],"result":"字","meaning":"үсэг"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 字 (written character), built from 'roof' 宀 + 'child' 子. Subject: a single CHILD sitting cross-legged on the floor of a traditional study room practicing calligraphy with a brush, the curved ROOF of the room clearly visible ABOVE the child framing the scene. The 'child-under-roof studying' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a ROOF shape ⌒ on the LEFT, plus sign in MIDDLE, a small CHILD figure on the RIGHT, result showing the child sitting under the roof holding a brush. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple roof above a small child silhouette holding a brush, single subject centered on pure white background. Reads as 'character/letter'. No text, no watermark."
+    }
+  },
+  {
+    "character": "信",
+    "pinyin": "xìn",
+    "meaning": "итгэх",
+    "structure": {
+      "parts": [{"char":"亻","label":"хүн"},{"char":"言","label":"үг"}],
+      "result": {"char":"信","label":"итгэх"}
+    },
+    "story": "Хүний (亻) хэлсэн үгэнд (言) итгэхэд итгэл. Бичсэн үг бол захидал. 亻+言=信.",
+    "example": {"word":"相信","pinyin":"xiāngxìn","translation":"итгэх"},
+    "mnemonic": {"parts":["亻","言"],"result":"信","meaning":"итгэх"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 信 (trust/letter), built from 'person' 亻 + 'words/speech' 言. Subject: ONE person on the LEFT side speaking earnestly with a sincere expression, with VISIBLE curving sound waves or a speech bubble flowing from their mouth toward the right — emphasizing the spoken WORDS as a tangible element. The 'person + words' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a PERSON stick figure on the LEFT, plus sign in MIDDLE, a SPEECH BUBBLE or sound waves on the RIGHT, result showing the person with words coming from their mouth. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple person silhouette with a speech bubble next to their mouth, single subject centered on pure white background. Reads as 'trust/communication'. No text, no watermark."
+    }
+  },
+  {
+    "character": "鸣",
+    "pinyin": "míng",
+    "meaning": "донгодох",
+    "structure": {
+      "parts": [{"char":"口","label":"ам"},{"char":"鸟","label":"шувуу"}],
+      "result": {"char":"鸣","label":"донгодох"}
+    },
+    "story": "Шувууны (鸟) амнаас (口) дуу гарч байна — донгодох, жиргэх гэсэн утга. 口+鸟=鸣.",
+    "example": {"word":"鸣叫","pinyin":"míngjiào","translation":"донгодох"},
+    "mnemonic": {"parts":["口","鸟"],"result":"鸣","meaning":"донгодох"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 鸣 (birdsong), built from 'mouth' 口 + 'bird' 鸟. Subject: a single colorful songbird perched on a branch with its BEAK WIDE OPEN, clear curving SOUND WAVES emanating from its open mouth into the air — the open beak and visible sound waves must be the dominant visual elements. Soft pastel dawn light. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a MOUTH/circle shape on the LEFT, plus sign in MIDDLE, a BIRD shape on the RIGHT, result showing the bird with its mouth open and sound waves coming out. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple bird with its beak open and small sound waves coming out, single subject centered on pure white background. Reads as 'birdsong'. No text, no watermark."
+    }
+  },
+  {
+    "character": "看",
+    "pinyin": "kàn",
+    "meaning": "харах",
+    "structure": {
+      "parts": [{"char":"手","label":"гар"},{"char":"目","label":"нүд"}],
+      "result": {"char":"看","label":"харах"}
+    },
+    "story": "Гараа (手) нүдний (目) дээр тавьж нарнаас халхалж харна — 'харах' үйлдэл. 手+目=看.",
+    "example": {"word":"看见","pinyin":"kànjiàn","translation":"харах"},
+    "mnemonic": {"parts":["手","目"],"result":"看","meaning":"харах"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 看 (look/see), built from 'hand' 手 + 'eye' 目. Subject: a person clearly HOLDING their HAND HORIZONTALLY ABOVE their EYES (like a visor / sun shade) to peer into the distance, the hand-over-eye gesture is the dominant visual element, viewer looks at side profile. The 'hand-over-eye' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a HAND on the LEFT, plus sign in MIDDLE, an EYE on the RIGHT, result showing a face with the hand held above the eye. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple eye with a flat hand held visor-like above it, single subject centered on pure white background. Reads as 'look'. No text, no watermark."
+    }
+  },
+  {
+    "character": "想",
+    "pinyin": "xiǎng",
+    "meaning": "бодох",
+    "structure": {
+      "parts": [{"char":"相","label":"харагдах"},{"char":"心","label":"зүрх"}],
+      "result": {"char":"想","label":"бодох"}
+    },
+    "story": "Зүрхэн (心) дотор аливаа зүйлийн дүр (相) гарч ирэхэд бодол төрнө. 相+心=想.",
+    "example": {"word":"想法","pinyin":"xiǎngfǎ","translation":"санаа, бодол"},
+    "mnemonic": {"parts":["相","心"],"result":"想","meaning":"бодох"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 想 (think/desire), built from 'visualize' 相 + 'heart' 心. Subject: a young person sitting peacefully with one hand resting on their CHEST OVER THEIR HEART, eyes closed dreamily, with a clear THOUGHT BUBBLE above their head containing a small image of what they desire (a small landscape, flower, or person). The 'heart + visualized thought' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a small EYE/IMAGE icon on the LEFT (representing visualization), plus sign in MIDDLE, a HEART shape on the RIGHT, result showing a heart with a thought bubble. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a heart shape with a thought bubble rising from it, warm rose color, single subject centered on pure white background. Reads as 'desire/think of'. No text, no watermark."
+    }
+  },
+  {
+    "character": "思",
+    "pinyin": "sī",
+    "meaning": "бодох",
+    "structure": {
+      "parts": [{"char":"田","label":"талбай"},{"char":"心","label":"зүрх"}],
+      "result": {"char":"思","label":"бодох"}
+    },
+    "story": "Зүрхэн (心) дээр бодлын талбай (田) дэлгэгдсэн — гүн боддог байдал. 田+心=思.",
+    "example": {"word":"思考","pinyin":"sīkǎo","translation":"эргэцүүлэн бодох"},
+    "mnemonic": {"parts":["田","心"],"result":"思","meaning":"бодох"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 思 (deep contemplation), built from 'field' 田 + 'heart' 心 — mnemonic of a 'field of thoughts above the heart'. Subject: a scholar seated in quiet thought with one hand on their CHEST OVER THEIR HEART, and visible behind them a checkered FIELD pattern stretching out, as if their inner mind is a field of thoughts to till. The 'field-above-heart' reading must be evident. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a grid pattern (FIELD) on the LEFT, plus sign in MIDDLE, a HEART shape on the RIGHT, result showing the field positioned above the heart. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a heart shape with a small grid (field) pattern directly above it, soft blue color, single subject centered on pure white background. Reads as 'contemplation'. No text, no watermark."
+    }
+  },
+  {
+    "character": "跑",
+    "pinyin": "pǎo",
+    "meaning": "гүйх",
+    "structure": {
+      "parts": [{"char":"足","label":"хөл"},{"char":"包","label":"bāo (дуудлага)"}],
+      "result": {"char":"跑","label":"гүйх"}
+    },
+    "story": "Хөл (足) утгат радикал — хурдан хөдлөх үйлдэл. Баруун тал 包 (bāo) дуудлагыг өгнө. 足+包=跑.",
+    "example": {"word":"跑步","pinyin":"pǎobù","translation":"гүйх дасгал"},
+    "mnemonic": {"parts":["足","包"],"result":"跑","meaning":"гүйх"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 跑 (run), built from 'foot' 足 (semantic) + phonetic. Subject: a runner mid-stride from the side with EXTREME MOTION BLUR on the LEGS and FEET, the powerful pumping FEET as the unmistakable focus, dust/wind streaks behind. The 'foot in motion' reading must be the obvious visual emphasis. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a FOOT/leg shape on the LEFT, plus sign in MIDDLE, motion lines on the RIGHT, result showing a runner mid-stride with emphasized feet. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple running figure silhouette with emphasized motion on the feet/legs, single subject centered on pure white background. Reads as 'run'. No text, no watermark."
+    }
+  },
+  {
+    "character": "跳",
+    "pinyin": "tiào",
+    "meaning": "үсрэх",
+    "structure": {
+      "parts": [{"char":"足","label":"хөл"},{"char":"兆","label":"zhào (дуудлага)"}],
+      "result": {"char":"跳","label":"үсрэх"}
+    },
+    "story": "Хөл (足) утгат, баруун тал 兆 (zhào) дуудлагын зөвлөмж. 足+兆=跳, үсрэх гэсэн утга.",
+    "example": {"word":"跳舞","pinyin":"tiàowǔ","translation":"бүжиглэх"},
+    "mnemonic": {"parts":["足","兆"],"result":"跳","meaning":"үсрэх"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 跳 (jump), built from 'foot' 足 (semantic) + phonetic. Subject: a person frozen MID-LEAP in the air with BOTH FEET clearly off the ground, knees bent, captured at the peak height of the jump, gravity-defying pose. The 'feet in the air' reading must be the dominant visual. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a FOOT shape on the LEFT, plus sign in MIDDLE, an upward arrow on the RIGHT, result showing a figure suspended in mid-jump with feet off the ground. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple jumping figure silhouette suspended in air with feet clearly off the ground, single subject centered on pure white background. Reads as 'jump'. No text, no watermark."
+    }
+  },
+  {
+    "character": "笑",
+    "pinyin": "xiào",
+    "meaning": "инээх",
+    "structure": {
+      "parts": [{"char":"竹","label":"хулс"},{"char":"夭","label":"нугарах"}],
+      "result": {"char":"笑","label":"инээх"}
+    },
+    "story": "Хулсны (竹) навч салхинд найгаж 'нугардаг' (夭) шиг хүний ам инээхэд нугардаг. 竹+夭=笑.",
+    "example": {"word":"微笑","pinyin":"wēixiào","translation":"инээмсэглэх"},
+    "mnemonic": {"parts":["竹","夭"],"result":"笑","meaning":"инээх"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 笑 (laugh), built from 'bamboo' 竹 (top) + 'bending' 夭 (bottom). Subject: a person laughing joyfully with mouth wide open, with delicate BAMBOO LEAVES arching gracefully above their head like a natural crown (echoing the bamboo radical at the top of the character). The 'bamboo + laughing face' composition must be clear. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: BAMBOO LEAVES on the LEFT, plus sign in MIDDLE, a SMILING FACE on the RIGHT, result showing the smiling face crowned with bamboo leaves above. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple smiling face with a small bamboo leaf arching above, warm color, single subject centered on pure white background. Reads as 'laugh'. No text, no watermark."
+    }
+  },
+  {
+    "character": "江",
+    "pinyin": "jiāng",
+    "meaning": "том гол",
+    "structure": {
+      "parts": [{"char":"氵","label":"ус"},{"char":"工","label":"gōng (дуудлага)"}],
+      "result": {"char":"江","label":"том гол"}
+    },
+    "story": "Зүүн талын ус (氵) утгат, баруун тал 工 (gōng) дуудлагыг өгнө. Голчлон Янзе мөрнийг хэлдэг. 氵+工=江.",
+    "example": {"word":"长江","pinyin":"Cháng Jiāng","translation":"Янзе мөрөн"},
+    "mnemonic": {"parts":["氵","工"],"result":"江","meaning":"том гол"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 江 (great river/Yangtze), built from 'water' 氵 radical + phonetic. Subject: a vast wide majestic RIVER flowing through misty mountains, the WATER fills the foreground and middle as the unmistakable dominant subject — water is THE element, viewer's eye is drawn to the river surface and current. Sense of grand scale. Soft watercolor Chinese ink-wash style with Studio Ghibli warmth, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: three water droplets representing 氵 on the LEFT, plus sign in MIDDLE, a flowing RIVER shape on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a single bold wave/river shape, deep blue color, single subject centered on pure white background. Reads as 'great river'. No text, no watermark."
+    }
+  },
+  {
+    "character": "河",
+    "pinyin": "hé",
+    "meaning": "гол",
+    "structure": {
+      "parts": [{"char":"氵","label":"ус"},{"char":"可","label":"kě (дуудлага)"}],
+      "result": {"char":"河","label":"гол"}
+    },
+    "story": "Ус (氵) утгат радикал — голын хэлбэрийг илэрхийлнэ. 可 (kě) дуудлагын зөвлөмж. 氵+可=河.",
+    "example": {"word":"黄河","pinyin":"Huánghé","translation":"Шар мөрөн"},
+    "mnemonic": {"parts":["氵","可"],"result":"河","meaning":"гол"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 河 (river), built from 'water' 氵 radical + phonetic. Subject: a peaceful MEANDERING RIVER curving gently through soft green landscape, the flowing WATER is the clear main visual subject filling the center, willow trees softly framing. The river/water emphasis must be obvious. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: three water droplets representing 氵 on the LEFT, plus sign in MIDDLE, a winding RIVER curve on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a simple curving river or wavy water line, blue color, single subject centered on pure white background. Reads as 'river'. No text, no watermark."
+    }
+  },
+  {
+    "character": "海",
+    "pinyin": "hǎi",
+    "meaning": "далай",
+    "structure": {
+      "parts": [{"char":"氵","label":"ус"},{"char":"每","label":"měi (дуудлага)"}],
+      "result": {"char":"海","label":"далай"}
+    },
+    "story": "Олон голын ус (氵) нэг газар цугларч асар их ус — далай. 每 нь дуудлагын зөвлөмж. 氵+每=海.",
+    "example": {"word":"大海","pinyin":"dàhǎi","translation":"далай"},
+    "mnemonic": {"parts":["氵","每"],"result":"海","meaning":"далай"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 海 (sea), built from 'water' 氵 radical + phonetic. Subject: a VAST ENDLESS OCEAN stretching to the distant horizon, gentle rolling waves dominate the entire frame, sense of immense scale of WATER — water everywhere. The ocean/water emphasis must be the overwhelming subject. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: three water droplets representing 氵 on the LEFT, plus sign in MIDDLE, an ocean WAVE on the RIGHT, result showing many waves stretching to horizon. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a single big curling ocean wave, deep blue color, single subject centered on pure white background. Reads as 'sea'. No text, no watermark."
+    }
+  },
+  {
+    "character": "美",
+    "pinyin": "měi",
+    "meaning": "үзэсгэлэнтэй",
+    "structure": {
+      "parts": [{"char":"羊","label":"хонь"},{"char":"大","label":"том"}],
+      "result": {"char":"美","label":"үзэсгэлэнтэй"}
+    },
+    "story": "Том (大) бүдүүн хонь (羊) — эртний Хятадад баялаг, үзэсгэлэнгийн бэлгэдэл байсан. 羊+大=美.",
+    "example": {"word":"美丽","pinyin":"měilì","translation":"үзэсгэлэнтэй"},
+    "mnemonic": {"parts":["羊","大"],"result":"美","meaning":"үзэсгэлэнтэй"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 美 (beautiful), built from 'sheep' 羊 + 'big' 大 — ancient etymology of a magnificent large sheep. Subject: a SINGLE EXTRAORDINARILY LARGE ram with MASSIVE elegantly CURLING HORNS standing proudly in a mountain meadow, the sheep's SIZE and grandeur are the clear visual emphasis (oversized compared to surroundings). The 'big sheep' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a small SHEEP on the LEFT, plus sign in MIDDLE, a 'LARGE' size indicator (arrows expanding) on the RIGHT, result showing a magnified sheep. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a proud sheep silhouette with prominent curled horns, warm earth color, single subject centered on pure white background. Reads as 'beautiful'. No text, no watermark."
+    }
+  },
+  {
+    "character": "鲜",
+    "pinyin": "xiān",
+    "meaning": "шинэхэн",
+    "structure": {
+      "parts": [{"char":"鱼","label":"загас"},{"char":"羊","label":"хонь"}],
+      "result": {"char":"鲜","label":"шинэхэн"}
+    },
+    "story": "Шинэ загас (鱼), шинэ хонины мах (羊) — хамгийн шинэхэн, ходоодонд тааламжтай идэшний бэлгэдэл. 鱼+羊=鲜.",
+    "example": {"word":"新鲜","pinyin":"xīnxiān","translation":"шинэхэн"},
+    "mnemonic": {"parts":["鱼","羊"],"result":"鲜","meaning":"шинэхэн"},
+    "prompts": {
+      "main": "Educational illustration for Chinese character 鲜 (fresh), built from 'fish' 鱼 + 'sheep' 羊. Subject: ONE whole glistening FRESH FISH on the LEFT side and a piece of fresh tender LAMB MEAT on the RIGHT side, displayed side-by-side on a bamboo tray, both ingredients clearly visible as the freshness pairing. The 'fish + sheep together' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "evolution": "A simple educational flat diagram: a FISH on the LEFT, plus sign in MIDDLE, a SHEEP on the RIGHT, both as simple cartoon shapes. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
+      "icon": "A minimalist flat vector icon: a fish silhouette and a sheep silhouette together side-by-side, single subject centered on pure white background. Reads as 'fresh'. No text, no watermark."
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "character": "林",
+  "pinyin": "lín",
+  "meaning": "ой",
+  "structure": {
+    "parts": [
+      { "char": "木", "label": "мод" },
+      { "char": "木", "label": "мод" }
+    ],
+    "result": { "char": "林", "label": "ой" }
+  },
+  "story": "Нэг мод бол 木. Хоёр мод нийлээд 林 буюу ой, төгөл гэсэн санаа болно.",
+  "example": {
+    "word": "森林",
+    "pinyin": "sēnlín",
+    "translation": "ой мод"
+  },
+  "mnemonic": {
+    "parts": ["木", "木"],
+    "result": "林",
+    "meaning": "ой"
+  }
+}

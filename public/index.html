@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kanji.mn — studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .han { font-family: "Noto Serif SC", "Source Han Serif", "PingFang SC", "Hiragino Sans GB", serif; }
+    .mono { font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace; }
+    .spin { animation: spin 0.9s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .checker {
+      background-image:
+        linear-gradient(45deg, #e5e7eb 25%, transparent 25%),
+        linear-gradient(-45deg, #e5e7eb 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #e5e7eb 75%),
+        linear-gradient(-45deg, transparent 75%, #e5e7eb 75%);
+      background-size: 24px 24px;
+      background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+    }
+    .draft-item.active { background:#dbeafe; border-left:3px solid #2563eb; }
+    .draft-item { border-left:3px solid transparent; }
+    details > summary { cursor: pointer; }
+    .save-pulse { animation: pulse 0.6s ease-out; }
+    @keyframes pulse {
+      0% { background-color: #fef3c7; }
+      100% { background-color: transparent; }
+    }
+    .saved-flash { color:#059669; font-size:11px; opacity:0; transition: opacity 0.3s; }
+    .saved-flash.show { opacity:1; }
+  </style>
+</head>
+<body class="bg-slate-100 min-h-screen text-slate-900">
+
+  <header class="bg-white border-b sticky top-0 z-10">
+    <div class="max-w-[1800px] mx-auto px-6 py-3 flex items-center gap-4">
+      <h1 class="text-xl font-bold text-blue-700">🀄 Kanji.mn <span class="text-slate-400 font-normal text-sm">studio</span></h1>
+      <div class="text-sm text-slate-600 bg-slate-100 px-3 py-1 rounded-full">
+        <span id="done-count" class="font-bold text-emerald-700">0</span>
+        <span class="text-slate-400">/</span>
+        <span id="total-count">0</span>
+        бэлэн
+      </div>
+      <span id="saved-flash" class="saved-flash">✓ хадгалагдсан</span>
+      <div class="flex-1"></div>
+
+      <button id="reset-draft" class="text-xs text-slate-500 hover:text-rose-600 underline" title="Энэ ханзыг seed-руу буцаах + upload устгах">↺ Reset draft</button>
+
+      <label class="flex items-center gap-2 text-sm text-slate-700">
+        <input type="checkbox" id="noai" class="accent-blue-600" checked>
+        AI зураггүй
+      </label>
+
+      <select id="format" class="border rounded px-3 py-1.5 text-sm bg-white">
+        <option value="png">PNG</option>
+        <option value="svg">SVG</option>
+        <option value="webp">WebP</option>
+        <option value="jpeg">JPEG</option>
+      </select>
+
+      <button id="prev-btn" class="px-3 py-2 text-slate-600 hover:bg-slate-100 rounded text-lg" title="Өмнөх (←)">◀</button>
+      <button id="next-btn" class="px-3 py-2 text-slate-600 hover:bg-slate-100 rounded text-lg" title="Дараах (→)">▶</button>
+
+      <button id="generate" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
+        <span>▶ Generate</span>
+        <svg id="gen-spinner" class="spin hidden" width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="white" stroke-width="3" stroke-dasharray="40 60"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-[1800px] mx-auto px-4 py-4 grid gap-4" style="grid-template-columns: 230px 460px 1fr;">
+
+    <!-- ───────── SIDEBAR ───────── -->
+    <aside class="bg-white rounded-xl border overflow-hidden flex flex-col" style="height: calc(100vh - 96px); position: sticky; top: 80px;">
+      <div class="px-3 py-2 border-b bg-slate-50 text-xs text-slate-500 font-semibold uppercase tracking-wide">
+        30 ханз (DB)
+      </div>
+      <ul id="drafts-list" class="overflow-y-auto flex-1 divide-y"></ul>
+    </aside>
+
+    <!-- ───────── FORM ───────── -->
+    <section class="space-y-4">
+
+      <div class="bg-white rounded-xl p-5 border space-y-3">
+        <div class="flex items-baseline gap-3">
+          <span id="cur-char" class="han text-5xl text-blue-900 font-bold"></span>
+          <div class="text-sm text-slate-500">
+            <div><b id="cur-pinyin"></b> · <span id="cur-meaning"></span></div>
+            <div class="text-xs">#<span id="cur-idx">-</span> / <span id="cur-total">-</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 border space-y-3">
+        <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Үндсэн</h2>
+        <div class="grid grid-cols-3 gap-3">
+          <label class="block">
+            <span class="text-xs text-slate-500">Иероглиф</span>
+            <input id="character" type="text" class="han mt-1 w-full border rounded px-3 py-2 text-2xl text-center">
+          </label>
+          <label class="block">
+            <span class="text-xs text-slate-500">Пиньин</span>
+            <input id="pinyin" type="text" class="mt-1 w-full border rounded px-3 py-2">
+          </label>
+          <label class="block">
+            <span class="text-xs text-slate-500">Утга</span>
+            <input id="meaning" type="text" class="mt-1 w-full border rounded px-3 py-2">
+          </label>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 border space-y-3">
+        <div class="flex items-center justify-between">
+          <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Бүтэц</h2>
+          <button id="add-part" class="text-xs px-2 py-1 rounded bg-slate-100 hover:bg-slate-200">+ part</button>
+        </div>
+        <div id="parts" class="space-y-2"></div>
+        <div class="border-t pt-3 grid grid-cols-2 gap-3">
+          <label class="block">
+            <span class="text-xs text-slate-500">Үр дүн ханз</span>
+            <input id="result-char" type="text" class="han mt-1 w-full border rounded px-3 py-2 text-xl text-center">
+          </label>
+          <label class="block">
+            <span class="text-xs text-slate-500">Үр дүн label</span>
+            <input id="result-label" type="text" class="mt-1 w-full border rounded px-3 py-2">
+          </label>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 border space-y-3">
+        <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Санааны түүх</h2>
+        <textarea id="story" rows="3" class="w-full border rounded px-3 py-2 text-sm"></textarea>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 border space-y-3">
+        <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Жишээ үг</h2>
+        <div class="grid grid-cols-3 gap-3">
+          <label class="block">
+            <span class="text-xs text-slate-500">Үг</span>
+            <input id="ex-word" type="text" class="han mt-1 w-full border rounded px-3 py-2 text-lg">
+          </label>
+          <label class="block">
+            <span class="text-xs text-slate-500">Пиньин</span>
+            <input id="ex-pinyin" type="text" class="mt-1 w-full border rounded px-3 py-2">
+          </label>
+          <label class="block">
+            <span class="text-xs text-slate-500">Орчуулга</span>
+            <input id="ex-trans" type="text" class="mt-1 w-full border rounded px-3 py-2">
+          </label>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 border space-y-3">
+        <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">🎨 AI prompt + 🖼 upload</h2>
+        <p class="text-xs text-slate-500">3 slot тус бүрд: prompt-ыг copy → гадаа generate → upload. Prompt-ыг засаж бичсэн нь DB-д PATCH-аар хадгална.</p>
+        <div id="slot-main"      data-slot="main"      class="image-slot border rounded-lg p-3 bg-slate-50"></div>
+        <div id="slot-evolution" data-slot="evolution" class="image-slot border rounded-lg p-3 bg-slate-50"></div>
+        <div id="slot-icon"      data-slot="icon"      class="image-slot border rounded-lg p-3 bg-slate-50"></div>
+      </div>
+
+      <details class="bg-white rounded-xl p-5 border">
+        <summary class="font-bold text-sm text-slate-500 uppercase tracking-wide">Raw API payload</summary>
+        <pre id="json-view" class="mono text-xs mt-3 bg-slate-900 text-slate-100 p-3 rounded overflow-auto max-h-96"></pre>
+      </details>
+
+      <details class="bg-white rounded-xl p-5 border">
+        <summary class="font-bold text-sm text-slate-500 uppercase tracking-wide">📜 Render history (DB)</summary>
+        <ul id="history-list" class="text-xs mt-3 space-y-1"></ul>
+      </details>
+    </section>
+
+    <!-- ───────── PREVIEW ───────── -->
+    <section class="space-y-4" style="position: sticky; top: 80px; align-self: start;">
+      <div class="bg-white rounded-xl border p-4">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Preview</h2>
+          <div id="meta" class="text-xs text-slate-500"></div>
+        </div>
+        <div id="preview-wrap" class="checker rounded-lg overflow-hidden border min-h-[500px] flex items-center justify-center">
+          <p id="placeholder" class="text-slate-400 text-sm text-center px-6">
+            Зүүнээс ханз сонгоод <b>Generate</b> дар.<br>
+            <span class="text-xs">Бүх state DB-д хадгалагдана.</span>
+          </p>
+          <img id="preview-img" class="hidden max-w-full" alt="preview">
+          <iframe id="preview-svg" class="hidden w-full h-[900px] bg-white" frameborder="0"></iframe>
+        </div>
+        <div class="flex items-center gap-3 mt-3">
+          <a id="download" class="hidden bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded text-sm font-semibold" download>⬇ Download</a>
+          <button id="next-after" class="hidden bg-slate-200 hover:bg-slate-300 px-4 py-2 rounded text-sm">Дараагийн ханз →</button>
+          <div id="error" class="hidden text-red-600 text-sm bg-red-50 border border-red-200 rounded px-3 py-2 flex-1"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+  // ───────────────── STATE ─────────────────
+  let drafts = [];           // summary list from /api/drafts
+  let currentChar = null;    // current draft character
+  let currentDraft = null;   // full DraftFull
+  let saveTimer = null;
+  const SLOT_LABEL = {
+    main:      'Гол зураг — forest scene',
+    evolution: 'Санааны түүх — evolution diagram',
+    icon:      'Утгын дүрс — icon',
+  };
+
+  // ───────────────── API CLIENT ─────────────────
+  const enc = encodeURIComponent;
+  const api = {
+    list:   () => fetch('/api/drafts').then(r => r.json()),
+    get:    (c) => fetch(`/api/drafts/${enc(c)}`).then(r => r.json()),
+    patch:  (c, body) => fetch(`/api/drafts/${enc(c)}`, {
+      method:'PATCH', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body),
+    }).then(r => r.json()),
+    reset:  (c) => fetch(`/api/drafts/${enc(c)}/reset`, { method:'POST' }).then(r => r.json()),
+    upload: (c, slot, file) => {
+      const fd = new FormData(); fd.append('file', file);
+      return fetch(`/api/drafts/${enc(c)}/images/${slot}`, { method:'PUT', body: fd }).then(r => r.json());
+    },
+    deleteImage: (c, slot) => fetch(`/api/drafts/${enc(c)}/images/${slot}`, { method:'DELETE' }).then(r => r.json()),
+    imageUrl:    (c, slot, bust='') => `/api/images/${enc(c)}/${slot}${bust ? `?t=${bust}` : ''}`,
+    render: (c, format, noai) => fetch(`/api/drafts/${enc(c)}/render?format=${format}${noai?'&noai=1':''}`, { method:'POST' }),
+    renders: (c) => fetch(`/api/drafts/${enc(c)}/renders`).then(r => r.json()),
+  };
+
+  function debouncedPatch(patch) {
+    if (!currentChar) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(async () => {
+      const updated = await api.patch(currentChar, patch);
+      if (updated && updated.character) {
+        currentDraft = updated;
+        flashSaved();
+        updateJsonView();
+      }
+    }, 500);
+  }
+
+  function flashSaved() {
+    const el = document.getElementById('saved-flash');
+    el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 800);
+  }
+
+  // ───────────────── SIDEBAR ─────────────────
+  async function refreshSidebar() {
+    drafts = await api.list();
+    document.getElementById('total-count').textContent = drafts.length;
+    document.getElementById('cur-total').textContent = drafts.length;
+    document.getElementById('done-count').textContent = drafts.filter(d => d.isDone).length;
+
+    const ul = document.getElementById('drafts-list');
+    ul.innerHTML = drafts.map((d) => {
+      const imgBadge = d.hasImages.main ? '<span title="main uploaded" class="text-blue-600">🖼</span>' : '';
+      return `
+        <li data-char="${escapeAttr(d.character)}" class="draft-item flex items-center gap-2 px-3 py-2.5 cursor-pointer hover:bg-slate-50 ${d.character === currentChar ? 'active' : ''}">
+          <span class="han text-2xl w-8 text-center text-slate-800">${escapeHtml(d.character)}</span>
+          <div class="flex-1 min-w-0">
+            <div class="text-sm font-semibold truncate">${escapeHtml(d.meaning)}</div>
+            <div class="text-xs text-slate-500 truncate">${escapeHtml(d.pinyin)}</div>
+          </div>
+          ${imgBadge}
+          ${d.isDone ? '<span class="text-emerald-600 font-bold">✓</span>' : `<span class="text-slate-300 text-xs">${d.position+1}</span>`}
+        </li>`;
+    }).join('');
+    ul.querySelectorAll('li').forEach((li) => {
+      li.onclick = () => loadDraft(li.dataset.char);
+    });
+  }
+
+  // ───────────────── LOAD DRAFT ─────────────────
+  async function loadDraft(character) {
+    const d = await api.get(character);
+    if (d.error) { alert(d.error); return; }
+    currentChar = character;
+    currentDraft = d;
+
+    const data = d.data;
+    document.getElementById('cur-char').textContent    = data.character;
+    document.getElementById('cur-pinyin').textContent  = data.pinyin;
+    document.getElementById('cur-meaning').textContent = data.meaning;
+    document.getElementById('cur-idx').textContent     = d.position + 1;
+
+    setVal('character',  data.character);
+    setVal('pinyin',     data.pinyin);
+    setVal('meaning',    data.meaning);
+    setVal('result-char', data.structure.result.char);
+    setVal('result-label', data.structure.result.label);
+    setVal('story',      data.story);
+    setVal('ex-word',    data.example.word);
+    setVal('ex-pinyin',  data.example.pinyin);
+    setVal('ex-trans',   data.example.translation);
+
+    renderParts(data.structure.parts);
+    ['main','evolution','icon'].forEach(renderSlot);
+    updateJsonView();
+    await refreshSidebar();
+    await refreshHistory();
+    clearPreview();
+
+    const cur = document.querySelector(`.draft-item[data-char="${cssEscape(character)}"]`);
+    if (cur) cur.scrollIntoView({ block:'nearest', behavior:'smooth' });
+  }
+
+  // ───────────────── PARTS ─────────────────
+  function renderParts(parts) {
+    const c = document.getElementById('parts');
+    c.innerHTML = '';
+    parts.forEach((p, i) => {
+      const row = document.createElement('div');
+      row.className = 'flex items-center gap-2';
+      row.innerHTML = `
+        <input type="text" data-idx="${i}" data-key="char" value="${escapeAttr(p.char)}"
+          class="han w-16 border rounded px-2 py-1.5 text-lg text-center">
+        <input type="text" data-idx="${i}" data-key="label" value="${escapeAttr(p.label)}"
+          class="flex-1 border rounded px-2 py-1.5 text-sm" placeholder="label">
+        <button data-rm="${i}" class="text-rose-500 hover:bg-rose-50 w-7 h-7 rounded text-lg">×</button>
+      `;
+      c.appendChild(row);
+    });
+    c.querySelectorAll('input').forEach((el) => {
+      el.oninput = () => {
+        const idx = +el.dataset.idx;
+        currentDraft.data.structure.parts[idx][el.dataset.key] = el.value;
+        debouncedPatch({ structure: currentDraft.data.structure });
+        updateJsonView();
+      };
+    });
+    c.querySelectorAll('[data-rm]').forEach((b) => {
+      b.onclick = () => {
+        if (currentDraft.data.structure.parts.length <= 1) return;
+        currentDraft.data.structure.parts.splice(+b.dataset.rm, 1);
+        renderParts(currentDraft.data.structure.parts);
+        debouncedPatch({ structure: currentDraft.data.structure });
+        updateJsonView();
+      };
+    });
+  }
+  document.getElementById('add-part').onclick = () => {
+    if (!currentDraft) return;
+    currentDraft.data.structure.parts.push({ char:'木', label:'' });
+    renderParts(currentDraft.data.structure.parts);
+    debouncedPatch({ structure: currentDraft.data.structure });
+    updateJsonView();
+  };
+
+  // ───────────────── SLOTS (prompt + upload) ─────────────────
+  function renderSlot(slotKey) {
+    const root = document.querySelector(`[data-slot="${slotKey}"]`);
+    const prompt = currentDraft?.data?.prompts?.[slotKey] ?? '';
+    const has = currentDraft?.hasImages?.[slotKey];
+    const imgSrc = has ? api.imageUrl(currentChar, slotKey, currentDraft.updatedAt) : null;
+
+    root.innerHTML = `
+      <div class="flex items-center justify-between mb-2">
+        <span class="font-semibold text-sm">${SLOT_LABEL[slotKey]}</span>
+        ${has ? '<span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">✓ uploaded</span>' : ''}
+      </div>
+
+      <details class="mb-2" ${prompt && !has ? 'open' : ''}>
+        <summary class="text-xs text-slate-600 hover:text-blue-600 select-none">🎨 Prompt (засаж + Copy)</summary>
+        <div class="mt-2 space-y-1">
+          <textarea data-prompt-slot="${slotKey}" rows="4"
+            class="mono w-full text-xs border rounded p-2 bg-white">${escapeHtml(prompt)}</textarea>
+          <div class="flex items-center gap-2">
+            <button data-copy-slot="${slotKey}" class="text-xs bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded">📋 Copy</button>
+            <span data-copy-flash="${slotKey}" class="text-xs text-emerald-600 saved-flash">copied</span>
+          </div>
+        </div>
+      </details>
+
+      <div class="flex items-center gap-3 flex-wrap">
+        <label class="inline-flex items-center gap-2 cursor-pointer text-sm bg-slate-200 hover:bg-slate-300 px-3 py-1.5 rounded">
+          🖼 Upload
+          <input type="file" accept="image/*" data-upload-slot="${slotKey}" class="hidden">
+        </label>
+        <button data-aigen-slot="${slotKey}" class="text-sm bg-violet-600 hover:bg-violet-700 text-white px-3 py-1.5 rounded inline-flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
+          <span data-aigen-label="${slotKey}">🤖 AI generate</span>
+          <svg data-aigen-spin="${slotKey}" class="spin hidden" width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="white" stroke-width="3" stroke-dasharray="40 60"/>
+          </svg>
+        </button>
+        ${imgSrc ? `
+          <img src="${imgSrc}" class="w-14 h-14 object-cover rounded border" data-thumb-slot="${slotKey}">
+          <button data-delete-slot="${slotKey}" class="text-xs text-rose-500 hover:bg-rose-50 px-2 py-1 rounded">× устгах</button>
+        ` : '<span class="text-xs text-slate-400">зураг алга</span>'}
+      </div>
+    `;
+
+    // Prompt textarea — debounced PATCH
+    const ta = root.querySelector('[data-prompt-slot]');
+    ta.oninput = (e) => {
+      currentDraft.data.prompts ??= {};
+      currentDraft.data.prompts[slotKey] = e.target.value;
+      debouncedPatch({ prompts: currentDraft.data.prompts });
+      updateJsonView();
+    };
+
+    // Copy button
+    root.querySelector('[data-copy-slot]').onclick = async () => {
+      const text = currentDraft?.data?.prompts?.[slotKey] ?? '';
+      try {
+        await navigator.clipboard.writeText(text);
+        const flash = root.querySelector('[data-copy-flash]');
+        flash.classList.add('show');
+        setTimeout(() => flash.classList.remove('show'), 1200);
+      } catch (e) {
+        alert('Clipboard error: ' + e.message);
+      }
+    };
+
+    // Upload
+    root.querySelector('[data-upload-slot]').onchange = async (e) => {
+      const f = e.target.files?.[0];
+      if (!f) return;
+      const res = await api.upload(currentChar, slotKey, f);
+      if (res.error) { alert(res.error); return; }
+      currentDraft = await api.get(currentChar);
+      renderSlot(slotKey);
+      await refreshSidebar();
+    };
+
+    // Delete
+    const del = root.querySelector('[data-delete-slot]');
+    if (del) {
+      del.onclick = async () => {
+        if (!confirm('Энэ зургийг устгах уу?')) return;
+        await api.deleteImage(currentChar, slotKey);
+        currentDraft = await api.get(currentChar);
+        renderSlot(slotKey);
+        await refreshSidebar();
+      };
+    }
+
+    // AI generate via OpenAI (uses prompt stored on draft)
+    const ai = root.querySelector(`[data-aigen-slot="${slotKey}"]`);
+    if (ai) {
+      ai.onclick = async () => {
+        const label = root.querySelector(`[data-aigen-label="${slotKey}"]`);
+        const spin  = root.querySelector(`[data-aigen-spin="${slotKey}"]`);
+        ai.disabled = true; spin.classList.remove('hidden'); label.textContent = 'үүсгэж байна (~15-30s)';
+        try {
+          const res = await fetch(`/api/drafts/${enc(currentChar)}/generate-image/${slotKey}`, { method: 'POST' });
+          const j = await res.json();
+          if (!res.ok) throw new Error(j.error || `HTTP ${res.status}`);
+          currentDraft = await api.get(currentChar);
+          renderSlot(slotKey);
+          await refreshSidebar();
+        } catch (e) {
+          alert('AI generate алдаа: ' + e.message + '\n\nOPENAI_API_KEY серверт тохируулагдсан эсэхээ шалга.');
+        } finally {
+          if (root.querySelector(`[data-aigen-slot="${slotKey}"]`)) {
+            // slot was re-rendered; old refs invalid — skip
+          }
+        }
+      };
+    }
+  }
+
+  // ───────────────── TEXT FIELD WIRING ─────────────────
+  const FIELD_MAP = {
+    character:    (v) => ({ character: v }),
+    pinyin:       (v) => ({ pinyin: v }),
+    meaning:      (v) => ({ meaning: v }),
+    story:        (v) => ({ story: v }),
+    'result-char':  (v) => ({ structure: { ...currentDraft.data.structure, result: { ...currentDraft.data.structure.result, char: v } } }),
+    'result-label': (v) => ({ structure: { ...currentDraft.data.structure, result: { ...currentDraft.data.structure.result, label: v } } }),
+    'ex-word':    (v) => ({ example: { ...currentDraft.data.example, word: v } }),
+    'ex-pinyin':  (v) => ({ example: { ...currentDraft.data.example, pinyin: v } }),
+    'ex-trans':   (v) => ({ example: { ...currentDraft.data.example, translation: v } }),
+  };
+
+  Object.entries(FIELD_MAP).forEach(([id, builder]) => {
+    document.getElementById(id).oninput = () => {
+      if (!currentDraft) return;
+      const v = val(id);
+      // Update local copy for UI consistency
+      const patch = builder(v);
+      Object.assign(currentDraft.data, deepMerge(currentDraft.data, patch));
+      debouncedPatch(patch);
+      updateJsonView();
+    };
+  });
+
+  function deepMerge(base, patch) {
+    if (base && typeof base === 'object' && patch && typeof patch === 'object' && !Array.isArray(patch)) {
+      const out = { ...base };
+      for (const k of Object.keys(patch)) out[k] = deepMerge(base[k], patch[k]);
+      return out;
+    }
+    return patch;
+  }
+
+  // ───────────────── JSON VIEW ─────────────────
+  function updateJsonView() {
+    if (!currentDraft) return;
+    document.getElementById('json-view').textContent = JSON.stringify(currentDraft.data, null, 2);
+  }
+
+  // ───────────────── HISTORY ─────────────────
+  async function refreshHistory() {
+    if (!currentChar) return;
+    const renders = await api.renders(currentChar);
+    const ul = document.getElementById('history-list');
+    if (!renders.length) { ul.innerHTML = '<li class="text-slate-400">history алга</li>'; return; }
+    ul.innerHTML = renders.map(r => `
+      <li class="flex items-center gap-3">
+        <a href="/api/renders/${r.id}" target="_blank" class="text-blue-600 hover:underline">#${r.id}</a>
+        <span class="text-slate-500">${r.format}</span>
+        <span class="text-slate-500">${(r.size/1024).toFixed(1)} KB</span>
+        <span class="text-slate-400 text-[10px]">${new Date(r.renderedAt).toLocaleString()}</span>
+      </li>
+    `).join('');
+  }
+
+  // ───────────────── RESET ─────────────────
+  document.getElementById('reset-draft').onclick = async () => {
+    if (!currentChar) return;
+    if (!confirm(`"${currentChar}" ханзыг seed-руу буцаах уу? Текст засвар + uploaded зурагнууд устах болно.`)) return;
+    await api.reset(currentChar);
+    await loadDraft(currentChar);
+  };
+
+  // ───────────────── GENERATE ─────────────────
+  let lastUrl = null;
+  function clearPreview() {
+    if (lastUrl) { URL.revokeObjectURL(lastUrl); lastUrl = null; }
+    document.getElementById('preview-img').classList.add('hidden');
+    document.getElementById('preview-svg').classList.add('hidden');
+    document.getElementById('placeholder').classList.remove('hidden');
+    document.getElementById('download').classList.add('hidden');
+    document.getElementById('next-after').classList.add('hidden');
+    document.getElementById('error').classList.add('hidden');
+    document.getElementById('meta').textContent = '';
+  }
+
+  async function generate() {
+    if (!currentChar) return;
+    const btn = document.getElementById('generate');
+    const spinner = document.getElementById('gen-spinner');
+    const errBox = document.getElementById('error');
+    errBox.classList.add('hidden');
+    btn.disabled = true; spinner.classList.remove('hidden');
+
+    const format = document.getElementById('format').value;
+    const noai = document.getElementById('noai').checked;
+    const t0 = performance.now();
+
+    try {
+      const res = await api.render(currentChar, format, noai);
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || `HTTP ${res.status}`);
+      }
+      const blob = await res.blob();
+      if (lastUrl) URL.revokeObjectURL(lastUrl);
+      lastUrl = URL.createObjectURL(blob);
+
+      document.getElementById('placeholder').classList.add('hidden');
+      const img = document.getElementById('preview-img');
+      const iframe = document.getElementById('preview-svg');
+      if (format === 'svg') {
+        iframe.src = lastUrl; iframe.classList.remove('hidden'); img.classList.add('hidden');
+      } else {
+        img.src = lastUrl; img.classList.remove('hidden'); iframe.classList.add('hidden');
+      }
+      const dl = document.getElementById('download');
+      dl.href = lastUrl;
+      dl.download = `${currentChar}.${format === 'jpeg' ? 'jpg' : format}`;
+      dl.classList.remove('hidden');
+      document.getElementById('next-after').classList.remove('hidden');
+
+      document.getElementById('meta').textContent =
+        `${(blob.size / 1024).toFixed(1)} KB · ${Math.round(performance.now() - t0)} ms · ${format.toUpperCase()}`;
+
+      await refreshSidebar();
+      await refreshHistory();
+    } catch (e) {
+      errBox.textContent = e.message;
+      errBox.classList.remove('hidden');
+    } finally {
+      btn.disabled = false; spinner.classList.add('hidden');
+    }
+  }
+  document.getElementById('generate').onclick = generate;
+
+  // ───────────────── NAV ─────────────────
+  function nav(delta) {
+    if (!currentChar) return;
+    const idx = drafts.findIndex(d => d.character === currentChar);
+    const target = drafts[idx + delta];
+    if (target) loadDraft(target.character);
+  }
+  document.getElementById('prev-btn').onclick = () => nav(-1);
+  document.getElementById('next-btn').onclick = () => nav(1);
+  document.getElementById('next-after').onclick = () => nav(1);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft')  nav(-1);
+    if (e.key === 'ArrowRight') nav(1);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); generate(); }
+  });
+
+  // ───────────────── HELPERS ─────────────────
+  function val(id) { return document.getElementById(id).value.trim(); }
+  function setVal(id, v) { document.getElementById(id).value = v ?? ''; }
+  function escapeAttr(s) { return String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]); }
+  function escapeHtml(s) { return escapeAttr(s); }
+  function cssEscape(s) {
+    if (window.CSS && CSS.escape) return CSS.escape(s);
+    return String(s).replace(/[^a-zA-Z0-9_-]/g, ch => '\\' + ch);
+  }
+
+  // ───────────────── INIT ─────────────────
+  (async () => {
+    await refreshSidebar();
+    if (drafts.length) await loadDraft(drafts[0].character);
+  })();
+  </script>
+</body>
+</html>
