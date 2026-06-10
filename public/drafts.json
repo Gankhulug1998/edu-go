@@ -4,509 +4,7150 @@
     "pinyin": "lín",
     "meaning": "ой",
     "structure": {
-      "parts": [{"char":"木","label":"мод"},{"char":"木","label":"мод"}],
-      "result": {"char":"林","label":"ой"}
+      "parts": [
+        {
+          "char": "木",
+          "label": "мод"
+        },
+        {
+          "char": "木",
+          "label": "мод"
+        }
+      ],
+      "result": {
+        "char": "林",
+        "label": "ой"
+      }
     },
     "story": "Нэг мод бол 木. Хоёр мод нийлээд 林 буюу ой, төгөл гэсэн санаа болно.",
-    "example": {"word":"森林","pinyin":"sēnlín","translation":"ой мод"},
-    "mnemonic": {"parts":["木","木"],"result":"林","meaning":"ой"},
+    "example": {
+      "word": "森林",
+      "pinyin": "sēnlín",
+      "translation": "ой мод"
+    },
+    "mnemonic": {
+      "parts": [
+        "木",
+        "木"
+      ],
+      "result": "林",
+      "meaning": "ой"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 林 (forest), built from two 'tree' radicals 木+木. Subject: EXACTLY TWO prominent identical pine trees standing tall side-by-side in the foreground as the clear focal point, soft morning sun rays between their trunks, gentle East Asian landscape behind. Composition must read as a PAIR of trees. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram showing visual transformation: one small cartoon tree on the LEFT, a thin arrow in the MIDDLE, TWO cartoon trees standing side-by-side on the RIGHT. Clean white background. Style of a children's school textbook diagram. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: two simple green pine trees standing side-by-side, single subject centered on pure white background. Friendly, easy to recognize at small size. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌲"
+      }
+    },
+    "storyFormula": "🌲 + 🌲 = 🌳",
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "radical:木"
+    ]
   },
   {
     "character": "森",
     "pinyin": "sēn",
     "meaning": "ой бөглөө",
     "structure": {
-      "parts": [{"char":"木","label":"мод"},{"char":"木","label":"мод"},{"char":"木","label":"мод"}],
-      "result": {"char":"森","label":"ой бөглөө"}
+      "parts": [
+        {
+          "char": "木",
+          "label": "мод"
+        },
+        {
+          "char": "木",
+          "label": "мод"
+        },
+        {
+          "char": "木",
+          "label": "мод"
+        }
+      ],
+      "result": {
+        "char": "森",
+        "label": "ой бөглөө"
+      }
     },
     "story": "Гурван мод нэг дор нийлээд 森 — маш олон модтой, нягт бөглөө ой гэсэн утга болно.",
-    "example": {"word":"森林","pinyin":"sēnlín","translation":"ой мод"},
-    "mnemonic": {"parts":["木","木","木"],"result":"森","meaning":"ой бөглөө"},
+    "example": {
+      "word": "森林",
+      "pinyin": "sēnlín",
+      "translation": "ой мод"
+    },
+    "mnemonic": {
+      "parts": [
+        "木",
+        "木",
+        "木"
+      ],
+      "result": "森",
+      "meaning": "ой бөглөө"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 森 (dense forest), built from THREE 'tree' radicals 木+木+木. Subject: EXACTLY THREE prominent pine trees arranged in a clear triangular composition — two in front and one taller behind — creating a small dense grove. The three trees must be the unmistakable focus. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: TWO cartoon trees on the LEFT (representing 林), thin arrow in MIDDLE, THREE trees clustered together on the RIGHT (forming 森). Clean white background, school-textbook diagram style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: three simple green pine trees clustered together in a triangle, single subject centered on pure white background. Recognizable as 'dense forest'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌳"
+      }
+    },
+    "storyFormula": "🌲 + 🌲 + 🌲 = 🌳",
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "triple",
+      "radical:木"
+    ]
   },
   {
     "character": "明",
     "pinyin": "míng",
     "meaning": "гэрэлтэй",
     "structure": {
-      "parts": [{"char":"日","label":"нар"},{"char":"月","label":"сар"}],
-      "result": {"char":"明","label":"гэрэлтэй"}
+      "parts": [
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "月",
+          "label": "сар"
+        }
+      ],
+      "result": {
+        "char": "明",
+        "label": "гэрэлтэй"
+      }
     },
     "story": "Тэнгэрт хоёр гэрэлтүүлэгч — нар, сар хамт байвал орчин маш гэгээтэй, тод гэрэлтэй болно. 日+月=明.",
-    "example": {"word":"明天","pinyin":"míngtiān","translation":"маргааш"},
-    "mnemonic": {"parts":["日","月"],"result":"明","meaning":"гэрэлтэй"},
+    "example": {
+      "word": "明天",
+      "pinyin": "míngtiān",
+      "translation": "маргааш"
+    },
+    "mnemonic": {
+      "parts": [
+        "日",
+        "月"
+      ],
+      "result": "明",
+      "meaning": "гэрэлтэй"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 明 (bright), built from 'sun' 日 + 'moon' 月. Subject: a single peaceful sky with BOTH the SUN on the LEFT and a CRESCENT MOON on the RIGHT clearly visible at the same time, doubling the light over a calm landscape. The viewer must immediately see SUN + MOON together. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a round SUN on the LEFT, plus sign in the MIDDLE, a CRESCENT MOON on the RIGHT, with gentle light rays radiating outward indicating brightness. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a sun and a crescent moon side-by-side as a single pictogram, warm golden color, centered on pure white background. Reads as 'brightness'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💡"
+      }
+    },
+    "storyFormula": "☀️ + 🌙 = 💡",
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1",
+      "radical:日"
+    ]
   },
   {
     "character": "休",
     "pinyin": "xiū",
     "meaning": "амрах",
     "structure": {
-      "parts": [{"char":"亻","label":"хүн"},{"char":"木","label":"мод"}],
-      "result": {"char":"休","label":"амрах"}
+      "parts": [
+        {
+          "char": "亻",
+          "label": "хүн"
+        },
+        {
+          "char": "木",
+          "label": "мод"
+        }
+      ],
+      "result": {
+        "char": "休",
+        "label": "амрах"
+      }
     },
     "story": "Ядарсан хүн (亻) том мод (木) дор тулж амарна. 亻+木=休, амрах гэсэн утга.",
-    "example": {"word":"休息","pinyin":"xiūxi","translation":"амрах, чөлөө"},
-    "mnemonic": {"parts":["亻","木"],"result":"休","meaning":"амрах"},
+    "example": {
+      "word": "休息",
+      "pinyin": "xiūxi",
+      "translation": "амрах, чөлөө"
+    },
+    "mnemonic": {
+      "parts": [
+        "亻",
+        "木"
+      ],
+      "result": "休",
+      "meaning": "амрах"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 休 (rest), built from 'person' 亻 + 'tree' 木. Subject: ONE traveler sitting on the ground LEANING their back against the TRUNK of a single large tree, eyes peacefully closed, hat tilted forward, content smile. The PERSON+TREE pairing must be the immediate visual reading. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a stick-figure PERSON on the LEFT, plus sign in MIDDLE, a TREE on the RIGHT, with the result showing a person leaning against the tree. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple human figure peacefully sitting against a tree trunk, single subject centered on pure white background. Reads as 'rest'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "😌"
+      }
+    },
+    "storyFormula": "🚶 + 🌲 = 😌",
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "radical:亻"
+    ]
   },
   {
     "character": "好",
     "pinyin": "hǎo",
     "meaning": "сайн",
     "structure": {
-      "parts": [{"char":"女","label":"эмэгтэй"},{"char":"子","label":"хүүхэд"}],
-      "result": {"char":"好","label":"сайн"}
+      "parts": [
+        {
+          "char": "女",
+          "label": "эмэгтэй"
+        },
+        {
+          "char": "子",
+          "label": "хүүхэд"
+        }
+      ],
+      "result": {
+        "char": "好",
+        "label": "сайн"
+      }
     },
     "story": "Ээж (女) хүүхдээ (子) тэвэрсэн дүр — энэ нь сайн, аз жаргалтай гэсэн утгыг илэрхийлнэ. 女+子=好.",
-    "example": {"word":"你好","pinyin":"nǐ hǎo","translation":"сайн уу"},
-    "mnemonic": {"parts":["女","子"],"result":"好","meaning":"сайн"},
+    "example": {
+      "word": "你好",
+      "pinyin": "nǐ hǎo",
+      "translation": "сайн уу"
+    },
+    "mnemonic": {
+      "parts": [
+        "女",
+        "子"
+      ],
+      "result": "好",
+      "meaning": "сайн"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 好 (good), built from 'woman' 女 + 'child' 子. Subject: a MOTHER on the LEFT holding her small CHILD on the RIGHT in her warm embrace, both smiling tenderly. The mother-and-child pair must be the unmistakable subject. Soft warm light, family love. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a WOMAN figure on the LEFT, plus sign in MIDDLE, a small CHILD figure on the RIGHT, result showing them embracing. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: silhouette of a mother holding a child, warm rose color, single subject centered on pure white background. Reads as 'good/loving'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "❤️"
+      }
+    },
+    "storyFormula": "👩 + 👶 = ❤️",
+    "level": 1,
+    "category": "chanar",
+    "tags": [
+      "hsk1",
+      "radical:女"
+    ]
   },
   {
     "character": "安",
     "pinyin": "ān",
     "meaning": "тайван",
     "structure": {
-      "parts": [{"char":"宀","label":"дээвэр"},{"char":"女","label":"эмэгтэй"}],
-      "result": {"char":"安","label":"тайван"}
+      "parts": [
+        {
+          "char": "宀",
+          "label": "дээвэр"
+        },
+        {
+          "char": "女",
+          "label": "эмэгтэй"
+        }
+      ],
+      "result": {
+        "char": "安",
+        "label": "тайван"
+      }
     },
     "story": "Гэрийн дээвэр (宀) дор эмэгтэй (女) сууж байна — аюулгүй, тайван амгалан. 宀+女=安.",
-    "example": {"word":"安全","pinyin":"ānquán","translation":"аюулгүй"},
-    "mnemonic": {"parts":["宀","女"],"result":"安","meaning":"тайван"},
+    "example": {
+      "word": "安全",
+      "pinyin": "ānquán",
+      "translation": "аюулгүй"
+    },
+    "mnemonic": {
+      "parts": [
+        "宀",
+        "女"
+      ],
+      "result": "安",
+      "meaning": "тайван"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 安 (peaceful/safe), built from 'roof' 宀 + 'woman' 女. Subject: ONE woman sitting calmly INSIDE a traditional Asian house, the curved ROOF clearly framing her from ABOVE, warm soft interior lighting, sense of shelter and safety. The 'woman-under-roof' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a ROOF shape ⌒ on the LEFT, plus sign in MIDDLE, a WOMAN figure on the RIGHT, result showing the woman sitting peacefully under the roof. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple house with a curved peaceful roof, a small dot inside representing a person, single subject centered on pure white background. Reads as 'peace/safety'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🕊️"
+      }
+    },
+    "storyFormula": "🏠 + 👩 = 🕊️",
+    "level": 1,
+    "category": "chanar",
+    "tags": [
+      "radical:宀"
+    ]
   },
   {
     "character": "家",
     "pinyin": "jiā",
     "meaning": "гэр",
     "structure": {
-      "parts": [{"char":"宀","label":"дээвэр"},{"char":"豕","label":"гахай"}],
-      "result": {"char":"家","label":"гэр"}
+      "parts": [
+        {
+          "char": "宀",
+          "label": "дээвэр"
+        },
+        {
+          "char": "豕",
+          "label": "гахай"
+        }
+      ],
+      "result": {
+        "char": "家",
+        "label": "гэр"
+      }
     },
     "story": "Эрт цагт дээвэр (宀) дор тэжээвэр гахайтай (豕) айл бол баян, бүрэн бүтэн гэрийн дүр байсан. 宀+豕=家.",
-    "example": {"word":"家人","pinyin":"jiārén","translation":"гэр бүл"},
-    "mnemonic": {"parts":["宀","豕"],"result":"家","meaning":"гэр"},
+    "example": {
+      "word": "家人",
+      "pinyin": "jiārén",
+      "translation": "гэр бүл"
+    },
+    "mnemonic": {
+      "parts": [
+        "宀",
+        "豕"
+      ],
+      "result": "家",
+      "meaning": "гэр"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 家 (home), built from 'roof' 宀 + 'pig' 豕 — the ancient etymology of a domestic pig under shelter. Subject: a small pet pig peacefully resting INSIDE a traditional Asian farmhouse, with the curved ROOF clearly visible ABOVE the pig, cozy warm interior. The 'pig-under-roof' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a ROOF shape ⌒ on the LEFT, plus sign in MIDDLE, a small PIG figure on the RIGHT, result showing the pig peacefully under the roof. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a small traditional house with a sloped curved roof, warm earth color, single subject centered on pure white background. Reads as 'home'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏠"
+      }
+    },
+    "storyFormula": "🏠 + 🐖 = 🏡",
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1",
+      "radical:宀"
+    ]
   },
   {
     "character": "男",
     "pinyin": "nán",
     "meaning": "эрэгтэй",
     "structure": {
-      "parts": [{"char":"田","label":"талбай"},{"char":"力","label":"хүч"}],
-      "result": {"char":"男","label":"эрэгтэй"}
+      "parts": [
+        {
+          "char": "田",
+          "label": "талбай"
+        },
+        {
+          "char": "力",
+          "label": "хүч"
+        }
+      ],
+      "result": {
+        "char": "男",
+        "label": "эрэгтэй"
+      }
     },
     "story": "Тариалангийн талбай (田) дээр хүч (力) гарган ажилладаг хүн — эрэгтэй гэсэн утга. 田+力=男.",
-    "example": {"word":"男人","pinyin":"nánrén","translation":"эрэгтэй хүн"},
-    "mnemonic": {"parts":["田","力"],"result":"男","meaning":"эрэгтэй"},
+    "example": {
+      "word": "男人",
+      "pinyin": "nánrén",
+      "translation": "эрэгтэй хүн"
+    },
+    "mnemonic": {
+      "parts": [
+        "田",
+        "力"
+      ],
+      "result": "男",
+      "meaning": "эрэгтэй"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 男 (man), built from 'field' 田 + 'strength' 力. Subject: a strong muscular farmer standing actively in a rice paddy field, the rectangular GRID PATTERN of the field is clearly visible at his feet and around him, his STRONG ARMS or shoulders emphasized. The 'strength + field' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a grid pattern representing a FIELD on the LEFT, plus sign in MIDDLE, a flexed ARM showing STRENGTH on the RIGHT, result showing a strong figure standing in the field. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a strong human figure with flexed arms standing on a field grid pattern, single subject centered on pure white background. Reads as 'man'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💪"
+      }
+    },
+    "storyFormula": "🌾 + 💪 = 👨",
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "radical:田"
+    ]
   },
   {
     "character": "从",
     "pinyin": "cóng",
     "meaning": "дагах",
     "structure": {
-      "parts": [{"char":"人","label":"хүн"},{"char":"人","label":"хүн"}],
-      "result": {"char":"从","label":"дагах"}
+      "parts": [
+        {
+          "char": "人",
+          "label": "хүн"
+        },
+        {
+          "char": "人",
+          "label": "хүн"
+        }
+      ],
+      "result": {
+        "char": "从",
+        "label": "дагах"
+      }
     },
     "story": "Нэг хүний (人) араас нөгөө хүн (人) дагаж явна — 'дагах' гэсэн санааны дүрс. 人+人=从.",
-    "example": {"word":"从来","pinyin":"cónglái","translation":"урьд хэзээ ч"},
-    "mnemonic": {"parts":["人","人"],"result":"从","meaning":"дагах"},
+    "example": {
+      "word": "从来",
+      "pinyin": "cónglái",
+      "translation": "урьд хэзээ ч"
+    },
+    "mnemonic": {
+      "parts": [
+        "人",
+        "人"
+      ],
+      "result": "从",
+      "meaning": "дагах"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 从 (follow), built from two 'person' 人 radicals. Subject: EXACTLY TWO people walking single-file on a path — one in FRONT, one clearly walking DIRECTLY BEHIND the front person, the back one looking at the front person's back. The 'following' action must be immediately readable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: ONE stick figure on the LEFT walking right, plus sign in MIDDLE, ANOTHER stick figure on the RIGHT walking right, result showing the second walking behind the first. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: two simple human silhouettes walking in single-file line, one clearly behind the other, single subject centered on pure white background. Reads as 'follow'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👥"
+      }
+    },
+    "storyFormula": "🚶 + 🚶 = 👥",
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "radical:人"
+    ]
   },
   {
     "character": "众",
     "pinyin": "zhòng",
     "meaning": "олон",
     "structure": {
-      "parts": [{"char":"人","label":"хүн"},{"char":"人","label":"хүн"},{"char":"人","label":"хүн"}],
-      "result": {"char":"众","label":"олон"}
+      "parts": [
+        {
+          "char": "人",
+          "label": "хүн"
+        },
+        {
+          "char": "人",
+          "label": "хүн"
+        },
+        {
+          "char": "人",
+          "label": "хүн"
+        }
+      ],
+      "result": {
+        "char": "众",
+        "label": "олон"
+      }
     },
     "story": "Гурван хүн (人+人+人) нэг дор цугласан — олон түмэн, хурал гэсэн утга. 人+人+人=众.",
-    "example": {"word":"群众","pinyin":"qúnzhòng","translation":"олон түмэн"},
-    "mnemonic": {"parts":["人","人","人"],"result":"众","meaning":"олон"},
+    "example": {
+      "word": "群众",
+      "pinyin": "qúnzhòng",
+      "translation": "олон түмэн"
+    },
+    "mnemonic": {
+      "parts": [
+        "人",
+        "人",
+        "人"
+      ],
+      "result": "众",
+      "meaning": "олон"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 众 (crowd), built from THREE 'person' 人 radicals. Subject: EXACTLY THREE people standing close together in a tight small group huddle, viewed from a slightly elevated angle, clearly distinguishable as three individuals forming a tiny crowd. The 'three people together' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: TWO figures on the LEFT (representing 从), arrow in MIDDLE, THREE figures clustered closely on the RIGHT (forming 众). Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: three simple human silhouettes clustered closely in a small group, single subject centered on pure white background. Reads as 'crowd'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🧑‍🤝‍🧑"
+      }
+    },
+    "storyFormula": "🚶 + 🚶 + 🚶 = 🧑‍🤝‍🧑",
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "triple",
+      "radical:人"
+    ]
   },
   {
     "character": "炎",
     "pinyin": "yán",
     "meaning": "халуун",
     "structure": {
-      "parts": [{"char":"火","label":"гал"},{"char":"火","label":"гал"}],
-      "result": {"char":"炎","label":"халуун"}
+      "parts": [
+        {
+          "char": "火",
+          "label": "гал"
+        },
+        {
+          "char": "火",
+          "label": "гал"
+        }
+      ],
+      "result": {
+        "char": "炎",
+        "label": "халуун"
+      }
     },
     "story": "Гал (火) дээр гал (火) давхарласан — маш халуун, шатсан халалт гэсэн утга. 火+火=炎.",
-    "example": {"word":"炎热","pinyin":"yánrè","translation":"маш халуун"},
-    "mnemonic": {"parts":["火","火"],"result":"炎","meaning":"халуун"},
+    "example": {
+      "word": "炎热",
+      "pinyin": "yánrè",
+      "translation": "маш халуун"
+    },
+    "mnemonic": {
+      "parts": [
+        "火",
+        "火"
+      ],
+      "result": "炎",
+      "meaning": "халуун"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 炎 (intense heat/flame), built from two 'fire' 火 radicals stacked. Subject: TWO large blazing FLAMES STACKED VERTICALLY — one flame burning above another flame — creating an extreme heat tower against a dark night background, glowing intense orange and red. The 'fire-above-fire' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a single FLAME shape on the LEFT, plus sign in MIDDLE, TWO flames stacked vertically on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: two flame shapes stacked vertically, warm orange and red color, single subject centered on pure white background. Reads as 'intense heat'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔥"
+      }
+    },
+    "storyFormula": "🔥 + 🔥 = 🥵",
+    "level": 2,
+    "category": "chanar",
+    "tags": [
+      "triple",
+      "radical:火"
+    ]
   },
   {
     "character": "出",
     "pinyin": "chū",
     "meaning": "гарах",
     "structure": {
-      "parts": [{"char":"山","label":"уул"},{"char":"山","label":"уул"}],
-      "result": {"char":"出","label":"гарах"}
+      "parts": [
+        {
+          "char": "山",
+          "label": "уул"
+        },
+        {
+          "char": "山",
+          "label": "уул"
+        }
+      ],
+      "result": {
+        "char": "出",
+        "label": "гарах"
+      }
     },
     "story": "Уул (山) дээгүүр өөр уул цухуйж 'гарч ирэх' дүрс. 山+山=出, гарах гэсэн утга.",
-    "example": {"word":"出门","pinyin":"chūmén","translation":"гэрээс гарах"},
-    "mnemonic": {"parts":["山","山"],"result":"出","meaning":"гарах"},
+    "example": {
+      "word": "出门",
+      "pinyin": "chūmén",
+      "translation": "гэрээс гарах"
+    },
+    "mnemonic": {
+      "parts": [
+        "山",
+        "山"
+      ],
+      "result": "出",
+      "meaning": "гарах"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 出 (emerge/go out), built from two 'mountain' 山 shapes stacked. Subject: ONE mountain peak clearly EMERGING and rising UP from BEHIND another mountain peak in the foreground, the back peak visibly thrusting up and out into the sky. The 'one mountain coming out from another' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: ONE triangular mountain on the LEFT, plus sign in MIDDLE, TWO mountains with one rising out from behind the other on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: two mountain triangles with one peak clearly emerging upward from behind the other, single subject centered on pure white background. Reads as 'emerge/go out'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚪"
+      }
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ]
   },
   {
     "character": "本",
     "pinyin": "běn",
     "meaning": "үндэс",
     "structure": {
-      "parts": [{"char":"木","label":"мод"},{"char":"一","label":"шугам (доод)"}],
-      "result": {"char":"本","label":"үндэс"}
+      "parts": [
+        {
+          "char": "木",
+          "label": "мод"
+        },
+        {
+          "char": "一",
+          "label": "шугам (доод)"
+        }
+      ],
+      "result": {
+        "char": "本",
+        "label": "үндэс"
+      }
     },
     "story": "Модны (木) доод хэсэг дээр нэмэлт шугам (一) тавьсан — үндэс, гарал, эх гэсэн утга. 木+一=本.",
-    "example": {"word":"日本","pinyin":"Rìběn","translation":"Япон"},
-    "mnemonic": {"parts":["木","一"],"result":"本","meaning":"үндэс"},
+    "example": {
+      "word": "日本",
+      "pinyin": "Rìběn",
+      "translation": "Япон"
+    },
+    "mnemonic": {
+      "parts": [
+        "木",
+        "一"
+      ],
+      "result": "本",
+      "meaning": "үндэс"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 本 (root/origin), built from 'tree' 木 + a horizontal mark at its BASE. Subject: a single large ancient tree with its prominent EXPOSED GNARLED ROOTS spreading wide at the base, the ROOT SYSTEM emphasized as the clear visual focus, while the trunk and crown are slightly faded. The 'tree-base highlighted' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a tree shape on the LEFT, plus sign in MIDDLE, the same tree on the RIGHT with a thick horizontal line highlighted at its BASE/roots. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple tree with prominent spreading roots emphasized, brown root color, single subject centered on pure white background. Reads as 'root/origin'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌱"
+      }
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1",
+      "radical:木"
+    ]
   },
   {
     "character": "末",
     "pinyin": "mò",
     "meaning": "үзүүр",
     "structure": {
-      "parts": [{"char":"木","label":"мод"},{"char":"一","label":"шугам (дээд)"}],
-      "result": {"char":"末","label":"үзүүр"}
+      "parts": [
+        {
+          "char": "木",
+          "label": "мод"
+        },
+        {
+          "char": "一",
+          "label": "шугам (дээд)"
+        }
+      ],
+      "result": {
+        "char": "末",
+        "label": "үзүүр"
+      }
     },
     "story": "Модны (木) дээд талд шугам (一) тавьсан — оройн үзүүр, төгсгөл гэсэн утга. 木+一=末.",
-    "example": {"word":"周末","pinyin":"zhōumò","translation":"амралтын өдөр"},
-    "mnemonic": {"parts":["木","一"],"result":"末","meaning":"үзүүр"},
+    "example": {
+      "word": "周末",
+      "pinyin": "zhōumò",
+      "translation": "амралтын өдөр"
+    },
+    "mnemonic": {
+      "parts": [
+        "木",
+        "一"
+      ],
+      "result": "末",
+      "meaning": "үзүүр"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 末 (tip/end), built from 'tree' 木 + a horizontal mark at its TOP. Subject: a tree viewed from below looking UP, with focus on the very TIPS of its highest branches reaching into the sky, the upper canopy/branch tips emphasized and highlighted by bright sunlight while the trunk recedes. The 'tree-top highlighted' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a tree shape on the LEFT, plus sign in MIDDLE, the same tree on the RIGHT with a thick horizontal line highlighted at the very TOP of its branches. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple tree with the very tips of its top branches emphasized/glowing, single subject centered on pure white background. Reads as 'tip/end'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🍃"
+      }
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "radical:木"
+    ]
   },
   {
     "character": "早",
     "pinyin": "zǎo",
     "meaning": "эрт",
     "structure": {
-      "parts": [{"char":"日","label":"нар"},{"char":"十","label":"загвар"}],
-      "result": {"char":"早","label":"эрт"}
+      "parts": [
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "十",
+          "label": "загвар"
+        }
+      ],
+      "result": {
+        "char": "早",
+        "label": "эрт"
+      }
     },
     "story": "Нар (日) үерт мандаж өвсний зурвас (十) дээгүүр гарч ирэх — өглөө эрт цаг. 日+十=早.",
-    "example": {"word":"早上","pinyin":"zǎoshang","translation":"өглөө"},
-    "mnemonic": {"parts":["日","十"],"result":"早","meaning":"эрт"},
+    "example": {
+      "word": "早上",
+      "pinyin": "zǎoshang",
+      "translation": "өглөө"
+    },
+    "mnemonic": {
+      "parts": [
+        "日",
+        "十"
+      ],
+      "result": "早",
+      "meaning": "эрт"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 早 (early morning), built from 'sun' 日 + horizontal/vertical stroke. Subject: the SUN rising just above thin grass plants or low vegetation, very early dewy morning, the sun positioned LOW directly ABOVE the plant tops. The 'sun-above-grass' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a SUN on the LEFT, plus sign in MIDDLE, a small grass/cross shape on the RIGHT, result showing the sun sitting above the grass shape. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a sun shape positioned directly above a simple horizontal/grass line, warm golden color, single subject centered on pure white background. Reads as 'early morning'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "☀️"
+      }
+    },
+    "storyFormula": "☀️ + 🌱 = ⏰",
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "radical:日"
+    ]
   },
   {
     "character": "旦",
     "pinyin": "dàn",
     "meaning": "үүр",
     "structure": {
-      "parts": [{"char":"日","label":"нар"},{"char":"一","label":"уулсын зурвас"}],
-      "result": {"char":"旦","label":"үүр"}
+      "parts": [
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "一",
+          "label": "уулсын зурвас"
+        }
+      ],
+      "result": {
+        "char": "旦",
+        "label": "үүр"
+      }
     },
     "story": "Нар (日) уулын зурвасаас (一) дээш гарч ирж байна — үүр цайх. 日+一=旦.",
-    "example": {"word":"元旦","pinyin":"Yuándàn","translation":"Шинэ жилийн өдөр"},
-    "mnemonic": {"parts":["日","一"],"result":"旦","meaning":"үүр"},
+    "example": {
+      "word": "元旦",
+      "pinyin": "Yuándàn",
+      "translation": "Шинэ жилийн өдөр"
+    },
+    "mnemonic": {
+      "parts": [
+        "日",
+        "一"
+      ],
+      "result": "旦",
+      "meaning": "үүр"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 旦 (dawn/sunrise), built from 'sun' 日 + horizon line. Subject: the sun emerging HALF-VISIBLE from BEHIND a very clear flat HORIZON LINE (sea or distant plains), exactly half of the sun above the line, the horizon perfectly straight and crisp. The 'sun-resting-on-horizon' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a SUN on the LEFT, plus sign in MIDDLE, a long horizontal HORIZON LINE on the RIGHT, result showing the sun half-risen above the horizon line. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a half-sun shape rising above a strong horizontal line, warm golden color, single subject centered on pure white background. Reads as 'dawn'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌅"
+      }
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "radical:日"
+    ]
   },
   {
     "character": "字",
     "pinyin": "zì",
     "meaning": "үсэг",
     "structure": {
-      "parts": [{"char":"宀","label":"дээвэр"},{"char":"子","label":"хүүхэд"}],
-      "result": {"char":"字","label":"үсэг"}
+      "parts": [
+        {
+          "char": "宀",
+          "label": "дээвэр"
+        },
+        {
+          "char": "子",
+          "label": "хүүхэд"
+        }
+      ],
+      "result": {
+        "char": "字",
+        "label": "үсэг"
+      }
     },
     "story": "Дээвэр (宀) дор хүүхэд (子) суугаа байгаа — гэртээ үсэг бичиг сурч буйн бэлгэдэл. 宀+子=字.",
-    "example": {"word":"汉字","pinyin":"hànzì","translation":"хятад үсэг"},
-    "mnemonic": {"parts":["宀","子"],"result":"字","meaning":"үсэг"},
+    "example": {
+      "word": "汉字",
+      "pinyin": "hànzì",
+      "translation": "хятад үсэг"
+    },
+    "mnemonic": {
+      "parts": [
+        "宀",
+        "子"
+      ],
+      "result": "字",
+      "meaning": "үсэг"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 字 (written character), built from 'roof' 宀 + 'child' 子. Subject: a single CHILD sitting cross-legged on the floor of a traditional study room practicing calligraphy with a brush, the curved ROOF of the room clearly visible ABOVE the child framing the scene. The 'child-under-roof studying' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a ROOF shape ⌒ on the LEFT, plus sign in MIDDLE, a small CHILD figure on the RIGHT, result showing the child sitting under the roof holding a brush. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple roof above a small child silhouette holding a brush, single subject centered on pure white background. Reads as 'character/letter'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "✍️"
+      }
+    },
+    "storyFormula": "🏠 + 👶 = ✍️",
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1",
+      "radical:宀"
+    ]
   },
   {
     "character": "信",
     "pinyin": "xìn",
     "meaning": "итгэх",
     "structure": {
-      "parts": [{"char":"亻","label":"хүн"},{"char":"言","label":"үг"}],
-      "result": {"char":"信","label":"итгэх"}
+      "parts": [
+        {
+          "char": "亻",
+          "label": "хүн"
+        },
+        {
+          "char": "言",
+          "label": "үг"
+        }
+      ],
+      "result": {
+        "char": "信",
+        "label": "итгэх"
+      }
     },
     "story": "Хүний (亻) хэлсэн үгэнд (言) итгэхэд итгэл. Бичсэн үг бол захидал. 亻+言=信.",
-    "example": {"word":"相信","pinyin":"xiāngxìn","translation":"итгэх"},
-    "mnemonic": {"parts":["亻","言"],"result":"信","meaning":"итгэх"},
+    "example": {
+      "word": "相信",
+      "pinyin": "xiāngxìn",
+      "translation": "итгэх"
+    },
+    "mnemonic": {
+      "parts": [
+        "亻",
+        "言"
+      ],
+      "result": "信",
+      "meaning": "итгэх"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 信 (trust/letter), built from 'person' 亻 + 'words/speech' 言. Subject: ONE person on the LEFT side speaking earnestly with a sincere expression, with VISIBLE curving sound waves or a speech bubble flowing from their mouth toward the right — emphasizing the spoken WORDS as a tangible element. The 'person + words' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a PERSON stick figure on the LEFT, plus sign in MIDDLE, a SPEECH BUBBLE or sound waves on the RIGHT, result showing the person with words coming from their mouth. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple person silhouette with a speech bubble next to their mouth, single subject centered on pure white background. Reads as 'trust/communication'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💌"
+      }
+    },
+    "storyFormula": "🚶 + 💬 = 💌",
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "radical:亻"
+    ]
   },
   {
     "character": "鸣",
     "pinyin": "míng",
     "meaning": "донгодох",
     "structure": {
-      "parts": [{"char":"口","label":"ам"},{"char":"鸟","label":"шувуу"}],
-      "result": {"char":"鸣","label":"донгодох"}
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "鸟",
+          "label": "шувуу"
+        }
+      ],
+      "result": {
+        "char": "鸣",
+        "label": "донгодох"
+      }
     },
     "story": "Шувууны (鸟) амнаас (口) дуу гарч байна — донгодох, жиргэх гэсэн утга. 口+鸟=鸣.",
-    "example": {"word":"鸣叫","pinyin":"míngjiào","translation":"донгодох"},
-    "mnemonic": {"parts":["口","鸟"],"result":"鸣","meaning":"донгодох"},
+    "example": {
+      "word": "鸣叫",
+      "pinyin": "míngjiào",
+      "translation": "донгодох"
+    },
+    "mnemonic": {
+      "parts": [
+        "口",
+        "鸟"
+      ],
+      "result": "鸣",
+      "meaning": "донгодох"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 鸣 (birdsong), built from 'mouth' 口 + 'bird' 鸟. Subject: a single colorful songbird perched on a branch with its BEAK WIDE OPEN, clear curving SOUND WAVES emanating from its open mouth into the air — the open beak and visible sound waves must be the dominant visual elements. Soft pastel dawn light. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a MOUTH/circle shape on the LEFT, plus sign in MIDDLE, a BIRD shape on the RIGHT, result showing the bird with its mouth open and sound waves coming out. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple bird with its beak open and small sound waves coming out, single subject centered on pure white background. Reads as 'birdsong'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🐦"
+      }
+    },
+    "level": 2,
+    "category": "biye",
+    "tags": [
+      "radical:口"
+    ]
   },
   {
     "character": "看",
     "pinyin": "kàn",
     "meaning": "харах",
     "structure": {
-      "parts": [{"char":"手","label":"гар"},{"char":"目","label":"нүд"}],
-      "result": {"char":"看","label":"харах"}
+      "parts": [
+        {
+          "char": "手",
+          "label": "гар"
+        },
+        {
+          "char": "目",
+          "label": "нүд"
+        }
+      ],
+      "result": {
+        "char": "看",
+        "label": "харах"
+      }
     },
     "story": "Гараа (手) нүдний (目) дээр тавьж нарнаас халхалж харна — 'харах' үйлдэл. 手+目=看.",
-    "example": {"word":"看见","pinyin":"kànjiàn","translation":"харах"},
-    "mnemonic": {"parts":["手","目"],"result":"看","meaning":"харах"},
+    "example": {
+      "word": "看见",
+      "pinyin": "kànjiàn",
+      "translation": "харах"
+    },
+    "mnemonic": {
+      "parts": [
+        "手",
+        "目"
+      ],
+      "result": "看",
+      "meaning": "харах"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 看 (look/see), built from 'hand' 手 + 'eye' 目. Subject: a person clearly HOLDING their HAND HORIZONTALLY ABOVE their EYES (like a visor / sun shade) to peer into the distance, the hand-over-eye gesture is the dominant visual element, viewer looks at side profile. The 'hand-over-eye' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a HAND on the LEFT, plus sign in MIDDLE, an EYE on the RIGHT, result showing a face with the hand held above the eye. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple eye with a flat hand held visor-like above it, single subject centered on pure white background. Reads as 'look'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👀"
+      }
+    },
+    "storyFormula": "✋ + 👁 = 👀",
+    "level": 1,
+    "category": "biye",
+    "tags": [
+      "hsk1",
+      "radical:目"
+    ]
   },
   {
     "character": "想",
     "pinyin": "xiǎng",
     "meaning": "бодох",
     "structure": {
-      "parts": [{"char":"相","label":"харагдах"},{"char":"心","label":"зүрх"}],
-      "result": {"char":"想","label":"бодох"}
+      "parts": [
+        {
+          "char": "相",
+          "label": "харагдах"
+        },
+        {
+          "char": "心",
+          "label": "зүрх"
+        }
+      ],
+      "result": {
+        "char": "想",
+        "label": "бодох"
+      }
     },
     "story": "Зүрхэн (心) дотор аливаа зүйлийн дүр (相) гарч ирэхэд бодол төрнө. 相+心=想.",
-    "example": {"word":"想法","pinyin":"xiǎngfǎ","translation":"санаа, бодол"},
-    "mnemonic": {"parts":["相","心"],"result":"想","meaning":"бодох"},
+    "example": {
+      "word": "想法",
+      "pinyin": "xiǎngfǎ",
+      "translation": "санаа, бодол"
+    },
+    "mnemonic": {
+      "parts": [
+        "相",
+        "心"
+      ],
+      "result": "想",
+      "meaning": "бодох"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 想 (think/desire), built from 'visualize' 相 + 'heart' 心. Subject: a young person sitting peacefully with one hand resting on their CHEST OVER THEIR HEART, eyes closed dreamily, with a clear THOUGHT BUBBLE above their head containing a small image of what they desire (a small landscape, flower, or person). The 'heart + visualized thought' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a small EYE/IMAGE icon on the LEFT (representing visualization), plus sign in MIDDLE, a HEART shape on the RIGHT, result showing a heart with a thought bubble. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a heart shape with a thought bubble rising from it, warm rose color, single subject centered on pure white background. Reads as 'desire/think of'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💭"
+      }
+    },
+    "level": 1,
+    "category": "setgel",
+    "tags": [
+      "hsk1",
+      "radical:心"
+    ]
   },
   {
     "character": "思",
     "pinyin": "sī",
     "meaning": "бодох",
     "structure": {
-      "parts": [{"char":"田","label":"талбай"},{"char":"心","label":"зүрх"}],
-      "result": {"char":"思","label":"бодох"}
+      "parts": [
+        {
+          "char": "田",
+          "label": "талбай"
+        },
+        {
+          "char": "心",
+          "label": "зүрх"
+        }
+      ],
+      "result": {
+        "char": "思",
+        "label": "бодох"
+      }
     },
     "story": "Зүрхэн (心) дээр бодлын талбай (田) дэлгэгдсэн — гүн боддог байдал. 田+心=思.",
-    "example": {"word":"思考","pinyin":"sīkǎo","translation":"эргэцүүлэн бодох"},
-    "mnemonic": {"parts":["田","心"],"result":"思","meaning":"бодох"},
+    "example": {
+      "word": "思考",
+      "pinyin": "sīkǎo",
+      "translation": "эргэцүүлэн бодох"
+    },
+    "mnemonic": {
+      "parts": [
+        "田",
+        "心"
+      ],
+      "result": "思",
+      "meaning": "бодох"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 思 (deep contemplation), built from 'field' 田 + 'heart' 心 — mnemonic of a 'field of thoughts above the heart'. Subject: a scholar seated in quiet thought with one hand on their CHEST OVER THEIR HEART, and visible behind them a checkered FIELD pattern stretching out, as if their inner mind is a field of thoughts to till. The 'field-above-heart' reading must be evident. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a grid pattern (FIELD) on the LEFT, plus sign in MIDDLE, a HEART shape on the RIGHT, result showing the field positioned above the heart. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a heart shape with a small grid (field) pattern directly above it, soft blue color, single subject centered on pure white background. Reads as 'contemplation'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🧠"
+      }
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "radical:心"
+    ]
   },
   {
     "character": "跑",
     "pinyin": "pǎo",
     "meaning": "гүйх",
     "structure": {
-      "parts": [{"char":"足","label":"хөл"},{"char":"包","label":"bāo (дуудлага)"}],
-      "result": {"char":"跑","label":"гүйх"}
+      "parts": [
+        {
+          "char": "足",
+          "label": "хөл"
+        },
+        {
+          "char": "包",
+          "label": "bāo (дуудлага)"
+        }
+      ],
+      "result": {
+        "char": "跑",
+        "label": "гүйх"
+      }
     },
     "story": "Хөл (足) утгат радикал — хурдан хөдлөх үйлдэл. Баруун тал 包 (bāo) дуудлагыг өгнө. 足+包=跑.",
-    "example": {"word":"跑步","pinyin":"pǎobù","translation":"гүйх дасгал"},
-    "mnemonic": {"parts":["足","包"],"result":"跑","meaning":"гүйх"},
+    "example": {
+      "word": "跑步",
+      "pinyin": "pǎobù",
+      "translation": "гүйх дасгал"
+    },
+    "mnemonic": {
+      "parts": [
+        "足",
+        "包"
+      ],
+      "result": "跑",
+      "meaning": "гүйх"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 跑 (run), built from 'foot' 足 (semantic) + phonetic. Subject: a runner mid-stride from the side with EXTREME MOTION BLUR on the LEGS and FEET, the powerful pumping FEET as the unmistakable focus, dust/wind streaks behind. The 'foot in motion' reading must be the obvious visual emphasis. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a FOOT/leg shape on the LEFT, plus sign in MIDDLE, motion lines on the RIGHT, result showing a runner mid-stride with emphasized feet. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple running figure silhouette with emphasized motion on the feet/legs, single subject centered on pure white background. Reads as 'run'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏃"
+      }
+    },
+    "storyFormula": "🦶 + 💨 = 🏃",
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "radical:足"
+    ]
   },
   {
     "character": "跳",
     "pinyin": "tiào",
     "meaning": "үсрэх",
     "structure": {
-      "parts": [{"char":"足","label":"хөл"},{"char":"兆","label":"zhào (дуудлага)"}],
-      "result": {"char":"跳","label":"үсрэх"}
+      "parts": [
+        {
+          "char": "足",
+          "label": "хөл"
+        },
+        {
+          "char": "兆",
+          "label": "zhào (дуудлага)"
+        }
+      ],
+      "result": {
+        "char": "跳",
+        "label": "үсрэх"
+      }
     },
     "story": "Хөл (足) утгат, баруун тал 兆 (zhào) дуудлагын зөвлөмж. 足+兆=跳, үсрэх гэсэн утга.",
-    "example": {"word":"跳舞","pinyin":"tiàowǔ","translation":"бүжиглэх"},
-    "mnemonic": {"parts":["足","兆"],"result":"跳","meaning":"үсрэх"},
+    "example": {
+      "word": "跳舞",
+      "pinyin": "tiàowǔ",
+      "translation": "бүжиглэх"
+    },
+    "mnemonic": {
+      "parts": [
+        "足",
+        "兆"
+      ],
+      "result": "跳",
+      "meaning": "үсрэх"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 跳 (jump), built from 'foot' 足 (semantic) + phonetic. Subject: a person frozen MID-LEAP in the air with BOTH FEET clearly off the ground, knees bent, captured at the peak height of the jump, gravity-defying pose. The 'feet in the air' reading must be the dominant visual. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a FOOT shape on the LEFT, plus sign in MIDDLE, an upward arrow on the RIGHT, result showing a figure suspended in mid-jump with feet off the ground. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple jumping figure silhouette suspended in air with feet clearly off the ground, single subject centered on pure white background. Reads as 'jump'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🤸"
+      }
+    },
+    "storyFormula": "🦶 + ⤴️ = 🤸",
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "radical:足"
+    ]
   },
   {
     "character": "笑",
     "pinyin": "xiào",
     "meaning": "инээх",
     "structure": {
-      "parts": [{"char":"竹","label":"хулс"},{"char":"夭","label":"нугарах"}],
-      "result": {"char":"笑","label":"инээх"}
+      "parts": [
+        {
+          "char": "竹",
+          "label": "хулс"
+        },
+        {
+          "char": "夭",
+          "label": "нугарах"
+        }
+      ],
+      "result": {
+        "char": "笑",
+        "label": "инээх"
+      }
     },
     "story": "Хулсны (竹) навч салхинд найгаж 'нугардаг' (夭) шиг хүний ам инээхэд нугардаг. 竹+夭=笑.",
-    "example": {"word":"微笑","pinyin":"wēixiào","translation":"инээмсэглэх"},
-    "mnemonic": {"parts":["竹","夭"],"result":"笑","meaning":"инээх"},
+    "example": {
+      "word": "微笑",
+      "pinyin": "wēixiào",
+      "translation": "инээмсэглэх"
+    },
+    "mnemonic": {
+      "parts": [
+        "竹",
+        "夭"
+      ],
+      "result": "笑",
+      "meaning": "инээх"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 笑 (laugh), built from 'bamboo' 竹 (top) + 'bending' 夭 (bottom). Subject: a person laughing joyfully with mouth wide open, with delicate BAMBOO LEAVES arching gracefully above their head like a natural crown (echoing the bamboo radical at the top of the character). The 'bamboo + laughing face' composition must be clear. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: BAMBOO LEAVES on the LEFT, plus sign in MIDDLE, a SMILING FACE on the RIGHT, result showing the smiling face crowned with bamboo leaves above. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple smiling face with a small bamboo leaf arching above, warm color, single subject centered on pure white background. Reads as 'laugh'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "😄"
+      }
+    },
+    "storyFormula": "🎋 + 😬 = 😄",
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "radical:竹"
+    ]
   },
   {
     "character": "江",
     "pinyin": "jiāng",
     "meaning": "том гол",
     "structure": {
-      "parts": [{"char":"氵","label":"ус"},{"char":"工","label":"gōng (дуудлага)"}],
-      "result": {"char":"江","label":"том гол"}
+      "parts": [
+        {
+          "char": "氵",
+          "label": "ус"
+        },
+        {
+          "char": "工",
+          "label": "gōng (дуудлага)"
+        }
+      ],
+      "result": {
+        "char": "江",
+        "label": "том гол"
+      }
     },
     "story": "Зүүн талын ус (氵) утгат, баруун тал 工 (gōng) дуудлагыг өгнө. Голчлон Янзе мөрнийг хэлдэг. 氵+工=江.",
-    "example": {"word":"长江","pinyin":"Cháng Jiāng","translation":"Янзе мөрөн"},
-    "mnemonic": {"parts":["氵","工"],"result":"江","meaning":"том гол"},
+    "example": {
+      "word": "长江",
+      "pinyin": "Cháng Jiāng",
+      "translation": "Янзе мөрөн"
+    },
+    "mnemonic": {
+      "parts": [
+        "氵",
+        "工"
+      ],
+      "result": "江",
+      "meaning": "том гол"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 江 (great river/Yangtze), built from 'water' 氵 radical + phonetic. Subject: a vast wide majestic RIVER flowing through misty mountains, the WATER fills the foreground and middle as the unmistakable dominant subject — water is THE element, viewer's eye is drawn to the river surface and current. Sense of grand scale. Soft watercolor Chinese ink-wash style with Studio Ghibli warmth, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: three water droplets representing 氵 on the LEFT, plus sign in MIDDLE, a flowing RIVER shape on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a single bold wave/river shape, deep blue color, single subject centered on pure white background. Reads as 'great river'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏞️"
+      }
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "radical:水"
+    ]
   },
   {
     "character": "河",
     "pinyin": "hé",
     "meaning": "гол",
     "structure": {
-      "parts": [{"char":"氵","label":"ус"},{"char":"可","label":"kě (дуудлага)"}],
-      "result": {"char":"河","label":"гол"}
+      "parts": [
+        {
+          "char": "氵",
+          "label": "ус"
+        },
+        {
+          "char": "可",
+          "label": "kě (дуудлага)"
+        }
+      ],
+      "result": {
+        "char": "河",
+        "label": "гол"
+      }
     },
     "story": "Ус (氵) утгат радикал — голын хэлбэрийг илэрхийлнэ. 可 (kě) дуудлагын зөвлөмж. 氵+可=河.",
-    "example": {"word":"黄河","pinyin":"Huánghé","translation":"Шар мөрөн"},
-    "mnemonic": {"parts":["氵","可"],"result":"河","meaning":"гол"},
+    "example": {
+      "word": "黄河",
+      "pinyin": "Huánghé",
+      "translation": "Шар мөрөн"
+    },
+    "mnemonic": {
+      "parts": [
+        "氵",
+        "可"
+      ],
+      "result": "河",
+      "meaning": "гол"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 河 (river), built from 'water' 氵 radical + phonetic. Subject: a peaceful MEANDERING RIVER curving gently through soft green landscape, the flowing WATER is the clear main visual subject filling the center, willow trees softly framing. The river/water emphasis must be obvious. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: three water droplets representing 氵 on the LEFT, plus sign in MIDDLE, a winding RIVER curve on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple curving river or wavy water line, blue color, single subject centered on pure white background. Reads as 'river'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💦"
+      }
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "radical:水"
+    ]
   },
   {
     "character": "海",
     "pinyin": "hǎi",
     "meaning": "далай",
     "structure": {
-      "parts": [{"char":"氵","label":"ус"},{"char":"每","label":"měi (дуудлага)"}],
-      "result": {"char":"海","label":"далай"}
+      "parts": [
+        {
+          "char": "氵",
+          "label": "ус"
+        },
+        {
+          "char": "每",
+          "label": "měi (дуудлага)"
+        }
+      ],
+      "result": {
+        "char": "海",
+        "label": "далай"
+      }
     },
     "story": "Олон голын ус (氵) нэг газар цугларч асар их ус — далай. 每 нь дуудлагын зөвлөмж. 氵+每=海.",
-    "example": {"word":"大海","pinyin":"dàhǎi","translation":"далай"},
-    "mnemonic": {"parts":["氵","每"],"result":"海","meaning":"далай"},
+    "example": {
+      "word": "大海",
+      "pinyin": "dàhǎi",
+      "translation": "далай"
+    },
+    "mnemonic": {
+      "parts": [
+        "氵",
+        "每"
+      ],
+      "result": "海",
+      "meaning": "далай"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 海 (sea), built from 'water' 氵 radical + phonetic. Subject: a VAST ENDLESS OCEAN stretching to the distant horizon, gentle rolling waves dominate the entire frame, sense of immense scale of WATER — water everywhere. The ocean/water emphasis must be the overwhelming subject. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: three water droplets representing 氵 on the LEFT, plus sign in MIDDLE, an ocean WAVE on the RIGHT, result showing many waves stretching to horizon. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a single big curling ocean wave, deep blue color, single subject centered on pure white background. Reads as 'sea'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌊"
+      }
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "radical:水"
+    ]
   },
   {
     "character": "美",
     "pinyin": "měi",
     "meaning": "үзэсгэлэнтэй",
     "structure": {
-      "parts": [{"char":"羊","label":"хонь"},{"char":"大","label":"том"}],
-      "result": {"char":"美","label":"үзэсгэлэнтэй"}
+      "parts": [
+        {
+          "char": "羊",
+          "label": "хонь"
+        },
+        {
+          "char": "大",
+          "label": "том"
+        }
+      ],
+      "result": {
+        "char": "美",
+        "label": "үзэсгэлэнтэй"
+      }
     },
     "story": "Том (大) бүдүүн хонь (羊) — эртний Хятадад баялаг, үзэсгэлэнгийн бэлгэдэл байсан. 羊+大=美.",
-    "example": {"word":"美丽","pinyin":"měilì","translation":"үзэсгэлэнтэй"},
-    "mnemonic": {"parts":["羊","大"],"result":"美","meaning":"үзэсгэлэнтэй"},
+    "example": {
+      "word": "美丽",
+      "pinyin": "měilì",
+      "translation": "үзэсгэлэнтэй"
+    },
+    "mnemonic": {
+      "parts": [
+        "羊",
+        "大"
+      ],
+      "result": "美",
+      "meaning": "үзэсгэлэнтэй"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 美 (beautiful), built from 'sheep' 羊 + 'big' 大 — ancient etymology of a magnificent large sheep. Subject: a SINGLE EXTRAORDINARILY LARGE ram with MASSIVE elegantly CURLING HORNS standing proudly in a mountain meadow, the sheep's SIZE and grandeur are the clear visual emphasis (oversized compared to surroundings). The 'big sheep' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a small SHEEP on the LEFT, plus sign in MIDDLE, a 'LARGE' size indicator (arrows expanding) on the RIGHT, result showing a magnified sheep. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a proud sheep silhouette with prominent curled horns, warm earth color, single subject centered on pure white background. Reads as 'beautiful'. No text, no watermark."
-    }
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🐑"
+      }
+    },
+    "level": 1,
+    "category": "chanar",
+    "tags": [
+      "radical:羊"
+    ]
   },
   {
     "character": "鲜",
     "pinyin": "xiān",
     "meaning": "шинэхэн",
     "structure": {
-      "parts": [{"char":"鱼","label":"загас"},{"char":"羊","label":"хонь"}],
-      "result": {"char":"鲜","label":"шинэхэн"}
+      "parts": [
+        {
+          "char": "鱼",
+          "label": "загас"
+        },
+        {
+          "char": "羊",
+          "label": "хонь"
+        }
+      ],
+      "result": {
+        "char": "鲜",
+        "label": "шинэхэн"
+      }
     },
     "story": "Шинэ загас (鱼), шинэ хонины мах (羊) — хамгийн шинэхэн, ходоодонд тааламжтай идэшний бэлгэдэл. 鱼+羊=鲜.",
-    "example": {"word":"新鲜","pinyin":"xīnxiān","translation":"шинэхэн"},
-    "mnemonic": {"parts":["鱼","羊"],"result":"鲜","meaning":"шинэхэн"},
+    "example": {
+      "word": "新鲜",
+      "pinyin": "xīnxiān",
+      "translation": "шинэхэн"
+    },
+    "mnemonic": {
+      "parts": [
+        "鱼",
+        "羊"
+      ],
+      "result": "鲜",
+      "meaning": "шинэхэн"
+    },
     "prompts": {
       "main": "Educational illustration for Chinese character 鲜 (fresh), built from 'fish' 鱼 + 'sheep' 羊. Subject: ONE whole glistening FRESH FISH on the LEFT side and a piece of fresh tender LAMB MEAT on the RIGHT side, displayed side-by-side on a bamboo tray, both ingredients clearly visible as the freshness pairing. The 'fish + sheep together' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a FISH on the LEFT, plus sign in MIDDLE, a SHEEP on the RIGHT, both as simple cartoon shapes. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a fish silhouette and a sheep silhouette together side-by-side, single subject centered on pure white background. Reads as 'fresh'. No text, no watermark."
+    },
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🐟"
+      }
+    },
+    "storyFormula": "🐟 + 🐑 = 🍣",
+    "level": 2,
+    "category": "chanar",
+    "tags": [
+      "radical:鱼"
+    ]
+  },
+  {
+    "character": "朋",
+    "pinyin": "péng",
+    "meaning": "найз",
+    "structure": {
+      "parts": [
+        {
+          "char": "月",
+          "label": "сар"
+        },
+        {
+          "char": "月",
+          "label": "сар"
+        }
+      ],
+      "result": {
+        "char": "朋",
+        "label": "найз"
+      }
+    },
+    "story": "Хоёр сар (月) зэрэгцэн = байнга хамт байх хань, найз нөхөр.",
+    "example": {
+      "word": "朋友",
+      "pinyin": "péngyou",
+      "translation": "найз нөхөд"
+    },
+    "mnemonic": {
+      "parts": [
+        "月",
+        "月"
+      ],
+      "result": "朋",
+      "meaning": "найз"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1",
+      "radical:月"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🤝"
+      }
+    },
+    "storyFormula": "🌙 + 🌙 = 🤝"
+  },
+  {
+    "character": "名",
+    "pinyin": "míng",
+    "meaning": "нэр",
+    "structure": {
+      "parts": [
+        {
+          "char": "夕",
+          "label": "үдэш"
+        },
+        {
+          "char": "口",
+          "label": "ам"
+        }
+      ],
+      "result": {
+        "char": "名",
+        "label": "нэр"
+      }
+    },
+    "story": "Үдэш (夕) харанхуйд хүнийг амаар (口) дуудах = нэр.",
+    "example": {
+      "word": "名字",
+      "pinyin": "míngzi",
+      "translation": "нэр"
+    },
+    "mnemonic": {
+      "parts": [
+        "夕",
+        "口"
+      ],
+      "result": "名",
+      "meaning": "нэр"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏷️"
+      }
+    },
+    "storyFormula": "🌆 + 👄 = 🏷️"
+  },
+  {
+    "character": "你",
+    "pinyin": "nǐ",
+    "meaning": "чи",
+    "structure": {
+      "parts": [
+        {
+          "char": "亻",
+          "label": "хүн"
+        },
+        {
+          "char": "尔",
+          "label": "чи"
+        }
+      ],
+      "result": {
+        "char": "你",
+        "label": "чи"
+      }
+    },
+    "story": "Хүн (亻) хэмээх радикал + 尔 = ярьж буй нөгөө хүн: чи.",
+    "example": {
+      "word": "你好",
+      "pinyin": "nǐhǎo",
+      "translation": "сайн байна уу"
+    },
+    "mnemonic": {
+      "parts": [
+        "亻",
+        "尔"
+      ],
+      "result": "你",
+      "meaning": "чи"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1",
+      "radical:亻"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🫵"
+      }
     }
+  },
+  {
+    "character": "他",
+    "pinyin": "tā",
+    "meaning": "тэр",
+    "structure": {
+      "parts": [
+        {
+          "char": "亻",
+          "label": "хүн"
+        },
+        {
+          "char": "也",
+          "label": "бас"
+        }
+      ],
+      "result": {
+        "char": "他",
+        "label": "тэр (эр)"
+      }
+    },
+    "story": "Хүн (亻) + 也 = яриан дахь гуравдагч хүн: тэр.",
+    "example": {
+      "word": "他们",
+      "pinyin": "tāmen",
+      "translation": "тэд"
+    },
+    "mnemonic": {
+      "parts": [
+        "亻",
+        "也"
+      ],
+      "result": "他",
+      "meaning": "тэр"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1",
+      "radical:亻"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🧍"
+      }
+    }
+  },
+  {
+    "character": "们",
+    "pinyin": "men",
+    "meaning": "-ууд (олон тоо)",
+    "structure": {
+      "parts": [
+        {
+          "char": "亻",
+          "label": "хүн"
+        },
+        {
+          "char": "门",
+          "label": "хаалга"
+        }
+      ],
+      "result": {
+        "char": "们",
+        "label": "олон тоо"
+      }
+    },
+    "story": "Хүн (亻) + хаалга (门) = хүмүүсийг олон тоонд оруулах нөхцөл.",
+    "example": {
+      "word": "我们",
+      "pinyin": "wǒmen",
+      "translation": "бид"
+    },
+    "mnemonic": {
+      "parts": [
+        "亻",
+        "门"
+      ],
+      "result": "们",
+      "meaning": "-ууд (олон тоо)"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1",
+      "radical:亻"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👥"
+      }
+    }
+  },
+  {
+    "character": "妈",
+    "pinyin": "mā",
+    "meaning": "ээж",
+    "structure": {
+      "parts": [
+        {
+          "char": "女",
+          "label": "эмэгтэй"
+        },
+        {
+          "char": "马",
+          "label": "морь"
+        }
+      ],
+      "result": {
+        "char": "妈",
+        "label": "ээж"
+      }
+    },
+    "story": "Эмэгтэй (女) + 马 (дуудлага) = ээж.",
+    "example": {
+      "word": "妈妈",
+      "pinyin": "māma",
+      "translation": "ээж"
+    },
+    "mnemonic": {
+      "parts": [
+        "女",
+        "马"
+      ],
+      "result": "妈",
+      "meaning": "ээж"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1",
+      "radical:女"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👩"
+      }
+    },
+    "storyFormula": "👩 + 🐴 = ❤️"
+  },
+  {
+    "character": "体",
+    "pinyin": "tǐ",
+    "meaning": "бие",
+    "structure": {
+      "parts": [
+        {
+          "char": "亻",
+          "label": "хүн"
+        },
+        {
+          "char": "本",
+          "label": "үндэс"
+        }
+      ],
+      "result": {
+        "char": "体",
+        "label": "бие"
+      }
+    },
+    "story": "Хүн (亻) + үндэс (本) = хүний үндэс болсон бие махбод.",
+    "example": {
+      "word": "身体",
+      "pinyin": "shēntǐ",
+      "translation": "бие"
+    },
+    "mnemonic": {
+      "parts": [
+        "亻",
+        "本"
+      ],
+      "result": "体",
+      "meaning": "бие"
+    },
+    "level": 1,
+    "category": "biye",
+    "tags": [
+      "radical:亻"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💪"
+      }
+    },
+    "storyFormula": "🧍 + 🌳 = 💪"
+  },
+  {
+    "character": "泪",
+    "pinyin": "lèi",
+    "meaning": "нулимс",
+    "structure": {
+      "parts": [
+        {
+          "char": "氵",
+          "label": "ус"
+        },
+        {
+          "char": "目",
+          "label": "нүд"
+        }
+      ],
+      "result": {
+        "char": "泪",
+        "label": "нулимс"
+      }
+    },
+    "story": "Нүд (目) -нээс ус (氵) гоожих = нулимс.",
+    "example": {
+      "word": "眼泪",
+      "pinyin": "yǎnlèi",
+      "translation": "нулимс"
+    },
+    "mnemonic": {
+      "parts": [
+        "氵",
+        "目"
+      ],
+      "result": "泪",
+      "meaning": "нулимс"
+    },
+    "level": 2,
+    "category": "biye",
+    "tags": [
+      "radical:水"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "😢"
+      }
+    },
+    "storyFormula": "💧 + 👁️ = 😢"
+  },
+  {
+    "character": "吃",
+    "pinyin": "chī",
+    "meaning": "идэх",
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "乞",
+          "label": "гуйх"
+        }
+      ],
+      "result": {
+        "char": "吃",
+        "label": "идэх"
+      }
+    },
+    "story": "Ам (口) -аар хооллох үйл = идэх.",
+    "example": {
+      "word": "吃饭",
+      "pinyin": "chīfàn",
+      "translation": "хоол идэх"
+    },
+    "mnemonic": {
+      "parts": [
+        "口",
+        "乞"
+      ],
+      "result": "吃",
+      "meaning": "идэх"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1",
+      "radical:口"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🍚"
+      }
+    },
+    "storyFormula": "👄 + 🍚"
+  },
+  {
+    "character": "唱",
+    "pinyin": "chàng",
+    "meaning": "дуулах",
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "昌",
+          "label": "тод"
+        }
+      ],
+      "result": {
+        "char": "唱",
+        "label": "дуулах"
+      }
+    },
+    "story": "Ам (口) нээж тод (昌) дуу гаргах = дуулах.",
+    "example": {
+      "word": "唱歌",
+      "pinyin": "chànggē",
+      "translation": "дуу дуулах"
+    },
+    "mnemonic": {
+      "parts": [
+        "口",
+        "昌"
+      ],
+      "result": "唱",
+      "meaning": "дуулах"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "radical:口"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎤"
+      }
+    },
+    "storyFormula": "👄 + 🎶 = 🎤"
+  },
+  {
+    "character": "花",
+    "pinyin": "huā",
+    "meaning": "цэцэг",
+    "structure": {
+      "parts": [
+        {
+          "char": "艹",
+          "label": "өвс"
+        },
+        {
+          "char": "化",
+          "label": "хувирах"
+        }
+      ],
+      "result": {
+        "char": "花",
+        "label": "цэцэг"
+      }
+    },
+    "story": "Ургамал (艹) хувирч (化) дэлбээлэх = цэцэг.",
+    "example": {
+      "word": "鲜花",
+      "pinyin": "xiānhuā",
+      "translation": "шинэ цэцэг"
+    },
+    "mnemonic": {
+      "parts": [
+        "艹",
+        "化"
+      ],
+      "result": "花",
+      "meaning": "цэцэг"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "radical:艹"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌸"
+      }
+    },
+    "storyFormula": "🌱 + ✨ = 🌸"
+  },
+  {
+    "character": "草",
+    "pinyin": "cǎo",
+    "meaning": "өвс",
+    "structure": {
+      "parts": [
+        {
+          "char": "艹",
+          "label": "өвс"
+        },
+        {
+          "char": "早",
+          "label": "эрт"
+        }
+      ],
+      "result": {
+        "char": "草",
+        "label": "өвс"
+      }
+    },
+    "story": "Өглөө эрт (早) ургах ногоон (艹) = өвс.",
+    "example": {
+      "word": "草地",
+      "pinyin": "cǎodì",
+      "translation": "зүлэг"
+    },
+    "mnemonic": {
+      "parts": [
+        "艹",
+        "早"
+      ],
+      "result": "草",
+      "meaning": "өвс"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "radical:艹"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌿"
+      }
+    },
+    "storyFormula": "🌱 + 🌅 = 🌿"
+  },
+  {
+    "character": "苗",
+    "pinyin": "miáo",
+    "meaning": "соёо",
+    "structure": {
+      "parts": [
+        {
+          "char": "艹",
+          "label": "өвс"
+        },
+        {
+          "char": "田",
+          "label": "талбай"
+        }
+      ],
+      "result": {
+        "char": "苗",
+        "label": "соёо"
+      }
+    },
+    "story": "Тариалангийн талбайд (田) ургах ногоон (艹) = соёо, нахиа.",
+    "example": {
+      "word": "树苗",
+      "pinyin": "shùmiáo",
+      "translation": "модны суулгац"
+    },
+    "mnemonic": {
+      "parts": [
+        "艹",
+        "田"
+      ],
+      "result": "苗",
+      "meaning": "соёо"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "radical:艹"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌱"
+      }
+    },
+    "storyFormula": "🌱 + 🟫 = 🌾"
+  },
+  {
+    "character": "时",
+    "pinyin": "shí",
+    "meaning": "цаг (хугацаа)",
+    "structure": {
+      "parts": [
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "寸",
+          "label": "хэмжүүр"
+        }
+      ],
+      "result": {
+        "char": "时",
+        "label": "цаг хугацаа"
+      }
+    },
+    "story": "Нар (日) -аар цагийг хэмжих (寸) = цаг хугацаа.",
+    "example": {
+      "word": "时间",
+      "pinyin": "shíjiān",
+      "translation": "цаг хугацаа"
+    },
+    "mnemonic": {
+      "parts": [
+        "日",
+        "寸"
+      ],
+      "result": "时",
+      "meaning": "цаг (хугацаа)"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1",
+      "radical:日"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "⏰"
+      }
+    },
+    "storyFormula": "☀️ + 📏 = ⏰"
+  },
+  {
+    "character": "忘",
+    "pinyin": "wàng",
+    "meaning": "мартах",
+    "structure": {
+      "parts": [
+        {
+          "char": "亡",
+          "label": "алга болох"
+        },
+        {
+          "char": "心",
+          "label": "сэтгэл"
+        }
+      ],
+      "result": {
+        "char": "忘",
+        "label": "мартах"
+      }
+    },
+    "story": "Сэтгэлээс (心) алга болох (亡) = мартах.",
+    "example": {
+      "word": "忘记",
+      "pinyin": "wàngjì",
+      "translation": "мартах"
+    },
+    "mnemonic": {
+      "parts": [
+        "亡",
+        "心"
+      ],
+      "result": "忘",
+      "meaning": "мартах"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "radical:心"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💭"
+      }
+    },
+    "storyFormula": "❤️ + ❌ = 💨"
+  },
+  {
+    "character": "怕",
+    "pinyin": "pà",
+    "meaning": "айх",
+    "structure": {
+      "parts": [
+        {
+          "char": "忄",
+          "label": "сэтгэл"
+        },
+        {
+          "char": "白",
+          "label": "цагаан"
+        }
+      ],
+      "result": {
+        "char": "怕",
+        "label": "айх"
+      }
+    },
+    "story": "Сэтгэл (忄) цайх (白) = айх, эмээх.",
+    "example": {
+      "word": "害怕",
+      "pinyin": "hàipà",
+      "translation": "айх"
+    },
+    "mnemonic": {
+      "parts": [
+        "忄",
+        "白"
+      ],
+      "result": "怕",
+      "meaning": "айх"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "radical:心"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "😨"
+      }
+    },
+    "storyFormula": "❤️ + ⬜ = 😨"
+  },
+  {
+    "character": "尖",
+    "pinyin": "jiān",
+    "meaning": "хурц үзүүр",
+    "structure": {
+      "parts": [
+        {
+          "char": "小",
+          "label": "жижиг"
+        },
+        {
+          "char": "大",
+          "label": "том"
+        }
+      ],
+      "result": {
+        "char": "尖",
+        "label": "хурц үзүүр"
+      }
+    },
+    "story": "Дээр нь жижиг (小), доор нь том (大) = дээшээ нарийссан хурц үзүүр.",
+    "example": {
+      "word": "笔尖",
+      "pinyin": "bǐjiān",
+      "translation": "үзэгний үзүүр"
+    },
+    "mnemonic": {
+      "parts": [
+        "小",
+        "大"
+      ],
+      "result": "尖",
+      "meaning": "хурц үзүүр"
+    },
+    "level": 2,
+    "category": "chanar",
+    "tags": [],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔺"
+      }
+    },
+    "storyFormula": "🔼"
+  },
+  {
+    "character": "晶",
+    "pinyin": "jīng",
+    "meaning": "болор",
+    "structure": {
+      "parts": [
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "日",
+          "label": "нар"
+        }
+      ],
+      "result": {
+        "char": "晶",
+        "label": "болор"
+      }
+    },
+    "story": "Гурван нар (日) гялалзах = болор шиг тунгалаг гэрэлтэх.",
+    "example": {
+      "word": "水晶",
+      "pinyin": "shuǐjīng",
+      "translation": "болор"
+    },
+    "mnemonic": {
+      "parts": [
+        "日",
+        "日",
+        "日"
+      ],
+      "result": "晶",
+      "meaning": "болор"
+    },
+    "level": 2,
+    "category": "chanar",
+    "tags": [
+      "triple",
+      "radical:日"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💎"
+      }
+    },
+    "storyFormula": "☀️ + ☀️ + ☀️ = 💎"
+  },
+  {
+    "character": "品",
+    "pinyin": "pǐn",
+    "meaning": "бараа, чанар",
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "口",
+          "label": "ам"
+        }
+      ],
+      "result": {
+        "char": "品",
+        "label": "бараа"
+      }
+    },
+    "story": "Гурван ам (口) амтлах = бараа, бүтээгдэхүүний чанар.",
+    "example": {
+      "word": "产品",
+      "pinyin": "chǎnpǐn",
+      "translation": "бүтээгдэхүүн"
+    },
+    "mnemonic": {
+      "parts": [
+        "口",
+        "口",
+        "口"
+      ],
+      "result": "品",
+      "meaning": "бараа, чанар"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "triple",
+      "radical:口"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📦"
+      }
+    },
+    "storyFormula": "👄 + 👄 + 👄 = 📦"
+  },
+  {
+    "character": "爱",
+    "pinyin": "ài",
+    "meaning": "хайрлах",
+    "kind": "simple",
+    "example": {
+      "word": "爱好",
+      "pinyin": "ài hào",
+      "translation": "сонирхол, хобби"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "爱",
+        "label": "хайрлах"
+      }
+    },
+    "story": "«хайрлах» гэсэн утгатай үндсэн дүрс ханз (ài)."
+  },
+  {
+    "character": "八",
+    "pinyin": "bā",
+    "meaning": "найм",
+    "kind": "simple",
+    "example": {
+      "word": "八月",
+      "pinyin": "Bā yuè",
+      "translation": "наймдугаар сар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "八",
+        "label": "найм"
+      }
+    },
+    "story": "«найм» гэсэн утгатай үндсэн дүрс ханз (bā)."
+  },
+  {
+    "character": "爸",
+    "pinyin": "bà",
+    "meaning": "аав",
+    "kind": "simple",
+    "example": {
+      "word": "爸爸",
+      "pinyin": "bà ba",
+      "translation": "аав"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "爸",
+        "label": "аав"
+      }
+    },
+    "story": "«аав» гэсэн утгатай үндсэн дүрс ханз (bà)."
+  },
+  {
+    "character": "杯",
+    "pinyin": "bēi",
+    "meaning": "аяга",
+    "kind": "simple",
+    "example": {
+      "word": "杯子",
+      "pinyin": "bēi zi",
+      "translation": "аяга"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "杯",
+        "label": "аяга"
+      }
+    },
+    "story": "«аяга» гэсэн утгатай үндсэн дүрс ханз (bēi)."
+  },
+  {
+    "character": "子",
+    "pinyin": "zi",
+    "meaning": "хүүхэд",
+    "kind": "simple",
+    "example": {
+      "word": "孩子",
+      "pinyin": "hái zi",
+      "translation": "хүүхэд"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "子",
+        "label": "хүүхэд"
+      }
+    },
+    "story": "«хүүхэд» гэсэн утгатай үндсэн дүрс ханз (zi)."
+  },
+  {
+    "character": "北",
+    "pinyin": "běi",
+    "meaning": "хойд",
+    "kind": "simple",
+    "example": {
+      "word": "北京",
+      "pinyin": "Běi jīng",
+      "translation": "Бээжин"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "北",
+        "label": "хойд"
+      }
+    },
+    "story": "«хойд» гэсэн утгатай үндсэн дүрс ханз (běi)."
+  },
+  {
+    "character": "京",
+    "pinyin": "jīng",
+    "meaning": "нийслэл",
+    "kind": "simple",
+    "example": {
+      "word": "北京",
+      "pinyin": "Běi jīng",
+      "translation": "Бээжин"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "京",
+        "label": "нийслэл"
+      }
+    },
+    "story": "«нийслэл» гэсэн утгатай үндсэн дүрс ханз (jīng)."
+  },
+  {
+    "character": "不",
+    "pinyin": "bù",
+    "meaning": "үгүй",
+    "kind": "simple",
+    "example": {
+      "word": "不是",
+      "pinyin": "bù shì",
+      "translation": "биш"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "不",
+        "label": "үгүй"
+      }
+    },
+    "story": "«үгүй» гэсэн утгатай үндсэн дүрс ханз (bù)."
+  },
+  {
+    "character": "客",
+    "pinyin": "kè",
+    "meaning": "зочин",
+    "kind": "compound",
+    "example": {
+      "word": "客人",
+      "pinyin": "kè rén",
+      "translation": "зочин"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "宀",
+          "label": "дээвэр"
+        },
+        {
+          "char": "各",
+          "label": "тус бүр"
+        }
+      ],
+      "result": {
+        "char": "客",
+        "label": "зочин"
+      }
+    },
+    "story": "дээвэр (宀), тус бүр (各) хослон «зочин» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "宀",
+        "各"
+      ],
+      "result": "客",
+      "meaning": "зочин"
+    }
+  },
+  {
+    "character": "气",
+    "pinyin": "qì",
+    "meaning": "агаар, хий",
+    "kind": "simple",
+    "example": {
+      "word": "天气",
+      "pinyin": "tiān qì",
+      "translation": "цаг агаар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "气",
+        "label": "агаар, хий"
+      }
+    },
+    "story": "«агаар, хий» гэсэн утгатай үндсэн дүрс ханз (qì)."
+  },
+  {
+    "character": "菜",
+    "pinyin": "cài",
+    "meaning": "хүнс, ногоо",
+    "kind": "simple",
+    "example": {
+      "word": "点菜",
+      "pinyin": "diǎn cài",
+      "translation": "хоол захиалах"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "菜",
+        "label": "хүнс, ногоо"
+      }
+    },
+    "story": "«хүнс, ногоо» гэсэн утгатай үндсэн дүрс ханз (cài)."
+  },
+  {
+    "character": "茶",
+    "pinyin": "chá",
+    "meaning": "цай",
+    "kind": "compound",
+    "example": {
+      "word": "喝茶",
+      "pinyin": "hē chá",
+      "translation": "цай уух"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "艹",
+          "label": "өвс"
+        },
+        {
+          "char": "人",
+          "label": "хүн"
+        },
+        {
+          "char": "木",
+          "label": "мод"
+        }
+      ],
+      "result": {
+        "char": "茶",
+        "label": "цай"
+      }
+    },
+    "story": "өвс (艹), хүн (人), мод (木) хослон «цай» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "艹",
+        "人",
+        "木"
+      ],
+      "result": "茶",
+      "meaning": "цай"
+    }
+  },
+  {
+    "character": "租",
+    "pinyin": "zū",
+    "meaning": "түрээслэх",
+    "kind": "compound",
+    "example": {
+      "word": "出租车",
+      "pinyin": "chū zū chē",
+      "translation": "такси"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "禾",
+          "label": "тариа"
+        },
+        {
+          "char": "且",
+          "label": "бас"
+        }
+      ],
+      "result": {
+        "char": "租",
+        "label": "түрээслэх"
+      }
+    },
+    "story": "тариа (禾), бас (且) хослон «түрээслэх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "禾",
+        "且"
+      ],
+      "result": "租",
+      "meaning": "түрээслэх"
+    }
+  },
+  {
+    "character": "车",
+    "pinyin": "chē",
+    "meaning": "тэрэг, машин",
+    "kind": "simple",
+    "example": {
+      "word": "汽车",
+      "pinyin": "qì chē",
+      "translation": "автомашин"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "车",
+        "label": "тэрэг, машин"
+      }
+    },
+    "story": "«тэрэг, машин» гэсэн утгатай үндсэн дүрс ханз (chē)."
+  },
+  {
+    "character": "打",
+    "pinyin": "dǎ",
+    "meaning": "цохих, барих",
+    "kind": "simple",
+    "example": {
+      "word": "打电话",
+      "pinyin": "dǎ diàn huà",
+      "translation": "утсаар ярих"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "打",
+        "label": "цохих, барих"
+      }
+    },
+    "story": "«цохих, барих» гэсэн утгатай үндсэн дүрс ханз (dǎ)."
+  },
+  {
+    "character": "电",
+    "pinyin": "diàn",
+    "meaning": "цахилгаан",
+    "kind": "simple",
+    "example": {
+      "word": "电脑",
+      "pinyin": "diàn nǎo",
+      "translation": "компьютер"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "电",
+        "label": "цахилгаан"
+      }
+    },
+    "story": "«цахилгаан» гэсэн утгатай үндсэн дүрс ханз (diàn)."
+  },
+  {
+    "character": "话",
+    "pinyin": "huà",
+    "meaning": "яриа, үг",
+    "kind": "simple",
+    "example": {
+      "word": "说话",
+      "pinyin": "shuō huà",
+      "translation": "ярих"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "话",
+        "label": "яриа, үг"
+      }
+    },
+    "story": "«яриа, үг» гэсэн утгатай үндсэн дүрс ханз (huà)."
+  },
+  {
+    "character": "大",
+    "pinyin": "dà",
+    "meaning": "том",
+    "kind": "compound",
+    "example": {
+      "word": "大家",
+      "pinyin": "dà jiā",
+      "translation": "бүгд, хүн бүр"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "一",
+          "label": "нэг"
+        },
+        {
+          "char": "人",
+          "label": "хүн"
+        }
+      ],
+      "result": {
+        "char": "大",
+        "label": "том"
+      }
+    },
+    "story": "нэг (一), хүн (人) хослон «том» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "一",
+        "人"
+      ],
+      "result": "大",
+      "meaning": "том"
+    }
+  },
+  {
+    "character": "的",
+    "pinyin": "de",
+    "meaning": "-ын (харьяа)",
+    "kind": "simple",
+    "example": {
+      "word": "我的",
+      "pinyin": "wǒ de",
+      "translation": "миний"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "的",
+        "label": "-ын (харьяа)"
+      }
+    },
+    "story": "«-ын (харьяа)» гэсэн утгатай үндсэн дүрс ханз (de)."
+  },
+  {
+    "character": "点",
+    "pinyin": "diǎn",
+    "meaning": "цэг, цаг",
+    "kind": "compound",
+    "example": {
+      "word": "几点",
+      "pinyin": "jǐ diǎn",
+      "translation": "хэдэн цаг"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "占",
+          "label": "эзлэх"
+        },
+        {
+          "char": "灬",
+          "label": "гал"
+        }
+      ],
+      "result": {
+        "char": "点",
+        "label": "цэг, цаг"
+      }
+    },
+    "story": "эзлэх (占), гал (灬) хослон «цэг, цаг» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "占",
+        "灬"
+      ],
+      "result": "点",
+      "meaning": "цэг, цаг"
+    }
+  },
+  {
+    "character": "脑",
+    "pinyin": "nǎo",
+    "meaning": "тархи",
+    "kind": "simple",
+    "example": {
+      "word": "电脑",
+      "pinyin": "diàn nǎo",
+      "translation": "компьютер"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "脑",
+        "label": "тархи"
+      }
+    },
+    "story": "«тархи» гэсэн утгатай үндсэн дүрс ханз (nǎo)."
+  },
+  {
+    "character": "视",
+    "pinyin": "shì",
+    "meaning": "харах",
+    "kind": "compound",
+    "example": {
+      "word": "电视",
+      "pinyin": "diàn shì",
+      "translation": "зурагт"
+    },
+    "level": 1,
+    "category": "biye",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "礻",
+          "label": "тахил"
+        },
+        {
+          "char": "见",
+          "label": "харах"
+        }
+      ],
+      "result": {
+        "char": "视",
+        "label": "харах"
+      }
+    },
+    "story": "тахил (礻), харах (见) хослон «харах» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "礻",
+        "见"
+      ],
+      "result": "视",
+      "meaning": "харах"
+    }
+  },
+  {
+    "character": "影",
+    "pinyin": "yǐng",
+    "meaning": "сүүдэр, дүрс",
+    "kind": "simple",
+    "example": {
+      "word": "电影",
+      "pinyin": "diàn yǐng",
+      "translation": "кино"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "影",
+        "label": "сүүдэр, дүрс"
+      }
+    },
+    "story": "«сүүдэр, дүрс» гэсэн утгатай үндсэн дүрс ханз (yǐng)."
+  },
+  {
+    "character": "东",
+    "pinyin": "dōng",
+    "meaning": "зүүн",
+    "kind": "simple",
+    "example": {
+      "word": "东西",
+      "pinyin": "dōng xī",
+      "translation": "юм, эд зүйл"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "东",
+        "label": "зүүн"
+      }
+    },
+    "story": "«зүүн» гэсэн утгатай үндсэн дүрс ханз (dōng)."
+  },
+  {
+    "character": "西",
+    "pinyin": "xī",
+    "meaning": "баруун",
+    "kind": "simple",
+    "example": {
+      "word": "西边",
+      "pinyin": "xī biān",
+      "translation": "баруун тал"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "西",
+        "label": "баруун"
+      }
+    },
+    "story": "«баруун» гэсэн утгатай үндсэн дүрс ханз (xī)."
+  },
+  {
+    "character": "都",
+    "pinyin": "dōu",
+    "meaning": "бүгд",
+    "kind": "simple",
+    "example": {
+      "word": "都是",
+      "pinyin": "dōu shì",
+      "translation": "бүгд мөн"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "都",
+        "label": "бүгд"
+      }
+    },
+    "story": "«бүгд» гэсэн утгатай үндсэн дүрс ханз (dōu)."
+  },
+  {
+    "character": "读",
+    "pinyin": "dú",
+    "meaning": "унших",
+    "kind": "simple",
+    "example": {
+      "word": "读书",
+      "pinyin": "dú shū",
+      "translation": "ном унших"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "读",
+        "label": "унших"
+      }
+    },
+    "story": "«унших» гэсэн утгатай үндсэн дүрс ханз (dú)."
+  },
+  {
+    "character": "对",
+    "pinyin": "duì",
+    "meaning": "зөв",
+    "kind": "compound",
+    "example": {
+      "word": "对不起",
+      "pinyin": "duì bu qǐ",
+      "translation": "уучлаарай"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "又",
+          "label": "гар"
+        },
+        {
+          "char": "寸",
+          "label": "хэмжүүр"
+        }
+      ],
+      "result": {
+        "char": "对",
+        "label": "зөв"
+      }
+    },
+    "story": "гар (又), хэмжүүр (寸) хослон «зөв» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "又",
+        "寸"
+      ],
+      "result": "对",
+      "meaning": "зөв"
+    }
+  },
+  {
+    "character": "起",
+    "pinyin": "qǐ",
+    "meaning": "босох, эхлэх",
+    "kind": "simple",
+    "example": {
+      "word": "一起",
+      "pinyin": "yī qǐ",
+      "translation": "хамт"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "起",
+        "label": "босох, эхлэх"
+      }
+    },
+    "story": "«босох, эхлэх» гэсэн утгатай үндсэн дүрс ханз (qǐ)."
+  },
+  {
+    "character": "多",
+    "pinyin": "duō",
+    "meaning": "олон",
+    "kind": "simple",
+    "example": {
+      "word": "多少",
+      "pinyin": "duō shǎo",
+      "translation": "хэд"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "多",
+        "label": "олон"
+      }
+    },
+    "story": "«олон» гэсэн утгатай үндсэн дүрс ханз (duō)."
+  },
+  {
+    "character": "少",
+    "pinyin": "shǎo",
+    "meaning": "цөөн",
+    "kind": "simple",
+    "example": {
+      "word": "多少",
+      "pinyin": "duō shǎo",
+      "translation": "хэд"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "少",
+        "label": "цөөн"
+      }
+    },
+    "story": "«цөөн» гэсэн утгатай үндсэн дүрс ханз (shǎo)."
+  },
+  {
+    "character": "儿",
+    "pinyin": "ér",
+    "meaning": "хүүхэд, хүү",
+    "kind": "simple",
+    "example": {
+      "word": "儿子",
+      "pinyin": "ér zi",
+      "translation": "хүү"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "儿",
+        "label": "хүүхэд, хүү"
+      }
+    },
+    "story": "«хүүхэд, хүү» гэсэн утгатай үндсэн дүрс ханз (ér)."
+  },
+  {
+    "character": "二",
+    "pinyin": "èr",
+    "meaning": "хоёр",
+    "kind": "compound",
+    "example": {
+      "word": "二月",
+      "pinyin": "Èr yuè",
+      "translation": "хоёрдугаар сар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "一",
+          "label": "нэг"
+        },
+        {
+          "char": "一",
+          "label": "нэг"
+        }
+      ],
+      "result": {
+        "char": "二",
+        "label": "хоёр"
+      }
+    },
+    "story": "нэг (一) 2 удаа давтагдаж «хоёр» гэсэн утгыг илэрхийлнэ.",
+    "mnemonic": {
+      "parts": [
+        "一",
+        "一"
+      ],
+      "result": "二",
+      "meaning": "хоёр"
+    }
+  },
+  {
+    "character": "饭",
+    "pinyin": "fàn",
+    "meaning": "хоол, будаа",
+    "kind": "compound",
+    "example": {
+      "word": "米饭",
+      "pinyin": "mǐ fàn",
+      "translation": "цагаан будаа"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "饣",
+          "label": "хоол"
+        },
+        {
+          "char": "反",
+          "label": "эсрэг"
+        }
+      ],
+      "result": {
+        "char": "饭",
+        "label": "хоол, будаа"
+      }
+    },
+    "story": "хоол (饣), эсрэг (反) хослон «хоол, будаа» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "饣",
+        "反"
+      ],
+      "result": "饭",
+      "meaning": "хоол, будаа"
+    }
+  },
+  {
+    "character": "馆",
+    "pinyin": "guǎn",
+    "meaning": "газар (барилга)",
+    "kind": "compound",
+    "example": {
+      "word": "饭馆",
+      "pinyin": "fàn guǎn",
+      "translation": "хоолны газар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "饣",
+          "label": "хоол"
+        },
+        {
+          "char": "官",
+          "label": "түшмэл"
+        }
+      ],
+      "result": {
+        "char": "馆",
+        "label": "газар (барилга)"
+      }
+    },
+    "story": "хоол (饣), түшмэл (官) хослон «газар (барилга)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "饣",
+        "官"
+      ],
+      "result": "馆",
+      "meaning": "газар (барилга)"
+    }
+  },
+  {
+    "character": "飞",
+    "pinyin": "fēi",
+    "meaning": "нисэх",
+    "kind": "simple",
+    "example": {
+      "word": "飞机",
+      "pinyin": "fēi jī",
+      "translation": "онгоц"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "飞",
+        "label": "нисэх"
+      }
+    },
+    "story": "«нисэх» гэсэн утгатай үндсэн дүрс ханз (fēi)."
+  },
+  {
+    "character": "机",
+    "pinyin": "jī",
+    "meaning": "машин, аппарат",
+    "kind": "simple",
+    "example": {
+      "word": "手机",
+      "pinyin": "shǒu jī",
+      "translation": "гар утас"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "机",
+        "label": "машин, аппарат"
+      }
+    },
+    "story": "«машин, аппарат» гэсэн утгатай үндсэн дүрс ханз (jī)."
+  },
+  {
+    "character": "分",
+    "pinyin": "fēn",
+    "meaning": "хуваах, минут",
+    "kind": "compound",
+    "example": {
+      "word": "分钟",
+      "pinyin": "fēn zhōng",
+      "translation": "минут"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "八",
+          "label": "найм"
+        },
+        {
+          "char": "刀",
+          "label": "хутга"
+        }
+      ],
+      "result": {
+        "char": "分",
+        "label": "хуваах, минут"
+      }
+    },
+    "story": "найм (八), хутга (刀) хослон «хуваах, минут» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "八",
+        "刀"
+      ],
+      "result": "分",
+      "meaning": "хуваах, минут"
+    }
+  },
+  {
+    "character": "钟",
+    "pinyin": "zhōng",
+    "meaning": "цаг (хонх)",
+    "kind": "compound",
+    "example": {
+      "word": "分钟",
+      "pinyin": "fēn zhōng",
+      "translation": "минут"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "钅",
+          "label": "металл"
+        },
+        {
+          "char": "中",
+          "label": "дунд"
+        }
+      ],
+      "result": {
+        "char": "钟",
+        "label": "цаг (хонх)"
+      }
+    },
+    "story": "металл (钅), дунд (中) хослон «цаг (хонх)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "钅",
+        "中"
+      ],
+      "result": "钟",
+      "meaning": "цаг (хонх)"
+    }
+  },
+  {
+    "character": "高",
+    "pinyin": "gāo",
+    "meaning": "өндөр",
+    "kind": "simple",
+    "example": {
+      "word": "高兴",
+      "pinyin": "gāo xìng",
+      "translation": "баяртай"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "高",
+        "label": "өндөр"
+      }
+    },
+    "story": "«өндөр» гэсэн утгатай үндсэн дүрс ханз (gāo)."
+  },
+  {
+    "character": "兴",
+    "pinyin": "xìng",
+    "meaning": "сэргэх, баясах",
+    "kind": "simple",
+    "example": {
+      "word": "高兴",
+      "pinyin": "gāo xìng",
+      "translation": "баяртай"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "兴",
+        "label": "сэргэх, баясах"
+      }
+    },
+    "story": "«сэргэх, баясах» гэсэн утгатай үндсэн дүрс ханз (xìng)."
+  },
+  {
+    "character": "个",
+    "pinyin": "gè",
+    "meaning": "ширхэг (тоолуур)",
+    "kind": "simple",
+    "example": {
+      "word": "一个",
+      "pinyin": "yī ge",
+      "translation": "нэг ширхэг"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "个",
+        "label": "ширхэг (тоолуур)"
+      }
+    },
+    "story": "«ширхэг (тоолуур)» гэсэн утгатай үндсэн дүрс ханз (gè)."
+  },
+  {
+    "character": "工",
+    "pinyin": "gōng",
+    "meaning": "ажил",
+    "kind": "simple",
+    "example": {
+      "word": "工作",
+      "pinyin": "gōng zuò",
+      "translation": "ажил"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "工",
+        "label": "ажил"
+      }
+    },
+    "story": "«ажил» гэсэн утгатай үндсэн дүрс ханз (gōng)."
+  },
+  {
+    "character": "作",
+    "pinyin": "zuò",
+    "meaning": "хийх, бүтээх",
+    "kind": "simple",
+    "example": {
+      "word": "工作",
+      "pinyin": "gōng zuò",
+      "translation": "ажил"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "作",
+        "label": "хийх, бүтээх"
+      }
+    },
+    "story": "«хийх, бүтээх» гэсэн утгатай үндсэн дүрс ханз (zuò)."
+  },
+  {
+    "character": "狗",
+    "pinyin": "gǒu",
+    "meaning": "нохой",
+    "kind": "simple",
+    "example": {
+      "word": "小狗",
+      "pinyin": "xiǎo gǒu",
+      "translation": "гөлөг"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "狗",
+        "label": "нохой"
+      }
+    },
+    "story": "«нохой» гэсэн утгатай үндсэн дүрс ханз (gǒu)."
+  },
+  {
+    "character": "汉",
+    "pinyin": "hàn",
+    "meaning": "хятад",
+    "kind": "compound",
+    "example": {
+      "word": "汉语",
+      "pinyin": "Hàn yǔ",
+      "translation": "хятад хэл"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "氵",
+          "label": "ус"
+        },
+        {
+          "char": "又",
+          "label": "гар"
+        }
+      ],
+      "result": {
+        "char": "汉",
+        "label": "хятад"
+      }
+    },
+    "story": "ус (氵), гар (又) хослон «хятад» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "氵",
+        "又"
+      ],
+      "result": "汉",
+      "meaning": "хятад"
+    }
+  },
+  {
+    "character": "语",
+    "pinyin": "yǔ",
+    "meaning": "хэл",
+    "kind": "simple",
+    "example": {
+      "word": "汉语",
+      "pinyin": "Hàn yǔ",
+      "translation": "хятад хэл"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "语",
+        "label": "хэл"
+      }
+    },
+    "story": "«хэл» гэсэн утгатай үндсэн дүрс ханз (yǔ)."
+  },
+  {
+    "character": "喝",
+    "pinyin": "hē",
+    "meaning": "уух",
+    "kind": "simple",
+    "example": {
+      "word": "喝水",
+      "pinyin": "hē shuǐ",
+      "translation": "ус уух"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "喝",
+        "label": "уух"
+      }
+    },
+    "story": "«уух» гэсэн утгатай үндсэн дүрс ханз (hē)."
+  },
+  {
+    "character": "和",
+    "pinyin": "hé",
+    "meaning": "ба, эв",
+    "kind": "compound",
+    "example": {
+      "word": "和平",
+      "pinyin": "hé píng",
+      "translation": "энх тайван"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "禾",
+          "label": "тариа"
+        },
+        {
+          "char": "口",
+          "label": "ам"
+        }
+      ],
+      "result": {
+        "char": "和",
+        "label": "ба, эв"
+      }
+    },
+    "story": "тариа (禾), ам (口) хослон «ба, эв» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "禾",
+        "口"
+      ],
+      "result": "和",
+      "meaning": "ба, эв"
+    }
+  },
+  {
+    "character": "很",
+    "pinyin": "hěn",
+    "meaning": "маш",
+    "kind": "simple",
+    "example": {
+      "word": "很好",
+      "pinyin": "hěn hǎo",
+      "translation": "маш сайн"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "很",
+        "label": "маш"
+      }
+    },
+    "story": "«маш» гэсэн утгатай үндсэн дүрс ханз (hěn)."
+  },
+  {
+    "character": "后",
+    "pinyin": "hòu",
+    "meaning": "ард, дараа",
+    "kind": "simple",
+    "example": {
+      "word": "后面",
+      "pinyin": "hòu mian",
+      "translation": "ард тал"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "后",
+        "label": "ард, дараа"
+      }
+    },
+    "story": "«ард, дараа» гэсэн утгатай үндсэн дүрс ханз (hòu)."
+  },
+  {
+    "character": "面",
+    "pinyin": "miàn",
+    "meaning": "нүүр, тал, гурил",
+    "kind": "simple",
+    "example": {
+      "word": "后面",
+      "pinyin": "hòu mian",
+      "translation": "ард тал"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "面",
+        "label": "нүүр, тал, гурил"
+      }
+    },
+    "story": "«нүүр, тал, гурил» гэсэн утгатай үндсэн дүрс ханз (miàn)."
+  },
+  {
+    "character": "回",
+    "pinyin": "huí",
+    "meaning": "буцах",
+    "kind": "simple",
+    "example": {
+      "word": "回家",
+      "pinyin": "huí jiā",
+      "translation": "гэртээ харих"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "回",
+        "label": "буцах"
+      }
+    },
+    "story": "«буцах» гэсэн утгатай үндсэн дүрс ханз (huí)."
+  },
+  {
+    "character": "会",
+    "pinyin": "huì",
+    "meaning": "чадах, цуглах",
+    "kind": "simple",
+    "example": {
+      "word": "开会",
+      "pinyin": "kāi huì",
+      "translation": "хурал хийх"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "会",
+        "label": "чадах, цуглах"
+      }
+    },
+    "story": "«чадах, цуглах» гэсэн утгатай үндсэн дүрс ханз (huì)."
+  },
+  {
+    "character": "火",
+    "pinyin": "huǒ",
+    "meaning": "гал",
+    "kind": "simple",
+    "example": {
+      "word": "火车",
+      "pinyin": "huǒ chē",
+      "translation": "галт тэрэг"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "火",
+        "label": "гал"
+      }
+    },
+    "story": "«гал» гэсэн утгатай үндсэн дүрс ханз (huǒ)."
+  },
+  {
+    "character": "站",
+    "pinyin": "zhàn",
+    "meaning": "зогсох, буудал",
+    "kind": "compound",
+    "example": {
+      "word": "车站",
+      "pinyin": "chē zhàn",
+      "translation": "зогсоол"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "立",
+          "label": "зогсох"
+        },
+        {
+          "char": "占",
+          "label": "эзлэх"
+        }
+      ],
+      "result": {
+        "char": "站",
+        "label": "зогсох, буудал"
+      }
+    },
+    "story": "зогсох (立), эзлэх (占) хослон «зогсох, буудал» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "立",
+        "占"
+      ],
+      "result": "站",
+      "meaning": "зогсох, буудал"
+    }
+  },
+  {
+    "character": "几",
+    "pinyin": "jǐ",
+    "meaning": "хэд",
+    "kind": "simple",
+    "example": {
+      "word": "几个",
+      "pinyin": "jǐ ge",
+      "translation": "хэдэн ширхэг"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "几",
+        "label": "хэд"
+      }
+    },
+    "story": "«хэд» гэсэн утгатай үндсэн дүрс ханз (jǐ)."
+  },
+  {
+    "character": "叫",
+    "pinyin": "jiào",
+    "meaning": "дуудах, хашгирах",
+    "kind": "simple",
+    "example": {
+      "word": "名叫",
+      "pinyin": "míng jiào",
+      "translation": "... нэртэй"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "叫",
+        "label": "дуудах, хашгирах"
+      }
+    },
+    "story": "«дуудах, хашгирах» гэсэн утгатай үндсэн дүрс ханз (jiào)."
+  },
+  {
+    "character": "今",
+    "pinyin": "jīn",
+    "meaning": "одоо, өнөө",
+    "kind": "simple",
+    "example": {
+      "word": "今天",
+      "pinyin": "jīn tiān",
+      "translation": "өнөөдөр"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "今",
+        "label": "одоо, өнөө"
+      }
+    },
+    "story": "«одоо, өнөө» гэсэн утгатай үндсэн дүрс ханз (jīn)."
+  },
+  {
+    "character": "天",
+    "pinyin": "tiān",
+    "meaning": "тэнгэр, өдөр",
+    "kind": "compound",
+    "example": {
+      "word": "今天",
+      "pinyin": "jīn tiān",
+      "translation": "өнөөдөр"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "一",
+          "label": "нэг"
+        },
+        {
+          "char": "大",
+          "label": "том"
+        }
+      ],
+      "result": {
+        "char": "天",
+        "label": "тэнгэр, өдөр"
+      }
+    },
+    "story": "нэг (一), том (大) хослон «тэнгэр, өдөр» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "一",
+        "大"
+      ],
+      "result": "天",
+      "meaning": "тэнгэр, өдөр"
+    }
+  },
+  {
+    "character": "九",
+    "pinyin": "jiǔ",
+    "meaning": "ес",
+    "kind": "simple",
+    "example": {
+      "word": "九月",
+      "pinyin": "Jiǔ yuè",
+      "translation": "есдүгээр сар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "九",
+        "label": "ес"
+      }
+    },
+    "story": "«ес» гэсэн утгатай үндсэн дүрс ханз (jiǔ)."
+  },
+  {
+    "character": "开",
+    "pinyin": "kāi",
+    "meaning": "нээх, эхлэх",
+    "kind": "simple",
+    "example": {
+      "word": "开始",
+      "pinyin": "kāi shǐ",
+      "translation": "эхлэх"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "开",
+        "label": "нээх, эхлэх"
+      }
+    },
+    "story": "«нээх, эхлэх» гэсэн утгатай үндсэн дүрс ханз (kāi)."
+  },
+  {
+    "character": "见",
+    "pinyin": "jiàn",
+    "meaning": "харах, уулзах",
+    "kind": "simple",
+    "example": {
+      "word": "看见",
+      "pinyin": "kàn jiàn",
+      "translation": "харах"
+    },
+    "level": 1,
+    "category": "biye",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "见",
+        "label": "харах, уулзах"
+      }
+    },
+    "story": "«харах, уулзах» гэсэн утгатай үндсэн дүрс ханз (jiàn)."
+  },
+  {
+    "character": "块",
+    "pinyin": "kuài",
+    "meaning": "хэсэг, төгрөг",
+    "kind": "simple",
+    "example": {
+      "word": "一块",
+      "pinyin": "yī kuài",
+      "translation": "нэг хэсэг"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "块",
+        "label": "хэсэг, төгрөг"
+      }
+    },
+    "story": "«хэсэг, төгрөг» гэсэн утгатай үндсэн дүрс ханз (kuài)."
+  },
+  {
+    "character": "来",
+    "pinyin": "lái",
+    "meaning": "ирэх",
+    "kind": "simple",
+    "example": {
+      "word": "回来",
+      "pinyin": "huí lai",
+      "translation": "буцаж ирэх"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "来",
+        "label": "ирэх"
+      }
+    },
+    "story": "«ирэх» гэсэн утгатай үндсэн дүрс ханз (lái)."
+  },
+  {
+    "character": "老",
+    "pinyin": "lǎo",
+    "meaning": "хөгшин, ноён",
+    "kind": "simple",
+    "example": {
+      "word": "老师",
+      "pinyin": "lǎo shī",
+      "translation": "багш"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "老",
+        "label": "хөгшин, ноён"
+      }
+    },
+    "story": "«хөгшин, ноён» гэсэн утгатай үндсэн дүрс ханз (lǎo)."
+  },
+  {
+    "character": "师",
+    "pinyin": "shī",
+    "meaning": "багш, мастер",
+    "kind": "simple",
+    "example": {
+      "word": "老师",
+      "pinyin": "lǎo shī",
+      "translation": "багш"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "师",
+        "label": "багш, мастер"
+      }
+    },
+    "story": "«багш, мастер» гэсэн утгатай үндсэн дүрс ханз (shī)."
+  },
+  {
+    "character": "了",
+    "pinyin": "le",
+    "meaning": "(дууссаныг заана)",
+    "kind": "simple",
+    "example": {
+      "word": "好了",
+      "pinyin": "hǎo le",
+      "translation": "боллоо"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "了",
+        "label": "(дууссаныг заана)"
+      }
+    },
+    "story": "«(дууссаныг заана)» гэсэн утгатай үндсэн дүрс ханз (le)."
+  },
+  {
+    "character": "冷",
+    "pinyin": "lěng",
+    "meaning": "хүйтэн",
+    "kind": "simple",
+    "example": {
+      "word": "很冷",
+      "pinyin": "hěn lěng",
+      "translation": "маш хүйтэн"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "冷",
+        "label": "хүйтэн"
+      }
+    },
+    "story": "«хүйтэн» гэсэн утгатай үндсэн дүрс ханз (lěng)."
+  },
+  {
+    "character": "里",
+    "pinyin": "lǐ",
+    "meaning": "дотор, газар",
+    "kind": "compound",
+    "example": {
+      "word": "里面",
+      "pinyin": "lǐ miàn",
+      "translation": "дотор тал"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "田",
+          "label": "талбай"
+        },
+        {
+          "char": "土",
+          "label": "шороо"
+        }
+      ],
+      "result": {
+        "char": "里",
+        "label": "дотор, газар"
+      }
+    },
+    "story": "талбай (田), шороо (土) хослон «дотор, газар» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "田",
+        "土"
+      ],
+      "result": "里",
+      "meaning": "дотор, газар"
+    }
+  },
+  {
+    "character": "零",
+    "pinyin": "líng",
+    "meaning": "тэг",
+    "kind": "compound",
+    "example": {
+      "word": "零下",
+      "pinyin": "líng xià",
+      "translation": "хасах (хэм)"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "雨",
+          "label": "бороо"
+        },
+        {
+          "char": "令",
+          "label": "тушаах"
+        }
+      ],
+      "result": {
+        "char": "零",
+        "label": "тэг"
+      }
+    },
+    "story": "бороо (雨), тушаах (令) хослон «тэг» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "雨",
+        "令"
+      ],
+      "result": "零",
+      "meaning": "тэг"
+    }
+  },
+  {
+    "character": "六",
+    "pinyin": "liù",
+    "meaning": "зургаа",
+    "kind": "simple",
+    "example": {
+      "word": "六月",
+      "pinyin": "Liù yuè",
+      "translation": "зургаадугаар сар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "六",
+        "label": "зургаа"
+      }
+    },
+    "story": "«зургаа» гэсэн утгатай үндсэн дүрс ханз (liù)."
+  },
+  {
+    "character": "吗",
+    "pinyin": "ma",
+    "meaning": "уу? (асуултын)",
+    "kind": "compound",
+    "example": {
+      "word": "好吗",
+      "pinyin": "hǎo ma",
+      "translation": "сайн уу?"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "马",
+          "label": "морь"
+        }
+      ],
+      "result": {
+        "char": "吗",
+        "label": "уу? (асуултын)"
+      }
+    },
+    "story": "ам (口), морь (马) хослон «уу? (асуултын)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "口",
+        "马"
+      ],
+      "result": "吗",
+      "meaning": "уу? (асуултын)"
+    }
+  },
+  {
+    "character": "买",
+    "pinyin": "mǎi",
+    "meaning": "худалдан авах",
+    "kind": "simple",
+    "example": {
+      "word": "买东西",
+      "pinyin": "mǎi dōng xi",
+      "translation": "юм авах"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "买",
+        "label": "худалдан авах"
+      }
+    },
+    "story": "«худалдан авах» гэсэн утгатай үндсэн дүрс ханз (mǎi)."
+  },
+  {
+    "character": "猫",
+    "pinyin": "māo",
+    "meaning": "муур",
+    "kind": "compound",
+    "example": {
+      "word": "小猫",
+      "pinyin": "xiǎo māo",
+      "translation": "муур"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "犭",
+          "label": "амьтан"
+        },
+        {
+          "char": "苗",
+          "label": "соёо"
+        }
+      ],
+      "result": {
+        "char": "猫",
+        "label": "муур"
+      }
+    },
+    "story": "амьтан (犭), соёо (苗) хослон «муур» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "犭",
+        "苗"
+      ],
+      "result": "猫",
+      "meaning": "муур"
+    }
+  },
+  {
+    "character": "没",
+    "pinyin": "méi",
+    "meaning": "үгүй, алга",
+    "kind": "simple",
+    "example": {
+      "word": "没有",
+      "pinyin": "méi yǒu",
+      "translation": "байхгүй"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "没",
+        "label": "үгүй, алга"
+      }
+    },
+    "story": "«үгүй, алга» гэсэн утгатай үндсэн дүрс ханз (méi)."
+  },
+  {
+    "character": "关",
+    "pinyin": "guān",
+    "meaning": "хаах, холбоо",
+    "kind": "simple",
+    "example": {
+      "word": "关系",
+      "pinyin": "guān xi",
+      "translation": "хамаарал"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "关",
+        "label": "хаах, холбоо"
+      }
+    },
+    "story": "«хаах, холбоо» гэсэн утгатай үндсэн дүрс ханз (guān)."
+  },
+  {
+    "character": "系",
+    "pinyin": "xì",
+    "meaning": "холбоо, систем",
+    "kind": "simple",
+    "example": {
+      "word": "关系",
+      "pinyin": "guān xi",
+      "translation": "хамаарал"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "系",
+        "label": "холбоо, систем"
+      }
+    },
+    "story": "«холбоо, систем» гэсэн утгатай үндсэн дүрс ханз (xì)."
+  },
+  {
+    "character": "米",
+    "pinyin": "mǐ",
+    "meaning": "будаа, метр",
+    "kind": "simple",
+    "example": {
+      "word": "米饭",
+      "pinyin": "mǐ fàn",
+      "translation": "цагаан будаа"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "米",
+        "label": "будаа, метр"
+      }
+    },
+    "story": "«будаа, метр» гэсэн утгатай үндсэн дүрс ханз (mǐ)."
+  },
+  {
+    "character": "哪",
+    "pinyin": "nǎ",
+    "meaning": "аль, хаана",
+    "kind": "compound",
+    "example": {
+      "word": "哪里",
+      "pinyin": "nǎ lǐ",
+      "translation": "хаана"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "那",
+          "label": "тэр"
+        }
+      ],
+      "result": {
+        "char": "哪",
+        "label": "аль, хаана"
+      }
+    },
+    "story": "ам (口), тэр (那) хослон «аль, хаана» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "口",
+        "那"
+      ],
+      "result": "哪",
+      "meaning": "аль, хаана"
+    }
+  },
+  {
+    "character": "那",
+    "pinyin": "nà",
+    "meaning": "тэр",
+    "kind": "simple",
+    "example": {
+      "word": "那个",
+      "pinyin": "nà ge",
+      "translation": "тэр нэг"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "那",
+        "label": "тэр"
+      }
+    },
+    "story": "«тэр» гэсэн утгатай үндсэн дүрс ханз (nà)."
+  },
+  {
+    "character": "呢",
+    "pinyin": "né",
+    "meaning": "(асуултын нөхцөл)",
+    "kind": "simple",
+    "example": {
+      "word": "你呢",
+      "pinyin": "nǐ ne",
+      "translation": "чи яаж?"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "呢",
+        "label": "(асуултын нөхцөл)"
+      }
+    },
+    "story": "«(асуултын нөхцөл)» гэсэн утгатай үндсэн дүрс ханз (né)."
+  },
+  {
+    "character": "能",
+    "pinyin": "néng",
+    "meaning": "чадах",
+    "kind": "simple",
+    "example": {
+      "word": "可能",
+      "pinyin": "kě néng",
+      "translation": "магадгүй"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "能",
+        "label": "чадах"
+      }
+    },
+    "story": "«чадах» гэсэн утгатай үндсэн дүрс ханз (néng)."
+  },
+  {
+    "character": "年",
+    "pinyin": "nián",
+    "meaning": "жил",
+    "kind": "simple",
+    "example": {
+      "word": "去年",
+      "pinyin": "qù nián",
+      "translation": "өнгөрсөн жил"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "年",
+        "label": "жил"
+      }
+    },
+    "story": "«жил» гэсэн утгатай үндсэн дүрс ханз (nián)."
+  },
+  {
+    "character": "女",
+    "pinyin": "nǚ",
+    "meaning": "эмэгтэй",
+    "kind": "simple",
+    "example": {
+      "word": "女人",
+      "pinyin": "nǚ rén",
+      "translation": "эмэгтэй"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "女",
+        "label": "эмэгтэй"
+      }
+    },
+    "story": "«эмэгтэй» гэсэн утгатай үндсэн дүрс ханз (nǚ)."
+  },
+  {
+    "character": "友",
+    "pinyin": "yǒu",
+    "meaning": "найз",
+    "kind": "simple",
+    "example": {
+      "word": "朋友",
+      "pinyin": "péng you",
+      "translation": "найз"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "友",
+        "label": "найз"
+      }
+    },
+    "story": "«найз» гэсэн утгатай үндсэн дүрс ханз (yǒu)."
+  },
+  {
+    "character": "漂",
+    "pinyin": "piào",
+    "meaning": "хөвөх, гоё",
+    "kind": "compound",
+    "example": {
+      "word": "漂亮",
+      "pinyin": "piào liang",
+      "translation": "гоё, үзэсгэлэнтэй"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "氵",
+          "label": "ус"
+        },
+        {
+          "char": "票",
+          "label": "тасалбар"
+        }
+      ],
+      "result": {
+        "char": "漂",
+        "label": "хөвөх, гоё"
+      }
+    },
+    "story": "ус (氵), тасалбар (票) хослон «хөвөх, гоё» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "氵",
+        "票"
+      ],
+      "result": "漂",
+      "meaning": "хөвөх, гоё"
+    }
+  },
+  {
+    "character": "亮",
+    "pinyin": "liàng",
+    "meaning": "тод, гэрэлтэй",
+    "kind": "simple",
+    "example": {
+      "word": "漂亮",
+      "pinyin": "piào liang",
+      "translation": "гоё, үзэсгэлэнтэй"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "亮",
+        "label": "тод, гэрэлтэй"
+      }
+    },
+    "story": "«тод, гэрэлтэй» гэсэн утгатай үндсэн дүрс ханз (liàng)."
+  },
+  {
+    "character": "苹",
+    "pinyin": "píng",
+    "meaning": "алим (苹果)",
+    "kind": "compound",
+    "example": {
+      "word": "苹果",
+      "pinyin": "Píng guǒ",
+      "translation": "алим"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "艹",
+          "label": "өвс"
+        },
+        {
+          "char": "平",
+          "label": "тэгш"
+        }
+      ],
+      "result": {
+        "char": "苹",
+        "label": "алим (苹果)"
+      }
+    },
+    "story": "өвс (艹), тэгш (平) хослон «алим (苹果)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "艹",
+        "平"
+      ],
+      "result": "苹",
+      "meaning": "алим (苹果)"
+    }
+  },
+  {
+    "character": "果",
+    "pinyin": "guǒ",
+    "meaning": "жимс, үр дүн",
+    "kind": "compound",
+    "example": {
+      "word": "水果",
+      "pinyin": "shuǐ guǒ",
+      "translation": "жимс"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "田",
+          "label": "талбай"
+        },
+        {
+          "char": "木",
+          "label": "мод"
+        }
+      ],
+      "result": {
+        "char": "果",
+        "label": "жимс, үр дүн"
+      }
+    },
+    "story": "талбай (田), мод (木) хослон «жимс, үр дүн» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "田",
+        "木"
+      ],
+      "result": "果",
+      "meaning": "жимс, үр дүн"
+    }
+  },
+  {
+    "character": "七",
+    "pinyin": "qī",
+    "meaning": "долоо",
+    "kind": "simple",
+    "example": {
+      "word": "七月",
+      "pinyin": "Qī yuè",
+      "translation": "долоодугаар сар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "七",
+        "label": "долоо"
+      }
+    },
+    "story": "«долоо» гэсэн утгатай үндсэн дүрс ханз (qī)."
+  },
+  {
+    "character": "前",
+    "pinyin": "qián",
+    "meaning": "урд, өмнө",
+    "kind": "simple",
+    "example": {
+      "word": "前面",
+      "pinyin": "qián miàn",
+      "translation": "урд тал"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "前",
+        "label": "урд, өмнө"
+      }
+    },
+    "story": "«урд, өмнө» гэсэн утгатай үндсэн дүрс ханз (qián)."
+  },
+  {
+    "character": "钱",
+    "pinyin": "qián",
+    "meaning": "мөнгө",
+    "kind": "simple",
+    "example": {
+      "word": "多少钱",
+      "pinyin": "duō shao qián",
+      "translation": "хэдэн төгрөг"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "钱",
+        "label": "мөнгө"
+      }
+    },
+    "story": "«мөнгө» гэсэн утгатай үндсэн дүрс ханз (qián)."
+  },
+  {
+    "character": "请",
+    "pinyin": "qǐng",
+    "meaning": "урих, гуйх",
+    "kind": "compound",
+    "example": {
+      "word": "请进",
+      "pinyin": "qǐng jìn",
+      "translation": "орно уу"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "讠",
+          "label": "яриа"
+        },
+        {
+          "char": "青",
+          "label": "ногоон"
+        }
+      ],
+      "result": {
+        "char": "请",
+        "label": "урих, гуйх"
+      }
+    },
+    "story": "яриа (讠), ногоон (青) хослон «урих, гуйх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "讠",
+        "青"
+      ],
+      "result": "请",
+      "meaning": "урих, гуйх"
+    }
+  },
+  {
+    "character": "去",
+    "pinyin": "qù",
+    "meaning": "явах",
+    "kind": "simple",
+    "example": {
+      "word": "去年",
+      "pinyin": "qù nián",
+      "translation": "өнгөрсөн жил"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "去",
+        "label": "явах"
+      }
+    },
+    "story": "«явах» гэсэн утгатай үндсэн дүрс ханз (qù)."
+  },
+  {
+    "character": "热",
+    "pinyin": "rè",
+    "meaning": "халуун",
+    "kind": "simple",
+    "example": {
+      "word": "很热",
+      "pinyin": "hěn rè",
+      "translation": "маш халуун"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "热",
+        "label": "халуун"
+      }
+    },
+    "story": "«халуун» гэсэн утгатай үндсэн дүрс ханз (rè)."
+  },
+  {
+    "character": "人",
+    "pinyin": "rén",
+    "meaning": "хүн",
+    "kind": "simple",
+    "example": {
+      "word": "女人",
+      "pinyin": "nǚ rén",
+      "translation": "эмэгтэй"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "人",
+        "label": "хүн"
+      }
+    },
+    "story": "«хүн» гэсэн утгатай үндсэн дүрс ханз (rén)."
+  },
+  {
+    "character": "认",
+    "pinyin": "rèn",
+    "meaning": "таних",
+    "kind": "compound",
+    "example": {
+      "word": "认识",
+      "pinyin": "rèn shi",
+      "translation": "танилцах"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "讠",
+          "label": "яриа"
+        },
+        {
+          "char": "人",
+          "label": "хүн"
+        }
+      ],
+      "result": {
+        "char": "认",
+        "label": "таних"
+      }
+    },
+    "story": "яриа (讠), хүн (人) хослон «таних» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "讠",
+        "人"
+      ],
+      "result": "认",
+      "meaning": "таних"
+    }
+  },
+  {
+    "character": "识",
+    "pinyin": "shí",
+    "meaning": "мэдэх, таних",
+    "kind": "simple",
+    "example": {
+      "word": "认识",
+      "pinyin": "rèn shi",
+      "translation": "танилцах"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "识",
+        "label": "мэдэх, таних"
+      }
+    },
+    "story": "«мэдэх, таних» гэсэн утгатай үндсэн дүрс ханз (shí)."
+  },
+  {
+    "character": "日",
+    "pinyin": "rì",
+    "meaning": "нар, өдөр",
+    "kind": "compound",
+    "example": {
+      "word": "生日",
+      "pinyin": "shēng rì",
+      "translation": "төрсөн өдөр"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "一",
+          "label": "нэг"
+        }
+      ],
+      "result": {
+        "char": "日",
+        "label": "нар, өдөр"
+      }
+    },
+    "story": "ам (口), нэг (一) хослон «нар, өдөр» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "口",
+        "一"
+      ],
+      "result": "日",
+      "meaning": "нар, өдөр"
+    }
+  },
+  {
+    "character": "三",
+    "pinyin": "sān",
+    "meaning": "гурав",
+    "kind": "compound",
+    "example": {
+      "word": "三月",
+      "pinyin": "Sān yuè",
+      "translation": "гуравдугаар сар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "一",
+          "label": "нэг"
+        },
+        {
+          "char": "二",
+          "label": "хоёр"
+        }
+      ],
+      "result": {
+        "char": "三",
+        "label": "гурав"
+      }
+    },
+    "story": "нэг (一), хоёр (二) хослон «гурав» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "一",
+        "二"
+      ],
+      "result": "三",
+      "meaning": "гурав"
+    }
+  },
+  {
+    "character": "商",
+    "pinyin": "shāng",
+    "meaning": "худалдаа",
+    "kind": "simple",
+    "example": {
+      "word": "商店",
+      "pinyin": "shāng diàn",
+      "translation": "дэлгүүр"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "商",
+        "label": "худалдаа"
+      }
+    },
+    "story": "«худалдаа» гэсэн утгатай үндсэн дүрс ханз (shāng)."
+  },
+  {
+    "character": "店",
+    "pinyin": "diàn",
+    "meaning": "дэлгүүр",
+    "kind": "simple",
+    "example": {
+      "word": "商店",
+      "pinyin": "shāng diàn",
+      "translation": "дэлгүүр"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "店",
+        "label": "дэлгүүр"
+      }
+    },
+    "story": "«дэлгүүр» гэсэн утгатай үндсэн дүрс ханз (diàn)."
+  },
+  {
+    "character": "上",
+    "pinyin": "shàng",
+    "meaning": "дээр",
+    "kind": "simple",
+    "example": {
+      "word": "上午",
+      "pinyin": "shàng wǔ",
+      "translation": "өглөө"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "上",
+        "label": "дээр"
+      }
+    },
+    "story": "«дээр» гэсэн утгатай үндсэн дүрс ханз (shàng)."
+  },
+  {
+    "character": "午",
+    "pinyin": "wǔ",
+    "meaning": "үд",
+    "kind": "simple",
+    "example": {
+      "word": "下午",
+      "pinyin": "xià wǔ",
+      "translation": "үдээс хойш"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "午",
+        "label": "үд"
+      }
+    },
+    "story": "«үд» гэсэн утгатай үндсэн дүрс ханз (wǔ)."
+  },
+  {
+    "character": "什",
+    "pinyin": "shén",
+    "meaning": "юу (什么)",
+    "kind": "compound",
+    "example": {
+      "word": "什么",
+      "pinyin": "shén me",
+      "translation": "юу"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "亻",
+          "label": "хүн"
+        },
+        {
+          "char": "十",
+          "label": "арав"
+        }
+      ],
+      "result": {
+        "char": "什",
+        "label": "юу (什么)"
+      }
+    },
+    "story": "хүн (亻), арав (十) хослон «юу (什么)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "亻",
+        "十"
+      ],
+      "result": "什",
+      "meaning": "юу (什么)"
+    }
+  },
+  {
+    "character": "么",
+    "pinyin": "me",
+    "meaning": "(асуултын 什么)",
+    "kind": "simple",
+    "example": {
+      "word": "什么",
+      "pinyin": "shén me",
+      "translation": "юу"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "么",
+        "label": "(асуултын 什么)"
+      }
+    },
+    "story": "«(асуултын 什么)» гэсэн утгатай үндсэн дүрс ханз (me)."
+  },
+  {
+    "character": "十",
+    "pinyin": "shí",
+    "meaning": "арав",
+    "kind": "simple",
+    "example": {
+      "word": "十月",
+      "pinyin": "Shí yuè",
+      "translation": "аравдугаар сар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "十",
+        "label": "арав"
+      }
+    },
+    "story": "«арав» гэсэн утгатай үндсэн дүрс ханз (shí)."
+  },
+  {
+    "character": "候",
+    "pinyin": "hòu",
+    "meaning": "хүлээх, үе",
+    "kind": "simple",
+    "example": {
+      "word": "时候",
+      "pinyin": "shí hou",
+      "translation": "үе, цаг"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "候",
+        "label": "хүлээх, үе"
+      }
+    },
+    "story": "«хүлээх, үе» гэсэн утгатай үндсэн дүрс ханз (hòu)."
+  },
+  {
+    "character": "是",
+    "pinyin": "shì",
+    "meaning": "мөн, байх",
+    "kind": "simple",
+    "example": {
+      "word": "不是",
+      "pinyin": "bù shì",
+      "translation": "биш"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "是",
+        "label": "мөн, байх"
+      }
+    },
+    "story": "«мөн, байх» гэсэн утгатай үндсэн дүрс ханз (shì)."
+  },
+  {
+    "character": "书",
+    "pinyin": "shū",
+    "meaning": "ном",
+    "kind": "simple",
+    "example": {
+      "word": "看书",
+      "pinyin": "kàn shū",
+      "translation": "ном унших"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "书",
+        "label": "ном"
+      }
+    },
+    "story": "«ном» гэсэн утгатай үндсэн дүрс ханз (shū)."
+  },
+  {
+    "character": "谁",
+    "pinyin": "shuí",
+    "meaning": "хэн",
+    "kind": "simple",
+    "example": {
+      "word": "是谁",
+      "pinyin": "shì shéi",
+      "translation": "хэн бэ"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "谁",
+        "label": "хэн"
+      }
+    },
+    "story": "«хэн» гэсэн утгатай үндсэн дүрс ханз (shuí)."
+  },
+  {
+    "character": "水",
+    "pinyin": "shuǐ",
+    "meaning": "ус",
+    "kind": "simple",
+    "example": {
+      "word": "水果",
+      "pinyin": "shuǐ guǒ",
+      "translation": "жимс"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "水",
+        "label": "ус"
+      }
+    },
+    "story": "«ус» гэсэн утгатай үндсэн дүрс ханз (shuǐ)."
+  },
+  {
+    "character": "睡",
+    "pinyin": "shuì",
+    "meaning": "унтах",
+    "kind": "simple",
+    "example": {
+      "word": "睡觉",
+      "pinyin": "shuì jiào",
+      "translation": "унтах"
+    },
+    "level": 1,
+    "category": "biye",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "睡",
+        "label": "унтах"
+      }
+    },
+    "story": "«унтах» гэсэн утгатай үндсэн дүрс ханз (shuì)."
+  },
+  {
+    "character": "觉",
+    "pinyin": "jué",
+    "meaning": "мэдрэх, унтах",
+    "kind": "simple",
+    "example": {
+      "word": "睡觉",
+      "pinyin": "shuì jiào",
+      "translation": "унтах"
+    },
+    "level": 1,
+    "category": "biye",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "觉",
+        "label": "мэдрэх, унтах"
+      }
+    },
+    "story": "«мэдрэх, унтах» гэсэн утгатай үндсэн дүрс ханз (jué)."
+  },
+  {
+    "character": "说",
+    "pinyin": "shuō",
+    "meaning": "хэлэх",
+    "kind": "simple",
+    "example": {
+      "word": "说话",
+      "pinyin": "shuō huà",
+      "translation": "ярих"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "说",
+        "label": "хэлэх"
+      }
+    },
+    "story": "«хэлэх» гэсэн утгатай үндсэн дүрс ханз (shuō)."
+  },
+  {
+    "character": "四",
+    "pinyin": "sì",
+    "meaning": "дөрөв",
+    "kind": "simple",
+    "example": {
+      "word": "四月",
+      "pinyin": "Sì yuè",
+      "translation": "дөрөвдүгээр сар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "四",
+        "label": "дөрөв"
+      }
+    },
+    "story": "«дөрөв» гэсэн утгатай үндсэн дүрс ханз (sì)."
+  },
+  {
+    "character": "岁",
+    "pinyin": "suì",
+    "meaning": "нас",
+    "kind": "simple",
+    "example": {
+      "word": "几岁",
+      "pinyin": "jǐ suì",
+      "translation": "хэдэн настай"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "岁",
+        "label": "нас"
+      }
+    },
+    "story": "«нас» гэсэн утгатай үндсэн дүрс ханз (suì)."
+  },
+  {
+    "character": "她",
+    "pinyin": "tā",
+    "meaning": "тэр (эм)",
+    "kind": "compound",
+    "example": {
+      "word": "她们",
+      "pinyin": "tā men",
+      "translation": "тэд (эм)"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "女",
+          "label": "эмэгтэй"
+        },
+        {
+          "char": "也",
+          "label": "бас"
+        }
+      ],
+      "result": {
+        "char": "她",
+        "label": "тэр (эм)"
+      }
+    },
+    "story": "эмэгтэй (女), бас (也) хослон «тэр (эм)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "女",
+        "也"
+      ],
+      "result": "她",
+      "meaning": "тэр (эм)"
+    }
+  },
+  {
+    "character": "太",
+    "pinyin": "tài",
+    "meaning": "хэт",
+    "kind": "simple",
+    "example": {
+      "word": "太好",
+      "pinyin": "tài hǎo",
+      "translation": "хэт сайн"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "太",
+        "label": "хэт"
+      }
+    },
+    "story": "«хэт» гэсэн утгатай үндсэн дүрс ханз (tài)."
+  },
+  {
+    "character": "听",
+    "pinyin": "tīng",
+    "meaning": "сонсох",
+    "kind": "compound",
+    "example": {
+      "word": "听话",
+      "pinyin": "tīng huà",
+      "translation": "үг сонсох"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "斤",
+          "label": "сүх"
+        }
+      ],
+      "result": {
+        "char": "听",
+        "label": "сонсох"
+      }
+    },
+    "story": "ам (口), сүх (斤) хослон «сонсох» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "口",
+        "斤"
+      ],
+      "result": "听",
+      "meaning": "сонсох"
+    }
+  },
+  {
+    "character": "同",
+    "pinyin": "tóng",
+    "meaning": "адил",
+    "kind": "simple",
+    "example": {
+      "word": "同学",
+      "pinyin": "tóng xué",
+      "translation": "ангийн найз"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "同",
+        "label": "адил"
+      }
+    },
+    "story": "«адил» гэсэн утгатай үндсэн дүрс ханз (tóng)."
+  },
+  {
+    "character": "学",
+    "pinyin": "xué",
+    "meaning": "сурах",
+    "kind": "simple",
+    "example": {
+      "word": "学校",
+      "pinyin": "xué xiào",
+      "translation": "сургууль"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "学",
+        "label": "сурах"
+      }
+    },
+    "story": "«сурах» гэсэн утгатай үндсэн дүрс ханз (xué)."
+  },
+  {
+    "character": "喂",
+    "pinyin": "wèi",
+    "meaning": "хэлүү (утсанд)",
+    "kind": "simple",
+    "example": {
+      "word": "喂",
+      "pinyin": "wéi",
+      "translation": "байна уу"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "喂",
+        "label": "хэлүү (утсанд)"
+      }
+    },
+    "story": "«хэлүү (утсанд)» гэсэн утгатай үндсэн дүрс ханз (wèi)."
+  },
+  {
+    "character": "我",
+    "pinyin": "wǒ",
+    "meaning": "би",
+    "kind": "simple",
+    "example": {
+      "word": "我们",
+      "pinyin": "wǒ men",
+      "translation": "бид"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "我",
+        "label": "би"
+      }
+    },
+    "story": "«би» гэсэн утгатай үндсэн дүрс ханз (wǒ)."
+  },
+  {
+    "character": "五",
+    "pinyin": "wǔ",
+    "meaning": "тав",
+    "kind": "simple",
+    "example": {
+      "word": "五月",
+      "pinyin": "Wǔ yuè",
+      "translation": "тавдугаар сар"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "五",
+        "label": "тав"
+      }
+    },
+    "story": "«тав» гэсэн утгатай үндсэн дүрс ханз (wǔ)."
+  },
+  {
+    "character": "喜",
+    "pinyin": "xǐ",
+    "meaning": "баярлах, дуртай",
+    "kind": "simple",
+    "example": {
+      "word": "喜欢",
+      "pinyin": "xǐ huan",
+      "translation": "дуртай"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "喜",
+        "label": "баярлах, дуртай"
+      }
+    },
+    "story": "«баярлах, дуртай» гэсэн утгатай үндсэн дүрс ханз (xǐ)."
+  },
+  {
+    "character": "欢",
+    "pinyin": "huān",
+    "meaning": "баяр, дуртай",
+    "kind": "compound",
+    "example": {
+      "word": "喜欢",
+      "pinyin": "xǐ huan",
+      "translation": "дуртай"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "又",
+          "label": "гар"
+        },
+        {
+          "char": "欠",
+          "label": "ангайх"
+        }
+      ],
+      "result": {
+        "char": "欢",
+        "label": "баяр, дуртай"
+      }
+    },
+    "story": "гар (又), ангайх (欠) хослон «баяр, дуртай» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "又",
+        "欠"
+      ],
+      "result": "欢",
+      "meaning": "баяр, дуртай"
+    }
+  },
+  {
+    "character": "下",
+    "pinyin": "xià",
+    "meaning": "доор",
+    "kind": "simple",
+    "example": {
+      "word": "下午",
+      "pinyin": "xià wǔ",
+      "translation": "үдээс хойш"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "下",
+        "label": "доор"
+      }
+    },
+    "story": "«доор» гэсэн утгатай үндсэн дүрс ханз (xià)."
+  },
+  {
+    "character": "雨",
+    "pinyin": "yǔ",
+    "meaning": "бороо",
+    "kind": "simple",
+    "example": {
+      "word": "下雨",
+      "pinyin": "xià yǔ",
+      "translation": "бороо орох"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "雨",
+        "label": "бороо"
+      }
+    },
+    "story": "«бороо» гэсэн утгатай үндсэн дүрс ханз (yǔ)."
+  },
+  {
+    "character": "先",
+    "pinyin": "xiān",
+    "meaning": "эхэлж, түрүүн",
+    "kind": "simple",
+    "example": {
+      "word": "先生",
+      "pinyin": "xiān sheng",
+      "translation": "ноён, багш"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "先",
+        "label": "эхэлж, түрүүн"
+      }
+    },
+    "story": "«эхэлж, түрүүн» гэсэн утгатай үндсэн дүрс ханз (xiān)."
+  },
+  {
+    "character": "生",
+    "pinyin": "shēng",
+    "meaning": "төрөх, амьд",
+    "kind": "compound",
+    "example": {
+      "word": "学生",
+      "pinyin": "xué sheng",
+      "translation": "оюутан"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "一",
+          "label": "нэг"
+        },
+        {
+          "char": "土",
+          "label": "шороо"
+        }
+      ],
+      "result": {
+        "char": "生",
+        "label": "төрөх, амьд"
+      }
+    },
+    "story": "нэг (一), шороо (土) хослон «төрөх, амьд» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "一",
+        "土"
+      ],
+      "result": "生",
+      "meaning": "төрөх, амьд"
+    }
+  },
+  {
+    "character": "现",
+    "pinyin": "xiàn",
+    "meaning": "одоо, илрэх",
+    "kind": "compound",
+    "example": {
+      "word": "现在",
+      "pinyin": "xiàn zài",
+      "translation": "одоо"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "王",
+          "label": "хаш"
+        },
+        {
+          "char": "见",
+          "label": "харах"
+        }
+      ],
+      "result": {
+        "char": "现",
+        "label": "одоо, илрэх"
+      }
+    },
+    "story": "хаш (王), харах (见) хослон «одоо, илрэх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "王",
+        "见"
+      ],
+      "result": "现",
+      "meaning": "одоо, илрэх"
+    }
+  },
+  {
+    "character": "在",
+    "pinyin": "zài",
+    "meaning": "-д байх",
+    "kind": "compound",
+    "example": {
+      "word": "现在",
+      "pinyin": "xiàn zài",
+      "translation": "одоо"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "才",
+          "label": "авьяас"
+        },
+        {
+          "char": "土",
+          "label": "шороо"
+        }
+      ],
+      "result": {
+        "char": "在",
+        "label": "-д байх"
+      }
+    },
+    "story": "авьяас (才), шороо (土) хослон «-д байх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "才",
+        "土"
+      ],
+      "result": "在",
+      "meaning": "-д байх"
+    }
+  },
+  {
+    "character": "小",
+    "pinyin": "xiǎo",
+    "meaning": "жижиг",
+    "kind": "simple",
+    "example": {
+      "word": "小时",
+      "pinyin": "xiǎo shí",
+      "translation": "цаг"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "小",
+        "label": "жижиг"
+      }
+    },
+    "story": "«жижиг» гэсэн утгатай үндсэн дүрс ханз (xiǎo)."
+  },
+  {
+    "character": "姐",
+    "pinyin": "jiě",
+    "meaning": "эгч",
+    "kind": "compound",
+    "example": {
+      "word": "姐姐",
+      "pinyin": "jiě jie",
+      "translation": "эгч"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "女",
+          "label": "эмэгтэй"
+        },
+        {
+          "char": "且",
+          "label": "бас"
+        }
+      ],
+      "result": {
+        "char": "姐",
+        "label": "эгч"
+      }
+    },
+    "story": "эмэгтэй (女), бас (且) хослон «эгч» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "女",
+        "且"
+      ],
+      "result": "姐",
+      "meaning": "эгч"
+    }
+  },
+  {
+    "character": "些",
+    "pinyin": "xiē",
+    "meaning": "хэдэн, зарим",
+    "kind": "simple",
+    "example": {
+      "word": "一些",
+      "pinyin": "yī xiē",
+      "translation": "хэдэн"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "些",
+        "label": "хэдэн, зарим"
+      }
+    },
+    "story": "«хэдэн, зарим» гэсэн утгатай үндсэн дүрс ханз (xiē)."
+  },
+  {
+    "character": "写",
+    "pinyin": "xiě",
+    "meaning": "бичих",
+    "kind": "simple",
+    "example": {
+      "word": "写字",
+      "pinyin": "xiě zì",
+      "translation": "үсэг бичих"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "写",
+        "label": "бичих"
+      }
+    },
+    "story": "«бичих» гэсэн утгатай үндсэн дүрс ханз (xiě)."
+  },
+  {
+    "character": "谢",
+    "pinyin": "xiè",
+    "meaning": "баярлах",
+    "kind": "simple",
+    "example": {
+      "word": "谢谢",
+      "pinyin": "xiè xie",
+      "translation": "баярлалаа"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "谢",
+        "label": "баярлах"
+      }
+    },
+    "story": "«баярлах» гэсэн утгатай үндсэн дүрс ханз (xiè)."
+  },
+  {
+    "character": "星",
+    "pinyin": "xīng",
+    "meaning": "од",
+    "kind": "compound",
+    "example": {
+      "word": "星期",
+      "pinyin": "xīng qī",
+      "translation": "долоо хоног"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "生",
+          "label": "төрөх"
+        }
+      ],
+      "result": {
+        "char": "星",
+        "label": "од"
+      }
+    },
+    "story": "нар (日), төрөх (生) хослон «од» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "日",
+        "生"
+      ],
+      "result": "星",
+      "meaning": "од"
+    }
+  },
+  {
+    "character": "期",
+    "pinyin": "qī",
+    "meaning": "хугацаа, үе",
+    "kind": "compound",
+    "example": {
+      "word": "星期",
+      "pinyin": "xīng qī",
+      "translation": "долоо хоног"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "其",
+          "label": "түүний"
+        },
+        {
+          "char": "月",
+          "label": "сар"
+        }
+      ],
+      "result": {
+        "char": "期",
+        "label": "хугацаа, үе"
+      }
+    },
+    "story": "түүний (其), сар (月) хослон «хугацаа, үе» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "其",
+        "月"
+      ],
+      "result": "期",
+      "meaning": "хугацаа, үе"
+    }
+  },
+  {
+    "character": "习",
+    "pinyin": "xí",
+    "meaning": "сурах, дадал",
+    "kind": "simple",
+    "example": {
+      "word": "学习",
+      "pinyin": "xué xí",
+      "translation": "суралцах"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "习",
+        "label": "сурах, дадал"
+      }
+    },
+    "story": "«сурах, дадал» гэсэн утгатай үндсэн дүрс ханз (xí)."
+  },
+  {
+    "character": "校",
+    "pinyin": "xiào",
+    "meaning": "сургууль",
+    "kind": "compound",
+    "example": {
+      "word": "学校",
+      "pinyin": "xué xiào",
+      "translation": "сургууль"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "木",
+          "label": "мод"
+        },
+        {
+          "char": "交",
+          "label": "огтлох"
+        }
+      ],
+      "result": {
+        "char": "校",
+        "label": "сургууль"
+      }
+    },
+    "story": "мод (木), огтлох (交) хослон «сургууль» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "木",
+        "交"
+      ],
+      "result": "校",
+      "meaning": "сургууль"
+    }
+  },
+  {
+    "character": "一",
+    "pinyin": "yī",
+    "meaning": "нэг",
+    "kind": "simple",
+    "example": {
+      "word": "一起",
+      "pinyin": "yī qǐ",
+      "translation": "хамт"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "一",
+        "label": "нэг"
+      }
+    },
+    "story": "«нэг» гэсэн утгатай үндсэн дүрс ханз (yī)."
+  },
+  {
+    "character": "衣",
+    "pinyin": "yī",
+    "meaning": "хувцас",
+    "kind": "simple",
+    "example": {
+      "word": "衣服",
+      "pinyin": "yī fu",
+      "translation": "хувцас"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "衣",
+        "label": "хувцас"
+      }
+    },
+    "story": "«хувцас» гэсэн утгатай үндсэн дүрс ханз (yī)."
+  },
+  {
+    "character": "服",
+    "pinyin": "fú",
+    "meaning": "хувцас, дагах",
+    "kind": "simple",
+    "example": {
+      "word": "衣服",
+      "pinyin": "yī fu",
+      "translation": "хувцас"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "服",
+        "label": "хувцас, дагах"
+      }
+    },
+    "story": "«хувцас, дагах» гэсэн утгатай үндсэн дүрс ханз (fú)."
+  },
+  {
+    "character": "医",
+    "pinyin": "yī",
+    "meaning": "эмчлэх, эмч",
+    "kind": "simple",
+    "example": {
+      "word": "医院",
+      "pinyin": "yī yuàn",
+      "translation": "эмнэлэг"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "医",
+        "label": "эмчлэх, эмч"
+      }
+    },
+    "story": "«эмчлэх, эмч» гэсэн утгатай үндсэн дүрс ханз (yī)."
+  },
+  {
+    "character": "院",
+    "pinyin": "yuàn",
+    "meaning": "хашаа, газар",
+    "kind": "compound",
+    "example": {
+      "word": "医院",
+      "pinyin": "yī yuàn",
+      "translation": "эмнэлэг"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "阝",
+          "label": "толгод"
+        },
+        {
+          "char": "完",
+          "label": "бүрэн"
+        }
+      ],
+      "result": {
+        "char": "院",
+        "label": "хашаа, газар"
+      }
+    },
+    "story": "толгод (阝), бүрэн (完) хослон «хашаа, газар» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "阝",
+        "完"
+      ],
+      "result": "院",
+      "meaning": "хашаа, газар"
+    }
+  },
+  {
+    "character": "椅",
+    "pinyin": "yǐ",
+    "meaning": "сандал",
+    "kind": "compound",
+    "example": {
+      "word": "椅子",
+      "pinyin": "yǐ zi",
+      "translation": "сандал"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "木",
+          "label": "мод"
+        },
+        {
+          "char": "奇",
+          "label": "сонин"
+        }
+      ],
+      "result": {
+        "char": "椅",
+        "label": "сандал"
+      }
+    },
+    "story": "мод (木), сонин (奇) хослон «сандал» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "木",
+        "奇"
+      ],
+      "result": "椅",
+      "meaning": "сандал"
+    }
+  },
+  {
+    "character": "有",
+    "pinyin": "yǒu",
+    "meaning": "байх, эзэмших",
+    "kind": "simple",
+    "example": {
+      "word": "有点",
+      "pinyin": "yǒu diǎn",
+      "translation": "жаахан"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "有",
+        "label": "байх, эзэмших"
+      }
+    },
+    "story": "«байх, эзэмших» гэсэн утгатай үндсэн дүрс ханз (yǒu)."
+  },
+  {
+    "character": "月",
+    "pinyin": "yuè",
+    "meaning": "сар",
+    "kind": "simple",
+    "example": {
+      "word": "月亮",
+      "pinyin": "yuè liang",
+      "translation": "сар (тэнгэрийн)"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "月",
+        "label": "сар"
+      }
+    },
+    "story": "«сар» гэсэн утгатай үндсэн дүрс ханз (yuè)."
+  },
+  {
+    "character": "再",
+    "pinyin": "zài",
+    "meaning": "дахин",
+    "kind": "simple",
+    "example": {
+      "word": "再见",
+      "pinyin": "zài jiàn",
+      "translation": "баяртай"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "再",
+        "label": "дахин"
+      }
+    },
+    "story": "«дахин» гэсэн утгатай үндсэн дүрс ханз (zài)."
+  },
+  {
+    "character": "怎",
+    "pinyin": "zěn",
+    "meaning": "яаж",
+    "kind": "simple",
+    "example": {
+      "word": "怎么",
+      "pinyin": "zěn me",
+      "translation": "яаж"
+    },
+    "level": 1,
+    "category": "setgel",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "怎",
+        "label": "яаж"
+      }
+    },
+    "story": "«яаж» гэсэн утгатай үндсэн дүрс ханз (zěn)."
+  },
+  {
+    "character": "样",
+    "pinyin": "yàng",
+    "meaning": "хэлбэр, янз",
+    "kind": "compound",
+    "example": {
+      "word": "怎么样",
+      "pinyin": "zěn me yàng",
+      "translation": "ямар вэ"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "木",
+          "label": "мод"
+        },
+        {
+          "char": "羊",
+          "label": "хонь"
+        }
+      ],
+      "result": {
+        "char": "样",
+        "label": "хэлбэр, янз"
+      }
+    },
+    "story": "мод (木), хонь (羊) хослон «хэлбэр, янз» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "木",
+        "羊"
+      ],
+      "result": "样",
+      "meaning": "хэлбэр, янз"
+    }
+  },
+  {
+    "character": "这",
+    "pinyin": "zhè",
+    "meaning": "энэ",
+    "kind": "compound",
+    "example": {
+      "word": "这个",
+      "pinyin": "zhè ge",
+      "translation": "энэ нэг"
+    },
+    "level": 1,
+    "category": "uil",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "辶",
+          "label": "явах"
+        },
+        {
+          "char": "文",
+          "label": "бичиг"
+        }
+      ],
+      "result": {
+        "char": "这",
+        "label": "энэ"
+      }
+    },
+    "story": "явах (辶), бичиг (文) хослон «энэ» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "辶",
+        "文"
+      ],
+      "result": "这",
+      "meaning": "энэ"
+    }
+  },
+  {
+    "character": "中",
+    "pinyin": "zhōng",
+    "meaning": "дунд, төв",
+    "kind": "simple",
+    "example": {
+      "word": "中国",
+      "pinyin": "Zhōng guó",
+      "translation": "Хятад"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "中",
+        "label": "дунд, төв"
+      }
+    },
+    "story": "«дунд, төв» гэсэн утгатай үндсэн дүрс ханз (zhōng)."
+  },
+  {
+    "character": "国",
+    "pinyin": "guó",
+    "meaning": "улс",
+    "kind": "simple",
+    "example": {
+      "word": "中国",
+      "pinyin": "Zhōng guó",
+      "translation": "Хятад"
+    },
+    "level": 1,
+    "category": "zuils",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "国",
+        "label": "улс"
+      }
+    },
+    "story": "«улс» гэсэн утгатай үндсэн дүрс ханз (guó)."
+  },
+  {
+    "character": "住",
+    "pinyin": "zhù",
+    "meaning": "амьдрах",
+    "kind": "compound",
+    "example": {
+      "word": "住院",
+      "pinyin": "zhù yuàn",
+      "translation": "эмнэлэгт хэвтэх"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "亻",
+          "label": "хүн"
+        },
+        {
+          "char": "主",
+          "label": "эзэн"
+        }
+      ],
+      "result": {
+        "char": "住",
+        "label": "амьдрах"
+      }
+    },
+    "story": "хүн (亻), эзэн (主) хослон «амьдрах» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "亻",
+        "主"
+      ],
+      "result": "住",
+      "meaning": "амьдрах"
+    }
+  },
+  {
+    "character": "桌",
+    "pinyin": "zhuō",
+    "meaning": "ширээ",
+    "kind": "compound",
+    "example": {
+      "word": "桌子",
+      "pinyin": "zhuō zi",
+      "translation": "ширээ"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "卓",
+          "label": "онцгой"
+        },
+        {
+          "char": "木",
+          "label": "мод"
+        }
+      ],
+      "result": {
+        "char": "桌",
+        "label": "ширээ"
+      }
+    },
+    "story": "онцгой (卓), мод (木) хослон «ширээ» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "卓",
+        "木"
+      ],
+      "result": "桌",
+      "meaning": "ширээ"
+    }
+  },
+  {
+    "character": "昨",
+    "pinyin": "zuó",
+    "meaning": "өчигдөр",
+    "kind": "simple",
+    "example": {
+      "word": "昨天",
+      "pinyin": "zuó tiān",
+      "translation": "өчигдөр"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "昨",
+        "label": "өчигдөр"
+      }
+    },
+    "story": "«өчигдөр» гэсэн утгатай үндсэн дүрс ханз (zuó)."
+  },
+  {
+    "character": "坐",
+    "pinyin": "zuò",
+    "meaning": "суух",
+    "kind": "compound",
+    "example": {
+      "word": "请坐",
+      "pinyin": "qǐng zuò",
+      "translation": "сууна уу"
+    },
+    "level": 1,
+    "category": "baigal",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [
+        {
+          "char": "从",
+          "label": "хоёр хүн"
+        },
+        {
+          "char": "土",
+          "label": "шороо"
+        }
+      ],
+      "result": {
+        "char": "坐",
+        "label": "суух"
+      }
+    },
+    "story": "хоёр хүн (从), шороо (土) хослон «суух» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "从",
+        "土"
+      ],
+      "result": "坐",
+      "meaning": "суух"
+    }
+  },
+  {
+    "character": "做",
+    "pinyin": "zuò",
+    "meaning": "хийх",
+    "kind": "simple",
+    "example": {
+      "word": "做饭",
+      "pinyin": "zuò fàn",
+      "translation": "хоол хийх"
+    },
+    "level": 1,
+    "category": "xun",
+    "tags": [
+      "hsk1"
+    ],
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "做",
+        "label": "хийх"
+      }
+    },
+    "story": "«хийх» гэсэн утгатай үндсэн дүрс ханз (zuò)."
   }
 ]

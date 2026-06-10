@@ -27,7 +27,11 @@ done
 dl SourceHanSansCN-Regular.otf "https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/CN/SourceHanSansCN-Regular.otf"
 dl SourceHanSansCN-Bold.otf    "https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/CN/SourceHanSansCN-Bold.otf"
 
-# Source Han Serif CN Bold — calligraphic look for the big character
+# Source Han Serif CN Bold — fallback serif for the big character
 dl SourceHanSerifCN-Bold.otf "https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/CN/SourceHanSerifCN-Bold.otf"
+
+# LXGW WenKai (霞鹜文楷) Medium — clean textbook-style kaishu. Used for ALL
+# Chinese characters so they read like neat, elegant handwriting. OFL-licensed.
+dl LXGWWenKai-Medium.ttf "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/LXGWWenKai-Medium.ttf"
 
 echo "✓ Done."

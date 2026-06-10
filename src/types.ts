@@ -13,13 +13,23 @@ export interface CardData {
   /** Гол иероглиф, ж: "林" */
   character: string;
 
+  /**
+   * Картын төрөл:
+   * - 'compound' (default): A+B=C задаргаатай (林 = 木+木).
+   * - 'simple': задрахгүй үндсэн дүрс (象形, ж: 人 日 山) — A+B=C мөр харуулахгүй.
+   */
+  kind?: 'compound' | 'simple';
+
   /** Пиньин, ж: "lín" */
   pinyin: string;
 
   /** Утга монгол, ж: "ой" */
   meaning: string;
 
-  /** Бүтэц: 2-3 хэсэг → үр дүн. ж: 木 + 木 = 林 */
+  /**
+   * Бүтэц: 2-3 хэсэг → үр дүн. ж: 木 + 木 = 林.
+   * kind='simple' үед parts хоосон байж болно (template зөвхөн үр дүнг харуулна).
+   */
   structure: {
     parts: Array<{ char: string; label: string }>;
     result: { char: string; label: string };
@@ -27,6 +37,12 @@ export interface CardData {
 
   /** Санааны түүх (тайлбар текст) */
   story: string;
+
+  /**
+   * Заавал биш: бүтэц картын 2-р мөрөнд харуулах эмоди томьёо.
+   * Ж: "☀️ + 🌙 = 💡" → 明-ийн утгыг визуалаар бэхжүүлнэ.
+   */
+  storyFormula?: string;
 
   /** Жишээ үг */
   example: {
@@ -59,4 +75,56 @@ export interface CardData {
     evolution?: string;
     icon?: string;
   };
+
+  // ─── Систем: түвшин / ангилал / шошго (багц зохион байгуулахад) ───
+
+  /** Сурах түвшин: 1 = Анхан, 2 = Дунд, 3 = Гүнзгий */
+  level?: CardLevel;
+
+  /** Утгын ангилал (нэг карт = нэг үндсэн ангилал) */
+  category?: CardCategory;
+
+  /**
+   * Нэмэлт шошго — багц/шүүлтэд. Ж: "triple" (森众炎晶品 шиг X+X+X),
+   * "radical:水" (氵 гэр бүл), "hsk1" гэх мэт.
+   */
+  tags?: string[];
+}
+
+/** Сурах түвшин */
+export type CardLevel = 1 | 2 | 3;
+
+/** Утгын ангилал — slug. Монгол нэрс packs.json дотор. */
+export type CardCategory =
+  | 'baigal'  // Байгаль (мод, ой, нар, цаг, ургамал)
+  | 'xun'     // Хүн ба гэр бүл (хүмүүс, төлөөний үг)
+  | 'biye'    // Бие ба эрхтэн
+  | 'uil'     // Үйл хөдлөл
+  | 'setgel'  // Сэтгэл ба бодол
+  | 'chanar'  // Шинж чанар
+  | 'zuils';  // Зүйл ба ойлголт
+
+/** Сурах багц (курацлагдсан, эрэмбэтэй ханзны цуглуулга) */
+export interface Pack {
+  /** slug, ж: "people-basics" */
+  id: string;
+  /** Монгол гарчиг, ж: "Хүн ба гэр бүл" */
+  title: string;
+  /** Богино тайлбар */
+  description: string;
+  /** Үндсэн түвшин */
+  level: CardLevel;
+  /** Үндсэн ангилал */
+  category: CardCategory;
+  /** Эмоди дүрс (UI-д) */
+  icon?: string;
+  /** Багц доторх ханзнууд — сурах эрэмбээр */
+  characters: string[];
+}
+
+/** Түвшин/ангилал/багцын манифест (public/packs.json) */
+export interface PackManifest {
+  levels: Array<{ id: CardLevel; slug: string; name: string; description: string }>;
+  categories: Array<{ slug: CardCategory; name: string; icon: string }>;
+  packs: Pack[];
 }

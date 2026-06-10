@@ -18,6 +18,34 @@ export interface RenderOptions {
   noAI?: boolean;
 }
 
+// In-memory cache of Twemoji SVG data URLs (avoid refetching across renders).
+const emojiCache = new Map<string, string>();
+
+/** Satori callback that swaps emoji glyphs for Twemoji SVG images. */
+async function loadAdditionalAsset(code: string, segment: string): Promise<string> {
+  if (code !== 'emoji') return '';
+  if (emojiCache.has(segment)) return emojiCache.get(segment)!;
+  const codepoint = [...segment]
+    .map((ch) => ch.codePointAt(0)!.toString(16))
+    .filter((cp) => cp !== 'fe0f') // variation selector — strip
+    .join('-');
+  const url = `https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/${codepoint}.svg`;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) {
+      emojiCache.set(segment, '');
+      return '';
+    }
+    const svg = await res.text();
+    const dataUrl = `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
+    emojiCache.set(segment, dataUrl);
+    return dataUrl;
+  } catch {
+    emojiCache.set(segment, '');
+    return '';
+  }
+}
+
 /** Full pipeline: data → resolved images → JSX → SVG → PNG buffer. */
 export async function renderCard(data: CardData, opts: RenderOptions = {}): Promise<Buffer> {
   const images: ResolvedImages = await resolveImages(data, { allowOpenAI: !opts.noAI });
@@ -36,6 +64,7 @@ export async function renderWithImages(
     width: CARD_WIDTH,
     height: CARD_HEIGHT,
     fonts,
+    loadAdditionalAsset,
   });
 
   const targetW = opts.width ?? CARD_WIDTH;
@@ -71,5 +100,6 @@ export async function renderSvg(data: CardData, opts: { noAI?: boolean } = {}): 
     width: CARD_WIDTH,
     height: CARD_HEIGHT,
     fonts,
+    loadAdditionalAsset,
   });
 }

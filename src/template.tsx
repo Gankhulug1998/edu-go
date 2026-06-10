@@ -42,6 +42,7 @@ export function Card({ data, images = {} }: { data: CardData; images?: ResolvedI
         display: 'flex',
         flexDirection: 'column',
         backgroundColor: C.bg,
+        backgroundImage: 'linear-gradient(180deg, #F5F9FE 0%, #E7EFFB 100%)',
         padding: 32,
         fontFamily: 'Inter, NotoSC',
         color: C.textDark,
@@ -85,7 +86,7 @@ export function Card({ data, images = {} }: { data: CardData; images?: ResolvedI
             <div
               style={{
                 display: 'flex',
-                fontFamily: 'NotoSerif, NotoSC',
+                fontFamily: 'BrushCN, NotoSC',
                 fontSize: 260,
                 lineHeight: 1,
                 color: C.textDark,
@@ -98,7 +99,11 @@ export function Card({ data, images = {} }: { data: CardData; images?: ResolvedI
             >
               {data.character}
             </div>
-            <StructureCard parts={data.structure.parts} result={data.structure.result} />
+            {data.kind === 'simple' || data.structure.parts.length < 2 ? (
+              <SimpleCard result={data.structure.result} formula={data.storyFormula} />
+            ) : (
+              <StructureCard parts={data.structure.parts} result={data.structure.result} formula={data.storyFormula} />
+            )}
           </div>
 
           {/* Pronunciation + meaning row */}
@@ -145,14 +150,70 @@ export function Card({ data, images = {} }: { data: CardData; images?: ResolvedI
 }
 
 // ────────────────────────────────────────────────────────────────────────────
+// SIMPLE CARD: ҮНДСЭН ДҮРС — задрахгүй ханз (象形), A+B=C мөргүй
+// ────────────────────────────────────────────────────────────────────────────
+function SimpleCard({
+  result,
+  formula,
+}: {
+  result: CardData['structure']['result'];
+  formula?: string;
+}) {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundColor: C.primarySoft,
+        border: `2px solid ${C.border}`,
+        borderRadius: 22,
+        padding: '20px 28px',
+        gap: 14,
+        flex: 1,
+        minHeight: 260,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <div style={{ display: 'flex', color: C.primary, fontWeight: 700, fontSize: 22, letterSpacing: 1.2 }}>
+        ҮНДСЭН ДҮРС
+      </div>
+      <span style={{ fontFamily: 'BrushCN, NotoSC', fontSize: 120, color: C.textDark, fontWeight: 700, lineHeight: 1 }}>
+        {result.char}
+      </span>
+      <div
+        style={{
+          display: 'flex',
+          fontSize: 18,
+          color: C.primary,
+          padding: '5px 18px',
+          borderRadius: 999,
+          border: `1.5px solid ${C.primary}`,
+          backgroundColor: '#FFFFFF',
+        }}
+      >
+        {result.label}
+      </div>
+      {formula ? (
+        <div style={{ display: 'flex', justifyContent: 'center', fontSize: 30, color: C.textMid, marginTop: 2 }}>
+          {formula}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────────────────
 // STRUCTURE CARD: БҮТЭЦ — parts + result with labels
 // ────────────────────────────────────────────────────────────────────────────
 function StructureCard({
   parts,
   result,
+  formula,
 }: {
   parts: CardData['structure']['parts'];
   result: CardData['structure']['result'];
+  formula?: string;
 }) {
   const nodes: any[] = [];
   parts.forEach((p, i) => {
@@ -202,6 +263,20 @@ function StructureCard({
       >
         {nodes}
       </div>
+      {formula ? (
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            fontSize: 30,
+            color: C.textMid,
+            marginTop: 4,
+            letterSpacing: 1,
+          }}
+        >
+          {formula}
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -209,7 +284,7 @@ function StructureCard({
 function PartGlyph({ char, label }: { char: string; label: string }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
-      <span style={{ fontFamily: 'NotoSC', fontSize: 74, color: C.textDark, fontWeight: 700, lineHeight: 1 }}>
+      <span style={{ fontFamily: 'BrushCN, NotoSC', fontSize: 74, color: C.textDark, fontWeight: 700, lineHeight: 1 }}>
         {char}
       </span>
       <div
@@ -390,9 +465,9 @@ function StoryCard({
 function EvolutionFallback({ firstPart, result }: { firstPart: string; result: string }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 10 }}>
-      <span style={{ fontFamily: 'NotoSC', fontSize: 44, fontWeight: 700, color: C.green }}>{firstPart}</span>
+      <span style={{ fontFamily: 'BrushCN, NotoSC', fontSize: 44, fontWeight: 700, color: C.green }}>{firstPart}</span>
       <img src={icons.arrowRight(C.primary)} width={28} height={28} />
-      <span style={{ fontFamily: 'NotoSC', fontSize: 44, fontWeight: 700, color: C.green }}>{result}</span>
+      <span style={{ fontFamily: 'BrushCN, NotoSC', fontSize: 44, fontWeight: 700, color: C.green }}>{result}</span>
     </div>
   );
 }
@@ -417,7 +492,7 @@ function ExampleCard({ example }: { example: CardData['example'] }) {
       <SectionHeader color={C.green} bgIcon={C.green} iconSrc={icons.book('#FFFFFF')} title="ЖИШЭЭ ҮГ" />
       <div style={{ display: 'flex', flexDirection: 'column', flex: 1, justifyContent: 'center', gap: 8 }}>
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 18 }}>
-          <span style={{ fontFamily: 'NotoSC', fontSize: 78, fontWeight: 700, color: C.textDark, lineHeight: 1 }}>
+          <span style={{ fontFamily: 'BrushCN, NotoSC', fontSize: 78, fontWeight: 700, color: C.textDark, lineHeight: 1 }}>
             {example.word}
           </span>
           <span style={{ fontSize: 38, color: C.textMid, fontWeight: 400 }}>= {example.translation}</span>
@@ -489,7 +564,7 @@ function MnemonicBar({ parts, result, meaning }: { parts: string[]; result: stri
   const tokens: any[] = [];
   parts.forEach((p, i) => {
     tokens.push(
-      <span key={`mp${i}`} style={{ fontFamily: 'NotoSC', fontSize: 36, fontWeight: 700, color: C.primaryDark }}>
+      <span key={`mp${i}`} style={{ fontFamily: 'BrushCN, NotoSC', fontSize: 36, fontWeight: 700, color: C.primaryDark }}>
         {p}
       </span>
     );
@@ -507,7 +582,7 @@ function MnemonicBar({ parts, result, meaning }: { parts: string[]; result: stri
     </span>
   );
   tokens.push(
-    <span key="mres" style={{ fontFamily: 'NotoSC', fontSize: 36, fontWeight: 700, color: C.primaryDark }}>
+    <span key="mres" style={{ fontFamily: 'BrushCN, NotoSC', fontSize: 36, fontWeight: 700, color: C.primaryDark }}>
       {result}
     </span>
   );

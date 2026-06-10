@@ -11,7 +11,13 @@ function getOpenAI(): OpenAI {
   return _openai;
 }
 
-const MODEL = (process.env.OPENAI_IMAGE_MODEL ?? 'gpt-image-1') as 'gpt-image-1' | 'dall-e-3';
+const MODEL = (process.env.OPENAI_IMAGE_MODEL ?? 'gpt-image-2') as
+  | 'gpt-image-2'
+  | 'gpt-image-1'
+  | 'dall-e-3';
+
+/** gpt-image-* models return b64_json natively and reject the response_format param. */
+const isGptImage = MODEL === 'gpt-image-1' || MODEL === 'gpt-image-2';
 
 // ────────────────────────────────────────────────────────────────────────────
 // Public: resolve all 3 image slots into data-URLs ready for the template
@@ -136,7 +142,7 @@ async function generateOpenAI(prompt: string, size: '1024x1024' | '1024x1536' | 
     prompt,
     size: MODEL === 'dall-e-3' ? (size === '1024x1024' ? '1024x1024' : '1792x1024') : size,
     n: 1,
-    ...(MODEL === 'gpt-image-1' ? {} : { response_format: 'b64_json' as const }),
+    ...(isGptImage ? {} : { response_format: 'b64_json' as const }),
   } as any);
 
   const first = res.data?.[0];

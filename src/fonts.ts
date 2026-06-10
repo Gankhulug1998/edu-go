@@ -38,8 +38,15 @@ export function loadFonts(): SatoriOptions['fonts'] {
     { name: 'Inter', data: load(`Inter-${subset}-400.woff`), weight: 400 as const, style: 'normal' as const },
     { name: 'Inter', data: load(`Inter-${subset}-700.woff`), weight: 700 as const, style: 'normal' as const },
   ]);
+  // LXGW WenKai (霞鹜文楷) — clean textbook-style kaishu for the Chinese
+  // characters: elegant handwriting feel but neat and legible. Single-weight
+  // file registered for both 400 and 700 so `fontWeight: 700` glyphs resolve
+  // to it instead of falling back.
+  const brush = load('LXGWWenKai-Medium.ttf');
   cache = [
     ...interFonts,
+    { name: 'BrushCN',  data: brush,                                 weight: 400, style: 'normal' },
+    { name: 'BrushCN',  data: brush,                                 weight: 700, style: 'normal' },
     { name: 'NotoSC',   data: load('SourceHanSansCN-Regular.otf'),   weight: 400, style: 'normal' },
     { name: 'NotoSC',   data: load('SourceHanSansCN-Bold.otf'),      weight: 700, style: 'normal' },
     { name: 'NotoSerif', data: load('SourceHanSerifCN-Bold.otf'),    weight: 700, style: 'normal' },
