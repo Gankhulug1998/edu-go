@@ -22,7 +22,7 @@
     "story": "Нэг мод бол 木. Хоёр мод нийлээд 林 буюу ой, төгөл гэсэн санаа болно.",
     "example": {
       "word": "森林",
-      "pinyin": "sēnlín",
+      "pinyin": "sēn lín",
       "translation": "ой мод"
     },
     "mnemonic": {
@@ -78,7 +78,7 @@
     "story": "Гурван мод нэг дор нийлээд 森 — маш олон модтой, нягт бөглөө ой гэсэн утга болно.",
     "example": {
       "word": "森林",
-      "pinyin": "sēnlín",
+      "pinyin": "sēn lín",
       "translation": "ой мод"
     },
     "mnemonic": {
@@ -132,7 +132,7 @@
     "story": "Тэнгэрт хоёр гэрэлтүүлэгч — нар, сар хамт байвал орчин маш гэгээтэй, тод гэрэлтэй болно. 日+月=明.",
     "example": {
       "word": "明天",
-      "pinyin": "míngtiān",
+      "pinyin": "míng tiān",
       "translation": "маргааш"
     },
     "mnemonic": {
@@ -185,7 +185,7 @@
     "story": "Ядарсан хүн (亻) том мод (木) дор тулж амарна. 亻+木=休, амрах гэсэн утга.",
     "example": {
       "word": "休息",
-      "pinyin": "xiūxi",
+      "pinyin": "xiū xi",
       "translation": "амрах, чөлөө"
     },
     "mnemonic": {
@@ -290,7 +290,7 @@
     "story": "Гэрийн дээвэр (宀) дор эмэгтэй (女) сууж байна — аюулгүй, тайван амгалан. 宀+女=安.",
     "example": {
       "word": "安全",
-      "pinyin": "ānquán",
+      "pinyin": "ān quán",
       "translation": "аюулгүй"
     },
     "mnemonic": {
@@ -342,7 +342,7 @@
     "story": "Эрт цагт дээвэр (宀) дор тэжээвэр гахайтай (豕) айл бол баян, бүрэн бүтэн гэрийн дүр байсан. 宀+豕=家.",
     "example": {
       "word": "家人",
-      "pinyin": "jiārén",
+      "pinyin": "jiā rén",
       "translation": "гэр бүл"
     },
     "mnemonic": {
@@ -395,7 +395,7 @@
     "story": "Тариалангийн талбай (田) дээр хүч (力) гарган ажилладаг хүн — эрэгтэй гэсэн утга. 田+力=男.",
     "example": {
       "word": "男人",
-      "pinyin": "nánrén",
+      "pinyin": "nán rén",
       "translation": "эрэгтэй хүн"
     },
     "mnemonic": {
@@ -447,7 +447,7 @@
     "story": "Нэг хүний (人) араас нөгөө хүн (人) дагаж явна — 'дагах' гэсэн санааны дүрс. 人+人=从.",
     "example": {
       "word": "从来",
-      "pinyin": "cónglái",
+      "pinyin": "cóng lái",
       "translation": "урьд хэзээ ч"
     },
     "mnemonic": {
@@ -503,7 +503,7 @@
     "story": "Гурван хүн (人+人+人) нэг дор цугласан — олон түмэн, хурал гэсэн утга. 人+人+人=众.",
     "example": {
       "word": "群众",
-      "pinyin": "qúnzhòng",
+      "pinyin": "qún zhòng",
       "translation": "олон түмэн"
     },
     "mnemonic": {
@@ -557,7 +557,7 @@
     "story": "Гал (火) дээр гал (火) давхарласан — маш халуун, шатсан халалт гэсэн утга. 火+火=炎.",
     "example": {
       "word": "炎热",
-      "pinyin": "yánrè",
+      "pinyin": "yán rè",
       "translation": "маш халуун"
     },
     "mnemonic": {
@@ -610,7 +610,7 @@
     "story": "Уул (山) дээгүүр өөр уул цухуйж 'гарч ирэх' дүрс. 山+山=出, гарах гэсэн утга.",
     "example": {
       "word": "出门",
-      "pinyin": "chūmén",
+      "pinyin": "chū mén",
       "translation": "гэрээс гарах"
     },
     "mnemonic": {
@@ -661,7 +661,7 @@
     "story": "Модны (木) доод хэсэг дээр нэмэлт шугам (一) тавьсан — үндэс, гарал, эх гэсэн утга. 木+一=本.",
     "example": {
       "word": "日本",
-      "pinyin": "Rìběn",
+      "pinyin": "Rì běn",
       "translation": "Япон"
     },
     "mnemonic": {
@@ -713,7 +713,7 @@
     "story": "Модны (木) дээд талд шугам (一) тавьсан — оройн үзүүр, төгсгөл гэсэн утга. 木+一=末.",
     "example": {
       "word": "周末",
-      "pinyin": "zhōumò",
+      "pinyin": "zhōu mò",
       "translation": "амралтын өдөр"
     },
     "mnemonic": {
@@ -764,7 +764,7 @@
     "story": "Нар (日) үерт мандаж өвсний зурвас (十) дээгүүр гарч ирэх — өглөө эрт цаг. 日+十=早.",
     "example": {
       "word": "早上",
-      "pinyin": "zǎoshang",
+      "pinyin": "zǎo shang",
       "translation": "өглөө"
     },
     "mnemonic": {
@@ -816,7 +816,7 @@
     "story": "Нар (日) уулын зурвасаас (一) дээш гарч ирж байна — үүр цайх. 日+一=旦.",
     "example": {
       "word": "元旦",
-      "pinyin": "Yuándàn",
+      "pinyin": "Yuán dàn",
       "translation": "Шинэ жилийн өдөр"
     },
     "mnemonic": {
@@ -867,7 +867,7 @@
     "story": "Дээвэр (宀) дор хүүхэд (子) суугаа байгаа — гэртээ үсэг бичиг сурч буйн бэлгэдэл. 宀+子=字.",
     "example": {
       "word": "汉字",
-      "pinyin": "hànzì",
+      "pinyin": "hàn zì",
       "translation": "хятад үсэг"
     },
     "mnemonic": {
@@ -920,7 +920,7 @@
     "story": "Хүний (亻) хэлсэн үгэнд (言) итгэхэд итгэл. Бичсэн үг бол захидал. 亻+言=信.",
     "example": {
       "word": "相信",
-      "pinyin": "xiāngxìn",
+      "pinyin": "xiāng xìn",
       "translation": "итгэх"
     },
     "mnemonic": {
@@ -972,7 +972,7 @@
     "story": "Шувууны (鸟) амнаас (口) дуу гарч байна — донгодох, жиргэх гэсэн утга. 口+鸟=鸣.",
     "example": {
       "word": "鸣叫",
-      "pinyin": "míngjiào",
+      "pinyin": "míng jiào",
       "translation": "донгодох"
     },
     "mnemonic": {
@@ -1023,7 +1023,7 @@
     "story": "Гараа (手) нүдний (目) дээр тавьж нарнаас халхалж харна — 'харах' үйлдэл. 手+目=看.",
     "example": {
       "word": "看见",
-      "pinyin": "kànjiàn",
+      "pinyin": "kàn jiàn",
       "translation": "харах"
     },
     "mnemonic": {
@@ -1076,7 +1076,7 @@
     "story": "Зүрхэн (心) дотор аливаа зүйлийн дүр (相) гарч ирэхэд бодол төрнө. 相+心=想.",
     "example": {
       "word": "想法",
-      "pinyin": "xiǎngfǎ",
+      "pinyin": "xiǎng fǎ",
       "translation": "санаа, бодол"
     },
     "mnemonic": {
@@ -1128,7 +1128,7 @@
     "story": "Зүрхэн (心) дээр бодлын талбай (田) дэлгэгдсэн — гүн боддог байдал. 田+心=思.",
     "example": {
       "word": "思考",
-      "pinyin": "sīkǎo",
+      "pinyin": "sī kǎo",
       "translation": "эргэцүүлэн бодох"
     },
     "mnemonic": {
@@ -1179,7 +1179,7 @@
     "story": "Хөл (足) утгат радикал — хурдан хөдлөх үйлдэл. Баруун тал 包 (bāo) дуудлагыг өгнө. 足+包=跑.",
     "example": {
       "word": "跑步",
-      "pinyin": "pǎobù",
+      "pinyin": "pǎo bù",
       "translation": "гүйх дасгал"
     },
     "mnemonic": {
@@ -1231,7 +1231,7 @@
     "story": "Хөл (足) утгат, баруун тал 兆 (zhào) дуудлагын зөвлөмж. 足+兆=跳, үсрэх гэсэн утга.",
     "example": {
       "word": "跳舞",
-      "pinyin": "tiàowǔ",
+      "pinyin": "tiào wǔ",
       "translation": "бүжиглэх"
     },
     "mnemonic": {
@@ -1283,7 +1283,7 @@
     "story": "Хулсны (竹) навч салхинд найгаж 'нугардаг' (夭) шиг хүний ам инээхэд нугардаг. 竹+夭=笑.",
     "example": {
       "word": "微笑",
-      "pinyin": "wēixiào",
+      "pinyin": "wēi xiào",
       "translation": "инээмсэглэх"
     },
     "mnemonic": {
@@ -1386,7 +1386,7 @@
     "story": "Ус (氵) утгат радикал — голын хэлбэрийг илэрхийлнэ. 可 (kě) дуудлагын зөвлөмж. 氵+可=河.",
     "example": {
       "word": "黄河",
-      "pinyin": "Huánghé",
+      "pinyin": "Huáng Hé",
       "translation": "Шар мөрөн"
     },
     "mnemonic": {
@@ -1437,7 +1437,7 @@
     "story": "Олон голын ус (氵) нэг газар цугларч асар их ус — далай. 每 нь дуудлагын зөвлөмж. 氵+每=海.",
     "example": {
       "word": "大海",
-      "pinyin": "dàhǎi",
+      "pinyin": "dà hǎi",
       "translation": "далай"
     },
     "mnemonic": {
@@ -1488,7 +1488,7 @@
     "story": "Том (大) бүдүүн хонь (羊) — эртний Хятадад баялаг, үзэсгэлэнгийн бэлгэдэл байсан. 羊+大=美.",
     "example": {
       "word": "美丽",
-      "pinyin": "měilì",
+      "pinyin": "měi lì",
       "translation": "үзэсгэлэнтэй"
     },
     "mnemonic": {
@@ -1539,7 +1539,7 @@
     "story": "Шинэ загас (鱼), шинэ хонины мах (羊) — хамгийн шинэхэн, ходоодонд тааламжтай идэшний бэлгэдэл. 鱼+羊=鲜.",
     "example": {
       "word": "新鲜",
-      "pinyin": "xīnxiān",
+      "pinyin": "xīn xiān",
       "translation": "шинэхэн"
     },
     "mnemonic": {
@@ -1591,7 +1591,7 @@
     "story": "Хоёр сар (月) зэрэгцэн = байнга хамт байх хань, найз нөхөр.",
     "example": {
       "word": "朋友",
-      "pinyin": "péngyou",
+      "pinyin": "péng you",
       "translation": "найз нөхөд"
     },
     "mnemonic": {
@@ -1639,7 +1639,7 @@
     "story": "Үдэш (夕) харанхуйд хүнийг амаар (口) дуудах = нэр.",
     "example": {
       "word": "名字",
-      "pinyin": "míngzi",
+      "pinyin": "míng zi",
       "translation": "нэр"
     },
     "mnemonic": {
@@ -1686,7 +1686,7 @@
     "story": "Хүн (亻) хэмээх радикал + 尔 = ярьж буй нөгөө хүн: чи.",
     "example": {
       "word": "你好",
-      "pinyin": "nǐhǎo",
+      "pinyin": "nǐ hǎo",
       "translation": "сайн байна уу"
     },
     "mnemonic": {
@@ -1733,7 +1733,7 @@
     "story": "Хүн (亻) + 也 = яриан дахь гуравдагч хүн: тэр.",
     "example": {
       "word": "他们",
-      "pinyin": "tāmen",
+      "pinyin": "tā men",
       "translation": "тэд"
     },
     "mnemonic": {
@@ -1780,7 +1780,7 @@
     "story": "Хүн (亻) + хаалга (门) = хүмүүсийг олон тоонд оруулах нөхцөл.",
     "example": {
       "word": "我们",
-      "pinyin": "wǒmen",
+      "pinyin": "wǒ men",
       "translation": "бид"
     },
     "mnemonic": {
@@ -1827,7 +1827,7 @@
     "story": "Эмэгтэй (女) + 马 (дуудлага) = ээж.",
     "example": {
       "word": "妈妈",
-      "pinyin": "māma",
+      "pinyin": "mā ma",
       "translation": "ээж"
     },
     "mnemonic": {
@@ -1875,7 +1875,7 @@
     "story": "Хүн (亻) + үндэс (本) = хүний үндэс болсон бие махбод.",
     "example": {
       "word": "身体",
-      "pinyin": "shēntǐ",
+      "pinyin": "shēn tǐ",
       "translation": "бие"
     },
     "mnemonic": {
@@ -1922,7 +1922,7 @@
     "story": "Нүд (目) -нээс ус (氵) гоожих = нулимс.",
     "example": {
       "word": "眼泪",
-      "pinyin": "yǎnlèi",
+      "pinyin": "yǎn lèi",
       "translation": "нулимс"
     },
     "mnemonic": {
@@ -1969,7 +1969,7 @@
     "story": "Ам (口) -аар хооллох үйл = идэх.",
     "example": {
       "word": "吃饭",
-      "pinyin": "chīfàn",
+      "pinyin": "chī fàn",
       "translation": "хоол идэх"
     },
     "mnemonic": {
@@ -2017,7 +2017,7 @@
     "story": "Ам (口) нээж тод (昌) дуу гаргах = дуулах.",
     "example": {
       "word": "唱歌",
-      "pinyin": "chànggē",
+      "pinyin": "chàng gē",
       "translation": "дуу дуулах"
     },
     "mnemonic": {
@@ -2064,7 +2064,7 @@
     "story": "Ургамал (艹) хувирч (化) дэлбээлэх = цэцэг.",
     "example": {
       "word": "鲜花",
-      "pinyin": "xiānhuā",
+      "pinyin": "xiān huā",
       "translation": "шинэ цэцэг"
     },
     "mnemonic": {
@@ -2111,7 +2111,7 @@
     "story": "Өглөө эрт (早) ургах ногоон (艹) = өвс.",
     "example": {
       "word": "草地",
-      "pinyin": "cǎodì",
+      "pinyin": "cǎo dì",
       "translation": "зүлэг"
     },
     "mnemonic": {
@@ -2158,7 +2158,7 @@
     "story": "Тариалангийн талбайд (田) ургах ногоон (艹) = соёо, нахиа.",
     "example": {
       "word": "树苗",
-      "pinyin": "shùmiáo",
+      "pinyin": "shù miáo",
       "translation": "модны суулгац"
     },
     "mnemonic": {
@@ -2205,7 +2205,7 @@
     "story": "Нар (日) -аар цагийг хэмжих (寸) = цаг хугацаа.",
     "example": {
       "word": "时间",
-      "pinyin": "shíjiān",
+      "pinyin": "shí jiān",
       "translation": "цаг хугацаа"
     },
     "mnemonic": {
@@ -2253,7 +2253,7 @@
     "story": "Сэтгэлээс (心) алга болох (亡) = мартах.",
     "example": {
       "word": "忘记",
-      "pinyin": "wàngjì",
+      "pinyin": "wàng jì",
       "translation": "мартах"
     },
     "mnemonic": {
@@ -2300,7 +2300,7 @@
     "story": "Сэтгэл (忄) цайх (白) = айх, эмээх.",
     "example": {
       "word": "害怕",
-      "pinyin": "hàipà",
+      "pinyin": "hài pà",
       "translation": "айх"
     },
     "mnemonic": {
@@ -2347,7 +2347,7 @@
     "story": "Дээр нь жижиг (小), доор нь том (大) = дээшээ нарийссан хурц үзүүр.",
     "example": {
       "word": "笔尖",
-      "pinyin": "bǐjiān",
+      "pinyin": "bǐ jiān",
       "translation": "үзэгний үзүүр"
     },
     "mnemonic": {
@@ -2396,7 +2396,7 @@
     "story": "Гурван нар (日) гялалзах = болор шиг тунгалаг гэрэлтэх.",
     "example": {
       "word": "水晶",
-      "pinyin": "shuǐjīng",
+      "pinyin": "shuǐ jīng",
       "translation": "болор"
     },
     "mnemonic": {
@@ -2449,7 +2449,7 @@
     "story": "Гурван ам (口) амтлах = бараа, бүтээгдэхүүний чанар.",
     "example": {
       "word": "产品",
-      "pinyin": "chǎnpǐn",
+      "pinyin": "chǎn pǐn",
       "translation": "бүтээгдэхүүн"
     },
     "mnemonic": {
@@ -8121,5 +8121,5519 @@
         "emoji": "🛠️"
       }
     }
+  },
+  {
+    "character": "吧",
+    "pinyin": "bā",
+    "meaning": "(зөвлөх нөхцөл)",
+    "kind": "simple",
+    "example": {
+      "word": "好吧",
+      "pinyin": "hǎo ba",
+      "translation": "за тэгье"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💬"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "吧",
+        "label": "(зөвлөх нөхцөл)"
+      }
+    },
+    "story": "«(зөвлөх нөхцөл)» гэсэн утгатай үндсэн дүрс ханз (bā)."
+  },
+  {
+    "character": "白",
+    "pinyin": "bái",
+    "meaning": "цагаан",
+    "kind": "simple",
+    "example": {
+      "word": "白色",
+      "pinyin": "bái sè",
+      "translation": "цагаан өнгө"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "⚪"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "白",
+        "label": "цагаан"
+      }
+    },
+    "story": "«цагаан» гэсэн утгатай үндсэн дүрс ханз (bái)."
+  },
+  {
+    "character": "百",
+    "pinyin": "bǎi",
+    "meaning": "зуу",
+    "kind": "simple",
+    "example": {
+      "word": "一百",
+      "pinyin": "yì bǎi",
+      "translation": "нэг зуу"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💯"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "百",
+        "label": "зуу"
+      }
+    },
+    "story": "«зуу» гэсэн утгатай үндсэн дүрс ханз (bǎi)."
+  },
+  {
+    "character": "帮",
+    "pinyin": "bāng",
+    "meaning": "туслах",
+    "kind": "simple",
+    "example": {
+      "word": "帮助",
+      "pinyin": "bāng zhù",
+      "translation": "туслах"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🤝"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "帮",
+        "label": "туслах"
+      }
+    },
+    "story": "«туслах» гэсэн утгатай үндсэн дүрс ханз (bāng)."
+  },
+  {
+    "character": "助",
+    "pinyin": "zhù",
+    "meaning": "туслах",
+    "kind": "compound",
+    "example": {
+      "word": "帮助",
+      "pinyin": "bāng zhù",
+      "translation": "туслах"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🤝"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "且",
+          "label": "бас"
+        },
+        {
+          "char": "力",
+          "label": "хүч"
+        }
+      ],
+      "result": {
+        "char": "助",
+        "label": "туслах"
+      }
+    },
+    "story": "бас (且), хүч (力) хослон «туслах» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "且",
+        "力"
+      ],
+      "result": "助",
+      "meaning": "туслах"
+    }
+  },
+  {
+    "character": "报",
+    "pinyin": "bào",
+    "meaning": "мэдээлэх; сонин",
+    "kind": "simple",
+    "example": {
+      "word": "报纸",
+      "pinyin": "bào zhǐ",
+      "translation": "сонин"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📰"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "报",
+        "label": "мэдээлэх; сонин"
+      }
+    },
+    "story": "«мэдээлэх; сонин» гэсэн утгатай үндсэн дүрс ханз (bào)."
+  },
+  {
+    "character": "纸",
+    "pinyin": "zhǐ",
+    "meaning": "цаас",
+    "kind": "compound",
+    "example": {
+      "word": "报纸",
+      "pinyin": "bào zhǐ",
+      "translation": "сонин"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📄"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "纟",
+          "label": "утас"
+        },
+        {
+          "char": "氏",
+          "label": "овог"
+        }
+      ],
+      "result": {
+        "char": "纸",
+        "label": "цаас"
+      }
+    },
+    "story": "утас (纟), овог (氏) хослон «цаас» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "纟",
+        "氏"
+      ],
+      "result": "纸",
+      "meaning": "цаас"
+    }
+  },
+  {
+    "character": "比",
+    "pinyin": "bǐ",
+    "meaning": "харьцуулах",
+    "kind": "simple",
+    "example": {
+      "word": "比如",
+      "pinyin": "Bǐ rú",
+      "translation": "жишээ нь"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "⚖️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "比",
+        "label": "харьцуулах"
+      }
+    },
+    "story": "«харьцуулах» гэсэн утгатай үндсэн дүрс ханз (bǐ)."
+  },
+  {
+    "character": "便",
+    "pinyin": "biàn",
+    "meaning": "тохиромжтой",
+    "kind": "simple",
+    "example": {
+      "word": "方便",
+      "pinyin": "fāng biàn",
+      "translation": "тохиромжтой"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👍"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "便",
+        "label": "тохиромжтой"
+      }
+    },
+    "story": "«тохиромжтой» гэсэн утгатай үндсэн дүрс ханз (biàn)."
+  },
+  {
+    "character": "宜",
+    "pinyin": "yí",
+    "meaning": "тохирох",
+    "kind": "compound",
+    "example": {
+      "word": "便宜",
+      "pinyin": "biàn yí",
+      "translation": "хямд"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💸"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "宀",
+          "label": "дээвэр"
+        },
+        {
+          "char": "且",
+          "label": "бас"
+        }
+      ],
+      "result": {
+        "char": "宜",
+        "label": "тохирох"
+      }
+    },
+    "story": "дээвэр (宀), бас (且) хослон «тохирох» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "宀",
+        "且"
+      ],
+      "result": "宜",
+      "meaning": "тохирох"
+    }
+  },
+  {
+    "character": "别",
+    "pinyin": "bié",
+    "meaning": "бүү; ялгах",
+    "kind": "simple",
+    "example": {
+      "word": "别人",
+      "pinyin": "bié ren",
+      "translation": "бусад хүн"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚫"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "别",
+        "label": "бүү; ялгах"
+      }
+    },
+    "story": "«бүү; ялгах» гэсэн утгатай үндсэн дүрс ханз (bié)."
+  },
+  {
+    "character": "歌",
+    "pinyin": "gē",
+    "meaning": "дуу",
+    "kind": "compound",
+    "example": {
+      "word": "唱歌",
+      "pinyin": "chàng gē",
+      "translation": "дуу дуулах"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎵"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "哥",
+          "label": "ах"
+        },
+        {
+          "char": "欠",
+          "label": "ангайх"
+        }
+      ],
+      "result": {
+        "char": "歌",
+        "label": "дуу"
+      }
+    },
+    "story": "ах (哥), ангайх (欠) хослон «дуу» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "哥",
+        "欠"
+      ],
+      "result": "歌",
+      "meaning": "дуу"
+    }
+  },
+  {
+    "character": "穿",
+    "pinyin": "chuān",
+    "meaning": "өмсөх",
+    "kind": "compound",
+    "example": {
+      "word": "穿上",
+      "pinyin": "chuān shàng",
+      "translation": "өмсөх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👔"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "穴",
+          "label": "агуй"
+        },
+        {
+          "char": "牙",
+          "label": "шүд"
+        }
+      ],
+      "result": {
+        "char": "穿",
+        "label": "өмсөх"
+      }
+    },
+    "story": "агуй (穴), шүд (牙) хослон «өмсөх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "穴",
+        "牙"
+      ],
+      "result": "穿",
+      "meaning": "өмсөх"
+    }
+  },
+  {
+    "character": "船",
+    "pinyin": "chuán",
+    "meaning": "усан онгоц",
+    "kind": "compound",
+    "example": {
+      "word": "轮船",
+      "pinyin": "lún chuán",
+      "translation": "хөлөг онгоц"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚢"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "舟",
+          "label": "завь"
+        },
+        {
+          "char": "几",
+          "label": "хэд"
+        },
+        {
+          "char": "口",
+          "label": "ам"
+        }
+      ],
+      "result": {
+        "char": "船",
+        "label": "усан онгоц"
+      }
+    },
+    "story": "завь (舟), хэд (几), ам (口) хослон «усан онгоц» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "舟",
+        "几",
+        "口"
+      ],
+      "result": "船",
+      "meaning": "усан онгоц"
+    }
+  },
+  {
+    "character": "次",
+    "pinyin": "cì",
+    "meaning": "удаа",
+    "kind": "simple",
+    "example": {
+      "word": "一次",
+      "pinyin": "yí cì",
+      "translation": "нэг удаа"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔢"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "次",
+        "label": "удаа"
+      }
+    },
+    "story": "«удаа» гэсэн утгатай үндсэн дүрс ханз (cì)."
+  },
+  {
+    "character": "错",
+    "pinyin": "cuò",
+    "meaning": "буруу, алдаа",
+    "kind": "compound",
+    "example": {
+      "word": "错误",
+      "pinyin": "cuò wù",
+      "translation": "алдаа"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "❌"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "钅",
+          "label": "металл"
+        },
+        {
+          "char": "昔",
+          "label": "урьд"
+        }
+      ],
+      "result": {
+        "char": "错",
+        "label": "буруу, алдаа"
+      }
+    },
+    "story": "металл (钅), урьд (昔) хослон «буруу, алдаа» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "钅",
+        "昔"
+      ],
+      "result": "错",
+      "meaning": "буруу, алдаа"
+    }
+  },
+  {
+    "character": "篮",
+    "pinyin": "lán",
+    "meaning": "сагс",
+    "kind": "simple",
+    "example": {
+      "word": "篮球",
+      "pinyin": "lán qiú",
+      "translation": "сагсан бөмбөг"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🧺"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "篮",
+        "label": "сагс"
+      }
+    },
+    "story": "«сагс» гэсэн утгатай үндсэн дүрс ханз (lán)."
+  },
+  {
+    "character": "球",
+    "pinyin": "qiú",
+    "meaning": "бөмбөг",
+    "kind": "simple",
+    "example": {
+      "word": "足球",
+      "pinyin": "zú qiú",
+      "translation": "хөлбөмбөг"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "⚽"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "球",
+        "label": "бөмбөг"
+      }
+    },
+    "story": "«бөмбөг» гэсэн утгатай үндсэн дүрс ханз (qiú)."
+  },
+  {
+    "character": "但",
+    "pinyin": "dàn",
+    "meaning": "гэхдээ",
+    "kind": "simple",
+    "example": {
+      "word": "但是",
+      "pinyin": "dàn shì",
+      "translation": "гэхдээ"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "↪️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "但",
+        "label": "гэхдээ"
+      }
+    },
+    "story": "«гэхдээ» гэсэн утгатай үндсэн дүрс ханз (dàn)."
+  },
+  {
+    "character": "到",
+    "pinyin": "dào",
+    "meaning": "хүрэх, ирэх",
+    "kind": "compound",
+    "example": {
+      "word": "到达",
+      "pinyin": "dào dá",
+      "translation": "хүрэх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📍"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "至",
+          "label": "хүрэх"
+        },
+        {
+          "char": "刂",
+          "label": "хутга"
+        }
+      ],
+      "result": {
+        "char": "到",
+        "label": "хүрэх, ирэх"
+      }
+    },
+    "story": "хүрэх (至), хутга (刂) хослон «хүрэх, ирэх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "至",
+        "刂"
+      ],
+      "result": "到",
+      "meaning": "хүрэх, ирэх"
+    }
+  },
+  {
+    "character": "得",
+    "pinyin": "dé",
+    "meaning": "олж авах",
+    "kind": "simple",
+    "example": {
+      "word": "觉得",
+      "pinyin": "jué de",
+      "translation": "санагдах"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎁"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "得",
+        "label": "олж авах"
+      }
+    },
+    "story": "«олж авах» гэсэн утгатай үндсэн дүрс ханз (dé)."
+  },
+  {
+    "character": "弟",
+    "pinyin": "dì",
+    "meaning": "дүү",
+    "kind": "simple",
+    "example": {
+      "word": "弟弟",
+      "pinyin": "dì di",
+      "translation": "дүү"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👦"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "弟",
+        "label": "дүү"
+      }
+    },
+    "story": "«дүү» гэсэн утгатай үндсэн дүрс ханз (dì)."
+  },
+  {
+    "character": "第",
+    "pinyin": "dì",
+    "meaning": "-дугаар",
+    "kind": "simple",
+    "example": {
+      "word": "第一",
+      "pinyin": "dì yī",
+      "translation": "эхний"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🥇"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "第",
+        "label": "-дугаар"
+      }
+    },
+    "story": "«-дугаар» гэсэн утгатай үндсэн дүрс ханз (dì)."
+  },
+  {
+    "character": "懂",
+    "pinyin": "dǒng",
+    "meaning": "ойлгох",
+    "kind": "simple",
+    "example": {
+      "word": "听懂",
+      "pinyin": "tīng dǒng",
+      "translation": "сонсож ойлгох"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💡"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "懂",
+        "label": "ойлгох"
+      }
+    },
+    "story": "«ойлгох» гэсэн утгатай үндсэн дүрс ханз (dǒng)."
+  },
+  {
+    "character": "房",
+    "pinyin": "fáng",
+    "meaning": "байшин, өрөө",
+    "kind": "compound",
+    "example": {
+      "word": "房间",
+      "pinyin": "fáng jiān",
+      "translation": "өрөө"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏠"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "户",
+          "label": "айл"
+        },
+        {
+          "char": "方",
+          "label": "зүг"
+        }
+      ],
+      "result": {
+        "char": "房",
+        "label": "байшин, өрөө"
+      }
+    },
+    "story": "айл (户), зүг (方) хослон «байшин, өрөө» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "户",
+        "方"
+      ],
+      "result": "房",
+      "meaning": "байшин, өрөө"
+    }
+  },
+  {
+    "character": "间",
+    "pinyin": "jiān",
+    "meaning": "хооронд, өрөө",
+    "kind": "compound",
+    "example": {
+      "word": "时间",
+      "pinyin": "shí jiān",
+      "translation": "цаг хугацаа"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚪"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "门",
+          "label": "хаалга"
+        },
+        {
+          "char": "日",
+          "label": "нар"
+        }
+      ],
+      "result": {
+        "char": "间",
+        "label": "хооронд, өрөө"
+      }
+    },
+    "story": "хаалга (门), нар (日) хослон «хооронд, өрөө» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "门",
+        "日"
+      ],
+      "result": "间",
+      "meaning": "хооронд, өрөө"
+    }
+  },
+  {
+    "character": "非",
+    "pinyin": "fēi",
+    "meaning": "биш, буруу",
+    "kind": "simple",
+    "example": {
+      "word": "非常",
+      "pinyin": "fēi cháng",
+      "translation": "маш"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚫"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "非",
+        "label": "биш, буруу"
+      }
+    },
+    "story": "«биш, буруу» гэсэн утгатай үндсэн дүрс ханз (fēi)."
+  },
+  {
+    "character": "常",
+    "pinyin": "cháng",
+    "meaning": "байнга, энгийн",
+    "kind": "simple",
+    "example": {
+      "word": "非常",
+      "pinyin": "fēi cháng",
+      "translation": "маш"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔁"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "常",
+        "label": "байнга, энгийн"
+      }
+    },
+    "story": "«байнга, энгийн» гэсэн утгатай үндсэн дүрс ханз (cháng)."
+  },
+  {
+    "character": "务",
+    "pinyin": "wù",
+    "meaning": "үйл хэрэг",
+    "kind": "simple",
+    "example": {
+      "word": "服务",
+      "pinyin": "fú wù",
+      "translation": "үйлчилгээ"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📋"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "务",
+        "label": "үйл хэрэг"
+      }
+    },
+    "story": "«үйл хэрэг» гэсэн утгатай үндсэн дүрс ханз (wù)."
+  },
+  {
+    "character": "员",
+    "pinyin": "yuán",
+    "meaning": "гишүүн, ажилтан",
+    "kind": "compound",
+    "example": {
+      "word": "服务员",
+      "pinyin": "fú wù yuán",
+      "translation": "үйлчлэгч"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👷"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "贝",
+          "label": "хясаа"
+        }
+      ],
+      "result": {
+        "char": "员",
+        "label": "гишүүн, ажилтан"
+      }
+    },
+    "story": "ам (口), хясаа (贝) хослон «гишүүн, ажилтан» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "口",
+        "贝"
+      ],
+      "result": "员",
+      "meaning": "гишүүн, ажилтан"
+    }
+  },
+  {
+    "character": "告",
+    "pinyin": "gào",
+    "meaning": "хэлэх",
+    "kind": "simple",
+    "example": {
+      "word": "告诉",
+      "pinyin": "gào sù",
+      "translation": "хэлэх"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📢"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "告",
+        "label": "хэлэх"
+      }
+    },
+    "story": "«хэлэх» гэсэн утгатай үндсэн дүрс ханз (gào)."
+  },
+  {
+    "character": "诉",
+    "pinyin": "sù",
+    "meaning": "хэлэх, гомдоллох",
+    "kind": "simple",
+    "example": {
+      "word": "告诉",
+      "pinyin": "gào sù",
+      "translation": "хэлэх"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🗣️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "诉",
+        "label": "хэлэх, гомдоллох"
+      }
+    },
+    "story": "«хэлэх, гомдоллох» гэсэн утгатай үндсэн дүрс ханз (sù)."
+  },
+  {
+    "character": "哥",
+    "pinyin": "gē",
+    "meaning": "ах",
+    "kind": "compound",
+    "example": {
+      "word": "哥哥",
+      "pinyin": "gē ge",
+      "translation": "ах"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👨"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "可",
+          "label": "болох"
+        },
+        {
+          "char": "可",
+          "label": "болох"
+        }
+      ],
+      "result": {
+        "char": "哥",
+        "label": "ах"
+      }
+    },
+    "story": "болох (可) 2 удаа давтагдаж «ах» гэсэн утгыг илэрхийлнэ.",
+    "mnemonic": {
+      "parts": [
+        "可",
+        "可"
+      ],
+      "result": "哥",
+      "meaning": "ах"
+    }
+  },
+  {
+    "character": "给",
+    "pinyin": "gěi",
+    "meaning": "өгөх",
+    "kind": "compound",
+    "example": {
+      "word": "给",
+      "pinyin": "gěi",
+      "translation": "өгөх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎁"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "纟",
+          "label": "утас"
+        },
+        {
+          "char": "合",
+          "label": "нийлэх"
+        }
+      ],
+      "result": {
+        "char": "给",
+        "label": "өгөх"
+      }
+    },
+    "story": "утас (纟), нийлэх (合) хослон «өгөх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "纟",
+        "合"
+      ],
+      "result": "给",
+      "meaning": "өгөх"
+    }
+  },
+  {
+    "character": "还",
+    "pinyin": "hái",
+    "meaning": "бас; буцаах",
+    "kind": "simple",
+    "example": {
+      "word": "还是",
+      "pinyin": "hái shi",
+      "translation": "эсвэл"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔙"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "还",
+        "label": "бас; буцаах"
+      }
+    },
+    "story": "«бас; буцаах» гэсэн утгатай үндсэн дүрс ханз (hái)."
+  },
+  {
+    "character": "孩",
+    "pinyin": "hái",
+    "meaning": "хүүхэд",
+    "kind": "simple",
+    "example": {
+      "word": "孩子",
+      "pinyin": "hái zi",
+      "translation": "хүүхэд"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🧒"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "孩",
+        "label": "хүүхэд"
+      }
+    },
+    "story": "«хүүхэд» гэсэн утгатай үндсэн дүрс ханз (hái)."
+  },
+  {
+    "character": "号",
+    "pinyin": "hào",
+    "meaning": "дугаар",
+    "kind": "simple",
+    "example": {
+      "word": "号码",
+      "pinyin": "hào mǎ",
+      "translation": "дугаар"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔢"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "号",
+        "label": "дугаар"
+      }
+    },
+    "story": "«дугаар» гэсэн утгатай үндсэн дүрс ханз (hào)."
+  },
+  {
+    "character": "黑",
+    "pinyin": "hēi",
+    "meaning": "хар",
+    "kind": "simple",
+    "example": {
+      "word": "黑色",
+      "pinyin": "hēi sè",
+      "translation": "хар өнгө"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "⚫"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "黑",
+        "label": "хар"
+      }
+    },
+    "story": "«хар» гэсэн утгатай үндсэн дүрс ханз (hēi)."
+  },
+  {
+    "character": "红",
+    "pinyin": "hóng",
+    "meaning": "улаан",
+    "kind": "compound",
+    "example": {
+      "word": "红色",
+      "pinyin": "hóng sè",
+      "translation": "улаан өнгө"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔴"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "纟",
+          "label": "утас"
+        },
+        {
+          "char": "工",
+          "label": "ажил"
+        }
+      ],
+      "result": {
+        "char": "红",
+        "label": "улаан"
+      }
+    },
+    "story": "утас (纟), ажил (工) хослон «улаан» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "纟",
+        "工"
+      ],
+      "result": "红",
+      "meaning": "улаан"
+    }
+  },
+  {
+    "character": "迎",
+    "pinyin": "yíng",
+    "meaning": "угтах",
+    "kind": "simple",
+    "example": {
+      "word": "欢迎",
+      "pinyin": "huān yíng",
+      "translation": "тавтай морил"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👐"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "迎",
+        "label": "угтах"
+      }
+    },
+    "story": "«угтах» гэсэн утгатай үндсэн дүрс ханз (yíng)."
+  },
+  {
+    "character": "答",
+    "pinyin": "dá",
+    "meaning": "хариулах",
+    "kind": "simple",
+    "example": {
+      "word": "回答",
+      "pinyin": "huí dá",
+      "translation": "хариулах"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💬"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "答",
+        "label": "хариулах"
+      }
+    },
+    "story": "«хариулах» гэсэн утгатай үндсэн дүрс ханз (dá)."
+  },
+  {
+    "character": "场",
+    "pinyin": "chǎng",
+    "meaning": "талбай",
+    "kind": "simple",
+    "example": {
+      "word": "机场",
+      "pinyin": "jī chǎng",
+      "translation": "нисэх онгоцны буудал"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏟️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "场",
+        "label": "талбай"
+      }
+    },
+    "story": "«талбай» гэсэн утгатай үндсэн дүрс ханз (chǎng)."
+  },
+  {
+    "character": "鸡",
+    "pinyin": "jī",
+    "meaning": "тахиа",
+    "kind": "compound",
+    "example": {
+      "word": "鸡蛋",
+      "pinyin": "jī dàn",
+      "translation": "өндөг"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🐔"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "又",
+          "label": "гар"
+        },
+        {
+          "char": "鸟",
+          "label": "шувуу"
+        }
+      ],
+      "result": {
+        "char": "鸡",
+        "label": "тахиа"
+      }
+    },
+    "story": "гар (又), шувуу (鸟) хослон «тахиа» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "又",
+        "鸟"
+      ],
+      "result": "鸡",
+      "meaning": "тахиа"
+    }
+  },
+  {
+    "character": "蛋",
+    "pinyin": "dàn",
+    "meaning": "өндөг",
+    "kind": "simple",
+    "example": {
+      "word": "鸡蛋",
+      "pinyin": "jī dàn",
+      "translation": "өндөг"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🥚"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "蛋",
+        "label": "өндөг"
+      }
+    },
+    "story": "«өндөг» гэсэн утгатай үндсэн дүрс ханз (dàn)."
+  },
+  {
+    "character": "件",
+    "pinyin": "jiàn",
+    "meaning": "ширхэг",
+    "kind": "simple",
+    "example": {
+      "word": "一件",
+      "pinyin": "yí jiàn",
+      "translation": "нэг ширхэг"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📦"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "件",
+        "label": "ширхэг"
+      }
+    },
+    "story": "«ширхэг» гэсэн утгатай үндсэн дүрс ханз (jiàn)."
+  },
+  {
+    "character": "教",
+    "pinyin": "jiào",
+    "meaning": "заах",
+    "kind": "simple",
+    "example": {
+      "word": "教室",
+      "pinyin": "jiào shì",
+      "translation": "анги"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👨‍🏫"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "教",
+        "label": "заах"
+      }
+    },
+    "story": "«заах» гэсэн утгатай үндсэн дүрс ханз (jiào)."
+  },
+  {
+    "character": "室",
+    "pinyin": "shì",
+    "meaning": "өрөө",
+    "kind": "compound",
+    "example": {
+      "word": "教室",
+      "pinyin": "jiào shì",
+      "translation": "анги"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚪"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "宀",
+          "label": "дээвэр"
+        },
+        {
+          "char": "至",
+          "label": "хүрэх"
+        }
+      ],
+      "result": {
+        "char": "室",
+        "label": "өрөө"
+      }
+    },
+    "story": "дээвэр (宀), хүрэх (至) хослон «өрөө» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "宀",
+        "至"
+      ],
+      "result": "室",
+      "meaning": "өрөө"
+    }
+  },
+  {
+    "character": "介",
+    "pinyin": "jiè",
+    "meaning": "зуучлах",
+    "kind": "simple",
+    "example": {
+      "word": "介绍",
+      "pinyin": "jiè shào",
+      "translation": "танилцуулах"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🤝"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "介",
+        "label": "зуучлах"
+      }
+    },
+    "story": "«зуучлах» гэсэн утгатай үндсэн дүрс ханз (jiè)."
+  },
+  {
+    "character": "绍",
+    "pinyin": "shào",
+    "meaning": "холбох, танилцуулах",
+    "kind": "simple",
+    "example": {
+      "word": "介绍",
+      "pinyin": "jiè shào",
+      "translation": "танилцуулах"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🤝"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "绍",
+        "label": "холбох, танилцуулах"
+      }
+    },
+    "story": "«холбох, танилцуулах» гэсэн утгатай үндсэн дүрс ханз (shào)."
+  },
+  {
+    "character": "近",
+    "pinyin": "jìn",
+    "meaning": "ойр",
+    "kind": "compound",
+    "example": {
+      "word": "最近",
+      "pinyin": "zuì jìn",
+      "translation": "саяхан"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📍"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "辶",
+          "label": "явах"
+        },
+        {
+          "char": "斤",
+          "label": "сүх"
+        }
+      ],
+      "result": {
+        "char": "近",
+        "label": "ойр"
+      }
+    },
+    "story": "явах (辶), сүх (斤) хослон «ойр» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "辶",
+        "斤"
+      ],
+      "result": "近",
+      "meaning": "ойр"
+    }
+  },
+  {
+    "character": "进",
+    "pinyin": "jìn",
+    "meaning": "орох, ахих",
+    "kind": "compound",
+    "example": {
+      "word": "进来",
+      "pinyin": "jìn lái",
+      "translation": "орж ирэх"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "➡️"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "辶",
+          "label": "явах"
+        },
+        {
+          "char": "井",
+          "label": "худаг"
+        }
+      ],
+      "result": {
+        "char": "进",
+        "label": "орох, ахих"
+      }
+    },
+    "story": "явах (辶), худаг (井) хослон «орох, ахих» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "辶",
+        "井"
+      ],
+      "result": "进",
+      "meaning": "орох, ахих"
+    }
+  },
+  {
+    "character": "就",
+    "pinyin": "jiù",
+    "meaning": "шууд, тэр даруй",
+    "kind": "simple",
+    "example": {
+      "word": "就是",
+      "pinyin": "jiù shì",
+      "translation": "яг мөн"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👉"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "就",
+        "label": "шууд, тэр даруй"
+      }
+    },
+    "story": "«шууд, тэр даруй» гэсэн утгатай үндсэн дүрс ханз (jiù)."
+  },
+  {
+    "character": "咖",
+    "pinyin": "kā",
+    "meaning": "кофе (咖啡)",
+    "kind": "compound",
+    "example": {
+      "word": "咖啡",
+      "pinyin": "kā fēi",
+      "translation": "кофе"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "☕"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "加",
+          "label": "нэмэх"
+        }
+      ],
+      "result": {
+        "char": "咖",
+        "label": "кофе (咖啡)"
+      }
+    },
+    "story": "ам (口), нэмэх (加) хослон «кофе (咖啡)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "口",
+        "加"
+      ],
+      "result": "咖",
+      "meaning": "кофе (咖啡)"
+    }
+  },
+  {
+    "character": "啡",
+    "pinyin": "fēi",
+    "meaning": "кофе (咖啡)",
+    "kind": "compound",
+    "example": {
+      "word": "咖啡",
+      "pinyin": "kā fēi",
+      "translation": "кофе"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "☕"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "口",
+          "label": "ам"
+        },
+        {
+          "char": "非",
+          "label": "буруу"
+        }
+      ],
+      "result": {
+        "char": "啡",
+        "label": "кофе (咖啡)"
+      }
+    },
+    "story": "ам (口), буруу (非) хослон «кофе (咖啡)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "口",
+        "非"
+      ],
+      "result": "啡",
+      "meaning": "кофе (咖啡)"
+    }
+  },
+  {
+    "character": "始",
+    "pinyin": "shǐ",
+    "meaning": "эхлэх",
+    "kind": "simple",
+    "example": {
+      "word": "开始",
+      "pinyin": "kāi shǐ",
+      "translation": "эхлэх"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏁"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "始",
+        "label": "эхлэх"
+      }
+    },
+    "story": "«эхлэх» гэсэн утгатай үндсэн дүрс ханз (shǐ)."
+  },
+  {
+    "character": "考",
+    "pinyin": "kǎo",
+    "meaning": "шалгах",
+    "kind": "simple",
+    "example": {
+      "word": "考试",
+      "pinyin": "kǎo shì",
+      "translation": "шалгалт"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📝"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "考",
+        "label": "шалгах"
+      }
+    },
+    "story": "«шалгах» гэсэн утгатай үндсэн дүрс ханз (kǎo)."
+  },
+  {
+    "character": "试",
+    "pinyin": "shì",
+    "meaning": "туршиx; шалгалт",
+    "kind": "compound",
+    "example": {
+      "word": "考试",
+      "pinyin": "kǎo shì",
+      "translation": "шалгалт"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📝"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "讠",
+          "label": "яриа"
+        },
+        {
+          "char": "式",
+          "label": "загвар"
+        }
+      ],
+      "result": {
+        "char": "试",
+        "label": "туршиx; шалгалт"
+      }
+    },
+    "story": "яриа (讠), загвар (式) хослон «туршиx; шалгалт» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "讠",
+        "式"
+      ],
+      "result": "试",
+      "meaning": "туршиx; шалгалт"
+    }
+  },
+  {
+    "character": "可",
+    "pinyin": "kě",
+    "meaning": "болох",
+    "kind": "simple",
+    "example": {
+      "word": "可以",
+      "pinyin": "kě yǐ",
+      "translation": "болно"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "✅"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "可",
+        "label": "болох"
+      }
+    },
+    "story": "«болох» гэсэн утгатай үндсэн дүрс ханз (kě)."
+  },
+  {
+    "character": "以",
+    "pinyin": "yǐ",
+    "meaning": "-аар; болох",
+    "kind": "simple",
+    "example": {
+      "word": "可以",
+      "pinyin": "kě yǐ",
+      "translation": "болно"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "➡️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "以",
+        "label": "-аар; болох"
+      }
+    },
+    "story": "«-аар; болох» гэсэн утгатай үндсэн дүрс ханз (yǐ)."
+  },
+  {
+    "character": "课",
+    "pinyin": "kè",
+    "meaning": "хичээл",
+    "kind": "compound",
+    "example": {
+      "word": "上课",
+      "pinyin": "shàng kè",
+      "translation": "хичээлд сууx"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📚"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "讠",
+          "label": "яриа"
+        },
+        {
+          "char": "果",
+          "label": "жимс"
+        }
+      ],
+      "result": {
+        "char": "课",
+        "label": "хичээл"
+      }
+    },
+    "story": "яриа (讠), жимс (果) хослон «хичээл» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "讠",
+        "果"
+      ],
+      "result": "课",
+      "meaning": "хичээл"
+    }
+  },
+  {
+    "character": "快",
+    "pinyin": "kuài",
+    "meaning": "хурдан",
+    "kind": "simple",
+    "example": {
+      "word": "快乐",
+      "pinyin": "kuài lè",
+      "translation": "баяр баясгалан"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "⚡"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "快",
+        "label": "хурдан"
+      }
+    },
+    "story": "«хурдан» гэсэн утгатай үндсэн дүрс ханз (kuài)."
+  },
+  {
+    "character": "乐",
+    "pinyin": "lè",
+    "meaning": "баяр; хөгжим",
+    "kind": "simple",
+    "example": {
+      "word": "快乐",
+      "pinyin": "kuài lè",
+      "translation": "баяр баясгалан"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "😄"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "乐",
+        "label": "баяр; хөгжим"
+      }
+    },
+    "story": "«баяр; хөгжим» гэсэн утгатай үндсэн дүрс ханз (lè)."
+  },
+  {
+    "character": "累",
+    "pinyin": "lèi",
+    "meaning": "ядрах",
+    "kind": "compound",
+    "example": {
+      "word": "很累",
+      "pinyin": "hěn lèi",
+      "translation": "маш ядарсан"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "😫"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "田",
+          "label": "талбай"
+        },
+        {
+          "char": "糸",
+          "label": "утас"
+        }
+      ],
+      "result": {
+        "char": "累",
+        "label": "ядрах"
+      }
+    },
+    "story": "талбай (田), утас (糸) хослон «ядрах» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "田",
+        "糸"
+      ],
+      "result": "累",
+      "meaning": "ядрах"
+    }
+  },
+  {
+    "character": "离",
+    "pinyin": "lí",
+    "meaning": "-аас холдох",
+    "kind": "simple",
+    "example": {
+      "word": "离开",
+      "pinyin": "lí kāi",
+      "translation": "орхих"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "↔️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "离",
+        "label": "-аас холдох"
+      }
+    },
+    "story": "«-аас холдох» гэсэн утгатай үндсэн дүрс ханз (lí)."
+  },
+  {
+    "character": "两",
+    "pinyin": "liǎng",
+    "meaning": "хоёр",
+    "kind": "simple",
+    "example": {
+      "word": "两个",
+      "pinyin": "liǎng gè",
+      "translation": "хоёр ширхэг"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "✌️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "两",
+        "label": "хоёр"
+      }
+    },
+    "story": "«хоёр» гэсэн утгатай үндсэн дүрс ханз (liǎng)."
+  },
+  {
+    "character": "路",
+    "pinyin": "lù",
+    "meaning": "зам",
+    "kind": "compound",
+    "example": {
+      "word": "马路",
+      "pinyin": "mǎ lù",
+      "translation": "гудамж"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🛣️"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "足",
+          "label": "хөл"
+        },
+        {
+          "char": "各",
+          "label": "тус бүр"
+        }
+      ],
+      "result": {
+        "char": "路",
+        "label": "зам"
+      }
+    },
+    "story": "хөл (足), тус бүр (各) хослон «зам» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "足",
+        "各"
+      ],
+      "result": "路",
+      "meaning": "зам"
+    }
+  },
+  {
+    "character": "旅",
+    "pinyin": "lǚ",
+    "meaning": "аялал",
+    "kind": "simple",
+    "example": {
+      "word": "旅游",
+      "pinyin": "lǚ yóu",
+      "translation": "аялал"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🧳"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "旅",
+        "label": "аялал"
+      }
+    },
+    "story": "«аялал» гэсэн утгатай үндсэн дүрс ханз (lǚ)."
+  },
+  {
+    "character": "游",
+    "pinyin": "yóu",
+    "meaning": "сэлэх, аялах",
+    "kind": "simple",
+    "example": {
+      "word": "游泳",
+      "pinyin": "yóu yǒng",
+      "translation": "усанд сэлэх"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏊"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "游",
+        "label": "сэлэх, аялах"
+      }
+    },
+    "story": "«сэлэх, аялах» гэсэн утгатай үндсэн дүрс ханз (yóu)."
+  },
+  {
+    "character": "卖",
+    "pinyin": "mài",
+    "meaning": "зарах",
+    "kind": "simple",
+    "example": {
+      "word": "买卖",
+      "pinyin": "mǎi mài",
+      "translation": "арилжаа"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏷️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "卖",
+        "label": "зарах"
+      }
+    },
+    "story": "«зарах» гэсэн утгатай үндсэн дүрс ханз (mài)."
+  },
+  {
+    "character": "慢",
+    "pinyin": "màn",
+    "meaning": "удаан",
+    "kind": "simple",
+    "example": {
+      "word": "很慢",
+      "pinyin": "hěn màn",
+      "translation": "маш удаан"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🐢"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "慢",
+        "label": "удаан"
+      }
+    },
+    "story": "«удаан» гэсэн утгатай үндсэн дүрс ханз (màn)."
+  },
+  {
+    "character": "忙",
+    "pinyin": "máng",
+    "meaning": "завгүй",
+    "kind": "compound",
+    "example": {
+      "word": "很忙",
+      "pinyin": "hěn máng",
+      "translation": "маш завгүй"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "😵"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "忄",
+          "label": "сэтгэл"
+        },
+        {
+          "char": "亡",
+          "label": "алга болох"
+        }
+      ],
+      "result": {
+        "char": "忙",
+        "label": "завгүй"
+      }
+    },
+    "story": "сэтгэл (忄), алга болох (亡) хослон «завгүй» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "忄",
+        "亡"
+      ],
+      "result": "忙",
+      "meaning": "завгүй"
+    }
+  },
+  {
+    "character": "每",
+    "pinyin": "měi",
+    "meaning": "бүр",
+    "kind": "simple",
+    "example": {
+      "word": "每天",
+      "pinyin": "měi tiān",
+      "translation": "өдөр бүр"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔁"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "每",
+        "label": "бүр"
+      }
+    },
+    "story": "«бүр» гэсэн утгатай үндсэн дүрс ханз (měi)."
+  },
+  {
+    "character": "妹",
+    "pinyin": "mèi",
+    "meaning": "дүү охин",
+    "kind": "simple",
+    "example": {
+      "word": "妹妹",
+      "pinyin": "mèi mei",
+      "translation": "эгч дүү"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👧"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "妹",
+        "label": "дүү охин"
+      }
+    },
+    "story": "«дүү охин» гэсэн утгатай үндсэн дүрс ханз (mèi)."
+  },
+  {
+    "character": "门",
+    "pinyin": "mén",
+    "meaning": "хаалга",
+    "kind": "simple",
+    "example": {
+      "word": "门口",
+      "pinyin": "mén kǒu",
+      "translation": "үүдэн хаалга"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚪"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "门",
+        "label": "хаалга"
+      }
+    },
+    "story": "«хаалга» гэсэн утгатай үндсэн дүрс ханз (mén)."
+  },
+  {
+    "character": "您",
+    "pinyin": "nín",
+    "meaning": "таныг (хүндэтгэл)",
+    "kind": "simple",
+    "example": {
+      "word": "您好",
+      "pinyin": "nín hǎo",
+      "translation": "сайн байна уу"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🙇"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "您",
+        "label": "таныг (хүндэтгэл)"
+      }
+    },
+    "story": "«таныг (хүндэтгэл)» гэсэн утгатай үндсэн дүрс ханз (nín)."
+  },
+  {
+    "character": "牛",
+    "pinyin": "niú",
+    "meaning": "үхэр",
+    "kind": "simple",
+    "example": {
+      "word": "牛奶",
+      "pinyin": "niú nǎi",
+      "translation": "сүү"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🐂"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "牛",
+        "label": "үхэр"
+      }
+    },
+    "story": "«үхэр» гэсэн утгатай үндсэн дүрс ханз (niú)."
+  },
+  {
+    "character": "奶",
+    "pinyin": "nǎi",
+    "meaning": "сүү",
+    "kind": "simple",
+    "example": {
+      "word": "牛奶",
+      "pinyin": "niú nǎi",
+      "translation": "сүү"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🥛"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "奶",
+        "label": "сүү"
+      }
+    },
+    "story": "«сүү» гэсэн утгатай үндсэн дүрс ханз (nǎi)."
+  },
+  {
+    "character": "旁",
+    "pinyin": "páng",
+    "meaning": "хажуу",
+    "kind": "compound",
+    "example": {
+      "word": "旁边",
+      "pinyin": "páng biān",
+      "translation": "хажуу"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "↔️"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "立",
+          "label": "зогсох"
+        },
+        {
+          "char": "方",
+          "label": "зүг"
+        }
+      ],
+      "result": {
+        "char": "旁",
+        "label": "хажуу"
+      }
+    },
+    "story": "зогсох (立), зүг (方) хослон «хажуу» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "立",
+        "方"
+      ],
+      "result": "旁",
+      "meaning": "хажуу"
+    }
+  },
+  {
+    "character": "边",
+    "pinyin": "biān",
+    "meaning": "зах, тал",
+    "kind": "compound",
+    "example": {
+      "word": "旁边",
+      "pinyin": "páng biān",
+      "translation": "хажуу"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📐"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "辶",
+          "label": "явах"
+        },
+        {
+          "char": "力",
+          "label": "хүч"
+        }
+      ],
+      "result": {
+        "char": "边",
+        "label": "зах, тал"
+      }
+    },
+    "story": "явах (辶), хүч (力) хослон «зах, тал» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "辶",
+        "力"
+      ],
+      "result": "边",
+      "meaning": "зах, тал"
+    }
+  },
+  {
+    "character": "票",
+    "pinyin": "piào",
+    "meaning": "тасалбар",
+    "kind": "simple",
+    "example": {
+      "word": "车票",
+      "pinyin": "chē piào",
+      "translation": "тээврийн тасалбар"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎫"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "票",
+        "label": "тасалбар"
+      }
+    },
+    "story": "«тасалбар» гэсэн утгатай үндсэн дүрс ханз (piào)."
+  },
+  {
+    "character": "妻",
+    "pinyin": "qī",
+    "meaning": "эхнэр",
+    "kind": "simple",
+    "example": {
+      "word": "妻子",
+      "pinyin": "qī zǐ",
+      "translation": "эхнэр"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👰"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "妻",
+        "label": "эхнэр"
+      }
+    },
+    "story": "«эхнэр» гэсэн утгатай үндсэн дүрс ханз (qī)."
+  },
+  {
+    "character": "床",
+    "pinyin": "chuáng",
+    "meaning": "ор",
+    "kind": "simple",
+    "example": {
+      "word": "起床",
+      "pinyin": "qǐ chuáng",
+      "translation": "босох"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🛏️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "床",
+        "label": "ор"
+      }
+    },
+    "story": "«ор» гэсэн утгатай үндсэн дүрс ханз (chuáng)."
+  },
+  {
+    "character": "千",
+    "pinyin": "qiān",
+    "meaning": "мянга",
+    "kind": "simple",
+    "example": {
+      "word": "一千",
+      "pinyin": "yì qiān",
+      "translation": "нэг мянга"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💯"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "千",
+        "label": "мянга"
+      }
+    },
+    "story": "«мянга» гэсэн утгатай үндсэн дүрс ханз (qiān)."
+  },
+  {
+    "character": "晴",
+    "pinyin": "qíng",
+    "meaning": "цэлмэг",
+    "kind": "compound",
+    "example": {
+      "word": "晴天",
+      "pinyin": "qíng tiān",
+      "translation": "цэлмэг өдөр"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "☀️"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "青",
+          "label": "ногоон"
+        }
+      ],
+      "result": {
+        "char": "晴",
+        "label": "цэлмэг"
+      }
+    },
+    "story": "нар (日), ногоон (青) хослон «цэлмэг» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "日",
+        "青"
+      ],
+      "result": "晴",
+      "meaning": "цэлмэг"
+    }
+  },
+  {
+    "character": "让",
+    "pinyin": "ràng",
+    "meaning": "зөвшөөрөх, болгох",
+    "kind": "simple",
+    "example": {
+      "word": "让",
+      "pinyin": "ràng",
+      "translation": "болгох"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🤲"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "让",
+        "label": "зөвшөөрөх, болгох"
+      }
+    },
+    "story": "«зөвшөөрөх, болгох» гэсэн утгатай үндсэн дүрс ханз (ràng)."
+  },
+  {
+    "character": "班",
+    "pinyin": "bān",
+    "meaning": "анги, ээлж",
+    "kind": "compound",
+    "example": {
+      "word": "上班",
+      "pinyin": "shàng bān",
+      "translation": "ажилд явах"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👥"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "王",
+          "label": "хаш"
+        },
+        {
+          "char": "刂",
+          "label": "хутга"
+        },
+        {
+          "char": "王",
+          "label": "хаш"
+        }
+      ],
+      "result": {
+        "char": "班",
+        "label": "анги, ээлж"
+      }
+    },
+    "story": "хаш (王), хутга (刂), хаш (王) хослон «анги, ээлж» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "王",
+        "刂",
+        "王"
+      ],
+      "result": "班",
+      "meaning": "анги, ээлж"
+    }
+  },
+  {
+    "character": "身",
+    "pinyin": "shēn",
+    "meaning": "бие",
+    "kind": "simple",
+    "example": {
+      "word": "身体",
+      "pinyin": "shēn tǐ",
+      "translation": "бие"
+    },
+    "level": 2,
+    "category": "biye",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🧍"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "身",
+        "label": "бие"
+      }
+    },
+    "story": "«бие» гэсэн утгатай үндсэн дүрс ханз (shēn)."
+  },
+  {
+    "character": "病",
+    "pinyin": "bìng",
+    "meaning": "өвчин",
+    "kind": "simple",
+    "example": {
+      "word": "生病",
+      "pinyin": "shēng bìng",
+      "translation": "өвдөх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🤒"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "病",
+        "label": "өвчин"
+      }
+    },
+    "story": "«өвчин» гэсэн утгатай үндсэн дүрс ханз (bìng)."
+  },
+  {
+    "character": "事",
+    "pinyin": "shì",
+    "meaning": "хэрэг",
+    "kind": "simple",
+    "example": {
+      "word": "事情",
+      "pinyin": "shì qing",
+      "translation": "хэрэг явдал"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📋"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "事",
+        "label": "хэрэг"
+      }
+    },
+    "story": "«хэрэг» гэсэн утгатай үндсэн дүрс ханз (shì)."
+  },
+  {
+    "character": "情",
+    "pinyin": "qíng",
+    "meaning": "сэтгэл, байдал",
+    "kind": "compound",
+    "example": {
+      "word": "事情",
+      "pinyin": "shì qing",
+      "translation": "хэрэг явдал"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "❤️"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "忄",
+          "label": "сэтгэл"
+        },
+        {
+          "char": "青",
+          "label": "ногоон"
+        }
+      ],
+      "result": {
+        "char": "情",
+        "label": "сэтгэл, байдал"
+      }
+    },
+    "story": "сэтгэл (忄), ногоон (青) хослон «сэтгэл, байдал» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "忄",
+        "青"
+      ],
+      "result": "情",
+      "meaning": "сэтгэл, байдал"
+    }
+  },
+  {
+    "character": "手",
+    "pinyin": "shǒu",
+    "meaning": "гар",
+    "kind": "simple",
+    "example": {
+      "word": "手机",
+      "pinyin": "shǒu jī",
+      "translation": "гар утас"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "✋"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "手",
+        "label": "гар"
+      }
+    },
+    "story": "«гар» гэсэн утгатай үндсэн дүрс ханз (shǒu)."
+  },
+  {
+    "character": "表",
+    "pinyin": "biǎo",
+    "meaning": "цаг; илэрхийлэх",
+    "kind": "simple",
+    "example": {
+      "word": "手表",
+      "pinyin": "shǒu biǎo",
+      "translation": "бугуйн цаг"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "⌚"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "表",
+        "label": "цаг; илэрхийлэх"
+      }
+    },
+    "story": "«цаг; илэрхийлэх» гэсэн утгатай үндсэн дүрс ханз (biǎo)."
+  },
+  {
+    "character": "送",
+    "pinyin": "sòng",
+    "meaning": "хүргэх, бэлэглэх",
+    "kind": "simple",
+    "example": {
+      "word": "送给",
+      "pinyin": "sòng gěi",
+      "translation": "бэлэглэх"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎁"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "送",
+        "label": "хүргэх, бэлэглэх"
+      }
+    },
+    "story": "«хүргэх, бэлэглэх» гэсэн утгатай үндсэн дүрс ханз (sòng)."
+  },
+  {
+    "character": "所",
+    "pinyin": "suǒ",
+    "meaning": "газар; учир",
+    "kind": "compound",
+    "example": {
+      "word": "所以",
+      "pinyin": "suǒ yǐ",
+      "translation": "тиймээс"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📍"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "户",
+          "label": "айл"
+        },
+        {
+          "char": "斤",
+          "label": "сүх"
+        }
+      ],
+      "result": {
+        "char": "所",
+        "label": "газар; учир"
+      }
+    },
+    "story": "айл (户), сүх (斤) хослон «газар; учир» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "户",
+        "斤"
+      ],
+      "result": "所",
+      "meaning": "газар; учир"
+    }
+  },
+  {
+    "character": "它",
+    "pinyin": "tā",
+    "meaning": "тэр (амьтан/юм)",
+    "kind": "simple",
+    "example": {
+      "word": "它",
+      "pinyin": "tā",
+      "translation": "тэр"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🐾"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "它",
+        "label": "тэр (амьтан/юм)"
+      }
+    },
+    "story": "«тэр (амьтан/юм)» гэсэн утгатай үндсэн дүрс ханз (tā)."
+  },
+  {
+    "character": "踢",
+    "pinyin": "tī",
+    "meaning": "өшиглөх",
+    "kind": "compound",
+    "example": {
+      "word": "踢球",
+      "pinyin": "tī qiú",
+      "translation": "бөмбөг өшиглөх"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🦵"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "足",
+          "label": "хөл"
+        },
+        {
+          "char": "易",
+          "label": "хялбар"
+        }
+      ],
+      "result": {
+        "char": "踢",
+        "label": "өшиглөх"
+      }
+    },
+    "story": "хөл (足), хялбар (易) хослон «өшиглөх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "足",
+        "易"
+      ],
+      "result": "踢",
+      "meaning": "өшиглөх"
+    }
+  },
+  {
+    "character": "题",
+    "pinyin": "tí",
+    "meaning": "асуудал, гарчиг",
+    "kind": "simple",
+    "example": {
+      "word": "问题",
+      "pinyin": "wèn tí",
+      "translation": "асуудал"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "❓"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "题",
+        "label": "асуудал, гарчиг"
+      }
+    },
+    "story": "«асуудал, гарчиг» гэсэн утгатай үндсэн дүрс ханз (tí)."
+  },
+  {
+    "character": "舞",
+    "pinyin": "wǔ",
+    "meaning": "бүжиг",
+    "kind": "simple",
+    "example": {
+      "word": "跳舞",
+      "pinyin": "tiào wǔ",
+      "translation": "бүжиглэх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💃"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "舞",
+        "label": "бүжиг"
+      }
+    },
+    "story": "«бүжиг» гэсэн утгатай үндсэн дүрс ханз (wǔ)."
+  },
+  {
+    "character": "外",
+    "pinyin": "wài",
+    "meaning": "гадна",
+    "kind": "simple",
+    "example": {
+      "word": "外面",
+      "pinyin": "wài miàn",
+      "translation": "гадна тал"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌳"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "外",
+        "label": "гадна"
+      }
+    },
+    "story": "«гадна» гэсэн утгатай үндсэн дүрс ханз (wài)."
+  },
+  {
+    "character": "完",
+    "pinyin": "wán",
+    "meaning": "дуусгах",
+    "kind": "compound",
+    "example": {
+      "word": "完成",
+      "pinyin": "wán chéng",
+      "translation": "дуусгах"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏁"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "宀",
+          "label": "дээвэр"
+        },
+        {
+          "char": "元",
+          "label": "эх"
+        }
+      ],
+      "result": {
+        "char": "完",
+        "label": "дуусгах"
+      }
+    },
+    "story": "дээвэр (宀), эх (元) хослон «дуусгах» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "宀",
+        "元"
+      ],
+      "result": "完",
+      "meaning": "дуусгах"
+    }
+  },
+  {
+    "character": "玩",
+    "pinyin": "wán",
+    "meaning": "тоглох",
+    "kind": "compound",
+    "example": {
+      "word": "玩",
+      "pinyin": "wán",
+      "translation": "тоглох"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎮"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "王",
+          "label": "хаш"
+        },
+        {
+          "char": "元",
+          "label": "эх"
+        }
+      ],
+      "result": {
+        "char": "玩",
+        "label": "тоглох"
+      }
+    },
+    "story": "хаш (王), эх (元) хослон «тоглох» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "王",
+        "元"
+      ],
+      "result": "玩",
+      "meaning": "тоглох"
+    }
+  },
+  {
+    "character": "晚",
+    "pinyin": "wǎn",
+    "meaning": "орой",
+    "kind": "compound",
+    "example": {
+      "word": "晚上",
+      "pinyin": "wǎn shang",
+      "translation": "орой"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌃"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "免",
+          "label": "чөлөөлөх"
+        }
+      ],
+      "result": {
+        "char": "晚",
+        "label": "орой"
+      }
+    },
+    "story": "нар (日), чөлөөлөх (免) хослон «орой» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "日",
+        "免"
+      ],
+      "result": "晚",
+      "meaning": "орой"
+    }
+  },
+  {
+    "character": "为",
+    "pinyin": "wèi",
+    "meaning": "-ийн төлөө",
+    "kind": "simple",
+    "example": {
+      "word": "因为",
+      "pinyin": "yīn wèi",
+      "translation": "учир нь"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎯"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "为",
+        "label": "-ийн төлөө"
+      }
+    },
+    "story": "«-ийн төлөө» гэсэн утгатай үндсэн дүрс ханз (wèi)."
+  },
+  {
+    "character": "问",
+    "pinyin": "wèn",
+    "meaning": "асуух",
+    "kind": "compound",
+    "example": {
+      "word": "问题",
+      "pinyin": "wèn tí",
+      "translation": "асуудал"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "❓"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "门",
+          "label": "хаалга"
+        },
+        {
+          "char": "口",
+          "label": "ам"
+        }
+      ],
+      "result": {
+        "char": "问",
+        "label": "асуух"
+      }
+    },
+    "story": "хаалга (门), ам (口) хослон «асуух» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "门",
+        "口"
+      ],
+      "result": "问",
+      "meaning": "асуух"
+    }
+  },
+  {
+    "character": "希",
+    "pinyin": "xī",
+    "meaning": "найдах (希望)",
+    "kind": "simple",
+    "example": {
+      "word": "希望",
+      "pinyin": "xī wàng",
+      "translation": "найдах"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🌟"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "希",
+        "label": "найдах (希望)"
+      }
+    },
+    "story": "«найдах (希望)» гэсэн утгатай үндсэн дүрс ханз (xī)."
+  },
+  {
+    "character": "望",
+    "pinyin": "wàng",
+    "meaning": "хүсэх, харах",
+    "kind": "compound",
+    "example": {
+      "word": "希望",
+      "pinyin": "xī wàng",
+      "translation": "найдах"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔭"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "亡",
+          "label": "алга болох"
+        },
+        {
+          "char": "月",
+          "label": "сар"
+        },
+        {
+          "char": "王",
+          "label": "хаш"
+        }
+      ],
+      "result": {
+        "char": "望",
+        "label": "хүсэх, харах"
+      }
+    },
+    "story": "алга болох (亡), сар (月), хаш (王) хослон «хүсэх, харах» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "亡",
+        "月",
+        "王"
+      ],
+      "result": "望",
+      "meaning": "хүсэх, харах"
+    }
+  },
+  {
+    "character": "洗",
+    "pinyin": "xǐ",
+    "meaning": "угаах",
+    "kind": "compound",
+    "example": {
+      "word": "洗手",
+      "pinyin": "xǐ shǒu",
+      "translation": "гар угаах"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚿"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "氵",
+          "label": "ус"
+        },
+        {
+          "char": "先",
+          "label": "урьд"
+        }
+      ],
+      "result": {
+        "char": "洗",
+        "label": "угаах"
+      }
+    },
+    "story": "ус (氵), урьд (先) хослон «угаах» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "氵",
+        "先"
+      ],
+      "result": "洗",
+      "meaning": "угаах"
+    }
+  },
+  {
+    "character": "瓜",
+    "pinyin": "guā",
+    "meaning": "тарвас, амтат жимс",
+    "kind": "simple",
+    "example": {
+      "word": "西瓜",
+      "pinyin": "xī guā",
+      "translation": "тарвас"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🍉"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "瓜",
+        "label": "тарвас, амтат жимс"
+      }
+    },
+    "story": "«тарвас, амтат жимс» гэсэн утгатай үндсэн дүрс ханз (guā)."
+  },
+  {
+    "character": "向",
+    "pinyin": "xiàng",
+    "meaning": "зүг рүү",
+    "kind": "simple",
+    "example": {
+      "word": "方向",
+      "pinyin": "fāng xiàng",
+      "translation": "чиглэл"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🧭"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "向",
+        "label": "зүг рүү"
+      }
+    },
+    "story": "«зүг рүү» гэсэн утгатай үндсэн дүрс ханз (xiàng)."
+  },
+  {
+    "character": "新",
+    "pinyin": "xīn",
+    "meaning": "шинэ",
+    "kind": "simple",
+    "example": {
+      "word": "新年",
+      "pinyin": "xīn nián",
+      "translation": "шинэ жил"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🆕"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "新",
+        "label": "шинэ"
+      }
+    },
+    "story": "«шинэ» гэсэн утгатай үндсэн дүрс ханз (xīn)."
+  },
+  {
+    "character": "姓",
+    "pinyin": "xìng",
+    "meaning": "овог",
+    "kind": "compound",
+    "example": {
+      "word": "姓名",
+      "pinyin": "xìng míng",
+      "translation": "овог нэр"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🪪"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "女",
+          "label": "эмэгтэй"
+        },
+        {
+          "char": "生",
+          "label": "төрөх"
+        }
+      ],
+      "result": {
+        "char": "姓",
+        "label": "овог"
+      }
+    },
+    "story": "эмэгтэй (女), төрөх (生) хослон «овог» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "女",
+        "生"
+      ],
+      "result": "姓",
+      "meaning": "овог"
+    }
+  },
+  {
+    "character": "息",
+    "pinyin": "xī",
+    "meaning": "амьсгаа; зогсох",
+    "kind": "compound",
+    "example": {
+      "word": "休息",
+      "pinyin": "xiū xi",
+      "translation": "амрах"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "😮‍💨"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "自",
+          "label": "өөрөө"
+        },
+        {
+          "char": "心",
+          "label": "сэтгэл"
+        }
+      ],
+      "result": {
+        "char": "息",
+        "label": "амьсгаа; зогсох"
+      }
+    },
+    "story": "өөрөө (自), сэтгэл (心) хослон «амьсгаа; зогсох» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "自",
+        "心"
+      ],
+      "result": "息",
+      "meaning": "амьсгаа; зогсох"
+    }
+  },
+  {
+    "character": "雪",
+    "pinyin": "xuě",
+    "meaning": "цас",
+    "kind": "simple",
+    "example": {
+      "word": "下雪",
+      "pinyin": "xià xuě",
+      "translation": "цас орох"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "❄️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "雪",
+        "label": "цас"
+      }
+    },
+    "story": "«цас» гэсэн утгатай үндсэн дүрс ханз (xuě)."
+  },
+  {
+    "character": "颜",
+    "pinyin": "yán",
+    "meaning": "өнгө (颜色)",
+    "kind": "simple",
+    "example": {
+      "word": "颜色",
+      "pinyin": "yán sè",
+      "translation": "өнгө"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎨"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "颜",
+        "label": "өнгө (颜色)"
+      }
+    },
+    "story": "«өнгө (颜色)» гэсэн утгатай үндсэн дүрс ханз (yán)."
+  },
+  {
+    "character": "色",
+    "pinyin": "sè",
+    "meaning": "өнгө",
+    "kind": "simple",
+    "example": {
+      "word": "颜色",
+      "pinyin": "yán sè",
+      "translation": "өнгө"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎨"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "色",
+        "label": "өнгө"
+      }
+    },
+    "story": "«өнгө» гэсэн утгатай үндсэн дүрс ханз (sè)."
+  },
+  {
+    "character": "眼",
+    "pinyin": "yǎn",
+    "meaning": "нүд",
+    "kind": "simple",
+    "example": {
+      "word": "眼睛",
+      "pinyin": "yǎn jing",
+      "translation": "нүд"
+    },
+    "level": 2,
+    "category": "biye",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👁️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "眼",
+        "label": "нүд"
+      }
+    },
+    "story": "«нүд» гэсэн утгатай үндсэн дүрс ханз (yǎn)."
+  },
+  {
+    "character": "睛",
+    "pinyin": "jīng",
+    "meaning": "нүдний цэцгий",
+    "kind": "compound",
+    "example": {
+      "word": "眼睛",
+      "pinyin": "yǎn jing",
+      "translation": "нүд"
+    },
+    "level": 2,
+    "category": "biye",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👁️"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "目",
+          "label": "нүд"
+        },
+        {
+          "char": "青",
+          "label": "ногоон"
+        }
+      ],
+      "result": {
+        "char": "睛",
+        "label": "нүдний цэцгий"
+      }
+    },
+    "story": "нүд (目), ногоон (青) хослон «нүдний цэцгий» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "目",
+        "青"
+      ],
+      "result": "睛",
+      "meaning": "нүдний цэцгий"
+    }
+  },
+  {
+    "character": "羊",
+    "pinyin": "yáng",
+    "meaning": "хонь",
+    "kind": "simple",
+    "example": {
+      "word": "羊肉",
+      "pinyin": "yáng ròu",
+      "translation": "хонины мах"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🐑"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "羊",
+        "label": "хонь"
+      }
+    },
+    "story": "«хонь» гэсэн утгатай үндсэн дүрс ханз (yáng)."
+  },
+  {
+    "character": "肉",
+    "pinyin": "ròu",
+    "meaning": "мах",
+    "kind": "simple",
+    "example": {
+      "word": "羊肉",
+      "pinyin": "yáng ròu",
+      "translation": "хонины мах"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🍖"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "肉",
+        "label": "мах"
+      }
+    },
+    "story": "«мах» гэсэн утгатай үндсэн дүрс ханз (ròu)."
+  },
+  {
+    "character": "药",
+    "pinyin": "yào",
+    "meaning": "эм",
+    "kind": "simple",
+    "example": {
+      "word": "吃药",
+      "pinyin": "chī yào",
+      "translation": "эм уух"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💊"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "药",
+        "label": "эм"
+      }
+    },
+    "story": "«эм» гэсэн утгатай үндсэн дүрс ханз (yào)."
+  },
+  {
+    "character": "要",
+    "pinyin": "yào",
+    "meaning": "хүсэх, шаардлагатай",
+    "kind": "compound",
+    "example": {
+      "word": "想要",
+      "pinyin": "xiǎng yào",
+      "translation": "хүсэх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🙏"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "覀",
+          "label": "баруун"
+        },
+        {
+          "char": "女",
+          "label": "эмэгтэй"
+        }
+      ],
+      "result": {
+        "char": "要",
+        "label": "хүсэх, шаардлагатай"
+      }
+    },
+    "story": "баруун (覀), эмэгтэй (女) хослон «хүсэх, шаардлагатай» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "覀",
+        "女"
+      ],
+      "result": "要",
+      "meaning": "хүсэх, шаардлагатай"
+    }
+  },
+  {
+    "character": "也",
+    "pinyin": "yě",
+    "meaning": "бас",
+    "kind": "simple",
+    "example": {
+      "word": "也是",
+      "pinyin": "yě shì",
+      "translation": "бас мөн"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "➕"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "也",
+        "label": "бас"
+      }
+    },
+    "story": "«бас» гэсэн утгатай үндсэн дүрс ханз (yě)."
+  },
+  {
+    "character": "已",
+    "pinyin": "yǐ",
+    "meaning": "аль хэдийн",
+    "kind": "simple",
+    "example": {
+      "word": "已经",
+      "pinyin": "yǐ jīng",
+      "translation": "аль хэдийн"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "☑️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "已",
+        "label": "аль хэдийн"
+      }
+    },
+    "story": "«аль хэдийн» гэсэн утгатай үндсэн дүрс ханз (yǐ)."
+  },
+  {
+    "character": "经",
+    "pinyin": "jīng",
+    "meaning": "дамжих; ном",
+    "kind": "simple",
+    "example": {
+      "word": "已经",
+      "pinyin": "yǐ jīng",
+      "translation": "аль хэдийн"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📿"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "经",
+        "label": "дамжих; ном"
+      }
+    },
+    "story": "«дамжих; ном» гэсэн утгатай үндсэн дүрс ханз (jīng)."
+  },
+  {
+    "character": "意",
+    "pinyin": "yì",
+    "meaning": "бодол, утга",
+    "kind": "compound",
+    "example": {
+      "word": "意思",
+      "pinyin": "yì si",
+      "translation": "утга, санаа"
+    },
+    "level": 2,
+    "category": "setgel",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💭"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "音",
+          "label": "дуу"
+        },
+        {
+          "char": "心",
+          "label": "сэтгэл"
+        }
+      ],
+      "result": {
+        "char": "意",
+        "label": "бодол, утга"
+      }
+    },
+    "story": "дуу (音), сэтгэл (心) хослон «бодол, утга» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "音",
+        "心"
+      ],
+      "result": "意",
+      "meaning": "бодол, утга"
+    }
+  },
+  {
+    "character": "因",
+    "pinyin": "yīn",
+    "meaning": "шалтгаан",
+    "kind": "simple",
+    "example": {
+      "word": "因为",
+      "pinyin": "yīn wèi",
+      "translation": "учир нь"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔗"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "因",
+        "label": "шалтгаан"
+      }
+    },
+    "story": "«шалтгаан» гэсэн утгатай үндсэн дүрс ханз (yīn)."
+  },
+  {
+    "character": "阴",
+    "pinyin": "yīn",
+    "meaning": "үүлэрхэг; сүүдэр",
+    "kind": "compound",
+    "example": {
+      "word": "阴天",
+      "pinyin": "yīn tiān",
+      "translation": "үүлэрхэг өдөр"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "☁️"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "阝",
+          "label": "толгод"
+        },
+        {
+          "char": "月",
+          "label": "сар"
+        }
+      ],
+      "result": {
+        "char": "阴",
+        "label": "үүлэрхэг; сүүдэр"
+      }
+    },
+    "story": "толгод (阝), сар (月) хослон «үүлэрхэг; сүүдэр» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "阝",
+        "月"
+      ],
+      "result": "阴",
+      "meaning": "үүлэрхэг; сүүдэр"
+    }
+  },
+  {
+    "character": "泳",
+    "pinyin": "yǒng",
+    "meaning": "сэлэх",
+    "kind": "compound",
+    "example": {
+      "word": "游泳",
+      "pinyin": "yóu yǒng",
+      "translation": "усанд сэлэх"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏊"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "氵",
+          "label": "ус"
+        },
+        {
+          "char": "永",
+          "label": "мөнх"
+        }
+      ],
+      "result": {
+        "char": "泳",
+        "label": "сэлэх"
+      }
+    },
+    "story": "ус (氵), мөнх (永) хослон «сэлэх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "氵",
+        "永"
+      ],
+      "result": "泳",
+      "meaning": "сэлэх"
+    }
+  },
+  {
+    "character": "右",
+    "pinyin": "yòu",
+    "meaning": "баруун",
+    "kind": "simple",
+    "example": {
+      "word": "右边",
+      "pinyin": "yòu bian",
+      "translation": "баруун тал"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "➡️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "右",
+        "label": "баруун"
+      }
+    },
+    "story": "«баруун» гэсэн утгатай үндсэн дүрс ханз (yòu)."
+  },
+  {
+    "character": "鱼",
+    "pinyin": "yú",
+    "meaning": "загас",
+    "kind": "simple",
+    "example": {
+      "word": "鱼",
+      "pinyin": "Yú",
+      "translation": "загас"
+    },
+    "level": 2,
+    "category": "baigal",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🐟"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "鱼",
+        "label": "загас"
+      }
+    },
+    "story": "«загас» гэсэн утгатай үндсэн дүрс ханз (yú)."
+  },
+  {
+    "character": "元",
+    "pinyin": "yuán",
+    "meaning": "юань; эх",
+    "kind": "simple",
+    "example": {
+      "word": "元旦",
+      "pinyin": "Yuán dàn",
+      "translation": "шинэ жил"
+    },
+    "level": 2,
+    "category": "xun",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💴"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "元",
+        "label": "юань; эх"
+      }
+    },
+    "story": "«юань; эх» гэсэн утгатай үндсэн дүрс ханз (yuán)."
+  },
+  {
+    "character": "远",
+    "pinyin": "yuǎn",
+    "meaning": "хол",
+    "kind": "compound",
+    "example": {
+      "word": "很远",
+      "pinyin": "hěn yuǎn",
+      "translation": "маш хол"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔭"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "辶",
+          "label": "явах"
+        },
+        {
+          "char": "元",
+          "label": "эх"
+        }
+      ],
+      "result": {
+        "char": "远",
+        "label": "хол"
+      }
+    },
+    "story": "явах (辶), эх (元) хослон «хол» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "辶",
+        "元"
+      ],
+      "result": "远",
+      "meaning": "хол"
+    }
+  },
+  {
+    "character": "运",
+    "pinyin": "yùn",
+    "meaning": "зөөх; хувь заяа",
+    "kind": "compound",
+    "example": {
+      "word": "运动",
+      "pinyin": "yùn dòng",
+      "translation": "спорт"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏃"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "辶",
+          "label": "явах"
+        },
+        {
+          "char": "云",
+          "label": "үүл"
+        }
+      ],
+      "result": {
+        "char": "运",
+        "label": "зөөх; хувь заяа"
+      }
+    },
+    "story": "явах (辶), үүл (云) хослон «зөөх; хувь заяа» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "辶",
+        "云"
+      ],
+      "result": "运",
+      "meaning": "зөөх; хувь заяа"
+    }
+  },
+  {
+    "character": "动",
+    "pinyin": "dòng",
+    "meaning": "хөдлөх",
+    "kind": "compound",
+    "example": {
+      "word": "运动",
+      "pinyin": "yùn dòng",
+      "translation": "спорт"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏃"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "云",
+          "label": "үүл"
+        },
+        {
+          "char": "力",
+          "label": "хүч"
+        }
+      ],
+      "result": {
+        "char": "动",
+        "label": "хөдлөх"
+      }
+    },
+    "story": "үүл (云), хүч (力) хослон «хөдлөх» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "云",
+        "力"
+      ],
+      "result": "动",
+      "meaning": "хөдлөх"
+    }
+  },
+  {
+    "character": "张",
+    "pinyin": "zhāng",
+    "meaning": "хуудас (тоолуур)",
+    "kind": "compound",
+    "example": {
+      "word": "一张",
+      "pinyin": "yì zhāng",
+      "translation": "нэг хуудас"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📄"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "弓",
+          "label": "нум"
+        },
+        {
+          "char": "长",
+          "label": "урт"
+        }
+      ],
+      "result": {
+        "char": "张",
+        "label": "хуудас (тоолуур)"
+      }
+    },
+    "story": "нум (弓), урт (长) хослон «хуудас (тоолуур)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "弓",
+        "长"
+      ],
+      "result": "张",
+      "meaning": "хуудас (тоолуур)"
+    }
+  },
+  {
+    "character": "长",
+    "pinyin": "cháng",
+    "meaning": "урт; ургах",
+    "kind": "simple",
+    "example": {
+      "word": "长大",
+      "pinyin": "zhǎng dà",
+      "translation": "өсөх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "📏"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "长",
+        "label": "урт; ургах"
+      }
+    },
+    "story": "«урт; ургах» гэсэн утгатай үндсэн дүрс ханз (cháng)."
+  },
+  {
+    "character": "丈",
+    "pinyin": "zhàng",
+    "meaning": "эр хүн (丈夫)",
+    "kind": "compound",
+    "example": {
+      "word": "丈夫",
+      "pinyin": "zhàng fu",
+      "translation": "нөхөр"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👨"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "一",
+          "label": "нэг"
+        },
+        {
+          "char": "又",
+          "label": "гар"
+        }
+      ],
+      "result": {
+        "char": "丈",
+        "label": "эр хүн (丈夫)"
+      }
+    },
+    "story": "нэг (一), гар (又) хослон «эр хүн (丈夫)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "一",
+        "又"
+      ],
+      "result": "丈",
+      "meaning": "эр хүн (丈夫)"
+    }
+  },
+  {
+    "character": "夫",
+    "pinyin": "fū",
+    "meaning": "эр хүн, нөхөр",
+    "kind": "compound",
+    "example": {
+      "word": "丈夫",
+      "pinyin": "zhàng fu",
+      "translation": "нөхөр"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "👨"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "一",
+          "label": "нэг"
+        },
+        {
+          "char": "大",
+          "label": "том"
+        }
+      ],
+      "result": {
+        "char": "夫",
+        "label": "эр хүн, нөхөр"
+      }
+    },
+    "story": "нэг (一), том (大) хослон «эр хүн, нөхөр» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "一",
+        "大"
+      ],
+      "result": "夫",
+      "meaning": "эр хүн, нөхөр"
+    }
+  },
+  {
+    "character": "找",
+    "pinyin": "zhǎo",
+    "meaning": "хайх",
+    "kind": "simple",
+    "example": {
+      "word": "找到",
+      "pinyin": "zhǎo dào",
+      "translation": "олох"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔍"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "找",
+        "label": "хайх"
+      }
+    },
+    "story": "«хайх» гэсэн утгатай үндсэн дүрс ханз (zhǎo)."
+  },
+  {
+    "character": "着",
+    "pinyin": "zhe",
+    "meaning": "-сан хэвээр (нөхцөл)",
+    "kind": "compound",
+    "example": {
+      "word": "看着",
+      "pinyin": "kàn zhe",
+      "translation": "хараад"
+    },
+    "level": 2,
+    "category": "biye",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🔛"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "羊",
+          "label": "хонь"
+        },
+        {
+          "char": "目",
+          "label": "нүд"
+        }
+      ],
+      "result": {
+        "char": "着",
+        "label": "-сан хэвээр (нөхцөл)"
+      }
+    },
+    "story": "хонь (羊), нүд (目) хослон «-сан хэвээр (нөхцөл)» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "羊",
+        "目"
+      ],
+      "result": "着",
+      "meaning": "-сан хэвээр (нөхцөл)"
+    }
+  },
+  {
+    "character": "真",
+    "pinyin": "zhēn",
+    "meaning": "үнэхээр",
+    "kind": "compound",
+    "example": {
+      "word": "真的",
+      "pinyin": "zhēn de",
+      "translation": "үнэхээр"
+    },
+    "level": 2,
+    "category": "biye",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "💯"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "直",
+          "label": "шулуун"
+        },
+        {
+          "char": "几",
+          "label": "хэд"
+        }
+      ],
+      "result": {
+        "char": "真",
+        "label": "үнэхээр"
+      }
+    },
+    "story": "шулуун (直), хэд (几) хослон «үнэхээр» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "直",
+        "几"
+      ],
+      "result": "真",
+      "meaning": "үнэхээр"
+    }
+  },
+  {
+    "character": "正",
+    "pinyin": "zhèng",
+    "meaning": "зөв; яг",
+    "kind": "compound",
+    "example": {
+      "word": "正在",
+      "pinyin": "zhèng zài",
+      "translation": "яг ... байгаа"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "✔️"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "一",
+          "label": "нэг"
+        },
+        {
+          "char": "止",
+          "label": "зогсох"
+        }
+      ],
+      "result": {
+        "char": "正",
+        "label": "зөв; яг"
+      }
+    },
+    "story": "нэг (一), зогсох (止) хослон «зөв; яг» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "一",
+        "止"
+      ],
+      "result": "正",
+      "meaning": "зөв; яг"
+    }
+  },
+  {
+    "character": "知",
+    "pinyin": "zhī",
+    "meaning": "мэдэх",
+    "kind": "simple",
+    "example": {
+      "word": "知道",
+      "pinyin": "zhī dào",
+      "translation": "мэдэх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🧠"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "知",
+        "label": "мэдэх"
+      }
+    },
+    "story": "«мэдэх» гэсэн утгатай үндсэн дүрс ханз (zhī)."
+  },
+  {
+    "character": "道",
+    "pinyin": "dào",
+    "meaning": "зам; арга",
+    "kind": "compound",
+    "example": {
+      "word": "知道",
+      "pinyin": "zhī dào",
+      "translation": "мэдэх"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🛤️"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "辶",
+          "label": "явах"
+        },
+        {
+          "char": "首",
+          "label": "толгой"
+        }
+      ],
+      "result": {
+        "char": "道",
+        "label": "зам; арга"
+      }
+    },
+    "story": "явах (辶), толгой (首) хослон «зам; арга» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "辶",
+        "首"
+      ],
+      "result": "道",
+      "meaning": "зам; арга"
+    }
+  },
+  {
+    "character": "准",
+    "pinyin": "zhǔn",
+    "meaning": "бэлэн; зөв",
+    "kind": "simple",
+    "example": {
+      "word": "准备",
+      "pinyin": "zhǔn bèi",
+      "translation": "бэлтгэх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎯"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "准",
+        "label": "бэлэн; зөв"
+      }
+    },
+    "story": "«бэлэн; зөв» гэсэн утгатай үндсэн дүрс ханз (zhǔn)."
+  },
+  {
+    "character": "备",
+    "pinyin": "bèi",
+    "meaning": "бэлтгэх",
+    "kind": "simple",
+    "example": {
+      "word": "准备",
+      "pinyin": "zhǔn bèi",
+      "translation": "бэлтгэх"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🎒"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "备",
+        "label": "бэлтгэх"
+      }
+    },
+    "story": "«бэлтгэх» гэсэн утгатай үндсэн дүрс ханз (bèi)."
+  },
+  {
+    "character": "自",
+    "pinyin": "zì",
+    "meaning": "өөрөө",
+    "kind": "simple",
+    "example": {
+      "word": "自己",
+      "pinyin": "zì jǐ",
+      "translation": "өөрөө"
+    },
+    "level": 2,
+    "category": "biye",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🤳"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "自",
+        "label": "өөрөө"
+      }
+    },
+    "story": "«өөрөө» гэсэн утгатай үндсэн дүрс ханз (zì)."
+  },
+  {
+    "character": "行",
+    "pinyin": "xíng",
+    "meaning": "явах; болох",
+    "kind": "simple",
+    "example": {
+      "word": "自行车",
+      "pinyin": "zì xíng chē",
+      "translation": "дугуй"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚲"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "行",
+        "label": "явах; болох"
+      }
+    },
+    "story": "«явах; болох» гэсэн утгатай үндсэн дүрс ханз (xíng)."
+  },
+  {
+    "character": "走",
+    "pinyin": "zǒu",
+    "meaning": "алхах, явах",
+    "kind": "compound",
+    "example": {
+      "word": "走路",
+      "pinyin": "zǒu lù",
+      "translation": "алхах"
+    },
+    "level": 2,
+    "category": "uil",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🚶"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "土",
+          "label": "шороо"
+        },
+        {
+          "char": "止",
+          "label": "зогсох"
+        }
+      ],
+      "result": {
+        "char": "走",
+        "label": "алхах, явах"
+      }
+    },
+    "story": "шороо (土), зогсох (止) хослон «алхах, явах» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "土",
+        "止"
+      ],
+      "result": "走",
+      "meaning": "алхах, явах"
+    }
+  },
+  {
+    "character": "最",
+    "pinyin": "zuì",
+    "meaning": "хамгийн",
+    "kind": "compound",
+    "example": {
+      "word": "最好",
+      "pinyin": "zuì hǎo",
+      "translation": "хамгийн сайн"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "🏆"
+      }
+    },
+    "structure": {
+      "parts": [
+        {
+          "char": "日",
+          "label": "нар"
+        },
+        {
+          "char": "取",
+          "label": "авах"
+        }
+      ],
+      "result": {
+        "char": "最",
+        "label": "хамгийн"
+      }
+    },
+    "story": "нар (日), авах (取) хослон «хамгийн» гэсэн утга үүсгэнэ.",
+    "mnemonic": {
+      "parts": [
+        "日",
+        "取"
+      ],
+      "result": "最",
+      "meaning": "хамгийн"
+    }
+  },
+  {
+    "character": "左",
+    "pinyin": "zuǒ",
+    "meaning": "зүүн",
+    "kind": "simple",
+    "example": {
+      "word": "左边",
+      "pinyin": "zuǒ bian",
+      "translation": "зүүн тал"
+    },
+    "level": 2,
+    "category": "zuils",
+    "tags": [
+      "hsk2"
+    ],
+    "images": {
+      "icon": {
+        "kind": "emoji",
+        "emoji": "⬅️"
+      }
+    },
+    "structure": {
+      "parts": [],
+      "result": {
+        "char": "左",
+        "label": "зүүн"
+      }
+    },
+    "story": "«зүүн» гэсэн утгатай үндсэн дүрс ханз (zuǒ)."
   }
 ]
