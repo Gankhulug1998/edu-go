@@ -1,4 +1,5 @@
 import { Hono } from 'hono';
+import { compress } from 'hono/compress';
 import { serve } from '@hono/node-server';
 import { serveStatic } from '@hono/node-server/serve-static';
 import { renderCard, renderSvg } from './render.js';
@@ -25,6 +26,14 @@ const seed = seedIfEmpty();
 if (seed.seeded > 0) console.log(`▶ DB seeded ${seed.seeded} drafts`);
 
 const app = new Hono();
+
+// gzip — текст/JSON хариуг шахаж удаан холбоос дээр огцом хурдасгана
+// (PNG зэрэг аль хэдийн шахагдсан форматыг дахин шахахгүй)
+app.use('*', async (c, next) => {
+  const skip = c.req.path.startsWith('/api/images/') || c.req.path.startsWith('/api/renders/');
+  if (skip) return next();
+  return compress()(c, next);
+});
 
 // ───────────────── INFO ─────────────────
 app.get('/api', (c) =>
