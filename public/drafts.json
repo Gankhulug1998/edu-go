@@ -34,7 +34,7 @@
       "meaning": "ой"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 林 (forest), built from two 'tree' radicals 木+木. Subject: EXACTLY TWO prominent identical pine trees standing tall side-by-side in the foreground as the clear focal point, soft morning sun rays between their trunks, gentle East Asian landscape behind. Composition must read as a PAIR of trees. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 林 (forest), built from two 'tree' radicals 木+木. Subject: EXACTLY TWO prominent identical pine trees standing tall side-by-side in the foreground as the clear focal point, soft morning sun rays between their trunks, gentle East Asian landscape behind. Composition must read as a PAIR of trees. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram showing visual transformation: one small cartoon tree on the LEFT, a thin arrow in the MIDDLE, TWO cartoon trees standing side-by-side on the RIGHT. Clean white background. Style of a children's school textbook diagram. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: two simple green pine trees standing side-by-side, single subject centered on pure white background. Friendly, easy to recognize at small size. No text, no watermark."
     },
@@ -54,7 +54,7 @@
   {
     "character": "森",
     "pinyin": "sēn",
-    "meaning": "ой бөглөө",
+    "meaning": "өтгөн ой, шугуй",
     "structure": {
       "parts": [
         {
@@ -75,7 +75,7 @@
         "label": "ой бөглөө"
       }
     },
-    "story": "Гурван мод нэг дор нийлээд 森 — маш олон модтой, нягт бөглөө ой гэсэн утга болно.",
+    "story": "Гурван мод нэг дор нийлээд 森 — мод нь үй түмээрээ шигүү ургасан өтгөн ой, шугуй.",
     "example": {
       "word": "森林",
       "pinyin": "sēn lín",
@@ -88,10 +88,10 @@
         "木"
       ],
       "result": "森",
-      "meaning": "ой бөглөө"
+      "meaning": "өтгөн ой, шугуй"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 森 (dense forest), built from THREE 'tree' radicals 木+木+木. Subject: EXACTLY THREE prominent pine trees arranged in a clear triangular composition — two in front and one taller behind — creating a small dense grove. The three trees must be the unmistakable focus. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 森 (dense forest), built from THREE 'tree' radicals 木+木+木. Subject: EXACTLY THREE prominent pine trees arranged in a clear triangular composition — two in front and one taller behind — creating a small dense grove. The three trees must be the unmistakable focus. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: TWO cartoon trees on the LEFT (representing 林), thin arrow in MIDDLE, THREE trees clustered together on the RIGHT (forming 森). Clean white background, school-textbook diagram style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: three simple green pine trees clustered together in a triangle, single subject centered on pure white background. Recognizable as 'dense forest'. No text, no watermark."
     },
@@ -144,7 +144,7 @@
       "meaning": "гэрэлтэй"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 明 (bright), built from 'sun' 日 + 'moon' 月. Subject: a single peaceful sky with BOTH the SUN on the LEFT and a CRESCENT MOON on the RIGHT clearly visible at the same time, doubling the light over a calm landscape. The viewer must immediately see SUN + MOON together. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 明 (bright), built from 'sun' 日 + 'moon' 月. Subject: a single peaceful sky with BOTH the SUN on the LEFT and a CRESCENT MOON on the RIGHT clearly visible at the same time, doubling the light over a calm landscape. The viewer must immediately see SUN + MOON together. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a round SUN on the LEFT, plus sign in the MIDDLE, a CRESCENT MOON on the RIGHT, with gentle light rays radiating outward indicating brightness. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a sun and a crescent moon side-by-side as a single pictogram, warm golden color, centered on pure white background. Reads as 'brightness'. No text, no watermark."
     },
@@ -197,7 +197,7 @@
       "meaning": "амрах"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 休 (rest), built from 'person' 亻 + 'tree' 木. Subject: ONE traveler sitting on the ground LEANING their back against the TRUNK of a single large tree, eyes peacefully closed, hat tilted forward, content smile. The PERSON+TREE pairing must be the immediate visual reading. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 休 (rest), built from 'person' 亻 + 'tree' 木. Subject: ONE traveler sitting on the ground LEANING their back against the TRUNK of a single large tree, eyes peacefully closed, hat tilted forward, content smile. The PERSON+TREE pairing must be the immediate visual reading. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a stick-figure PERSON on the LEFT, plus sign in MIDDLE, a TREE on the RIGHT, with the result showing a person leaning against the tree. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple human figure peacefully sitting against a tree trunk, single subject centered on pure white background. Reads as 'rest'. No text, no watermark."
     },
@@ -249,7 +249,7 @@
       "meaning": "сайн"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 好 (good), built from 'woman' 女 + 'child' 子. Subject: a MOTHER on the LEFT holding her small CHILD on the RIGHT in her warm embrace, both smiling tenderly. The mother-and-child pair must be the unmistakable subject. Soft warm light, family love. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 好 (good), built from 'woman' 女 + 'child' 子. Subject: a MOTHER on the LEFT holding her small CHILD on the RIGHT in her warm embrace, both smiling tenderly. The mother-and-child pair must be the unmistakable subject. Soft warm light, family love. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a WOMAN figure on the LEFT, plus sign in MIDDLE, a small CHILD figure on the RIGHT, result showing them embracing. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: silhouette of a mother holding a child, warm rose color, single subject centered on pure white background. Reads as 'good/loving'. No text, no watermark."
     },
@@ -302,7 +302,7 @@
       "meaning": "тайван"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 安 (peaceful/safe), built from 'roof' 宀 + 'woman' 女. Subject: ONE woman sitting calmly INSIDE a traditional Asian house, the curved ROOF clearly framing her from ABOVE, warm soft interior lighting, sense of shelter and safety. The 'woman-under-roof' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 安 (peaceful/safe), built from 'roof' 宀 + 'woman' 女. Subject: ONE woman sitting calmly INSIDE a traditional Asian house, the curved ROOF clearly framing her from ABOVE, warm soft interior lighting, sense of shelter and safety. The 'woman-under-roof' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a ROOF shape ⌒ on the LEFT, plus sign in MIDDLE, a WOMAN figure on the RIGHT, result showing the woman sitting peacefully under the roof. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple house with a curved peaceful roof, a small dot inside representing a person, single subject centered on pure white background. Reads as 'peace/safety'. No text, no watermark."
     },
@@ -354,7 +354,7 @@
       "meaning": "гэр"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 家 (home), built from 'roof' 宀 + 'pig' 豕 — the ancient etymology of a domestic pig under shelter. Subject: a small pet pig peacefully resting INSIDE a traditional Asian farmhouse, with the curved ROOF clearly visible ABOVE the pig, cozy warm interior. The 'pig-under-roof' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 家 (home), built from 'roof' 宀 + 'pig' 豕 — the ancient etymology of a domestic pig under shelter. Subject: a small pet pig peacefully resting INSIDE a traditional Asian farmhouse, with the curved ROOF clearly visible ABOVE the pig, cozy warm interior. The 'pig-under-roof' reading must be unmistakable. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a ROOF shape ⌒ on the LEFT, plus sign in MIDDLE, a small PIG figure on the RIGHT, result showing the pig peacefully under the roof. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a small traditional house with a sloped curved roof, warm earth color, single subject centered on pure white background. Reads as 'home'. No text, no watermark."
     },
@@ -407,7 +407,7 @@
       "meaning": "эрэгтэй"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 男 (man), built from 'field' 田 + 'strength' 力. Subject: a strong muscular farmer standing actively in a rice paddy field, the rectangular GRID PATTERN of the field is clearly visible at his feet and around him, his STRONG ARMS or shoulders emphasized. The 'strength + field' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 男 (man), built from 'field' 田 + 'strength' 力. Subject: a strong muscular farmer standing actively in a rice paddy field, the rectangular GRID PATTERN of the field is clearly visible at his feet and around him, his STRONG ARMS or shoulders emphasized. The 'strength + field' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a grid pattern representing a FIELD on the LEFT, plus sign in MIDDLE, a flexed ARM showing STRENGTH on the RIGHT, result showing a strong figure standing in the field. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a strong human figure with flexed arms standing on a field grid pattern, single subject centered on pure white background. Reads as 'man'. No text, no watermark."
     },
@@ -459,7 +459,7 @@
       "meaning": "дагах"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 从 (follow), built from two 'person' 人 radicals. Subject: EXACTLY TWO people walking single-file on a path — one in FRONT, one clearly walking DIRECTLY BEHIND the front person, the back one looking at the front person's back. The 'following' action must be immediately readable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 从 (follow), built from two 'person' 人 radicals. Subject: EXACTLY TWO people walking single-file on a path — one in FRONT, one clearly walking DIRECTLY BEHIND the front person, the back one looking at the front person's back. The 'following' action must be immediately readable. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: ONE stick figure on the LEFT walking right, plus sign in MIDDLE, ANOTHER stick figure on the RIGHT walking right, result showing the second walking behind the first. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: two simple human silhouettes walking in single-file line, one clearly behind the other, single subject centered on pure white background. Reads as 'follow'. No text, no watermark."
     },
@@ -516,7 +516,7 @@
       "meaning": "олон"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 众 (crowd), built from THREE 'person' 人 radicals. Subject: EXACTLY THREE people standing close together in a tight small group huddle, viewed from a slightly elevated angle, clearly distinguishable as three individuals forming a tiny crowd. The 'three people together' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 众 (crowd), built from THREE 'person' 人 radicals. Subject: EXACTLY THREE people standing close together in a tight small group huddle, viewed from a slightly elevated angle, clearly distinguishable as three individuals forming a tiny crowd. The 'three people together' reading must be unmistakable. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: TWO figures on the LEFT (representing 从), arrow in MIDDLE, THREE figures clustered closely on the RIGHT (forming 众). Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: three simple human silhouettes clustered closely in a small group, single subject centered on pure white background. Reads as 'crowd'. No text, no watermark."
     },
@@ -569,7 +569,7 @@
       "meaning": "халуун"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 炎 (intense heat/flame), built from two 'fire' 火 radicals stacked. Subject: TWO large blazing FLAMES STACKED VERTICALLY — one flame burning above another flame — creating an extreme heat tower against a dark night background, glowing intense orange and red. The 'fire-above-fire' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 炎 (intense heat/flame), built from two 'fire' 火 radicals stacked. Subject: TWO large blazing FLAMES STACKED VERTICALLY — one flame burning above another flame — creating an extreme heat tower against a dark night background, glowing intense orange and red. The 'fire-above-fire' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a single FLAME shape on the LEFT, plus sign in MIDDLE, TWO flames stacked vertically on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: two flame shapes stacked vertically, warm orange and red color, single subject centered on pure white background. Reads as 'intense heat'. No text, no watermark."
     },
@@ -622,7 +622,7 @@
       "meaning": "гарах"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 出 (emerge/go out), built from two 'mountain' 山 shapes stacked. Subject: ONE mountain peak clearly EMERGING and rising UP from BEHIND another mountain peak in the foreground, the back peak visibly thrusting up and out into the sky. The 'one mountain coming out from another' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 出 (emerge/go out), built from two 'mountain' 山 shapes stacked. Subject: ONE mountain peak clearly EMERGING and rising UP from BEHIND another mountain peak in the foreground, the back peak visibly thrusting up and out into the sky. The 'one mountain coming out from another' reading must be unmistakable. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: ONE triangular mountain on the LEFT, plus sign in MIDDLE, TWO mountains with one rising out from behind the other on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: two mountain triangles with one peak clearly emerging upward from behind the other, single subject centered on pure white background. Reads as 'emerge/go out'. No text, no watermark."
     },
@@ -650,7 +650,7 @@
         },
         {
           "char": "一",
-          "label": "шугам (доод)"
+          "label": "доод зураас (үндэс)"
         }
       ],
       "result": {
@@ -673,7 +673,7 @@
       "meaning": "үндэс"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 本 (root/origin), built from 'tree' 木 + a horizontal mark at its BASE. Subject: a single large ancient tree with its prominent EXPOSED GNARLED ROOTS spreading wide at the base, the ROOT SYSTEM emphasized as the clear visual focus, while the trunk and crown are slightly faded. The 'tree-base highlighted' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 本 (root/origin), built from 'tree' 木 + a horizontal mark at its BASE. Subject: a single large ancient tree with its prominent EXPOSED GNARLED ROOTS spreading wide at the base, the ROOT SYSTEM emphasized as the clear visual focus, while the trunk and crown are slightly faded. The 'tree-base highlighted' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a tree shape on the LEFT, plus sign in MIDDLE, the same tree on the RIGHT with a thick horizontal line highlighted at its BASE/roots. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple tree with prominent spreading roots emphasized, brown root color, single subject centered on pure white background. Reads as 'root/origin'. No text, no watermark."
     },
@@ -702,7 +702,7 @@
         },
         {
           "char": "一",
-          "label": "шугам (дээд)"
+          "label": "дээд зураас (үзүүр)"
         }
       ],
       "result": {
@@ -725,7 +725,7 @@
       "meaning": "үзүүр"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 末 (tip/end), built from 'tree' 木 + a horizontal mark at its TOP. Subject: a tree viewed from below looking UP, with focus on the very TIPS of its highest branches reaching into the sky, the upper canopy/branch tips emphasized and highlighted by bright sunlight while the trunk recedes. The 'tree-top highlighted' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 末 (tip/end), built from 'tree' 木 + a horizontal mark at its TOP. Subject: a tree viewed from below looking UP, with focus on the very TIPS of its highest branches reaching into the sky, the upper canopy/branch tips emphasized and highlighted by bright sunlight while the trunk recedes. The 'tree-top highlighted' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a tree shape on the LEFT, plus sign in MIDDLE, the same tree on the RIGHT with a thick horizontal line highlighted at the very TOP of its branches. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple tree with the very tips of its top branches emphasized/glowing, single subject centered on pure white background. Reads as 'tip/end'. No text, no watermark."
     },
@@ -753,7 +753,7 @@
         },
         {
           "char": "十",
-          "label": "загвар"
+          "label": "соёолж буй өвс"
         }
       ],
       "result": {
@@ -761,7 +761,7 @@
         "label": "эрт"
       }
     },
-    "story": "Нар (日) үерт мандаж өвсний зурвас (十) дээгүүр гарч ирэх — өглөө эрт цаг. 日+十=早.",
+    "story": "Нар (日) үүрээр мандаж, соёолж буй өвсний (十) дээгүүр гарч ирнэ — өглөө эрт. 日+十=早.",
     "example": {
       "word": "早上",
       "pinyin": "zǎo shang",
@@ -776,7 +776,7 @@
       "meaning": "эрт"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 早 (early morning), built from 'sun' 日 + horizontal/vertical stroke. Subject: the SUN rising just above thin grass plants or low vegetation, very early dewy morning, the sun positioned LOW directly ABOVE the plant tops. The 'sun-above-grass' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 早 (early morning), built from 'sun' 日 + horizontal/vertical stroke. Subject: the SUN rising just above thin grass plants or low vegetation, very early dewy morning, the sun positioned LOW directly ABOVE the plant tops. The 'sun-above-grass' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a SUN on the LEFT, plus sign in MIDDLE, a small grass/cross shape on the RIGHT, result showing the sun sitting above the grass shape. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a sun shape positioned directly above a simple horizontal/grass line, warm golden color, single subject centered on pure white background. Reads as 'early morning'. No text, no watermark."
     },
@@ -805,7 +805,7 @@
         },
         {
           "char": "一",
-          "label": "уулсын зурвас"
+          "label": "тэнгэрийн хаяа"
         }
       ],
       "result": {
@@ -828,7 +828,7 @@
       "meaning": "үүр"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 旦 (dawn/sunrise), built from 'sun' 日 + horizon line. Subject: the sun emerging HALF-VISIBLE from BEHIND a very clear flat HORIZON LINE (sea or distant plains), exactly half of the sun above the line, the horizon perfectly straight and crisp. The 'sun-resting-on-horizon' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 旦 (dawn/sunrise), built from 'sun' 日 + horizon line. Subject: the sun emerging HALF-VISIBLE from BEHIND a very clear flat HORIZON LINE (sea or distant plains), exactly half of the sun above the line, the horizon perfectly straight and crisp. The 'sun-resting-on-horizon' reading must be unmistakable. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a SUN on the LEFT, plus sign in MIDDLE, a long horizontal HORIZON LINE on the RIGHT, result showing the sun half-risen above the horizon line. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a half-sun shape rising above a strong horizontal line, warm golden color, single subject centered on pure white background. Reads as 'dawn'. No text, no watermark."
     },
@@ -879,7 +879,7 @@
       "meaning": "үсэг"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 字 (written character), built from 'roof' 宀 + 'child' 子. Subject: a single CHILD sitting cross-legged on the floor of a traditional study room practicing calligraphy with a brush, the curved ROOF of the room clearly visible ABOVE the child framing the scene. The 'child-under-roof studying' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 字 (written character), built from 'roof' 宀 + 'child' 子. Subject: a single CHILD sitting cross-legged on the floor of a traditional study room practicing calligraphy with a brush, the curved ROOF of the room clearly visible ABOVE the child framing the scene. The 'child-under-roof studying' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a ROOF shape ⌒ on the LEFT, plus sign in MIDDLE, a small CHILD figure on the RIGHT, result showing the child sitting under the roof holding a brush. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple roof above a small child silhouette holding a brush, single subject centered on pure white background. Reads as 'character/letter'. No text, no watermark."
     },
@@ -932,7 +932,7 @@
       "meaning": "итгэх"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 信 (trust/letter), built from 'person' 亻 + 'words/speech' 言. Subject: ONE person on the LEFT side speaking earnestly with a sincere expression, with VISIBLE curving sound waves or a speech bubble flowing from their mouth toward the right — emphasizing the spoken WORDS as a tangible element. The 'person + words' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 信 (trust/letter), built from 'person' 亻 + 'words/speech' 言. Subject: ONE person on the LEFT side speaking earnestly with a sincere expression, with VISIBLE curving sound waves or a speech bubble flowing from their mouth toward the right — emphasizing the spoken WORDS as a tangible element. The 'person + words' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a PERSON stick figure on the LEFT, plus sign in MIDDLE, a SPEECH BUBBLE or sound waves on the RIGHT, result showing the person with words coming from their mouth. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple person silhouette with a speech bubble next to their mouth, single subject centered on pure white background. Reads as 'trust/communication'. No text, no watermark."
     },
@@ -984,7 +984,7 @@
       "meaning": "донгодох"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 鸣 (birdsong), built from 'mouth' 口 + 'bird' 鸟. Subject: a single colorful songbird perched on a branch with its BEAK WIDE OPEN, clear curving SOUND WAVES emanating from its open mouth into the air — the open beak and visible sound waves must be the dominant visual elements. Soft pastel dawn light. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 鸣 (birdsong), built from 'mouth' 口 + 'bird' 鸟. Subject: a single colorful songbird perched on a branch with its BEAK WIDE OPEN, clear curving SOUND WAVES emanating from its open mouth into the air — the open beak and visible sound waves must be the dominant visual elements. Soft pastel dawn light. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a MOUTH/circle shape on the LEFT, plus sign in MIDDLE, a BIRD shape on the RIGHT, result showing the bird with its mouth open and sound waves coming out. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple bird with its beak open and small sound waves coming out, single subject centered on pure white background. Reads as 'birdsong'. No text, no watermark."
     },
@@ -1035,7 +1035,7 @@
       "meaning": "харах"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 看 (look/see), built from 'hand' 手 + 'eye' 目. Subject: a person clearly HOLDING their HAND HORIZONTALLY ABOVE their EYES (like a visor / sun shade) to peer into the distance, the hand-over-eye gesture is the dominant visual element, viewer looks at side profile. The 'hand-over-eye' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 看 (look/see), built from 'hand' 手 + 'eye' 目. Subject: a person clearly HOLDING their HAND HORIZONTALLY ABOVE their EYES (like a visor / sun shade) to peer into the distance, the hand-over-eye gesture is the dominant visual element, viewer looks at side profile. The 'hand-over-eye' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a HAND on the LEFT, plus sign in MIDDLE, an EYE on the RIGHT, result showing a face with the hand held above the eye. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple eye with a flat hand held visor-like above it, single subject centered on pure white background. Reads as 'look'. No text, no watermark."
     },
@@ -1088,7 +1088,7 @@
       "meaning": "бодох"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 想 (think/desire), built from 'visualize' 相 + 'heart' 心. Subject: a young person sitting peacefully with one hand resting on their CHEST OVER THEIR HEART, eyes closed dreamily, with a clear THOUGHT BUBBLE above their head containing a small image of what they desire (a small landscape, flower, or person). The 'heart + visualized thought' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 想 (think/desire), built from 'visualize' 相 + 'heart' 心. Subject: a young person sitting peacefully with one hand resting on their CHEST OVER THEIR HEART, eyes closed dreamily, with a clear THOUGHT BUBBLE above their head containing a small image of what they desire (a small landscape, flower, or person). The 'heart + visualized thought' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a small EYE/IMAGE icon on the LEFT (representing visualization), plus sign in MIDDLE, a HEART shape on the RIGHT, result showing a heart with a thought bubble. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a heart shape with a thought bubble rising from it, warm rose color, single subject centered on pure white background. Reads as 'desire/think of'. No text, no watermark."
     },
@@ -1140,7 +1140,7 @@
       "meaning": "бодох"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 思 (deep contemplation), built from 'field' 田 + 'heart' 心 — mnemonic of a 'field of thoughts above the heart'. Subject: a scholar seated in quiet thought with one hand on their CHEST OVER THEIR HEART, and visible behind them a checkered FIELD pattern stretching out, as if their inner mind is a field of thoughts to till. The 'field-above-heart' reading must be evident. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 思 (deep contemplation), built from 'field' 田 + 'heart' 心 — mnemonic of a 'field of thoughts above the heart'. Subject: a scholar seated in quiet thought with one hand on their CHEST OVER THEIR HEART, and visible behind them a checkered FIELD pattern stretching out, as if their inner mind is a field of thoughts to till. The 'field-above-heart' reading must be evident. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a grid pattern (FIELD) on the LEFT, plus sign in MIDDLE, a HEART shape on the RIGHT, result showing the field positioned above the heart. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a heart shape with a small grid (field) pattern directly above it, soft blue color, single subject centered on pure white background. Reads as 'contemplation'. No text, no watermark."
     },
@@ -1191,7 +1191,7 @@
       "meaning": "гүйх"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 跑 (run), built from 'foot' 足 (semantic) + phonetic. Subject: a runner mid-stride from the side with EXTREME MOTION BLUR on the LEGS and FEET, the powerful pumping FEET as the unmistakable focus, dust/wind streaks behind. The 'foot in motion' reading must be the obvious visual emphasis. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 跑 (run), built from 'foot' 足 (semantic) + phonetic. Subject: a runner mid-stride from the side with EXTREME MOTION BLUR on the LEGS and FEET, the powerful pumping FEET as the unmistakable focus, dust/wind streaks behind. The 'foot in motion' reading must be the obvious visual emphasis. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a FOOT/leg shape on the LEFT, plus sign in MIDDLE, motion lines on the RIGHT, result showing a runner mid-stride with emphasized feet. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple running figure silhouette with emphasized motion on the feet/legs, single subject centered on pure white background. Reads as 'run'. No text, no watermark."
     },
@@ -1243,7 +1243,7 @@
       "meaning": "үсрэх"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 跳 (jump), built from 'foot' 足 (semantic) + phonetic. Subject: a person frozen MID-LEAP in the air with BOTH FEET clearly off the ground, knees bent, captured at the peak height of the jump, gravity-defying pose. The 'feet in the air' reading must be the dominant visual. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 跳 (jump), built from 'foot' 足 (semantic) + phonetic. Subject: a person frozen MID-LEAP in the air with BOTH FEET clearly off the ground, knees bent, captured at the peak height of the jump, gravity-defying pose. The 'feet in the air' reading must be the dominant visual. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a FOOT shape on the LEFT, plus sign in MIDDLE, an upward arrow on the RIGHT, result showing a figure suspended in mid-jump with feet off the ground. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple jumping figure silhouette suspended in air with feet clearly off the ground, single subject centered on pure white background. Reads as 'jump'. No text, no watermark."
     },
@@ -1295,7 +1295,7 @@
       "meaning": "инээх"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 笑 (laugh), built from 'bamboo' 竹 (top) + 'bending' 夭 (bottom). Subject: a person laughing joyfully with mouth wide open, with delicate BAMBOO LEAVES arching gracefully above their head like a natural crown (echoing the bamboo radical at the top of the character). The 'bamboo + laughing face' composition must be clear. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 笑 (laugh), built from 'bamboo' 竹 (top) + 'bending' 夭 (bottom). Subject: a person laughing joyfully with mouth wide open, with delicate BAMBOO LEAVES arching gracefully above their head like a natural crown (echoing the bamboo radical at the top of the character). The 'bamboo + laughing face' composition must be clear. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: BAMBOO LEAVES on the LEFT, plus sign in MIDDLE, a SMILING FACE on the RIGHT, result showing the smiling face crowned with bamboo leaves above. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple smiling face with a small bamboo leaf arching above, warm color, single subject centered on pure white background. Reads as 'laugh'. No text, no watermark."
     },
@@ -1332,11 +1332,11 @@
         "label": "том гол"
       }
     },
-    "story": "Зүүн талын ус (氵) утгат, баруун тал 工 (gōng) дуудлагыг өгнө. Голчлон Янзе мөрнийг хэлдэг. 氵+工=江.",
+    "story": "Зүүн талын ус (氵) утгыг, баруун талын 工 (gōng) дуудлагыг өгнө. Голчлон Янцзы мөрнийг хэлдэг. 氵+工=江.",
     "example": {
       "word": "长江",
       "pinyin": "Cháng Jiāng",
-      "translation": "Янзе мөрөн"
+      "translation": "Янцзы мөрөн"
     },
     "mnemonic": {
       "parts": [
@@ -1347,7 +1347,7 @@
       "meaning": "том гол"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 江 (great river/Yangtze), built from 'water' 氵 radical + phonetic. Subject: a vast wide majestic RIVER flowing through misty mountains, the WATER fills the foreground and middle as the unmistakable dominant subject — water is THE element, viewer's eye is drawn to the river surface and current. Sense of grand scale. Soft watercolor Chinese ink-wash style with Studio Ghibli warmth, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 江 (great river/Yangtze), built from 'water' 氵 radical + phonetic. Subject: a vast wide majestic RIVER flowing through misty mountains, the WATER fills the foreground and middle as the unmistakable dominant subject — water is THE element, viewer's eye is drawn to the river surface and current. Sense of grand scale. Soft watercolor Chinese ink-wash style with a warm, gentle storybook atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: three water droplets representing 氵 on the LEFT, plus sign in MIDDLE, a flowing RIVER shape on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a single bold wave/river shape, deep blue color, single subject centered on pure white background. Reads as 'great river'. No text, no watermark."
     },
@@ -1398,7 +1398,7 @@
       "meaning": "гол"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 河 (river), built from 'water' 氵 radical + phonetic. Subject: a peaceful MEANDERING RIVER curving gently through soft green landscape, the flowing WATER is the clear main visual subject filling the center, willow trees softly framing. The river/water emphasis must be obvious. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 河 (river), built from 'water' 氵 radical + phonetic. Subject: a peaceful MEANDERING RIVER curving gently through soft green landscape, the flowing WATER is the clear main visual subject filling the center, willow trees softly framing. The river/water emphasis must be obvious. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: three water droplets representing 氵 on the LEFT, plus sign in MIDDLE, a winding RIVER curve on the RIGHT. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a simple curving river or wavy water line, blue color, single subject centered on pure white background. Reads as 'river'. No text, no watermark."
     },
@@ -1449,7 +1449,7 @@
       "meaning": "далай"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 海 (sea), built from 'water' 氵 radical + phonetic. Subject: a VAST ENDLESS OCEAN stretching to the distant horizon, gentle rolling waves dominate the entire frame, sense of immense scale of WATER — water everywhere. The ocean/water emphasis must be the overwhelming subject. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 海 (sea), built from 'water' 氵 radical + phonetic. Subject: a VAST ENDLESS OCEAN stretching to the distant horizon, gentle rolling waves dominate the entire frame, sense of immense scale of WATER — water everywhere. The ocean/water emphasis must be the overwhelming subject. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: three water droplets representing 氵 on the LEFT, plus sign in MIDDLE, an ocean WAVE on the RIGHT, result showing many waves stretching to horizon. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a single big curling ocean wave, deep blue color, single subject centered on pure white background. Reads as 'sea'. No text, no watermark."
     },
@@ -1500,7 +1500,7 @@
       "meaning": "үзэсгэлэнтэй"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 美 (beautiful), built from 'sheep' 羊 + 'big' 大 — ancient etymology of a magnificent large sheep. Subject: a SINGLE EXTRAORDINARILY LARGE ram with MASSIVE elegantly CURLING HORNS standing proudly in a mountain meadow, the sheep's SIZE and grandeur are the clear visual emphasis (oversized compared to surroundings). The 'big sheep' reading must be unmistakable. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 美 (beautiful), built from 'sheep' 羊 + 'big' 大 — ancient etymology of a magnificent large sheep. Subject: a SINGLE EXTRAORDINARILY LARGE ram with MASSIVE elegantly CURLING HORNS standing proudly in a mountain meadow, the sheep's SIZE and grandeur are the clear visual emphasis (oversized compared to surroundings). The 'big sheep' reading must be unmistakable. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a small SHEEP on the LEFT, plus sign in MIDDLE, a 'LARGE' size indicator (arrows expanding) on the RIGHT, result showing a magnified sheep. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a proud sheep silhouette with prominent curled horns, warm earth color, single subject centered on pure white background. Reads as 'beautiful'. No text, no watermark."
     },
@@ -1551,7 +1551,7 @@
       "meaning": "шинэхэн"
     },
     "prompts": {
-      "main": "Educational illustration for Chinese character 鲜 (fresh), built from 'fish' 鱼 + 'sheep' 羊. Subject: ONE whole glistening FRESH FISH on the LEFT side and a piece of fresh tender LAMB MEAT on the RIGHT side, displayed side-by-side on a bamboo tray, both ingredients clearly visible as the freshness pairing. The 'fish + sheep together' reading must be immediate. Soft watercolor Studio Ghibli style, centered, no text, no Chinese characters, no watermark.",
+      "main": "Educational illustration for Chinese character 鲜 (fresh), built from 'fish' 鱼 + 'sheep' 羊. Subject: ONE whole glistening FRESH FISH on the LEFT side and a piece of fresh tender LAMB MEAT on the RIGHT side, displayed side-by-side on a bamboo tray, both ingredients clearly visible as the freshness pairing. The 'fish + sheep together' reading must be immediate. Soft watercolor children's storybook illustration style, warm pastel palette, gentle dreamy atmosphere, centered, no text, no Chinese characters, no watermark.",
       "evolution": "A simple educational flat diagram: a FISH on the LEFT, plus sign in MIDDLE, a SHEEP on the RIGHT, both as simple cartoon shapes. Clean white background, textbook style. No text, no Chinese characters, no watermark.",
       "icon": "A minimalist flat vector icon: a fish silhouette and a sheep silhouette together side-by-side, single subject centered on pure white background. Reads as 'fresh'. No text, no watermark."
     },
@@ -1992,7 +1992,7 @@
         "emoji": "🍚"
       }
     },
-    "storyFormula": "👄 + 🍚"
+    "storyFormula": "👄 + 🍚 = 😋"
   },
   {
     "character": "唱",
@@ -2065,7 +2065,7 @@
     "example": {
       "word": "鲜花",
       "pinyin": "xiān huā",
-      "translation": "шинэ цэцэг"
+      "translation": "шинэхэн цэцэг"
     },
     "mnemonic": {
       "parts": [
@@ -2138,7 +2138,7 @@
   {
     "character": "苗",
     "pinyin": "miáo",
-    "meaning": "соёо",
+    "meaning": "соёолж, нахиа",
     "structure": {
       "parts": [
         {
@@ -2155,7 +2155,7 @@
         "label": "соёо"
       }
     },
-    "story": "Тариалангийн талбайд (田) ургах ногоон (艹) = соёо, нахиа.",
+    "story": "Тариалангийн талбайд (田) цухуйсан ногоон ургамал (艹) — соёолж, нахиа.",
     "example": {
       "word": "树苗",
       "pinyin": "shù miáo",
@@ -2167,7 +2167,7 @@
         "田"
       ],
       "result": "苗",
-      "meaning": "соёо"
+      "meaning": "соёолж, нахиа"
     },
     "level": 2,
     "category": "baigal",
@@ -2497,7 +2497,7 @@
         "label": "хайрлах"
       }
     },
-    "story": "«хайрлах» гэсэн утгатай үндсэн дүрс ханз (ài).",
+    "story": "Сарвайсан гар (爫) дор нөхрөө (友) халхлан тэвэрнэ — хайр гэдэг гараараа халамжлахын нэр.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2527,7 +2527,7 @@
         "label": "найм"
       }
     },
-    "story": "«найм» гэсэн утгатай үндсэн дүрс ханз (bā).",
+    "story": "Хоёр тийш зөрсөн хоёр зураас — салгаж хуваасан дүрс. Тоо «найм»-д зээлэгджээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2557,7 +2557,7 @@
         "label": "аав"
       }
     },
-    "story": "«аав» гэсэн утгатай үндсэн дүрс ханз (bà).",
+    "story": "Эцэг (父) утгыг, 巴 (bā) дуудлагыг өгнө — аав гэдэг үг дэлхийн олон хэлэнд ижилхэн сонсогддог.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2587,7 +2587,7 @@
         "label": "аяга"
       }
     },
-    "story": "«аяга» гэсэн утгатай үндсэн дүрс ханз (bēi).",
+    "story": "Мод (木) утгыг өгнө — эртний аяга модон байжээ. 不 (bēi-д ойр) дуудлагыг өгнө.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2597,7 +2597,7 @@
   },
   {
     "character": "子",
-    "pinyin": "zi",
+    "pinyin": "zǐ",
     "meaning": "хүүхэд",
     "kind": "simple",
     "example": {
@@ -2617,7 +2617,7 @@
         "label": "хүүхэд"
       }
     },
-    "story": "«хүүхэд» гэсэн утгатай үндсэн дүрс ханз (zi).",
+    "story": "Хоёр гараа дэлгэсэн, өлгийтэй нялх хүүхдийн дүрс — хүүхэд.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2647,7 +2647,7 @@
         "label": "хойд"
       }
     },
-    "story": "«хойд» гэсэн утгатай үндсэн дүрс ханз (běi).",
+    "story": "Хоёр хүн нуруугаа харуулан зогсож байна. Урагшаа нар руу харвал нуруу хойд зүгийг заана — хойд.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2677,7 +2677,7 @@
         "label": "нийслэл"
       }
     },
-    "story": "«нийслэл» гэсэн утгатай үндсэн дүрс ханз (jīng).",
+    "story": "Өндөр асар цамхгийн дүрс — хаан суудаг өндөр барилгатай хот: нийслэл.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2692,7 +2692,7 @@
     "kind": "simple",
     "example": {
       "word": "不是",
-      "pinyin": "bù shì",
+      "pinyin": "bú shì",
       "translation": "биш"
     },
     "level": 1,
@@ -2707,7 +2707,7 @@
         "label": "үгүй"
       }
     },
-    "story": "«үгүй» гэсэн утгатай үндсэн дүрс ханз (bù).",
+    "story": "Дээшээ ниссэн шувуу газарт эс буна — «үгүй, эс» гэсэн үгүйсгэл.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2746,7 +2746,7 @@
         "label": "зочин"
       }
     },
-    "story": "дээвэр (宀), тус бүр (各) хослон «зочин» гэсэн утга үүсгэнэ.",
+    "story": "Гэрийн дээвэр (宀) доор гаднаас хүрч ирсэн хүн (各) сууна — зочин.",
     "mnemonic": {
       "parts": [
         "宀",
@@ -2784,7 +2784,7 @@
         "label": "агаар, хий"
       }
     },
-    "story": "«агаар, хий» гэсэн утгатай үндсэн дүрс ханз (qì).",
+    "story": "Дэгдэн хөөрч буй уур, манангийн урсгал — агаар, хий, амьсгал.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2814,7 +2814,7 @@
         "label": "хүнс, ногоо"
       }
     },
-    "story": "«хүнс, ногоо» гэсэн утгатай үндсэн дүрс ханз (cài).",
+    "story": "Өвс (艹) дор гараар түүх (采 cǎi) — гараар түүсэн ногоо: хүнсний ногоо, хоол.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2857,7 +2857,7 @@
         "label": "цай"
       }
     },
-    "story": "өвс (艹), хүн (人), мод (木) хослон «цай» гэсэн утга үүсгэнэ.",
+    "story": "Өвс (艹), хүн (人), мод (木) гурав нийлнэ: хүн модны навчийг түүж цай хийдэг.",
     "mnemonic": {
       "parts": [
         "艹",
@@ -2905,7 +2905,7 @@
         "label": "түрээслэх"
       }
     },
-    "story": "тариа (禾), бас (且) хослон «түрээслэх» гэсэн утга үүсгэнэ.",
+    "story": "Эрт цагт газрын түрээсийг тариагаар (禾) төлдөг байжээ. 且 нь дуудлагыг өгнө — түрээслэх.",
     "mnemonic": {
       "parts": [
         "禾",
@@ -2943,7 +2943,7 @@
         "label": "тэрэг, машин"
       }
     },
-    "story": "«тэрэг, машин» гэсэн утгатай үндсэн дүрс ханз (chē).",
+    "story": "Дээрээс харсан тэрэгний дүрс: гол тэнхлэг ба дугуй — тэрэг, машин.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -2973,7 +2973,7 @@
         "label": "цохих, барих"
       }
     },
-    "story": "«цохих, барих» гэсэн утгатай үндсэн дүрс ханз (dǎ).",
+    "story": "Гар (扌) утгыг, 丁 (dīng) дуудлагыг өгнө — цохих; хятадаар маш олон үйлдэлд орлуулан хэрэглэдэг.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3003,7 +3003,7 @@
         "label": "цахилгаан"
       }
     },
-    "story": "«цахилгаан» гэсэн утгатай үндсэн дүрс ханз (diàn).",
+    "story": "Үүлнээс цахилсан аянгын гялбааг зурсан дүрс — цахилгаан.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3033,7 +3033,7 @@
         "label": "яриа, үг"
       }
     },
-    "story": "«яриа, үг» гэсэн утгатай үндсэн дүрс ханз (huà).",
+    "story": "Үг яриа (讠) ба хэл (舌) — хэлээрээ ярьдаг үг яриа.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3072,7 +3072,7 @@
         "label": "том"
       }
     },
-    "story": "нэг (一), хүн (人) хослон «том» гэсэн утга үүсгэнэ.",
+    "story": "Хүн хоёр гараа алдлан зогсож буй дүрс — «энэ ч их том!» гэж байгаа юм шиг.",
     "mnemonic": {
       "parts": [
         "一",
@@ -3110,7 +3110,7 @@
         "label": "-ын (харьяа)"
       }
     },
-    "story": "«-ын (харьяа)» гэсэн утгатай үндсэн дүрс ханз (de).",
+    "story": "Цагаан (白) халбага (勺) — «миний цагаан халбага» (我的) гэж тогтоо. Харьяалал заадаг, хамгийн их хэрэглэгддэг ханз.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3149,7 +3149,7 @@
         "label": "цэг, цаг"
       }
     },
-    "story": "эзлэх (占), гал (灬) хослон «цэг, цаг» гэсэн утга үүсгэнэ.",
+    "story": "Доорх дөрвөн цэг (灬) нь гал: галын оч шиг жижиг цэг. 占 дуудлагыг өгнө. Цагийг ч мөн заана.",
     "mnemonic": {
       "parts": [
         "占",
@@ -3187,7 +3187,7 @@
         "label": "тархи"
       }
     },
-    "story": "«тархи» гэсэн утгатай үндсэн дүрс ханз (nǎo).",
+    "story": "Махбодын радикал (月) — биеийн эрхтэн: тархи. 电脑 нь «цахилгаан тархи» буюу компьютер.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3226,7 +3226,7 @@
         "label": "харах"
       }
     },
-    "story": "тахил (礻), харах (见) хослон «харах» гэсэн утга үүсгэнэ.",
+    "story": "Тахилгын ширээний өмнө (礻) ажиглан харна (见) — харах, үзэх.",
     "mnemonic": {
       "parts": [
         "礻",
@@ -3264,7 +3264,7 @@
         "label": "сүүдэр, дүрс"
       }
     },
-    "story": "«сүүдэр, дүрс» гэсэн утгатай үндсэн дүрс ханз (yǐng).",
+    "story": "Нар өндөр асрыг (景) тусгахад гурван зураас (彡) болж унана — сүүдэр, дүрс.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3279,7 +3279,7 @@
     "kind": "simple",
     "example": {
       "word": "东西",
-      "pinyin": "dōng xī",
+      "pinyin": "dōng xi",
       "translation": "юм, эд зүйл"
     },
     "level": 1,
@@ -3294,7 +3294,7 @@
         "label": "зүүн"
       }
     },
-    "story": "«зүүн» гэсэн утгатай үндсэн дүрс ханз (dōng).",
+    "story": "Модны (木) завсраар нар (日) мандаж буй дүрс гэж тайлбарладаг — нар мандах зүг: зүүн.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3324,7 +3324,7 @@
         "label": "баруун"
       }
     },
-    "story": "«баруун» гэсэн утгатай үндсэн дүрс ханз (xī).",
+    "story": "Нар жаргахад шувуу үүрэндээ буудаг — нар жаргах зүг: баруун.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3354,7 +3354,7 @@
         "label": "бүгд"
       }
     },
-    "story": "«бүгд» гэсэн утгатай үндсэн дүрс ханз (dōu).",
+    "story": "Хүн бүр (者) цугладаг том хот (阝) — «бүгд» гэсэн утга руу шилжжээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3384,7 +3384,7 @@
         "label": "унших"
       }
     },
-    "story": "«унших» гэсэн утгатай үндсэн дүрс ханз (dú).",
+    "story": "Бичгийг дуу хоолойгоор (讠) дамжуулна — унших.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3423,7 +3423,7 @@
         "label": "зөв"
       }
     },
-    "story": "гар (又), хэмжүүр (寸) хослон «зөв» гэсэн утга үүсгэнэ.",
+    "story": "Гар (又) хэмжүүртэй (寸) яг таарна — зөв, оносон.",
     "mnemonic": {
       "parts": [
         "又",
@@ -3446,7 +3446,7 @@
     "kind": "simple",
     "example": {
       "word": "一起",
-      "pinyin": "yī qǐ",
+      "pinyin": "yì qǐ",
       "translation": "хамт"
     },
     "level": 1,
@@ -3461,7 +3461,7 @@
         "label": "босох, эхлэх"
       }
     },
-    "story": "«босох, эхлэх» гэсэн утгатай үндсэн дүрс ханз (qǐ).",
+    "story": "Гүйх (走) утгыг, 己 (jǐ) дуудлагыг өгнө — босох, өндийх, эхлэх.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3491,7 +3491,7 @@
         "label": "олон"
       }
     },
-    "story": "«олон» гэсэн утгатай үндсэн дүрс ханз (duō).",
+    "story": "Хоёр үдэш (夕) давхарлав — хоног өнгөрөх тусам нэмэгдсээр: олон.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3521,7 +3521,7 @@
         "label": "цөөн"
       }
     },
-    "story": "«цөөн» гэсэн утгатай үндсэн дүрс ханз (shǎo).",
+    "story": "Жижгээс (小) нэг хэсэг нь тасарч унана — улам цөөрнө: цөөн, бага.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3551,7 +3551,7 @@
         "label": "хүүхэд, хүү"
       }
     },
-    "story": "«хүүхэд, хүү» гэсэн утгатай үндсэн дүрс ханз (ér).",
+    "story": "Алхаж сурч яваа хүүхдийн хоёр хөлийн дүрс — хүүхэд, хүү.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3637,7 +3637,7 @@
         "label": "хоол, будаа"
       }
     },
-    "story": "хоол (饣), эсрэг (反) хослон «хоол, будаа» гэсэн утга үүсгэнэ.",
+    "story": "Хоолны радикал (饣) утгыг, 反 (fǎn) дуудлагыг өгнө — будаатай хоол.",
     "mnemonic": {
       "parts": [
         "饣",
@@ -3684,7 +3684,7 @@
         "label": "газар (барилга)"
       }
     },
-    "story": "хоол (饣), түшмэл (官) хослон «газар (барилга)» гэсэн утга үүсгэнэ.",
+    "story": "Хоол (饣) зочдод үйлчилдэг албан (官) байр — зоогийн газар, буудал, музей зэрэг барилга.",
     "mnemonic": {
       "parts": [
         "饣",
@@ -3722,7 +3722,7 @@
         "label": "нисэх"
       }
     },
-    "story": "«нисэх» гэсэн утгатай үндсэн дүрс ханз (fēi).",
+    "story": "Шувуу далавчаа дэлгэн дээш хөөрч буй дүрс — нисэх.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3752,7 +3752,7 @@
         "label": "машин, аппарат"
       }
     },
-    "story": "«машин, аппарат» гэсэн утгатай үндсэн дүрс ханз (jī).",
+    "story": "Эртний нэхмэлийн модон (木) механизм. 几 (jī) дуудлагыг өгнө — машин, төхөөрөмж.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3791,7 +3791,7 @@
         "label": "хуваах, минут"
       }
     },
-    "story": "найм (八), хутга (刀) хослон «хуваах, минут» гэсэн утга үүсгэнэ.",
+    "story": "Хутгаар (刀) юмыг хоёр тийш (八) хуваана. Цагийг жижиглэн хуваасан нэгж нь минут.",
     "mnemonic": {
       "parts": [
         "八",
@@ -3838,7 +3838,7 @@
         "label": "цаг (хонх)"
       }
     },
-    "story": "металл (钅), дунд (中) хослон «цаг (хонх)» гэсэн утга үүсгэнэ.",
+    "story": "Металлаар (钅) цутгасан хонх. 中 (zhōng) дуудлагыг өгнө — хонх, цаг.",
     "mnemonic": {
       "parts": [
         "钅",
@@ -3876,7 +3876,7 @@
         "label": "өндөр"
       }
     },
-    "story": "«өндөр» гэсэн утгатай үндсэн дүрс ханз (gāo).",
+    "story": "Олон давхар цамхгийн дүрс: дээвэр, цонх, суурь нь жигдхэн харагдана — өндөр.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3906,7 +3906,7 @@
         "label": "сэргэх, баясах"
       }
     },
-    "story": "«сэргэх, баясах» гэсэн утгатай үндсэн дүрс ханз (xìng).",
+    "story": "Олон гар нэг юмыг хамт өргөж буй дүрс — сэргэх, хөгжих, баясах.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3921,7 +3921,7 @@
     "kind": "simple",
     "example": {
       "word": "一个",
-      "pinyin": "yī ge",
+      "pinyin": "yí ge",
       "translation": "нэг ширхэг"
     },
     "level": 1,
@@ -3936,7 +3936,7 @@
         "label": "ширхэг (тоолуур)"
       }
     },
-    "story": "«ширхэг (тоолуур)» гэсэн утгатай үндсэн дүрс ханз (gè).",
+    "story": "Ганцаараа зогссон мод шиг дүрс — юм тоолох хамгийн түгээмэл нэгж: ширхэг.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3966,7 +3966,7 @@
         "label": "ажил"
       }
     },
-    "story": "«ажил» гэсэн утгатай үндсэн дүрс ханз (gōng).",
+    "story": "Мужааны хэмжүүр багажны дүрс — ажил, хөдөлмөр.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -3996,7 +3996,7 @@
         "label": "хийх, бүтээх"
       }
     },
-    "story": "«хийх, бүтээх» гэсэн утгатай үндсэн дүрс ханз (zuò).",
+    "story": "Хүн (亻) юм бүтээж байна. 乍 (zhà) дуудлагыг өгнө — хийх, бүтээх.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4026,7 +4026,7 @@
         "label": "нохой"
       }
     },
-    "story": "«нохой» гэсэн утгатай үндсэн дүрс ханз (gǒu).",
+    "story": "Амьтны радикал (犭) утгыг, 句 (gōu) дуудлагыг өгнө — нохой.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4065,7 +4065,7 @@
         "label": "хятад"
       }
     },
-    "story": "ус (氵), гар (又) хослон «хятад» гэсэн утга үүсгэнэ.",
+    "story": "Хань мөрөн (ус 氵) болон Хань улсын нэрнээс «хятад» гэсэн утга гарчээ.",
     "mnemonic": {
       "parts": [
         "氵",
@@ -4103,7 +4103,7 @@
         "label": "хэл"
       }
     },
-    "story": "«хэл» гэсэн утгатай үндсэн дүрс ханз (yǔ).",
+    "story": "Үг яриа (讠) ба «би» (吾 wú) — миний ярьдаг үг: хэл.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4133,7 +4133,7 @@
         "label": "уух"
       }
     },
-    "story": "«уух» гэсэн утгатай үндсэн дүрс ханз (hē).",
+    "story": "Ам (口) утгыг өгнө — амаараа залгилна. 曷 (hé) дуудлагыг өгнө — уух.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4172,7 +4172,7 @@
         "label": "ба, эв"
       }
     },
-    "story": "тариа (禾), ам (口) хослон «ба, эв» гэсэн утга үүсгэнэ.",
+    "story": "Тариа (禾) ам (口) бүрт хүрэлцэж байвал эв найрамдал тогтоно — ба, эв эе.",
     "mnemonic": {
       "parts": [
         "禾",
@@ -4210,7 +4210,7 @@
         "label": "маш"
       }
     },
-    "story": "«маш» гэсэн утгатай үндсэн дүрс ханз (hěn).",
+    "story": "Алхааны радикал (彳)-тай ханз. Анхны утгаасаа шилжээд «маш, их» гэсэн эрчимжүүлэгч болжээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4225,7 +4225,7 @@
     "kind": "simple",
     "example": {
       "word": "后面",
-      "pinyin": "hòu mian",
+      "pinyin": "hòu miàn",
       "translation": "ард тал"
     },
     "level": 1,
@@ -4240,7 +4240,7 @@
         "label": "ард, дараа"
       }
     },
-    "story": "«ард, дараа» гэсэн утгатай үндсэн дүрс ханз (hòu).",
+    "story": "Урагшаа явахад хоцорч үлдсэн тал — ард, хойно; цаг хугацаанд «дараа».",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4270,7 +4270,7 @@
         "label": "нүүр, тал, гурил"
       }
     },
-    "story": "«нүүр, тал, гурил» гэсэн утгатай үндсэн дүрс ханз (miàn).",
+    "story": "Хүний нүүрийг хүрээлээд дунд нь нүд зурсан дүрс — нүүр; тал; мөн гурил.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4300,7 +4300,7 @@
         "label": "буцах"
       }
     },
-    "story": "«буцах» гэсэн утгатай үндсэн дүрс ханз (huí).",
+    "story": "Эргэлдэх усны хуйг зурсан давхар дөрвөлжин — эргэх, буцах.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4330,7 +4330,7 @@
         "label": "чадах, цуглах"
       }
     },
-    "story": "«чадах, цуглах» гэсэн утгатай үндсэн дүрс ханз (huì).",
+    "story": "Дээвэр дор үүл (云) шиг олон хүн цуглана — уулзах, хуралдах; сүүлд «чадах» утгатай болсон.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4360,7 +4360,7 @@
         "label": "гал"
       }
     },
-    "story": "«гал» гэсэн утгатай үндсэн дүрс ханз (huǒ).",
+    "story": "Дүрэлзэх галын дөл, хоёр тийш үсэрсэн оч — гал.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4376,7 +4376,7 @@
     "example": {
       "word": "车站",
       "pinyin": "chē zhàn",
-      "translation": "зогсоол"
+      "translation": "буудал, зогсоол"
     },
     "level": 1,
     "category": "zuils",
@@ -4399,7 +4399,7 @@
         "label": "зогсох, буудал"
       }
     },
-    "story": "зогсох (立), эзлэх (占) хослон «зогсох, буудал» гэсэн утга үүсгэнэ.",
+    "story": "Зогсох (立) утгыг, 占 (zhàn) дуудлагыг өгнө — зогсох; тэрэг зогсдог газар нь буудал.",
     "mnemonic": {
       "parts": [
         "立",
@@ -4437,7 +4437,7 @@
         "label": "хэд"
       }
     },
-    "story": "«хэд» гэсэн утгатай үндсэн дүрс ханз (jǐ).",
+    "story": "Жижигхэн ширээний дүрс. Дуудлагаар нь зээлээд «хэд?» гэсэн асуултад хэрэглэдэг.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4467,7 +4467,7 @@
         "label": "дуудах, хашгирах"
       }
     },
-    "story": "«дуудах, хашгирах» гэсэн утгатай үндсэн дүрс ханз (jiào).",
+    "story": "Ам (口) утгыг, 丩 (jiū) дуудлагыг өгнө — дуудах, хашгирах; нэрлэх.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4497,7 +4497,7 @@
         "label": "одоо, өнөө"
       }
     },
-    "story": "«одоо, өнөө» гэсэн утгатай үндсэн дүрс ханз (jīn).",
+    "story": "Дээвэр дор тавьсан «яг энэ мөч» гэсэн тэмдэг — одоо, өнөө.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4536,7 +4536,7 @@
         "label": "тэнгэр, өдөр"
       }
     },
-    "story": "нэг (一), том (大) хослон «тэнгэр, өдөр» гэсэн утга үүсгэнэ.",
+    "story": "Том хүний (大) толгой дээрх огторгуй (一) — тэнгэр. Тэнгэрийн нэг эргэлт нь өдөр.",
     "mnemonic": {
       "parts": [
         "一",
@@ -4574,7 +4574,7 @@
         "label": "ес"
       }
     },
-    "story": "«ес» гэсэн утгатай үндсэн дүрс ханз (jiǔ).",
+    "story": "Тохойгоо нугалж сунгасан гарын дүрс — тоо «ес»-д зээлэгджээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4604,7 +4604,7 @@
         "label": "нээх, эхлэх"
       }
     },
-    "story": "«нээх, эхлэх» гэсэн утгатай үндсэн дүрс ханз (kāi).",
+    "story": "Хаалганы хоёр хавтсыг хоёр гараар түлхэж нээж буй дүрс — нээх, эхлэх.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4634,7 +4634,7 @@
         "label": "харах, уулзах"
       }
     },
-    "story": "«харах, уулзах» гэсэн утгатай үндсэн дүрс ханз (jiàn).",
+    "story": "Хөл дээрээ зогссон том нүд (目) — харах, үзэх, уулзах.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4645,11 +4645,11 @@
   {
     "character": "块",
     "pinyin": "kuài",
-    "meaning": "хэсэг, төгрөг",
+    "meaning": "хэсэг; юань (мөнгө)",
     "kind": "simple",
     "example": {
       "word": "一块",
-      "pinyin": "yī kuài",
+      "pinyin": "yí kuài",
       "translation": "нэг хэсэг"
     },
     "level": 1,
@@ -4664,7 +4664,7 @@
         "label": "хэсэг, төгрөг"
       }
     },
-    "story": "«хэсэг, төгрөг» гэсэн утгатай үндсэн дүрс ханз (kuài).",
+    "story": "Шороо (土) утгыг өгнө — шавар хэсэг. 夬 дуудлагыг өгнө. Мөнгөний нэгж юанийг ярианд ингэж нэрлэдэг.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4694,7 +4694,7 @@
         "label": "ирэх"
       }
     },
-    "story": "«ирэх» гэсэн утгатай үндсэн дүрс ханз (lái).",
+    "story": "Боловсорсон тарианы түрүүний дүрс. Ургац «ирдэг» учраас «ирэх» утгад зээлэгджээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4705,7 +4705,7 @@
   {
     "character": "老",
     "pinyin": "lǎo",
-    "meaning": "хөгшин, ноён",
+    "meaning": "хөгшин; эртний",
     "kind": "simple",
     "example": {
       "word": "老师",
@@ -4724,7 +4724,7 @@
         "label": "хөгшин, ноён"
       }
     },
-    "story": "«хөгшин, ноён» гэсэн утгатай үндсэн дүрс ханз (lǎo).",
+    "story": "Урт үстэй, таяг тулсан өвгөний дүрс — хөгшин; 老师 шиг үгэнд хүндэтгэлийн угтвар болдог.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4754,7 +4754,7 @@
         "label": "багш, мастер"
       }
     },
-    "story": "«багш, мастер» гэсэн утгатай үндсэн дүрс ханз (shī).",
+    "story": "Цэргийн ангийн туг — олныг дагуулагч: багш, мастер.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4784,7 +4784,7 @@
         "label": "(дууссаныг заана)"
       }
     },
-    "story": "«(дууссаныг заана)» гэсэн утгатай үндсэн дүрс ханз (le).",
+    "story": "Гар нь өлгийдөө ороогдсон хүүхэд — өлгийдөж «дууслаа»: үйл дууссаныг заадаг нөхцөл.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4814,7 +4814,7 @@
         "label": "хүйтэн"
       }
     },
-    "story": "«хүйтэн» гэсэн утгатай үндсэн дүрс ханз (lěng).",
+    "story": "Мөсний радикал (冫) утгыг, 令 (lìng) дуудлагыг өгнө — хүйтэн.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4853,7 +4853,7 @@
         "label": "дотор, газар"
       }
     },
-    "story": "талбай (田), шороо (土) хослон «дотор, газар» гэсэн утга үүсгэнэ.",
+    "story": "Талбай (田) ба шороо (土) — тариачдын суудаг тосгон. Сүүлд «дотор» гэсэн утга нэмэгджээ.",
     "mnemonic": {
       "parts": [
         "田",
@@ -4900,7 +4900,7 @@
         "label": "тэг"
       }
     },
-    "story": "бороо (雨), тушаах (令) хослон «тэг» гэсэн утга үүсгэнэ.",
+    "story": "Бороо (雨) дусал дуслаар унана — бутархайн үлдэгдэл, тэг. 令 (lìng) дуудлагыг өгнө.",
     "mnemonic": {
       "parts": [
         "雨",
@@ -4938,7 +4938,7 @@
         "label": "зургаа"
       }
     },
-    "story": "«зургаа» гэсэн утгатай үндсэн дүрс ханз (liù).",
+    "story": "Дээвэртэй жижиг урцны дүрс — тоо «зургаа»-д зээлэгджээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -4977,7 +4977,7 @@
         "label": "уу? (асуултын)"
       }
     },
-    "story": "ам (口), морь (马) хослон «уу? (асуултын)» гэсэн утга үүсгэнэ.",
+    "story": "Ам (口) утгыг, 马 (mǎ) дуудлагыг өгнө — өгүүлбэрийн төгсгөлд асуулт үүсгэдэг нөхцөл.",
     "mnemonic": {
       "parts": [
         "口",
@@ -5015,7 +5015,7 @@
         "label": "худалдан авах"
       }
     },
-    "story": "«худалдан авах» гэсэн утгатай үндсэн дүрс ханз (mǎi).",
+    "story": "Тороор хясаа (эртний мөнгө) шүүрдэн авна — худалдан авах.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5046,7 +5046,7 @@
         },
         {
           "char": "苗",
-          "label": "соёо"
+          "label": "miáo (дуудлага)"
         }
       ],
       "result": {
@@ -5054,7 +5054,7 @@
         "label": "муур"
       }
     },
-    "story": "амьтан (犭), соёо (苗) хослон «муур» гэсэн утга үүсгэнэ.",
+    "story": "Амьтны радикал (犭) утгыг, 苗 (miáo) дуудлагыг өгнө — «мяу» гэдэг дуу нь дуудлагатайгаа ч ойрхон.",
     "mnemonic": {
       "parts": [
         "犭",
@@ -5092,7 +5092,7 @@
         "label": "үгүй, алга"
       }
     },
-    "story": "«үгүй, алга» гэсэн утгатай үндсэн дүрс ханз (méi).",
+    "story": "Юм усанд (氵) живээд алга болно — үгүй, байхгүй.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5122,7 +5122,7 @@
         "label": "хаах, холбоо"
       }
     },
-    "story": "«хаах, холбоо» гэсэн утгатай үндсэн дүрс ханз (guān).",
+    "story": "Хаалганы хоёр хавтсыг хааж хөндлөн түгжээ хийнэ — хаах; 关系 гэдэгт «холбоо» утгатай.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5152,7 +5152,7 @@
         "label": "холбоо, систем"
       }
     },
-    "story": "«холбоо, систем» гэсэн утгатай үндсэн дүрс ханз (xì).",
+    "story": "Олон утас (糸) хоорондоо холбогдсон дүрс — холбоо, систем.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5182,7 +5182,7 @@
         "label": "будаа, метр"
       }
     },
-    "story": "«будаа, метр» гэсэн утгатай үндсэн дүрс ханз (mǐ).",
+    "story": "Тарианы түрүүнээс будааны мөхлөг дөрвөн зүг цацарсан дүрс — будаа; мөн метр.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5221,7 +5221,7 @@
         "label": "аль, хаана"
       }
     },
-    "story": "ам (口), тэр (那) хослон «аль, хаана» гэсэн утга үүсгэнэ.",
+    "story": "«Тэр» (那) гэдгийг амаар (口) лавлаж асуувал «аль нь?» болно.",
     "mnemonic": {
       "parts": [
         "口",
@@ -5259,7 +5259,7 @@
         "label": "тэр"
       }
     },
-    "story": "«тэр» гэсэн утгатай үндсэн дүрс ханз (nà).",
+    "story": "Эртний алс нутгийн нэр байсан ханз — «тэр, тэнд» гэсэн заалт үг болжээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5269,13 +5269,13 @@
   },
   {
     "character": "呢",
-    "pinyin": "né",
+    "pinyin": "ne",
     "meaning": "(асуултын нөхцөл)",
     "kind": "simple",
     "example": {
       "word": "你呢",
       "pinyin": "nǐ ne",
-      "translation": "чи яаж?"
+      "translation": "харин чи?"
     },
     "level": 1,
     "category": "uil",
@@ -5289,7 +5289,7 @@
         "label": "(асуултын нөхцөл)"
       }
     },
-    "story": "«(асуултын нөхцөл)» гэсэн утгатай үндсэн дүрс ханз (né).",
+    "story": "Ам (口) утгыг, 尼 (ní) дуудлагыг өгнө — «харин ...?» гэж асуултыг буцаадаг нөхцөл.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5319,7 +5319,7 @@
         "label": "чадах"
       }
     },
-    "story": "«чадах» гэсэн утгатай үндсэн дүрс ханз (néng).",
+    "story": "Эртний бичигт баавгайн дүрс байжээ. Баавгай шиг хүчтэй — «чадах».",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5349,7 +5349,7 @@
         "label": "жил"
       }
     },
-    "story": "«жил» гэсэн утгатай үндсэн дүрс ханз (nián).",
+    "story": "Тариа үүрсэн хүний дүрс: ургац жилд ганц удаа ирдэг — жил.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5379,7 +5379,7 @@
         "label": "эмэгтэй"
       }
     },
-    "story": "«эмэгтэй» гэсэн утгатай үндсэн дүрс ханз (nǚ).",
+    "story": "Өвдөг сөхрөн суусан эмэгтэйн зөөлөн дүрс — эмэгтэй.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5409,7 +5409,7 @@
         "label": "найз"
       }
     },
-    "story": "«найз» гэсэн утгатай үндсэн дүрс ханз (yǒu).",
+    "story": "Нэг зүг рүү сунгасан хоёр гар — гар барьсан анд нөхөд: найз.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5420,7 +5420,7 @@
   {
     "character": "漂",
     "pinyin": "piào",
-    "meaning": "хөвөх, гоё",
+    "meaning": "гоё, сайхан (漂亮)",
     "kind": "compound",
     "example": {
       "word": "漂亮",
@@ -5448,7 +5448,7 @@
         "label": "хөвөх, гоё"
       }
     },
-    "story": "ус (氵), тасалбар (票) хослон «хөвөх, гоё» гэсэн утга үүсгэнэ.",
+    "story": "Ус (氵) дээр тасалбар (票) хөвж явна. piāo гэж уншвал «хөвөх», 漂亮 гэдэг үгэнд piào — «гоё».",
     "mnemonic": {
       "parts": [
         "氵",
@@ -5486,7 +5486,7 @@
         "label": "тод, гэрэлтэй"
       }
     },
-    "story": "«тод, гэрэлтэй» гэсэн утгатай үндсэн дүрс ханз (liàng).",
+    "story": "Өндөр асрын (高-гийн орой) дээр гэрэл асна — гэрэлтэй, тод.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5501,7 +5501,7 @@
     "kind": "compound",
     "example": {
       "word": "苹果",
-      "pinyin": "Píng guǒ",
+      "pinyin": "píng guǒ",
       "translation": "алим"
     },
     "level": 1,
@@ -5525,7 +5525,7 @@
         "label": "алим (苹果)"
       }
     },
-    "story": "өвс (艹), тэгш (平) хослон «алим (苹果)» гэсэн утга үүсгэнэ.",
+    "story": "Ургамлын радикал (艹) утгыг, 平 (píng) дуудлагыг өгнө — 苹果 (алим) гэдэг үгэнд ордог.",
     "mnemonic": {
       "parts": [
         "艹",
@@ -5572,7 +5572,7 @@
         "label": "жимс, үр дүн"
       }
     },
-    "story": "талбай (田), мод (木) хослон «жимс, үр дүн» гэсэн утга үүсгэнэ.",
+    "story": "Модны (木) оройд бөөрөнхий жимс (田 шиг дүрс) ургаж буй зураг — жимс; үр дүн.",
     "mnemonic": {
       "parts": [
         "田",
@@ -5610,7 +5610,7 @@
         "label": "долоо"
       }
     },
-    "story": "«долоо» гэсэн утгатай үндсэн дүрс ханз (qī).",
+    "story": "Зүсэж огтолж буй дүрс байсан ч тоо «долоо»-д зээлэгджээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5640,7 +5640,7 @@
         "label": "урд, өмнө"
       }
     },
-    "story": "«урд, өмнө» гэсэн утгатай үндсэн дүрс ханз (qián).",
+    "story": "Завин дээр тавьсан хөл — урсгал даган урагшилна: урд, өмнө.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5670,7 +5670,7 @@
         "label": "мөнгө"
       }
     },
-    "story": "«мөнгө» гэсэн утгатай үндсэн дүрс ханз (qián).",
+    "story": "Металл (钅) утгыг өгнө — зоос. 戋 дуудлагыг өгнө — мөнгө.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5709,7 +5709,7 @@
         "label": "урих, гуйх"
       }
     },
-    "story": "яриа (讠), ногоон (青) хослон «урих, гуйх» гэсэн утга үүсгэнэ.",
+    "story": "Үг яриа (讠) утгыг, 青 (qīng) дуудлагыг өгнө — эелдгээр урих, хүсэх.",
     "mnemonic": {
       "parts": [
         "讠",
@@ -5747,7 +5747,7 @@
         "label": "явах"
       }
     },
-    "story": "«явах» гэсэн утгатай үндсэн дүрс ханз (qù).",
+    "story": "Хүн орох үүдээ орхин гарч буй дүрс — явах, одох.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5777,7 +5777,7 @@
         "label": "халуун"
       }
     },
-    "story": "«халуун» гэсэн утгатай үндсэн дүрс ханз (rè).",
+    "story": "Доорх дөрвөн цэг (灬) нь гал — галын илч: халуун.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5807,7 +5807,7 @@
         "label": "хүн"
       }
     },
-    "story": "«хүн» гэсэн утгатай үндсэн дүрс ханз (rén).",
+    "story": "Алхаж яваа хүний хажуугийн дүрс: хоёр хөл нь тод харагдана — хүн.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5846,7 +5846,7 @@
         "label": "таних"
       }
     },
-    "story": "яриа (讠), хүн (人) хослон «таних» гэсэн утга үүсгэнэ.",
+    "story": "Хүнийг (人) дуу хоолойгоор нь (讠) таних — таних, хүлээн зөвшөөрөх.",
     "mnemonic": {
       "parts": [
         "讠",
@@ -5884,7 +5884,7 @@
         "label": "мэдэх, таних"
       }
     },
-    "story": "«мэдэх, таних» гэсэн утгатай үндсэн дүрс ханз (shí).",
+    "story": "Сонссон үгээ (讠) ялган таньж тогтооно — мэдэх, таних.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -5923,7 +5923,7 @@
         "label": "нар, өдөр"
       }
     },
-    "story": "ам (口), нэг (一) хослон «нар, өдөр» гэсэн утга үүсгэнэ.",
+    "story": "Нарны дугуй дүрсийг дөрвөлжин болгож, голд нь цэг тавьсан эртний зураг — нар, өдөр.",
     "mnemonic": {
       "parts": [
         "口",
@@ -5970,7 +5970,7 @@
         "label": "гурав"
       }
     },
-    "story": "нэг (一), хоёр (二) хослон «гурав» гэсэн утга үүсгэнэ.",
+    "story": "Гурван зураас — гурав. Нэг, хоёр, гурав гэж зураад л тоолчихдог байжээ.",
     "mnemonic": {
       "parts": [
         "一",
@@ -6008,7 +6008,7 @@
         "label": "худалдаа"
       }
     },
-    "story": "«худалдаа» гэсэн утгатай үндсэн дүрс ханз (shāng).",
+    "story": "Худалдаанд гарамгай байсан эртний Шан улсын нэрнээс — худалдаа.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6038,7 +6038,7 @@
         "label": "дэлгүүр"
       }
     },
-    "story": "«дэлгүүр» гэсэн утгатай үндсэн дүрс ханз (diàn).",
+    "story": "Саравчин (广) дор эзэлсэн (占 diàn) газар — дэлгүүр, мухлаг.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6068,7 +6068,7 @@
         "label": "дээр"
       }
     },
-    "story": "«дээр» гэсэн утгатай үндсэн дүрс ханз (shàng).",
+    "story": "Хэвтээ шугамын дээр тавьсан тэмдэг — дээр, дээш.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6098,7 +6098,7 @@
         "label": "үд"
       }
     },
-    "story": "«үд» гэсэн утгатай үндсэн дүрс ханз (wǔ).",
+    "story": "Эртний цаг тооллын «морин цаг» буюу үд дунд — үд.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6137,7 +6137,7 @@
         "label": "юу (什么)"
       }
     },
-    "story": "хүн (亻), арав (十) хослон «юу (什么)» гэсэн утга үүсгэнэ.",
+    "story": "Хүн (亻) ба арав (十). Дангаараа бараг хэрэглэгдэхгүй, 什么 (юу?) гэдэг үгэнд амьдардаг.",
     "mnemonic": {
       "parts": [
         "亻",
@@ -6175,7 +6175,7 @@
         "label": "(асуултын 什么)"
       }
     },
-    "story": "«(асуултын 什么)» гэсэн утгатай үндсэн дүрс ханз (me).",
+    "story": "Нарийн утасны дүрс байсан ч одоо 什么 зэрэг үгийн сүүлд ордог хөнгөн нөхцөл болжээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6205,7 +6205,7 @@
         "label": "арав"
       }
     },
-    "story": "«арав» гэсэн утгатай үндсэн дүрс ханз (shí).",
+    "story": "Хөндлөн ба босоо зураас солбицов — бүтэн тоо: арав.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6235,7 +6235,7 @@
         "label": "хүлээх, үе"
       }
     },
-    "story": "«хүлээх, үе» гэсэн утгатай үндсэн дүрс ханз (hòu).",
+    "story": "Хүн (亻) харуулд зогсож хүлээнэ — хүлээх; 时候 гэдэгт «цаг үе».",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6250,7 +6250,7 @@
     "kind": "simple",
     "example": {
       "word": "不是",
-      "pinyin": "bù shì",
+      "pinyin": "bú shì",
       "translation": "биш"
     },
     "level": 1,
@@ -6265,7 +6265,7 @@
         "label": "мөн, байх"
       }
     },
-    "story": "«мөн, байх» гэсэн утгатай үндсэн дүрс ханз (shì).",
+    "story": "Нар (日) ба шулуун алхаа — нарны доорх зөв зам: мөн, тийм.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6295,7 +6295,7 @@
         "label": "ном"
       }
     },
-    "story": "«ном» гэсэн утгатай үндсэн дүрс ханз (shū).",
+    "story": "Бийр барьсан гар бичиг бичиж буй дүрс — ном, бичиг.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6305,7 +6305,7 @@
   },
   {
     "character": "谁",
-    "pinyin": "shuí",
+    "pinyin": "shéi",
     "meaning": "хэн",
     "kind": "simple",
     "example": {
@@ -6325,7 +6325,7 @@
         "label": "хэн"
       }
     },
-    "story": "«хэн» гэсэн утгатай үндсэн дүрс ханз (shuí).",
+    "story": "Хаалганы цаанаас дуу гарахад (讠) «хэн ярьж байна?» гэж асууна — хэн.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6355,7 +6355,7 @@
         "label": "ус"
       }
     },
-    "story": "«ус» гэсэн утгатай үндсэн дүрс ханз (shuǐ).",
+    "story": "Урсах горхины дүрс: гол урсгал, хажуугаар нь цацрах дусал — ус.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6385,7 +6385,7 @@
         "label": "унтах"
       }
     },
-    "story": "«унтах» гэсэн утгатай үндсэн дүрс ханз (shuì).",
+    "story": "Нүдний (目) зовхи доош унжина (垂) — нойр хүрч унтана.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6415,7 +6415,7 @@
         "label": "мэдрэх, унтах"
       }
     },
-    "story": "«мэдрэх, унтах» гэсэн утгатай үндсэн дүрс ханз (jué).",
+    "story": "Сурахын 学-гийн оройтой, доороо харах 见 — сэрж ухаарах (jué); 睡觉-д «нойр» (jiào).",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6445,7 +6445,7 @@
         "label": "хэлэх"
       }
     },
-    "story": "«хэлэх» гэсэн утгатай үндсэн дүрс ханз (shuō).",
+    "story": "Үг яриа (讠) утгыг, 兑 (duì) дуудлагыг өгнө — хэлэх, ярих.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6475,7 +6475,7 @@
         "label": "дөрөв"
       }
     },
-    "story": "«дөрөв» гэсэн утгатай үндсэн дүрс ханз (sì).",
+    "story": "Амнаас гарах амьсгалын дүрс байсан ч тоо «дөрөв»-т зээлэгджээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6505,7 +6505,7 @@
         "label": "нас"
       }
     },
-    "story": "«нас» гэсэн утгатай үндсэн дүрс ханз (suì).",
+    "story": "Жил дамнан давтагдах цаг хугацааны нэгж — нас. Хэдэн нас гэдгийг 几岁 гэж асууна.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6544,7 +6544,7 @@
         "label": "тэр (эм)"
       }
     },
-    "story": "эмэгтэй (女), бас (也) хослон «тэр (эм)» гэсэн утга үүсгэнэ.",
+    "story": "他-гийн хүн радикалыг 女 (эмэгтэй)-ээр сольсон — эмэгтэй хүнийг заах «тэр».",
     "mnemonic": {
       "parts": [
         "女",
@@ -6566,9 +6566,9 @@
     "meaning": "хэт",
     "kind": "simple",
     "example": {
-      "word": "太好",
-      "pinyin": "tài hǎo",
-      "translation": "хэт сайн"
+      "word": "太好了",
+      "pinyin": "tài hǎo le",
+      "translation": "ямар сайхан юм бэ!"
     },
     "level": 1,
     "category": "zuils",
@@ -6582,7 +6582,7 @@
         "label": "хэт"
       }
     },
-    "story": "«хэт» гэсэн утгатай үндсэн дүрс ханз (tài).",
+    "story": "Том (大)-оос ч давсныг доорх цэгээр тэмдэглэв — хэт, дэндүү.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6621,7 +6621,7 @@
         "label": "сонсох"
       }
     },
-    "story": "ам (口), сүх (斤) хослон «сонсох» гэсэн утга үүсгэнэ.",
+    "story": "Ам (口) ярихад нөгөө хүн нь сонсоно. 斤 нь хуучин дуудлагын үлдэгдэл — сонсох.",
     "mnemonic": {
       "parts": [
         "口",
@@ -6659,7 +6659,7 @@
         "label": "адил"
       }
     },
-    "story": "«адил» гэсэн утгатай үндсэн дүрс ханз (tóng).",
+    "story": "Нэг ам (口) шиг нэг дуугаар — адилхан, хамт.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6689,7 +6689,7 @@
         "label": "сурах"
       }
     },
-    "story": "«сурах» гэсэн утгатай үндсэн дүрс ханз (xué).",
+    "story": "Дээвэр дор хүүхэд (子), дээрээс нь мэдлэг асгаж буй хоёр гар — сурах.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6700,7 +6700,7 @@
   {
     "character": "喂",
     "pinyin": "wèi",
-    "meaning": "хэлүү (утсанд)",
+    "meaning": "байна уу? (утсаар)",
     "kind": "simple",
     "example": {
       "word": "喂",
@@ -6719,7 +6719,7 @@
         "label": "хэлүү (утсанд)"
       }
     },
-    "story": "«хэлүү (утсанд)» гэсэн утгатай үндсэн дүрс ханз (wèi).",
+    "story": "Ам (口) утгыг, 畏 (wèi) дуудлагыг өгнө — хүн дуудах аялга: «Байна уу?»",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6749,7 +6749,7 @@
         "label": "би"
       }
     },
-    "story": "«би» гэсэн утгатай үндсэн дүрс ханз (wǒ).",
+    "story": "Жад (戈) барьсан гар — зэвсгээ барьсан дайчин өөрийгөө «би» гэж заажээ.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6779,7 +6779,7 @@
         "label": "тав"
       }
     },
-    "story": "«тав» гэсэн утгатай үндсэн дүрс ханз (wǔ).",
+    "story": "Тэнгэр газрыг (хоёр зураас) хооронд нь солбицуулсан дүрс — тав.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6809,7 +6809,7 @@
         "label": "баярлах, дуртай"
       }
     },
-    "story": "«баярлах, дуртай» гэсэн утгатай үндсэн дүрс ханз (xǐ).",
+    "story": "Бөмбөр (壴) дэлдэж ам (口) дуулна — баяр ёслол: баярлах, дуртай.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6848,7 +6848,7 @@
         "label": "баяр, дуртай"
       }
     },
-    "story": "гар (又), ангайх (欠) хослон «баяр, дуртай» гэсэн утга үүсгэнэ.",
+    "story": "Ангайсан амтай (欠) хүн баярлаж инээнэ — баяр хөөр, дуртай.",
     "mnemonic": {
       "parts": [
         "又",
@@ -6886,7 +6886,7 @@
         "label": "доор"
       }
     },
-    "story": "«доор» гэсэн утгатай үндсэн дүрс ханз (xià).",
+    "story": "Хэвтээ шугамын доор тавьсан тэмдэг — доор, доош.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6916,7 +6916,7 @@
         "label": "бороо"
       }
     },
-    "story": "«бороо» гэсэн утгатай үндсэн дүрс ханз (yǔ).",
+    "story": "Тэнгэрийн хаяанаас дусал дуслаар унаж буй бороо — бороо.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6946,7 +6946,7 @@
         "label": "эхэлж, түрүүн"
       }
     },
-    "story": "«эхэлж, түрүүн» гэсэн утгатай үндсэн дүрс ханз (xiān).",
+    "story": "Хөл нь хүнээсээ (儿) түрүүлж гарна — эхлээд, түрүүн.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -6962,7 +6962,7 @@
     "example": {
       "word": "学生",
       "pinyin": "xué sheng",
-      "translation": "оюутан"
+      "translation": "сурагч, оюутан"
     },
     "level": 1,
     "category": "baigal",
@@ -6985,7 +6985,7 @@
         "label": "төрөх, амьд"
       }
     },
-    "story": "нэг (一), шороо (土) хослон «төрөх, амьд» гэсэн утга үүсгэнэ.",
+    "story": "Шорооноос (土) соёо цухуйж ургаж буй дүрс — төрөх, ургах, амьд.",
     "mnemonic": {
       "parts": [
         "一",
@@ -7032,7 +7032,7 @@
         "label": "одоо, илрэх"
       }
     },
-    "story": "хаш (王), харах (见) хослон «одоо, илрэх» гэсэн утга үүсгэнэ.",
+    "story": "Хаш чулууг (王) өнгөлөхөд гялбаа нь нүдэнд харагдана (见) — илрэх; яг одоо.",
     "mnemonic": {
       "parts": [
         "王",
@@ -7079,7 +7079,7 @@
         "label": "-д байх"
       }
     },
-    "story": "авьяас (才), шороо (土) хослон «-д байх» гэсэн утга үүсгэнэ.",
+    "story": "Газар (土) дээр цухуйсан нахиа (才) — яг одоо энд «байх».",
     "mnemonic": {
       "parts": [
         "才",
@@ -7117,7 +7117,7 @@
         "label": "жижиг"
       }
     },
-    "story": "«жижиг» гэсэн утгатай үндсэн дүрс ханз (xiǎo).",
+    "story": "Том юмыг жижиглэн хуваасан гурван жижиг цэг — жижиг, бага.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7156,7 +7156,7 @@
         "label": "эгч"
       }
     },
-    "story": "эмэгтэй (女), бас (且) хослон «эгч» гэсэн утга үүсгэнэ.",
+    "story": "Эмэгтэй (女) утгыг, 且 дуудлагыг өгнө — эгч.",
     "mnemonic": {
       "parts": [
         "女",
@@ -7179,7 +7179,7 @@
     "kind": "simple",
     "example": {
       "word": "一些",
-      "pinyin": "yī xiē",
+      "pinyin": "yì xiē",
       "translation": "хэдэн"
     },
     "level": 1,
@@ -7194,7 +7194,7 @@
         "label": "хэдэн, зарим"
       }
     },
-    "story": "«хэдэн, зарим» гэсэн утгатай үндсэн дүрс ханз (xiē).",
+    "story": "Энэ (此) дээр хоёр (二) нэмэв — «эдгээр хэд»: хэдэн, зарим.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7224,7 +7224,7 @@
         "label": "бичих"
       }
     },
-    "story": "«бичих» гэсэн утгатай үндсэн дүрс ханз (xiě).",
+    "story": "Дээвэр дор шаазгай үүрээ засдаг шиг үсгээ нямбай өрнө — бичих.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7254,7 +7254,7 @@
         "label": "баярлах"
       }
     },
-    "story": "«баярлах» гэсэн утгатай үндсэн дүрс ханз (xiè).",
+    "story": "Үг (讠), бие (身), бөхийлт (寸) — биеэ бөхийлгөн талархал хэлнэ: баярлалаа.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7293,7 +7293,7 @@
         "label": "од"
       }
     },
-    "story": "нар (日), төрөх (生) хослон «од» гэсэн утга үүсгэнэ.",
+    "story": "Нар (日) жаргасны дараа тэнгэрт төрдөг (生) жижиг гэрлүүд — одод.",
     "mnemonic": {
       "parts": [
         "日",
@@ -7340,7 +7340,7 @@
         "label": "хугацаа, үе"
       }
     },
-    "story": "түүний (其), сар (月) хослон «хугацаа, үе» гэсэн утга үүсгэнэ.",
+    "story": "Сарны (月) эргэлтээр хугацааг тоолдог. 其 (qí) дуудлагыг өгнө — хугацаа, үе.",
     "mnemonic": {
       "parts": [
         "其",
@@ -7378,7 +7378,7 @@
         "label": "сурах, дадал"
       }
     },
-    "story": "«сурах, дадал» гэсэн утгатай үндсэн дүрс ханз (xí).",
+    "story": "Шувууны далавчны (羽-гийн тал) дүрс — ангаахай ниснэ гэж дахин дахин дэвнэ: сурах, дадах.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7417,7 +7417,7 @@
         "label": "сургууль"
       }
     },
-    "story": "мод (木), огтлох (交) хослон «сургууль» гэсэн утга үүсгэнэ.",
+    "story": "Модон (木) барилга гэсэн санаа, 交 (jiāo) дуудлагыг өгнө — сургууль.",
     "mnemonic": {
       "parts": [
         "木",
@@ -7440,7 +7440,7 @@
     "kind": "simple",
     "example": {
       "word": "一起",
-      "pinyin": "yī qǐ",
+      "pinyin": "yì qǐ",
       "translation": "хамт"
     },
     "level": 1,
@@ -7455,7 +7455,7 @@
         "label": "нэг"
       }
     },
-    "story": "«нэг» гэсэн утгатай үндсэн дүрс ханз (yī).",
+    "story": "Ганц зураас — нэг. Хамгийн анхны, хамгийн энгийн ханз.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7485,7 +7485,7 @@
         "label": "хувцас"
       }
     },
-    "story": "«хувцас» гэсэн утгатай үндсэн дүрс ханз (yī).",
+    "story": "Захтай дээлийн энгэр, хормойн дүрс — хувцас.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7515,7 +7515,7 @@
         "label": "хувцас, дагах"
       }
     },
-    "story": "«хувцас, дагах» гэсэн утгатай үндсэн дүрс ханз (fú).",
+    "story": "Биед (月) зохицож таардаг зүйл — хувцас; дагах, үйлчлэх.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7545,7 +7545,7 @@
         "label": "эмчлэх, эмч"
       }
     },
-    "story": "«эмчлэх, эмч» гэсэн утгатай үндсэн дүрс ханз (yī).",
+    "story": "Хайрцагт (匚) хийсэн сум (矢) — эртний эмч сумны шархыг анагаадаг байжээ: эмчлэх, эмч.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7584,7 +7584,7 @@
         "label": "хашаа, газар"
       }
     },
-    "story": "толгод (阝), бүрэн (完) хослон «хашаа, газар» гэсэн утга үүсгэнэ.",
+    "story": "Толгод хэрэм (阝) дотор бүрэн (完) хашигдсан газар — хашаа; эмнэлэг, сургууль зэрэг байгууллага.",
     "mnemonic": {
       "parts": [
         "阝",
@@ -7631,7 +7631,7 @@
         "label": "сандал"
       }
     },
-    "story": "мод (木), сонин (奇) хослон «сандал» гэсэн утга үүсгэнэ.",
+    "story": "Модоор (木) хийсэн эд зүйл. 奇 (qí) дуудлагыг өгнө — сандал.",
     "mnemonic": {
       "parts": [
         "木",
@@ -7669,7 +7669,7 @@
         "label": "байх, эзэмших"
       }
     },
-    "story": "«байх, эзэмших» гэсэн утгатай үндсэн дүрс ханз (yǒu).",
+    "story": "Гартаа (𠂇) мах (月) барьжээ — гартаа юмтай: байх, эзэмших.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7699,7 +7699,7 @@
         "label": "сар"
       }
     },
-    "story": "«сар» гэсэн утгатай үндсэн дүрс ханз (yuè).",
+    "story": "Хавирган сарны дүрс — сар; биеийн эрхтэн заадаг радикал болж олон ханзанд ордог.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7729,7 +7729,7 @@
         "label": "дахин"
       }
     },
-    "story": "«дахин» гэсэн утгатай үндсэн дүрс ханз (zài).",
+    "story": "Нэг дээр давхарласан дүрс — дахин, ахин.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7759,7 +7759,7 @@
         "label": "яаж"
       }
     },
-    "story": "«яаж» гэсэн утгатай үндсэн дүрс ханз (zěn).",
+    "story": "Гэнэтийн (乍) явдалд зүрх (心) асуулт төрүүлнэ — яаж? яахав?",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7798,7 +7798,7 @@
         "label": "хэлбэр, янз"
       }
     },
-    "story": "мод (木), хонь (羊) хослон «хэлбэр, янз» гэсэн утга үүсгэнэ.",
+    "story": "Мод (木) утгыг, 羊 (yáng) дуудлагыг өгнө — загвар, янз байдал.",
     "mnemonic": {
       "parts": [
         "木",
@@ -7845,7 +7845,7 @@
         "label": "энэ"
       }
     },
-    "story": "явах (辶), бичиг (文) хослон «энэ» гэсэн утга үүсгэнэ.",
+    "story": "Алхаад (辶) очоод хуруугаараа заасан зүйл — «энэ».",
     "mnemonic": {
       "parts": [
         "辶",
@@ -7883,7 +7883,7 @@
         "label": "дунд, төв"
       }
     },
-    "story": "«дунд, төв» гэсэн утгатай үндсэн дүрс ханз (zhōng).",
+    "story": "Байны яг голд нэвт зоосон туг — дунд, төв. Дундад улс нь 中国.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7913,7 +7913,7 @@
         "label": "улс"
       }
     },
-    "story": "«улс» гэсэн утгатай үндсэн дүрс ханз (guó).",
+    "story": "Хэрмээр (口) хүрээлэгдсэн хаш эрдэнэ (玉) — улс орон.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -7952,7 +7952,7 @@
         "label": "амьдрах"
       }
     },
-    "story": "хүн (亻), эзэн (主) хослон «амьдрах» гэсэн утга үүсгэнэ.",
+    "story": "Хүн (亻) эзэн (主) шигээ нэг газраа тогтоно — амьдрах, суух.",
     "mnemonic": {
       "parts": [
         "亻",
@@ -7999,7 +7999,7 @@
         "label": "ширээ"
       }
     },
-    "story": "онцгой (卓), мод (木) хослон «ширээ» гэсэн утга үүсгэнэ.",
+    "story": "Өндөр (卓) модон (木) тавцан — ширээ.",
     "mnemonic": {
       "parts": [
         "卓",
@@ -8037,7 +8037,7 @@
         "label": "өчигдөр"
       }
     },
-    "story": "«өчигдөр» гэсэн утгатай үндсэн дүрс ханз (zuó).",
+    "story": "Нар (日) — өнгөрчихсөн өдөр. 乍 дуудлагыг өгнө — өчигдөр.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -8076,7 +8076,7 @@
         "label": "суух"
       }
     },
-    "story": "хоёр хүн (从), шороо (土) хослон «суух» гэсэн утга үүсгэнэ.",
+    "story": "Хоёр хүн (从) шороон дов (土) дээр харалдаа сууна — суух.",
     "mnemonic": {
       "parts": [
         "从",
@@ -8114,7 +8114,7 @@
         "label": "хийх"
       }
     },
-    "story": "«хийх» гэсэн утгатай үндсэн дүрс ханз (zuò).",
+    "story": "Хүн (亻) ажил үйл бүтээж байна — хийх.",
     "images": {
       "icon": {
         "kind": "emoji",
@@ -8150,7 +8150,7 @@
         "label": "(зөвлөх нөхцөл)"
       }
     },
-    "story": "«(зөвлөх нөхцөл)» гэсэн утгатай үндсэн дүрс ханз (bā)."
+    "story": "Ам (口) утгыг, 巴 (bā) дуудлагыг өгнө — «...л даа, за тэгье» гэж зөөлрүүлдэг нөхцөл."
   },
   {
     "character": "白",
@@ -8180,7 +8180,7 @@
         "label": "цагаан"
       }
     },
-    "story": "«цагаан» гэсэн утгатай үндсэн дүрс ханз (bái)."
+    "story": "Үүрийн нарны эхний туяа — цайвар гэгээ: цагаан."
   },
   {
     "character": "百",
@@ -8210,7 +8210,7 @@
         "label": "зуу"
       }
     },
-    "story": "«зуу» гэсэн утгатай үндсэн дүрс ханз (bǎi)."
+    "story": "Нэг (一) ба цагаан (白 bái — дуудлага) — зуу."
   },
   {
     "character": "帮",
@@ -8240,7 +8240,7 @@
         "label": "туслах"
       }
     },
-    "story": "«туслах» гэсэн утгатай үндсэн дүрс ханз (bāng)."
+    "story": "Даавуугаар (巾) ороож дэмжинэ. 邦 (bāng) дуудлагыг өгнө — туслах."
   },
   {
     "character": "助",
@@ -8279,7 +8279,7 @@
         "label": "туслах"
       }
     },
-    "story": "бас (且), хүч (力) хослон «туслах» гэсэн утга үүсгэнэ.",
+    "story": "Хүчээ (力) нэмэрлэнэ — туслах. 且 нь дуудлагыг өгнө.",
     "mnemonic": {
       "parts": [
         "且",
@@ -8317,7 +8317,7 @@
         "label": "мэдээлэх; сонин"
       }
     },
-    "story": "«мэдээлэх; сонин» гэсэн утгатай үндсэн дүрс ханз (bào)."
+    "story": "Гараар (扌) мэдээ дамжуулна — мэдээлэх; өдөр тутмын мэдээ нь сонин."
   },
   {
     "character": "纸",
@@ -8356,7 +8356,7 @@
         "label": "цаас"
       }
     },
-    "story": "утас (纟), овог (氏) хослон «цаас» гэсэн утга үүсгэнэ.",
+    "story": "Утас ширхэг (纟) — эртний цаасыг торго, ургамлын ширхэгээс хийдэг байв. 氏 (shì) дуудлагыг өгнө.",
     "mnemonic": {
       "parts": [
         "纟",
@@ -8373,7 +8373,7 @@
     "kind": "simple",
     "example": {
       "word": "比如",
-      "pinyin": "Bǐ rú",
+      "pinyin": "bǐ rú",
       "translation": "жишээ нь"
     },
     "level": 2,
@@ -8394,7 +8394,7 @@
         "label": "харьцуулах"
       }
     },
-    "story": "«харьцуулах» гэсэн утгатай үндсэн дүрс ханз (bǐ)."
+    "story": "Хоёр хүн зэрэгцэн зогсоод өндрөө үзэлцэнэ — харьцуулах."
   },
   {
     "character": "便",
@@ -8424,7 +8424,7 @@
         "label": "тохиромжтой"
       }
     },
-    "story": "«тохиромжтой» гэсэн утгатай үндсэн дүрс ханз (biàn)."
+    "story": "Хүн (亻) юмыг өөрчилж (更) амар болгоно — тохиромжтой; 便宜 (pián yi)-д «хямд»."
   },
   {
     "character": "宜",
@@ -8463,7 +8463,7 @@
         "label": "тохирох"
       }
     },
-    "story": "дээвэр (宀), бас (且) хослон «тохирох» гэсэн утга үүсгэнэ.",
+    "story": "Дээвэр (宀) доор эмх цэгцтэй өрсөн юмс — тохиромжтой, зохистой.",
     "mnemonic": {
       "parts": [
         "宀",
@@ -8501,7 +8501,7 @@
         "label": "бүү; ялгах"
       }
     },
-    "story": "«бүү; ялгах» гэсэн утгатай үндсэн дүрс ханз (bié)."
+    "story": "Хутгаар (刂) салгаж ялгана — салах, ялгах; «бүү ...» гэсэн хориглол ч болдог."
   },
   {
     "character": "歌",
@@ -8540,7 +8540,7 @@
         "label": "дуу"
       }
     },
-    "story": "ах (哥), ангайх (欠) хослон «дуу» гэсэн утга үүсгэнэ.",
+    "story": "Ангайсан ам (欠) — дуулж байна. 哥 (gē) дуудлагыг өгнө — дуу.",
     "mnemonic": {
       "parts": [
         "哥",
@@ -8587,7 +8587,7 @@
         "label": "өмсөх"
       }
     },
-    "story": "агуй (穴), шүд (牙) хослон «өмсөх» гэсэн утга үүсгэнэ.",
+    "story": "Шүд (牙) нүхийг (穴) нэвт гарна — нэвтрэх; биедээ хувцас «нэвт» углах нь өмсөх.",
     "mnemonic": {
       "parts": [
         "穴",
@@ -8638,7 +8638,7 @@
         "label": "усан онгоц"
       }
     },
-    "story": "завь (舟), хэд (几), ам (口) хослон «усан онгоц» гэсэн утга үүсгэнэ.",
+    "story": "Завь (舟) утгыг өгнө — усан онгоц, хөлөг.",
     "mnemonic": {
       "parts": [
         "舟",
@@ -8677,7 +8677,7 @@
         "label": "удаа"
       }
     },
-    "story": "«удаа» гэсэн утгатай үндсэн дүрс ханз (cì)."
+    "story": "Мөс (冫) ба ангайсан ам (欠) — амьсгаа ар араасаа гарна: удаа, дараалал."
   },
   {
     "character": "错",
@@ -8716,7 +8716,7 @@
         "label": "буруу, алдаа"
       }
     },
-    "story": "металл (钅), урьд (昔) хослон «буруу, алдаа» гэсэн утга үүсгэнэ.",
+    "story": "Металл (钅) зэврээд урьдын (昔) өнгөө алдана — алдаа, буруу.",
     "mnemonic": {
       "parts": [
         "钅",
@@ -8754,7 +8754,7 @@
         "label": "сагс"
       }
     },
-    "story": "«сагс» гэсэн утгатай үндсэн дүрс ханз (lán)."
+    "story": "Хулсаар (⺮) сүлжсэн сав — сагс. 篮球 нь сагсан бөмбөг."
   },
   {
     "character": "球",
@@ -8784,7 +8784,7 @@
         "label": "бөмбөг"
       }
     },
-    "story": "«бөмбөг» гэсэн утгатай үндсэн дүрс ханз (qiú)."
+    "story": "Хаш чулуу (王) шиг бөөрөнхий зүйл. 求 (qiú) дуудлагыг өгнө — бөмбөг."
   },
   {
     "character": "但",
@@ -8814,7 +8814,7 @@
         "label": "гэхдээ"
       }
     },
-    "story": "«гэхдээ» гэсэн утгатай үндсэн дүрс ханз (dàn)."
+    "story": "Хүн (亻) утгын зүгээс, 旦 (dàn) дуудлагыг өгнө — «гэхдээ» гэсэн холбоос."
   },
   {
     "character": "到",
@@ -8853,7 +8853,7 @@
         "label": "хүрэх, ирэх"
       }
     },
-    "story": "хүрэх (至), хутга (刂) хослон «хүрэх, ирэх» гэсэн утга үүсгэнэ.",
+    "story": "Хүрэх (至) утгыг, 刂 (dāo) дуудлагыг өгнө — хүрч очих, ирэх.",
     "mnemonic": {
       "parts": [
         "至",
@@ -8869,9 +8869,9 @@
     "meaning": "олж авах",
     "kind": "simple",
     "example": {
-      "word": "觉得",
-      "pinyin": "jué de",
-      "translation": "санагдах"
+      "word": "得到",
+      "pinyin": "dé dào",
+      "translation": "олж авах"
     },
     "level": 2,
     "category": "uil",
@@ -8891,7 +8891,7 @@
         "label": "олж авах"
       }
     },
-    "story": "«олж авах» гэсэн утгатай үндсэн дүрс ханз (dé)."
+    "story": "Замдаа (彳) үнэт зүйл олж авна — олох; мөн de, děi гэж уншигддаг олон үүрэгт ханз."
   },
   {
     "character": "弟",
@@ -8921,7 +8921,7 @@
         "label": "дүү"
       }
     },
-    "story": "«дүү» гэсэн утгатай үндсэн дүрс ханз (dì)."
+    "story": "Жадны иш дээр дэс дараалан ороосон сур — дараалал: ах дүүсийн бага нь, дүү."
   },
   {
     "character": "第",
@@ -8951,7 +8951,7 @@
         "label": "-дугаар"
       }
     },
-    "story": "«-дугаар» гэсэн утгатай үндсэн дүрс ханз (dì)."
+    "story": "Хулсан (⺮) модны үе шиг дэс дараа. 弟 (dì) дуудлагыг өгнө — «-дугаар»."
   },
   {
     "character": "懂",
@@ -8981,7 +8981,7 @@
         "label": "ойлгох"
       }
     },
-    "story": "«ойлгох» гэсэн утгатай үндсэн дүрс ханз (dǒng)."
+    "story": "Сэтгэл (忄) утгыг, 董 (dǒng) дуудлагыг өгнө — сэтгэлдээ нэвт ойлгох."
   },
   {
     "character": "房",
@@ -9020,7 +9020,7 @@
         "label": "байшин, өрөө"
       }
     },
-    "story": "айл (户), зүг (方) хослон «байшин, өрөө» гэсэн утга үүсгэнэ.",
+    "story": "Айлын хаалга (户) утгыг, 方 (fāng) дуудлагыг өгнө — байшин, өрөө.",
     "mnemonic": {
       "parts": [
         "户",
@@ -9067,7 +9067,7 @@
         "label": "хооронд, өрөө"
       }
     },
-    "story": "хаалга (门), нар (日) хослон «хооронд, өрөө» гэсэн утга үүсгэнэ.",
+    "story": "Хаалганы (门) завсраар нарны гэрэл (日) тусна — завсар, хооронд; өрөө.",
     "mnemonic": {
       "parts": [
         "门",
@@ -9105,7 +9105,7 @@
         "label": "биш, буруу"
       }
     },
-    "story": "«биш, буруу» гэсэн утгатай үндсэн дүрс ханз (fēi)."
+    "story": "Шувууны хоёр далавч эсрэг зүг рүү дэлгэгджээ — эсрэг: биш, буруу."
   },
   {
     "character": "常",
@@ -9135,7 +9135,7 @@
         "label": "байнга, энгийн"
       }
     },
-    "story": "«байнга, энгийн» гэсэн утгатай үндсэн дүрс ханз (cháng)."
+    "story": "Даавуу (巾) удаан элэгддэггүй — байнгын, ердийн. 尚 (shàng) дуудлагыг өгнө."
   },
   {
     "character": "务",
@@ -9165,7 +9165,7 @@
         "label": "үйл хэрэг"
       }
     },
-    "story": "«үйл хэрэг» гэсэн утгатай үндсэн дүрс ханз (wù)."
+    "story": "Хүчээ (力) дайчлан гүйцэтгэх ёстой зүйл — үйл хэрэг, үүрэг."
   },
   {
     "character": "员",
@@ -9204,7 +9204,7 @@
         "label": "гишүүн, ажилтан"
       }
     },
-    "story": "ам (口), хясаа (贝) хослон «гишүүн, ажилтан» гэсэн утга үүсгэнэ.",
+    "story": "Ам (口) — ам бүлийн тоо, хясаа (贝) — эртний мөнгө. Цалин авдаг хүн: ажилтан, гишүүн.",
     "mnemonic": {
       "parts": [
         "口",
@@ -9221,7 +9221,7 @@
     "kind": "simple",
     "example": {
       "word": "告诉",
-      "pinyin": "gào sù",
+      "pinyin": "gào su",
       "translation": "хэлэх"
     },
     "level": 2,
@@ -9242,7 +9242,7 @@
         "label": "хэлэх"
       }
     },
-    "story": "«хэлэх» гэсэн утгатай үндсэн дүрс ханз (gào)."
+    "story": "Үхэр (牛) өргөж тахиад амаар (口) зарлана — хэлэх, мэдэгдэх."
   },
   {
     "character": "诉",
@@ -9251,7 +9251,7 @@
     "kind": "simple",
     "example": {
       "word": "告诉",
-      "pinyin": "gào sù",
+      "pinyin": "gào su",
       "translation": "хэлэх"
     },
     "level": 2,
@@ -9272,7 +9272,7 @@
         "label": "хэлэх, гомдоллох"
       }
     },
-    "story": "«хэлэх, гомдоллох» гэсэн утгатай үндсэн дүрс ханз (sù)."
+    "story": "Учир явдлаа үгээр (讠) тоочин хэлнэ — хэлэх; гомдол мэдүүлэх."
   },
   {
     "character": "哥",
@@ -9327,9 +9327,9 @@
     "meaning": "өгөх",
     "kind": "compound",
     "example": {
-      "word": "给",
-      "pinyin": "gěi",
-      "translation": "өгөх"
+      "word": "给你",
+      "pinyin": "gěi nǐ",
+      "translation": "май, чамд өгье"
     },
     "level": 2,
     "category": "zuils",
@@ -9358,7 +9358,7 @@
         "label": "өгөх"
       }
     },
-    "story": "утас (纟), нийлэх (合) хослон «өгөх» гэсэн утга үүсгэнэ.",
+    "story": "Утсыг (纟) нийлүүлж (合) гарт нь гардуулна — өгөх.",
     "mnemonic": {
       "parts": [
         "纟",
@@ -9396,7 +9396,7 @@
         "label": "бас; буцаах"
       }
     },
-    "story": "«бас; буцаах» гэсэн утгатай үндсэн дүрс ханз (hái)."
+    "story": "Явсан зам (辶) буцаж ирнэ — буцаах (huán); «бас, мөн» (hái)."
   },
   {
     "character": "孩",
@@ -9426,7 +9426,7 @@
         "label": "хүүхэд"
       }
     },
-    "story": "«хүүхэд» гэсэн утгатай үндсэн дүрс ханз (hái)."
+    "story": "Хүүхэд (子) утгыг, 亥 (hài) дуудлагыг өгнө — хүүхэд."
   },
   {
     "character": "号",
@@ -9456,7 +9456,7 @@
         "label": "дугаар"
       }
     },
-    "story": "«дугаар» гэсэн утгатай үндсэн дүрс ханз (hào)."
+    "story": "Ам (口) дуу алдан дуудна — дуудах нэр; дугаар."
   },
   {
     "character": "黑",
@@ -9486,7 +9486,7 @@
         "label": "хар"
       }
     },
-    "story": "«хар» гэсэн утгатай үндсэн дүрс ханз (hēi)."
+    "story": "Галын (灬) утаанд хуссан яндангийн хөө тортог — хар."
   },
   {
     "character": "红",
@@ -9525,7 +9525,7 @@
         "label": "улаан"
       }
     },
-    "story": "утас (纟), ажил (工) хослон «улаан» гэсэн утга үүсгэнэ.",
+    "story": "Утас будах (纟) утгыг, 工 (gōng) дуудлагыг өгнө — улаан.",
     "mnemonic": {
       "parts": [
         "纟",
@@ -9563,7 +9563,7 @@
         "label": "угтах"
       }
     },
-    "story": "«угтах» гэсэн утгатай үндсэн дүрс ханз (yíng)."
+    "story": "Угтаж явж (辶) очно — угтах. 欢迎 нь «баяртайгаар угтъя»: тавтай морил."
   },
   {
     "character": "答",
@@ -9593,7 +9593,7 @@
         "label": "хариулах"
       }
     },
-    "story": "«хариулах» гэсэн утгатай үндсэн дүрс ханз (dá)."
+    "story": "Хулсан (⺮) хавтан дээр бичсэн хариу нийлнэ (合) — хариулах."
   },
   {
     "character": "场",
@@ -9623,7 +9623,7 @@
         "label": "талбай"
       }
     },
-    "story": "«талбай» гэсэн утгатай үндсэн дүрс ханз (chǎng)."
+    "story": "Тэгшилсэн шороон (土) дэвсэг — талбай. 昜 дуудлагыг өгнө."
   },
   {
     "character": "鸡",
@@ -9662,7 +9662,7 @@
         "label": "тахиа"
       }
     },
-    "story": "гар (又), шувуу (鸟) хослон «тахиа» гэсэн утга үүсгэнэ.",
+    "story": "Гарт (又) баригддаг гэрийн шувуу (鸟) — тахиа.",
     "mnemonic": {
       "parts": [
         "又",
@@ -9700,7 +9700,7 @@
         "label": "өндөг"
       }
     },
-    "story": "«өндөг» гэсэн утгатай үндсэн дүрс ханз (dàn)."
+    "story": "Доод хэсэг нь 虫 (шавж, мөлхөгч) — шувуу, мөлхөгчийн өндөг."
   },
   {
     "character": "件",
@@ -9730,7 +9730,7 @@
         "label": "ширхэг"
       }
     },
-    "story": "«ширхэг» гэсэн утгатай үндсэн дүрс ханз (jiàn)."
+    "story": "Хүн (亻) үхрийг (牛) хэсэглэн хуваана — ширхэг, зүйл тоолох нэгж."
   },
   {
     "character": "教",
@@ -9760,7 +9760,7 @@
         "label": "заах"
       }
     },
-    "story": "«заах» гэсэн утгатай үндсэн дүрс ханз (jiào)."
+    "story": "Багш саваа (攵) барьж хүүхдэд (子) хичээл заана — заах, сургах."
   },
   {
     "character": "室",
@@ -9799,7 +9799,7 @@
         "label": "өрөө"
       }
     },
-    "story": "дээвэр (宀), хүрэх (至) хослон «өрөө» гэсэн утга үүсгэнэ.",
+    "story": "Дээвэр (宀) доор хүрч очоод (至) тогтох газар — өрөө, танхим.",
     "mnemonic": {
       "parts": [
         "宀",
@@ -9837,7 +9837,7 @@
         "label": "зуучлах"
       }
     },
-    "story": "«зуучлах» гэсэн утгатай үндсэн дүрс ханз (jiè)."
+    "story": "Хоёр хүний дунд зогссон хүн — хооронд нь зуучилна: танилцуулах."
   },
   {
     "character": "绍",
@@ -9867,7 +9867,7 @@
         "label": "холбох, танилцуулах"
       }
     },
-    "story": "«холбох, танилцуулах» гэсэн утгатай үндсэн дүрс ханз (shào)."
+    "story": "Тасарсан утсыг (纟) залгана — холбох: танилцуулах. 召 (shào) дуудлагыг өгнө."
   },
   {
     "character": "近",
@@ -9906,7 +9906,7 @@
         "label": "ойр"
       }
     },
-    "story": "явах (辶), сүх (斤) хослон «ойр» гэсэн утга үүсгэнэ.",
+    "story": "Явах (辶) утгыг, 斤 (jīn) дуудлагыг өгнө — хол явахгүй: ойрхон.",
     "mnemonic": {
       "parts": [
         "辶",
@@ -9953,7 +9953,7 @@
         "label": "орох, ахих"
       }
     },
-    "story": "явах (辶), худаг (井) хослон «орох, ахих» гэсэн утга үүсгэнэ.",
+    "story": "Явах (辶) утгыг, 井 (jǐng) дуудлагыг өгнө — урагшлах, дотогш орох.",
     "mnemonic": {
       "parts": [
         "辶",
@@ -9991,7 +9991,7 @@
         "label": "шууд, тэр даруй"
       }
     },
-    "story": "«шууд, тэр даруй» гэсэн утгатай үндсэн дүрс ханз (jiù)."
+    "story": "Өндөр асар (京) руу шууд чиглэнэ — тэр даруй, шууд; яг."
   },
   {
     "character": "咖",
@@ -10030,7 +10030,7 @@
         "label": "кофе (咖啡)"
       }
     },
-    "story": "ам (口), нэмэх (加) хослон «кофе (咖啡)» гэсэн утга үүсгэнэ.",
+    "story": "Гадаад үгийн авиаг буулгасан ханз: ам (口) ба 加 (jiā) — 咖啡 (кофе) гэдэг үгэнд л ордог.",
     "mnemonic": {
       "parts": [
         "口",
@@ -10077,7 +10077,7 @@
         "label": "кофе (咖啡)"
       }
     },
-    "story": "ам (口), буруу (非) хослон «кофе (咖啡)» гэсэн утга үүсгэнэ.",
+    "story": "Гадаад үгийн авиаг буулгасан ханз: ам (口) ба 非 (fēi) — 咖啡 (кофе)-гийн хоёр дахь үе.",
     "mnemonic": {
       "parts": [
         "口",
@@ -10115,7 +10115,7 @@
         "label": "эхлэх"
       }
     },
-    "story": "«эхлэх» гэсэн утгатай үндсэн дүрс ханз (shǐ)."
+    "story": "Эмэгтэй (女) — амьдрал эхээс эхэлдэг: эхлэл, эхлэх. 台 дуудлагыг өгнө."
   },
   {
     "character": "考",
@@ -10145,12 +10145,12 @@
         "label": "шалгах"
       }
     },
-    "story": "«шалгах» гэсэн утгатай үндсэн дүрс ханз (kǎo)."
+    "story": "Таяг тулсан өвгөн (老-той ижил гаралтай) — туршлагаараа сорино: шалгах."
   },
   {
     "character": "试",
     "pinyin": "shì",
-    "meaning": "туршиx; шалгалт",
+    "meaning": "турших; шалгалт",
     "kind": "compound",
     "example": {
       "word": "考试",
@@ -10184,7 +10184,7 @@
         "label": "туршиx; шалгалт"
       }
     },
-    "story": "яриа (讠), загвар (式) хослон «туршиx; шалгалт» гэсэн утга үүсгэнэ.",
+    "story": "Үгээр (讠) загварын (式) дагуу асууж үзнэ — турших, шалгах.",
     "mnemonic": {
       "parts": [
         "讠",
@@ -10222,7 +10222,7 @@
         "label": "болох"
       }
     },
-    "story": "«болох» гэсэн утгатай үндсэн дүрс ханз (kě)."
+    "story": "Ам (口) зөвшөөрлийн дуу гаргана — болно, болох."
   },
   {
     "character": "以",
@@ -10252,7 +10252,7 @@
         "label": "-аар; болох"
       }
     },
-    "story": "«-аар; болох» гэсэн утгатай үндсэн дүрс ханз (yǐ)."
+    "story": "Хүн багаж хэрэглэж буй дүрс — юмыг «-аар, -ээр» хийхийг заана."
   },
   {
     "character": "课",
@@ -10262,7 +10262,7 @@
     "example": {
       "word": "上课",
       "pinyin": "shàng kè",
-      "translation": "хичээлд сууx"
+      "translation": "хичээлд суух"
     },
     "level": 2,
     "category": "uil",
@@ -10291,7 +10291,7 @@
         "label": "хичээл"
       }
     },
-    "story": "яриа (讠), жимс (果) хослон «хичээл» гэсэн утга үүсгэнэ.",
+    "story": "Үг яриа (讠) утгыг, 果 (guǒ) дуудлагыг өгнө — хичээл.",
     "mnemonic": {
       "parts": [
         "讠",
@@ -10329,7 +10329,7 @@
         "label": "хурдан"
       }
     },
-    "story": "«хурдан» гэсэн утгатай үндсэн дүрс ханз (kuài)."
+    "story": "Сэтгэл (忄) саадгүй нээгдэнэ (夬) — хурдан; сэтгэл хөнгөн: баяртай."
   },
   {
     "character": "乐",
@@ -10359,7 +10359,7 @@
         "label": "баяр; хөгжим"
       }
     },
-    "story": "«баяр; хөгжим» гэсэн утгатай үндсэн дүрс ханз (lè)."
+    "story": "Модон суурьтай хөгжмийн зэмсгийн дүрс — хөгжим (yuè); хөгжим сонсоход баяртай (lè)."
   },
   {
     "character": "累",
@@ -10398,7 +10398,7 @@
         "label": "ядрах"
       }
     },
-    "story": "талбай (田), утас (糸) хослон «ядрах» гэсэн утга үүсгэнэ.",
+    "story": "Талбайд (田) утас (糸) шиг сульдтал ажиллана — ядрах.",
     "mnemonic": {
       "parts": [
         "田",
@@ -10436,7 +10436,7 @@
         "label": "-аас холдох"
       }
     },
-    "story": "«-аас холдох» гэсэн утгатай үндсэн дүрс ханз (lí)."
+    "story": "Шувуу торноос мултран зайлна — салах, холдох."
   },
   {
     "character": "两",
@@ -10445,7 +10445,7 @@
     "kind": "simple",
     "example": {
       "word": "两个",
-      "pinyin": "liǎng gè",
+      "pinyin": "liǎng ge",
       "translation": "хоёр ширхэг"
     },
     "level": 2,
@@ -10466,7 +10466,7 @@
         "label": "хоёр"
       }
     },
-    "story": "«хоёр» гэсэн утгатай үндсэн дүрс ханз (liǎng)."
+    "story": "Тэрэгний буулган дээр зэрэгцсэн хоёр зүйл — хоёр (тоолох үгийн өмнө хэрэглэнэ)."
   },
   {
     "character": "路",
@@ -10505,7 +10505,7 @@
         "label": "зам"
       }
     },
-    "story": "хөл (足), тус бүр (各) хослон «зам» гэсэн утга үүсгэнэ.",
+    "story": "Хөл (足) утгыг, 各 дуудлагыг өгнө — хүн бүрийн хөлөөр гишгэгдсэн зам.",
     "mnemonic": {
       "parts": [
         "足",
@@ -10543,7 +10543,7 @@
         "label": "аялал"
       }
     },
-    "story": "«аялал» гэсэн утгатай үндсэн дүрс ханз (lǚ)."
+    "story": "Тугийн дор цувсан хүмүүс — аян замд гарсан бүлэг: аялал."
   },
   {
     "character": "游",
@@ -10573,7 +10573,7 @@
         "label": "сэлэх, аялах"
       }
     },
-    "story": "«сэлэх, аялах» гэсэн утгатай үндсэн дүрс ханз (yóu)."
+    "story": "Ус (氵) ба намирах туг — усанд хөвөн урсана: сэлэх; чөлөөтэй явах нь аялах."
   },
   {
     "character": "卖",
@@ -10603,7 +10603,7 @@
         "label": "зарах"
       }
     },
-    "story": "«зарах» гэсэн утгатай үндсэн дүрс ханз (mài)."
+    "story": "Худалдан авах 买 дээр «гаргах» тэмдэг (十) нэмэв — гаргаж зарах."
   },
   {
     "character": "慢",
@@ -10633,7 +10633,7 @@
         "label": "удаан"
       }
     },
-    "story": "«удаан» гэсэн утгатай үндсэн дүрс ханз (màn)."
+    "story": "Сэтгэл (忄) утгыг, 曼 (màn) дуудлагыг өгнө — удаан, аажуу."
   },
   {
     "character": "忙",
@@ -10672,7 +10672,7 @@
         "label": "завгүй"
       }
     },
-    "story": "сэтгэл (忄), алга болох (亡) хослон «завгүй» гэсэн утга үүсгэнэ.",
+    "story": "Сэтгэл (忄) алга болтлоо (亡) ажилд автана — завгүй.",
     "mnemonic": {
       "parts": [
         "忄",
@@ -10710,7 +10710,7 @@
         "label": "бүр"
       }
     },
-    "story": "«бүр» гэсэн утгатай үндсэн дүрс ханз (měi)."
+    "story": "Үсээ боосон эх хүний дүрс — «бүр, тутам» гэсэн утгад зээлэгджээ."
   },
   {
     "character": "妹",
@@ -10720,7 +10720,7 @@
     "example": {
       "word": "妹妹",
       "pinyin": "mèi mei",
-      "translation": "эгч дүү"
+      "translation": "охин дүү"
     },
     "level": 2,
     "category": "xun",
@@ -10740,7 +10740,7 @@
         "label": "дүү охин"
       }
     },
-    "story": "«дүү охин» гэсэн утгатай үндсэн дүрс ханз (mèi)."
+    "story": "Эмэгтэй (女) ба 未 (wèi: арай болоогүй) — өсөж гүйцээгүй охин: охин дүү."
   },
   {
     "character": "门",
@@ -10770,7 +10770,7 @@
         "label": "хаалга"
       }
     },
-    "story": "«хаалга» гэсэн утгатай үндсэн дүрс ханз (mén)."
+    "story": "Хоёр хавтастай хаалганы дүрс — хаалга."
   },
   {
     "character": "您",
@@ -10800,7 +10800,7 @@
         "label": "таныг (хүндэтгэл)"
       }
     },
-    "story": "«таныг (хүндэтгэл)» гэсэн утгатай үндсэн дүрс ханз (nín)."
+    "story": "Чи (你) дор зүрх (心) нэмэв — зүрхнээсээ хүндэтгэсэн «Та»."
   },
   {
     "character": "牛",
@@ -10830,7 +10830,7 @@
         "label": "үхэр"
       }
     },
-    "story": "«үхэр» гэсэн утгатай үндсэн дүрс ханз (niú)."
+    "story": "Эвэртэй үхрийн толгойг урдаас харсан дүрс — үхэр."
   },
   {
     "character": "奶",
@@ -10860,7 +10860,7 @@
         "label": "сүү"
       }
     },
-    "story": "«сүү» гэсэн утгатай үндсэн дүрс ханз (nǎi)."
+    "story": "Эмэгтэй (女) — эхийн сүү; мөн эмээ. 乃 (nǎi) дуудлагыг өгнө."
   },
   {
     "character": "旁",
@@ -10899,7 +10899,7 @@
         "label": "хажуу"
       }
     },
-    "story": "зогсох (立), зүг (方) хослон «хажуу» гэсэн утга үүсгэнэ.",
+    "story": "Зогсоод (立) аль нэг зүг рүү (方) хазайна — хажуу тал.",
     "mnemonic": {
       "parts": [
         "立",
@@ -10946,7 +10946,7 @@
         "label": "зах, тал"
       }
     },
-    "story": "явах (辶), хүч (力) хослон «зах, тал» гэсэн утга үүсгэнэ.",
+    "story": "Явсаар (辶) хүч (力) барагдах газар — зах хязгаар, тал.",
     "mnemonic": {
       "parts": [
         "辶",
@@ -10984,7 +10984,7 @@
         "label": "тасалбар"
       }
     },
-    "story": "«тасалбар» гэсэн утгатай үндсэн дүрс ханз (piào)."
+    "story": "Гал дээгүүр хийсэх хөнгөн цаас — тасалбар, билет."
   },
   {
     "character": "妻",
@@ -10993,7 +10993,7 @@
     "kind": "simple",
     "example": {
       "word": "妻子",
-      "pinyin": "qī zǐ",
+      "pinyin": "qī zi",
       "translation": "эхнэр"
     },
     "level": 2,
@@ -11014,7 +11014,7 @@
         "label": "эхнэр"
       }
     },
-    "story": "«эхнэр» гэсэн утгатай үндсэн дүрс ханз (qī)."
+    "story": "Гараараа үсээ засаж буй эмэгтэйн дүрс — эхнэр."
   },
   {
     "character": "床",
@@ -11044,7 +11044,7 @@
         "label": "ор"
       }
     },
-    "story": "«ор» гэсэн утгатай үндсэн дүрс ханз (chuáng)."
+    "story": "Саравчин (广) дор тавьсан модон (木) тавцан — ор."
   },
   {
     "character": "千",
@@ -11074,7 +11074,7 @@
         "label": "мянга"
       }
     },
-    "story": "«мянга» гэсэн утгатай үндсэн дүрс ханз (qiān)."
+    "story": "Хүн (人) дээр зураас нэмсэн дүрс — мянга."
   },
   {
     "character": "晴",
@@ -11113,7 +11113,7 @@
         "label": "цэлмэг"
       }
     },
-    "story": "нар (日), ногоон (青) хослон «цэлмэг» гэсэн утга үүсгэнэ.",
+    "story": "Нар (日) гарч тэнгэр хөх номин (青) болно — цэлмэг.",
     "mnemonic": {
       "parts": [
         "日",
@@ -11129,9 +11129,9 @@
     "meaning": "зөвшөөрөх, болгох",
     "kind": "simple",
     "example": {
-      "word": "让",
-      "pinyin": "ràng",
-      "translation": "болгох"
+      "word": "让我看看",
+      "pinyin": "ràng wǒ kàn kan",
+      "translation": "надад үзүүлээч"
     },
     "level": 2,
     "category": "uil",
@@ -11151,7 +11151,7 @@
         "label": "зөвшөөрөх, болгох"
       }
     },
-    "story": "«зөвшөөрөх, болгох» гэсэн утгатай үндсэн дүрс ханз (ràng)."
+    "story": "Үг хэлж (讠) зам тавьж өгнө — зөвшөөрөх; «...-уулах» гэж үйлдүүлэх."
   },
   {
     "character": "班",
@@ -11194,7 +11194,7 @@
         "label": "анги, ээлж"
       }
     },
-    "story": "хаш (王), хутга (刂), хаш (王) хослон «анги, ээлж» гэсэн утга үүсгэнэ.",
+    "story": "Хоёр хаш чулууг (王) хутгаар (刂) хувааж бүлэглэнэ — анги, бүлэг, ээлж.",
     "mnemonic": {
       "parts": [
         "王",
@@ -11233,7 +11233,7 @@
         "label": "бие"
       }
     },
-    "story": "«бие» гэсэн утгатай үндсэн дүрс ханз (shēn)."
+    "story": "Жирэмсэн хүний биеийг хажуугаас харсан дүрс — бие."
   },
   {
     "character": "病",
@@ -11263,7 +11263,7 @@
         "label": "өвчин"
       }
     },
-    "story": "«өвчин» гэсэн утгатай үндсэн дүрс ханз (bìng)."
+    "story": "Орондоо хэвтсэн өвчтэй хүний дүрс (疒 — өвчний радикал). 丙 (bǐng) дуудлагыг өгнө — өвчин."
   },
   {
     "character": "事",
@@ -11293,7 +11293,7 @@
         "label": "хэрэг"
       }
     },
-    "story": "«хэрэг» гэсэн утгатай үндсэн дүрс ханз (shì)."
+    "story": "Бичиг баримт барьсан гарын дүрс — албан ажил: хэрэг явдал."
   },
   {
     "character": "情",
@@ -11332,7 +11332,7 @@
         "label": "сэтгэл, байдал"
       }
     },
-    "story": "сэтгэл (忄), ногоон (青) хослон «сэтгэл, байдал» гэсэн утга үүсгэнэ.",
+    "story": "Сэтгэл (忄) утгыг, 青 (qīng) дуудлагыг өгнө — сэтгэл хөдлөл; байдал.",
     "mnemonic": {
       "parts": [
         "忄",
@@ -11370,7 +11370,7 @@
         "label": "гар"
       }
     },
-    "story": "«гар» гэсэн утгатай үндсэн дүрс ханз (shǒu)."
+    "story": "Таван хуруугаа дэлгэсэн алганы дүрс — гар."
   },
   {
     "character": "表",
@@ -11400,7 +11400,7 @@
         "label": "цаг; илэрхийлэх"
       }
     },
-    "story": "«цаг; илэрхийлэх» гэсэн утгатай үндсэн дүрс ханз (biǎo)."
+    "story": "Гадуур өмсдөг үслэг дээл — гадна тал: илэрхийлэх; бугуйн «гадна» зүүдэг цаг."
   },
   {
     "character": "送",
@@ -11430,7 +11430,7 @@
         "label": "хүргэх, бэлэглэх"
       }
     },
-    "story": "«хүргэх, бэлэглэх» гэсэн утгатай үндсэн дүрс ханз (sòng)."
+    "story": "Явж (辶) хүргэж өгнө — хүргэх; гарын бэлэг өгөх."
   },
   {
     "character": "所",
@@ -11469,7 +11469,7 @@
         "label": "газар; учир"
       }
     },
-    "story": "айл (户), сүх (斤) хослон «газар; учир» гэсэн утга үүсгэнэ.",
+    "story": "Айлын хаалга (户) ба сүх (斤) — мод цавчиж байшин барих газар. Мөн «учир» гэсэн холбоос болдог.",
     "mnemonic": {
       "parts": [
         "户",
@@ -11485,9 +11485,9 @@
     "meaning": "тэр (амьтан/юм)",
     "kind": "simple",
     "example": {
-      "word": "它",
-      "pinyin": "tā",
-      "translation": "тэр"
+      "word": "它们",
+      "pinyin": "tā men",
+      "translation": "тэд (юм, амьтан)"
     },
     "level": 2,
     "category": "zuils",
@@ -11507,7 +11507,7 @@
         "label": "тэр (амьтан/юм)"
       }
     },
-    "story": "«тэр (амьтан/юм)» гэсэн утгатай үндсэн дүрс ханз (tā)."
+    "story": "Эртний бичигт могойн дүрс байжээ — хүн биш юм, амьтныг заах «тэр»."
   },
   {
     "character": "踢",
@@ -11546,7 +11546,7 @@
         "label": "өшиглөх"
       }
     },
-    "story": "хөл (足), хялбар (易) хослон «өшиглөх» гэсэн утга үүсгэнэ.",
+    "story": "Хөл (足) утгыг, 易 (yì) дуудлагыг өгнө — өшиглөх.",
     "mnemonic": {
       "parts": [
         "足",
@@ -11584,7 +11584,7 @@
         "label": "асуудал, гарчиг"
       }
     },
-    "story": "«асуудал, гарчиг» гэсэн утгатай үндсэн дүрс ханз (tí)."
+    "story": "Толгой (页) хэсэгт бичдэг зүйл — гарчиг; асуулт, бодлого. 是 дуудлагыг өгнө."
   },
   {
     "character": "舞",
@@ -11614,7 +11614,7 @@
         "label": "бүжиг"
       }
     },
-    "story": "«бүжиг» гэсэн утгатай үндсэн дүрс ханз (wǔ)."
+    "story": "Хоёр гартаа чимэг барьж бүжиглэж буй хүний дүрс — бүжиг."
   },
   {
     "character": "外",
@@ -11644,7 +11644,7 @@
         "label": "гадна"
       }
     },
-    "story": "«гадна» гэсэн утгатай үндсэн дүрс ханз (wài)."
+    "story": "Үдэш (夕) мэргэ төлгийг (卜) гадаа үздэг байжээ — гадна, гадаад."
   },
   {
     "character": "完",
@@ -11683,7 +11683,7 @@
         "label": "дуусгах"
       }
     },
-    "story": "дээвэр (宀), эх (元) хослон «дуусгах» гэсэн утга үүсгэнэ.",
+    "story": "Барилга дээврээ (宀) тавьбал ажил дуусна. 元 (yuán) дуудлагыг өгнө — дуусгах, бүрэн.",
     "mnemonic": {
       "parts": [
         "宀",
@@ -11699,9 +11699,9 @@
     "meaning": "тоглох",
     "kind": "compound",
     "example": {
-      "word": "玩",
-      "pinyin": "wán",
-      "translation": "тоглох"
+      "word": "好玩",
+      "pinyin": "hǎo wán",
+      "translation": "сонирхолтой, хөгжилтэй"
     },
     "level": 2,
     "category": "zuils",
@@ -11730,7 +11730,7 @@
         "label": "тоглох"
       }
     },
-    "story": "хаш (王), эх (元) хослон «тоглох» гэсэн утга үүсгэнэ.",
+    "story": "Хаш чулууг (王) гартаа эргүүлж наадна. 元 (yuán) дуудлагыг өгнө — тоглох.",
     "mnemonic": {
       "parts": [
         "王",
@@ -11777,7 +11777,7 @@
         "label": "орой"
       }
     },
-    "story": "нар (日), чөлөөлөх (免) хослон «орой» гэсэн утга үүсгэнэ.",
+    "story": "Нар (日) үүрэг ажлаасаа чөлөөлөгдөн (免) жаргана — орой, үдэш.",
     "mnemonic": {
       "parts": [
         "日",
@@ -11815,7 +11815,7 @@
         "label": "-ийн төлөө"
       }
     },
-    "story": "«-ийн төлөө» гэсэн утгатай үндсэн дүрс ханз (wèi)."
+    "story": "Гар зааныг хөтөлж ажил хийлгэж буй эртний дүрс — үйлдэх; «-ийн төлөө»."
   },
   {
     "character": "问",
@@ -11854,7 +11854,7 @@
         "label": "асуух"
       }
     },
-    "story": "хаалга (门), ам (口) хослон «асуух» гэсэн утга үүсгэнэ.",
+    "story": "Айлын хаалган (门) дээр ирээд амаа (口) ангайж асууна — асуух.",
     "mnemonic": {
       "parts": [
         "门",
@@ -11892,7 +11892,7 @@
         "label": "найдах (希望)"
       }
     },
-    "story": "«найдах (希望)» гэсэн утгатай үндсэн дүрс ханз (xī)."
+    "story": "Сийрэг нэхсэн даавуу (巾) — ховор. Ховор зүйлийг хүсэн хүлээнэ: найдах."
   },
   {
     "character": "望",
@@ -11935,7 +11935,7 @@
         "label": "хүсэх, харах"
       }
     },
-    "story": "алга болох (亡), сар (月), хаш (王) хослон «хүсэх, харах» гэсэн утга үүсгэнэ.",
+    "story": "Дов дээр зогсоод алга болсон (亡) хүнээ санан сарыг (月) ширтэнэ — хүсэн хүлээх, харах.",
     "mnemonic": {
       "parts": [
         "亡",
@@ -11983,7 +11983,7 @@
         "label": "угаах"
       }
     },
-    "story": "ус (氵), урьд (先) хослон «угаах» гэсэн утга үүсгэнэ.",
+    "story": "Ус (氵) утгыг, 先 (xiān) дуудлагыг өгнө — угаах.",
     "mnemonic": {
       "parts": [
         "氵",
@@ -11996,7 +11996,7 @@
   {
     "character": "瓜",
     "pinyin": "guā",
-    "meaning": "тарвас, амтат жимс",
+    "meaning": "гуа; тарвас төрлийн жимс",
     "kind": "simple",
     "example": {
       "word": "西瓜",
@@ -12021,7 +12021,7 @@
         "label": "тарвас, амтат жимс"
       }
     },
-    "story": "«тарвас, амтат жимс» гэсэн утгатай үндсэн дүрс ханз (guā)."
+    "story": "Ороонго ишнээсээ дүүжлэгдсэн гуа жимсний дүрс — гуа."
   },
   {
     "character": "向",
@@ -12051,7 +12051,7 @@
         "label": "зүг рүү"
       }
     },
-    "story": "«зүг рүү» гэсэн утгатай үндсэн дүрс ханз (xiàng)."
+    "story": "Байшингийн хананд гаргасан цонх — цонхны харсан зүг: чиглэл, зүг рүү."
   },
   {
     "character": "新",
@@ -12081,7 +12081,7 @@
         "label": "шинэ"
       }
     },
-    "story": "«шинэ» гэсэн утгатай үндсэн дүрс ханз (xīn)."
+    "story": "Сүхээр (斤) мод (木) огтлоход цоо шинэ зүсэм гарна — шинэ."
   },
   {
     "character": "姓",
@@ -12120,7 +12120,7 @@
         "label": "овог"
       }
     },
-    "story": "эмэгтэй (女), төрөх (生) хослон «овог» гэсэн утга үүсгэнэ.",
+    "story": "Эхээс (女) төрөхөд (生) өвлөгддөг нэр — овог. Хамгийн эртний овгууд эхийн удмаар тоологддог байжээ.",
     "mnemonic": {
       "parts": [
         "女",
@@ -12167,7 +12167,7 @@
         "label": "амьсгаа; зогсох"
       }
     },
-    "story": "өөрөө (自), сэтгэл (心) хослон «амьсгаа; зогсох» гэсэн утга үүсгэнэ.",
+    "story": "自 нь хамрын дүрс: хамраараа (自) гүн амьсгалж зүрхээ (心) тайвшруулна — амрах, амьсгаа.",
     "mnemonic": {
       "parts": [
         "自",
@@ -12205,7 +12205,7 @@
         "label": "цас"
       }
     },
-    "story": "«цас» гэсэн утгатай үндсэн дүрс ханз (xuě)."
+    "story": "Бороо (雨) гараар шүүрдэж болох зүйл болон унана — цас."
   },
   {
     "character": "颜",
@@ -12235,7 +12235,7 @@
         "label": "өнгө (颜色)"
       }
     },
-    "story": "«өнгө (颜色)» гэсэн утгатай үндсэн дүрс ханз (yán)."
+    "story": "Нүүр толгойн (页) өнгө зүс — өнгө. 彦 дуудлагыг өгнө."
   },
   {
     "character": "色",
@@ -12265,7 +12265,7 @@
         "label": "өнгө"
       }
     },
-    "story": "«өнгө» гэсэн утгатай үндсэн дүрс ханз (sè)."
+    "story": "Хүний нүүрний хувирал, өнгө зүс — өнгө."
   },
   {
     "character": "眼",
@@ -12295,7 +12295,7 @@
         "label": "нүд"
       }
     },
-    "story": "«нүд» гэсэн утгатай үндсэн дүрс ханз (yǎn)."
+    "story": "Нүд (目) утгыг, 艮 (gèn) дуудлагыг өгнө — нүд."
   },
   {
     "character": "睛",
@@ -12334,7 +12334,7 @@
         "label": "нүдний цэцгий"
       }
     },
-    "story": "нүд (目), ногоон (青) хослон «нүдний цэцгий» гэсэн утга үүсгэнэ.",
+    "story": "Нүд (目) утгыг, 青 (qīng) дуудлагыг өгнө — нүдний цэцгий.",
     "mnemonic": {
       "parts": [
         "目",
@@ -12372,7 +12372,7 @@
         "label": "хонь"
       }
     },
-    "story": "«хонь» гэсэн утгатай үндсэн дүрс ханз (yáng)."
+    "story": "Хоёр эвэртэй хонины толгойг урдаас харсан дүрс — хонь."
   },
   {
     "character": "肉",
@@ -12402,7 +12402,7 @@
         "label": "мах"
       }
     },
-    "story": "«мах» гэсэн утгатай үндсэн дүрс ханз (ròu)."
+    "story": "Судалтай зүсэм махны дүрс — мах."
   },
   {
     "character": "药",
@@ -12432,7 +12432,7 @@
         "label": "эм"
       }
     },
-    "story": "«эм» гэсэн утгатай үндсэн дүрс ханз (yào)."
+    "story": "Эм ихэвчлэн ургамлаас (艹) гардаг. 约 (yuē) дуудлагыг өгнө — эм."
   },
   {
     "character": "要",
@@ -12471,7 +12471,7 @@
         "label": "хүсэх, шаардлагатай"
       }
     },
-    "story": "баруун (覀), эмэгтэй (女) хослон «хүсэх, шаардлагатай» гэсэн утга үүсгэнэ.",
+    "story": "Эмэгтэй (女) хүн бүсээ бүсэлж буй дүрс гэж тайлбарладаг — хүсэх, хэрэгтэй.",
     "mnemonic": {
       "parts": [
         "覀",
@@ -12509,7 +12509,7 @@
         "label": "бас"
       }
     },
-    "story": "«бас» гэсэн утгатай үндсэн дүрс ханз (yě)."
+    "story": "Эртний усны савны дүрс гэдэг — «бас, мөн» гэсэн утгад зээлэгджээ."
   },
   {
     "character": "已",
@@ -12539,7 +12539,7 @@
         "label": "аль хэдийн"
       }
     },
-    "story": "«аль хэдийн» гэсэн утгатай үндсэн дүрс ханз (yǐ)."
+    "story": "Төгсөж дууссан юмны мушгирсан дүрс — аль хэдийн."
   },
   {
     "character": "经",
@@ -12569,7 +12569,7 @@
         "label": "дамжих; ном"
       }
     },
-    "story": "«дамжих; ном» гэсэн утгатай үндсэн дүрс ханз (jīng)."
+    "story": "Нэхмэлийн босоо гол утас (纟) — гол судас: дамжин өнгөрөх; судар ном."
   },
   {
     "character": "意",
@@ -12608,7 +12608,7 @@
         "label": "бодол, утга"
       }
     },
-    "story": "дуу (音), сэтгэл (心) хослон «бодол, утга» гэсэн утга үүсгэнэ.",
+    "story": "Зүрхний (心) дуу хоолой (音) — бодол, санаа, утга.",
     "mnemonic": {
       "parts": [
         "音",
@@ -12646,7 +12646,7 @@
         "label": "шалтгаан"
       }
     },
-    "story": "«шалтгаан» гэсэн утгатай үндсэн дүрс ханз (yīn)."
+    "story": "Дэвсгэр (口) дээр хэвтэж буй хүн (大) — юунд түшиглэснийг заана: шалтгаан."
   },
   {
     "character": "阴",
@@ -12685,7 +12685,7 @@
         "label": "үүлэрхэг; сүүдэр"
       }
     },
-    "story": "толгод (阝), сар (月) хослон «үүлэрхэг; сүүдэр» гэсэн утга үүсгэнэ.",
+    "story": "Толгодын (阝) нар тусдаггүй, сар (月) харагддаг тал — сүүдэр; үүлэрхэг.",
     "mnemonic": {
       "parts": [
         "阝",
@@ -12732,7 +12732,7 @@
         "label": "сэлэх"
       }
     },
-    "story": "ус (氵), мөнх (永) хослон «сэлэх» гэсэн утга үүсгэнэ.",
+    "story": "Ус (氵) утгыг, 永 (yǒng) дуудлагыг өгнө — сэлэх.",
     "mnemonic": {
       "parts": [
         "氵",
@@ -12770,7 +12770,7 @@
         "label": "баруун"
       }
     },
-    "story": "«баруун» гэсэн утгатай үндсэн дүрс ханз (yòu)."
+    "story": "Гар (𠂇) ба ам (口) — хоол хийж амандаа хүргэдэг гар тал: баруун."
   },
   {
     "character": "鱼",
@@ -12778,9 +12778,9 @@
     "meaning": "загас",
     "kind": "simple",
     "example": {
-      "word": "鱼",
-      "pinyin": "Yú",
-      "translation": "загас"
+      "word": "大鱼",
+      "pinyin": "dà yú",
+      "translation": "том загас"
     },
     "level": 2,
     "category": "baigal",
@@ -12800,7 +12800,7 @@
         "label": "загас"
       }
     },
-    "story": "«загас» гэсэн утгатай үндсэн дүрс ханз (yú)."
+    "story": "Толгой, хайрст бие, сүүл нь жигдхэн харагдах загасны босоо дүрс — загас."
   },
   {
     "character": "元",
@@ -12830,7 +12830,7 @@
         "label": "юань; эх"
       }
     },
-    "story": "«юань; эх» гэсэн утгатай үндсэн дүрс ханз (yuán)."
+    "story": "Хүний (儿) толгойг (二) онцолсон дүрс — тэргүүн, эх; мөнгөний нэгж юань."
   },
   {
     "character": "远",
@@ -12869,7 +12869,7 @@
         "label": "хол"
       }
     },
-    "story": "явах (辶), эх (元) хослон «хол» гэсэн утга үүсгэнэ.",
+    "story": "Явах (辶) утгыг, 元 (yuán) дуудлагыг өгнө — урт замын цаана: хол.",
     "mnemonic": {
       "parts": [
         "辶",
@@ -12916,7 +12916,7 @@
         "label": "зөөх; хувь заяа"
       }
     },
-    "story": "явах (辶), үүл (云) хослон «зөөх; хувь заяа» гэсэн утга үүсгэнэ.",
+    "story": "Явах (辶) утгыг, 云 (yún) дуудлагыг өгнө — зөөх, тээх; мөн хувь заяа.",
     "mnemonic": {
       "parts": [
         "辶",
@@ -12963,7 +12963,7 @@
         "label": "хөдлөх"
       }
     },
-    "story": "үүл (云), хүч (力) хослон «хөдлөх» гэсэн утга үүсгэнэ.",
+    "story": "Хүч (力) гарвал юм хөдөлнө. 云 (yún) дуудлагыг өгнө — хөдлөх.",
     "mnemonic": {
       "parts": [
         "云",
@@ -13010,7 +13010,7 @@
         "label": "хуудас (тоолуур)"
       }
     },
-    "story": "нум (弓), урт (长) хослон «хуудас (тоолуур)» гэсэн утга үүсгэнэ.",
+    "story": "Нумын (弓) хөвчийг урт (长) татаж дэлгэнэ — дэлгэх; хуудас зүйл тоолох нэгж.",
     "mnemonic": {
       "parts": [
         "弓",
@@ -13026,9 +13026,9 @@
     "meaning": "урт; ургах",
     "kind": "simple",
     "example": {
-      "word": "长大",
-      "pinyin": "zhǎng dà",
-      "translation": "өсөх"
+      "word": "很长",
+      "pinyin": "hěn cháng",
+      "translation": "маш урт"
     },
     "level": 2,
     "category": "zuils",
@@ -13048,7 +13048,7 @@
         "label": "урт; ургах"
       }
     },
-    "story": "«урт; ургах» гэсэн утгатай үндсэн дүрс ханз (cháng)."
+    "story": "Урт үсээ намируулсан хүний дүрс — урт (cháng); үс ургадаг тул «ургах, өсөх» (zhǎng)."
   },
   {
     "character": "丈",
@@ -13087,7 +13087,7 @@
         "label": "эр хүн (丈夫)"
       }
     },
-    "story": "нэг (一), гар (又) хослон «эр хүн (丈夫)» гэсэн утга үүсгэнэ.",
+    "story": "Гараараа (又) арван төө хэмжиж буй дүрс — хэмжээний нэгж; насанд хүрсэн эр хүн.",
     "mnemonic": {
       "parts": [
         "一",
@@ -13134,7 +13134,7 @@
         "label": "эр хүн, нөхөр"
       }
     },
-    "story": "нэг (一), том (大) хослон «эр хүн, нөхөр» гэсэн утга үүсгэнэ.",
+    "story": "Том хүний (大) үсийг зүүгээр (一) сүлбэсэн дүрс: үсээ боосон насанд хүрсэн эр — нөхөр.",
     "mnemonic": {
       "parts": [
         "一",
@@ -13172,7 +13172,7 @@
         "label": "хайх"
       }
     },
-    "story": "«хайх» гэсэн утгатай үндсэн дүрс ханз (zhǎo)."
+    "story": "Гараар (扌) тэмтрэн эрнэ — хайх, олох."
   },
   {
     "character": "着",
@@ -13182,7 +13182,7 @@
     "example": {
       "word": "看着",
       "pinyin": "kàn zhe",
-      "translation": "хараад"
+      "translation": "харсаар байх"
     },
     "level": 2,
     "category": "biye",
@@ -13211,7 +13211,7 @@
         "label": "-сан хэвээр (нөхцөл)"
       }
     },
-    "story": "хонь (羊), нүд (目) хослон «-сан хэвээр (нөхцөл)» гэсэн утга үүсгэнэ.",
+    "story": "Хонь (羊) нүдээ (目) салгалгүй ширтсээр... — үйл үргэлжилж байгааг заадаг нөхцөл.",
     "mnemonic": {
       "parts": [
         "羊",
@@ -13258,7 +13258,7 @@
         "label": "үнэхээр"
       }
     },
-    "story": "шулуун (直), хэд (几) хослон «үнэхээр» гэсэн утга үүсгэнэ.",
+    "story": "Шулуун (直) зогссон, гажилгүй зүйл — үнэн, жинхэнэ.",
     "mnemonic": {
       "parts": [
         "直",
@@ -13305,7 +13305,7 @@
         "label": "зөв; яг"
       }
     },
-    "story": "нэг (一), зогсох (止) хослон «зөв; яг» гэсэн утга үүсгэнэ.",
+    "story": "Зурсан шугамандаа (一) яг тааруулж зогсоно (止) — зөв; яг.",
     "mnemonic": {
       "parts": [
         "一",
@@ -13343,7 +13343,7 @@
         "label": "мэдэх"
       }
     },
-    "story": "«мэдэх» гэсэн утгатай үндсэн дүрс ханз (zhī)."
+    "story": "Сум (矢) шиг хурц ам (口) — асуултад шууд онож хариулна: мэдэх."
   },
   {
     "character": "道",
@@ -13382,7 +13382,7 @@
         "label": "зам; арга"
       }
     },
-    "story": "явах (辶), толгой (首) хослон «зам; арга» гэсэн утга үүсгэнэ.",
+    "story": "Толгойгоо (首) дагуулан явдаг (辶) зам — зам мөр; ёс, арга.",
     "mnemonic": {
       "parts": [
         "辶",
@@ -13420,7 +13420,7 @@
         "label": "бэлэн; зөв"
       }
     },
-    "story": "«бэлэн; зөв» гэсэн утгатай үндсэн дүрс ханз (zhǔn)."
+    "story": "Мөсний (冫) гадаргуу шиг тэгш түвшин — нарийн зөв; 准备-д «бэлэн»."
   },
   {
     "character": "备",
@@ -13450,7 +13450,7 @@
         "label": "бэлтгэх"
       }
     },
-    "story": "«бэлтгэх» гэсэн утгатай үндсэн дүрс ханз (bèi)."
+    "story": "Багаж хэрэгслээ цэгцлэн янзалж буй дүрс — бэлтгэх."
   },
   {
     "character": "自",
@@ -13480,7 +13480,7 @@
         "label": "өөрөө"
       }
     },
-    "story": "«өөрөө» гэсэн утгатай үндсэн дүрс ханз (zì)."
+    "story": "Хүний хамрын дүрс. Хятадад өөрийгөө заахдаа хамраа заадаг — өөрөө."
   },
   {
     "character": "行",
@@ -13490,7 +13490,7 @@
     "example": {
       "word": "自行车",
       "pinyin": "zì xíng chē",
-      "translation": "дугуй"
+      "translation": "унадаг дугуй"
     },
     "level": 2,
     "category": "zuils",
@@ -13510,7 +13510,7 @@
         "label": "явах; болох"
       }
     },
-    "story": "«явах; болох» гэсэн утгатай үндсэн дүрс ханз (xíng)."
+    "story": "Дөрвөн зам огтлолцсон уулзварын дүрс — явах (xíng); «болно!» гэсэн зөвшөөрөл ч болдог."
   },
   {
     "character": "走",
@@ -13549,7 +13549,7 @@
         "label": "алхах, явах"
       }
     },
-    "story": "шороо (土), зогсох (止) хослон «алхах, явах» гэсэн утга үүсгэнэ.",
+    "story": "Дээд хэсэг нь гараа савчин гүйж буй хүн, доор нь хөл (止) — алхах, явах.",
     "mnemonic": {
       "parts": [
         "土",
@@ -13596,7 +13596,7 @@
         "label": "хамгийн"
       }
     },
-    "story": "нар (日), авах (取) хослон «хамгийн» гэсэн утга үүсгэнэ.",
+    "story": "Нар (日) мандмагц хамгийн түрүүнд гараа сунган авна (取) — «хамгийн».",
     "mnemonic": {
       "parts": [
         "日",
@@ -13634,6 +13634,6 @@
         "label": "зүүн"
       }
     },
-    "story": "«зүүн» гэсэн утгатай үндсэн дүрс ханз (zuǒ)."
+    "story": "Гар (𠂇) ба багаж (工) — багаж барихад тусалдаг гар тал: зүүн."
   }
 ]

@@ -165,6 +165,24 @@ WAL mode for concurrent reads. Re-seeding is non-destructive (uses `INSERT ... O
 | `←` / `→` | Previous / next draft |
 | `Ctrl + Enter` | Generate current card |
 
+## Licenses & attribution
+
+Card content (Mongolian stories, meanings, examples) is original to this project. Third-party data and assets it builds on:
+
+| Source | Used for | License | Requirement |
+|---|---|---|---|
+| [Twemoji](https://github.com/twitter/twemoji) | emoji icons rendered into cards | CC-BY 4.0 | **attribution required** wherever cards are published — credit "Twemoji © Twitter, Inc. and other contributors, CC-BY 4.0" |
+| [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cedict) | pinyin reference (build-time) | CC BY-SA 4.0 | attribution |
+| [makemeahanzi](https://github.com/skishore/makemeahanzi) `dictionary.txt` | decomposition reference (build-time) | LGPL-3.0+ | attribution; don't redistribute the file itself under other terms |
+| [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary) | HSK word lists (build-time) | MIT | attribution in source |
+| Inter, Source Han Sans/Serif, LXGW WenKai | fonts in rendered cards | SIL OFL 1.1 | no attribution needed; keep license files if redistributing fonts |
+
+Rules for content and image generation:
+
+- **Never reference studios, artists, brands, or franchises in image prompts** (e.g. "Studio Ghibli style", "Disney style"). Describe the aesthetic generically instead: "soft watercolor children's storybook illustration style, warm pastel palette".
+- AI-generated images (gpt-image-1): outputs are ours per OpenAI terms, but only if prompts stay free of third-party IP.
+- When the public learner app ships, add a credits page listing the table above (Twemoji attribution is mandatory, the rest is good practice).
+
 ## Notes
 
 - The 30 default characters are visually-decomposable compounds (林=木+木, 好=女+子, 家=宀+豕, etc.) — prompts emphasize the composition so images become memorable mnemonics, not generic art.
