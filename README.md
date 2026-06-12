@@ -10,7 +10,7 @@
 
 - **30 ханз бэлэн эх бэлтгэл** — 林, 森, 明, 休, 好, 安, 家... etymology-based mnemonics in Mongolian
 - **Satori + resvg PNG render pipeline** — ~400ms/карт (1400×1050)
-- **SQLite database** — drafts, uploaded images, render history
+- **PostgreSQL database** — drafts, uploaded images, render history (JSONB + BYTEA)
 - **OpenAI gpt-image-1 integration** — per-slot AI generation
 - **Web studio** at `/` — sidebar, prompt editor, upload, preview, Ctrl+Enter generate
 
@@ -20,7 +20,7 @@
 - **TypeScript** via `tsx`
 - **Hono** HTTP server (`@hono/node-server`)
 - **Satori** (JSX → SVG) + **@resvg/resvg-js** (SVG → PNG) + **sharp** (post-processing)
-- **better-sqlite3** for persistence
+- **PostgreSQL** (node-postgres) for persistence
 - **OpenAI gpt-image-1** for image generation
 - **Inter** (Latin + Cyrillic) + **Source Han Sans/Serif CN** for typography
 
@@ -42,7 +42,9 @@ npm run dev
 # → API: http://localhost:3000/api
 ```
 
-First request auto-seeds the SQLite DB (`data/kanjimn.db`) from `public/drafts.json`.
+Startup auto-creates the schema and seeds Postgres from `public/drafts.json`.
+DB connection: `DATABASE_URL` env (default: local unix socket `postgres:///kanjimn?host=/var/run/postgresql` — run `createdb kanjimn` once).
+Migrating from the old SQLite file: `npx tsx scripts/migrate-sqlite-to-pg.ts [data/kanjimn.db]`.
 
 ## Workflow
 
@@ -129,14 +131,14 @@ public/                         # static frontend + seed data
   drafts.json                   # 30 cards + 90 prompts (canonical seed)
 src/
   server.ts                     # Hono routes (DB + standalone APIs)
-  db.ts                         # better-sqlite3 layer (drafts/images/renders)
+  db.ts                         # PostgreSQL layer (drafts/images/renders)
   render.tsx                    # satori → resvg → PNG pipeline
   template.tsx                  # 8-block Satori JSX layout
   images.ts                     # OpenAI client + auto-prompts + emoji resolver
   fonts.ts                      # Inter + Source Han loader
   icons.ts                      # inline SVG (book/speaker/star/...)
   types.ts                      # CardData + ImageSlot
-data/kanjimn.db                 # SQLite (gitignored, auto-seeded on first run)
+data/kanjimn.db                 # legacy SQLite (kept for migrate-sqlite-to-pg.ts)
 assets/fonts/                   # downloaded by `npm run fonts` (gitignored)
 scripts/
   download-fonts.sh             # Inter + Source Han Sans/Serif CN

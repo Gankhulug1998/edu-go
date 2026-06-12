@@ -22,7 +22,9 @@ import {
 import type { CardData, ImageSlot } from './types.js';
 
 // ───────────────── INIT DB ─────────────────
-const seed = seedIfEmpty();
+import { initDb } from './db.js';
+await initDb();
+const seed = await seedIfEmpty();
 if (seed.seeded > 0) console.log(`▶ DB seeded ${seed.seeded} drafts`);
 
 const app = new Hono();
@@ -63,10 +65,10 @@ app.get('/api', (c) =>
 app.get('/health', (c) => c.text('ok'));
 
 // ───────────────── DB-BACKED DRAFTS ─────────────────
-app.get('/api/drafts', (c) => c.json(listDrafts()));
+app.get('/api/drafts', async (c) => c.json(await listDrafts()));
 
-app.get('/api/drafts/:character', (c) => {
-  const d = getDraft(c.req.param('character'));
+app.get('/api/drafts/:character', async (c) => {
+  const d = await getDraft(c.req.param('character'));
   if (!d) return c.json({ error: 'not found' }, 404);
   return c.json(d);
 });
@@ -75,13 +77,13 @@ app.patch('/api/drafts/:character', async (c) => {
   let patch: Partial<CardData>;
   try { patch = await c.req.json(); } catch { return c.json({ error: 'invalid JSON' }, 400); }
   if (!patch || typeof patch !== 'object') return c.json({ error: 'body must be object' }, 400);
-  const d = updateDraft(c.req.param('character'), patch);
+  const d = await updateDraft(c.req.param('character'), patch);
   if (!d) return c.json({ error: 'not found' }, 404);
   return c.json(d);
 });
 
-app.post('/api/drafts/:character/reset', (c) => {
-  const d = resetDraft(c.req.param('character'));
+app.post('/api/drafts/:character/reset', async (c) => {
+  const d = await resetDraft(c.req.param('character'));
   if (!d) return c.json({ error: 'not found' }, 404);
   return c.json(d);
 });
@@ -93,7 +95,7 @@ app.put('/api/drafts/:character/images/:slot', async (c) => {
   const character = c.req.param('character');
   const slot = c.req.param('slot') as 'main' | 'evolution' | 'icon';
   if (!VALID_SLOTS.has(slot)) return c.json({ error: 'invalid slot' }, 400);
-  if (!getDraft(character)) return c.json({ error: 'character not found' }, 404);
+  if (!(await getDraft(character))) return c.json({ error: 'character not found' }, 404);
 
   try {
     const form = await c.req.formData();
@@ -102,7 +104,7 @@ app.put('/api/drafts/:character/images/:slot', async (c) => {
     if (file.size > 10 * 1024 * 1024) return c.json({ error: 'file too large (>10MB)' }, 400);
     const buf = Buffer.from(await file.arrayBuffer());
     const mime = file.type || 'image/png';
-    setImage(character, slot, mime, buf);
+    await setImage(character, slot, mime, buf);
     return c.json({ character, slot, mime, size: file.size });
   } catch (e: any) {
     return c.json({ error: e?.message ?? 'upload failed' }, 500);
@@ -118,7 +120,7 @@ app.post('/api/drafts/:character/generate-image/:slot', async (c) => {
   const slot = c.req.param('slot') as 'main' | 'evolution' | 'icon';
   if (!VALID_SLOTS.has(slot)) return c.json({ error: 'invalid slot' }, 400);
 
-  const draft = getDraft(character);
+  const draft = await getDraft(character);
   if (!draft) return c.json({ error: 'character not found' }, 404);
 
   const body = await c.req.json().catch(() => ({}));
@@ -130,7 +132,7 @@ app.post('/api/drafts/:character/generate-image/:slot', async (c) => {
   try {
     const t0 = Date.now();
     const png = await generateImagePng(prompt, size);
-    setImage(character, slot, 'image/png', png);
+    await setImage(character, slot, 'image/png', png);
     return c.json({
       character, slot, mime: 'image/png',
       size: png.length, ms: Date.now() - t0,
@@ -141,18 +143,18 @@ app.post('/api/drafts/:character/generate-image/:slot', async (c) => {
   }
 });
 
-app.delete('/api/drafts/:character/images/:slot', (c) => {
+app.delete('/api/drafts/:character/images/:slot', async (c) => {
   const slot = c.req.param('slot');
   if (!VALID_SLOTS.has(slot)) return c.json({ error: 'invalid slot' }, 400);
-  const ok = removeImage(c.req.param('character'), slot);
+  const ok = await removeImage(c.req.param('character'), slot);
   if (!ok) return c.json({ error: 'no image to delete' }, 404);
   return c.json({ removed: true });
 });
 
-app.get('/api/images/:character/:slot', (c) => {
+app.get('/api/images/:character/:slot', async (c) => {
   const slot = c.req.param('slot');
   if (!VALID_SLOTS.has(slot)) return c.json({ error: 'invalid slot' }, 400);
-  const row = getImage(c.req.param('character'), slot);
+  const row = await getImage(c.req.param('character'), slot);
   if (!row) return c.json({ error: 'not found' }, 404);
   return c.body(row.data as any, 200, {
     'Content-Type': row.mime,
@@ -163,7 +165,7 @@ app.get('/api/images/:character/:slot', (c) => {
 // ───────────────── RENDER (DB-backed) ─────────────────
 app.post('/api/drafts/:character/render', async (c) => {
   const character = c.req.param('character');
-  const draft = getDraft(character);
+  const draft = await getDraft(character);
   if (!draft) return c.json({ error: 'not found' }, 404);
 
   const format = (c.req.query('format') ?? 'png') as 'png' | 'svg' | 'webp' | 'jpeg' | 'base64';
@@ -173,7 +175,7 @@ app.post('/api/drafts/:character/render', async (c) => {
   const images: NonNullable<CardData['images']> = {};
   for (const slot of ['main', 'evolution', 'icon'] as const) {
     if (draft.hasImages[slot]) {
-      const row = getImage(character, slot)!;
+      const row = (await getImage(character, slot))!;
       images[slot] = { kind: 'base64', mime: row.mime as any, data: row.data.toString('base64') };
     } else {
       const fromData = draft.data.images?.[slot];
@@ -188,8 +190,8 @@ app.post('/api/drafts/:character/render', async (c) => {
     if (format === 'svg') {
       const svg = await renderSvg(card, { noAI });
       // store as bytes for consistency
-      addRender(character, 'svg', Buffer.from(svg));
-      markDone(character);
+      await addRender(character, 'svg', Buffer.from(svg));
+      await markDone(character);
       return c.body(svg, 200, { 'Content-Type': 'image/svg+xml' });
     }
 
@@ -197,8 +199,8 @@ app.post('/api/drafts/:character/render', async (c) => {
       format: format === 'base64' ? 'png' : (format as any),
       noAI,
     });
-    addRender(character, format === 'base64' ? 'png' : format, png);
-    markDone(character);
+    await addRender(character, format === 'base64' ? 'png' : format, png);
+    await markDone(character);
 
     if (format === 'base64') return c.json({ image: `data:image/png;base64,${png.toString('base64')}` });
 
@@ -210,14 +212,14 @@ app.post('/api/drafts/:character/render', async (c) => {
   }
 });
 
-app.get('/api/drafts/:character/renders', (c) => {
-  return c.json(listRenders(c.req.param('character')));
+app.get('/api/drafts/:character/renders', async (c) => {
+  return c.json(await listRenders(c.req.param('character')));
 });
 
-app.get('/api/renders/:id', (c) => {
+app.get('/api/renders/:id', async (c) => {
   const id = Number(c.req.param('id'));
   if (!Number.isFinite(id)) return c.json({ error: 'invalid id' }, 400);
-  const r = getRender(id);
+  const r = await getRender(id);
   if (!r) return c.json({ error: 'not found' }, 404);
   const mime =
     r.format === 'svg' ? 'image/svg+xml' :
@@ -227,7 +229,7 @@ app.get('/api/renders/:id', (c) => {
 });
 
 // ───────────────── ADMIN ─────────────────
-app.post('/api/admin/reseed', (c) => c.json(reseed()));
+app.post('/api/admin/reseed', async (c) => c.json(await reseed()));
 
 // ───────────────── STANDALONE (no DB) ─────────────────
 app.post('/api/generate', async (c) => {
