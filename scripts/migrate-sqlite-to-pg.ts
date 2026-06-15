@@ -1,15 +1,15 @@
 #!/usr/bin/env tsx
 /**
- * Нэг удаагийн миграци: data/kanjimn.db (SQLite) → PostgreSQL.
+ * Нэг удаагийн миграци: data/edugo.db (SQLite) → PostgreSQL.
  * Drafts (is_done, updated_at хадгална), images, renders бүгдийг зөөнө.
  *
- *   DATABASE_URL=postgres://... npx tsx scripts/migrate-sqlite-to-pg.ts [path/to/kanjimn.db]
+ *   DATABASE_URL=postgres://... npx tsx scripts/migrate-sqlite-to-pg.ts [path/to/edugo.db]
  */
 import Database from 'better-sqlite3';
 import { resolve } from 'node:path';
 import { initDb, pool } from '../src/db.js';
 
-const SQLITE_PATH = process.argv[2] ?? resolve(import.meta.dirname, '..', 'data', 'kanjimn.db');
+const SQLITE_PATH = process.argv[2] ?? resolve(import.meta.dirname, '..', 'data', 'edugo.db');
 
 const sq = new Database(SQLITE_PATH, { readonly: true });
 console.log(`◀ source: ${SQLITE_PATH}`);

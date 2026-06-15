@@ -9,10 +9,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const SEED_PATH = resolve(ROOT, 'public', 'drafts.json');
 
-// DATABASE_URL жишээ: postgres://kanjimn:pass@127.0.0.1:15432/kanjimn
-// Локал хөгжүүлэлтэд unix socket: postgres:///kanjimn?host=/var/run/postgresql
+// DATABASE_URL жишээ: postgres://edugo:pass@127.0.0.1:15432/edugo
+// Локал хөгжүүлэлтэд unix socket: postgres:///edugo?host=/var/run/postgresql
 const pool = new pg.Pool({
-  connectionString: process.env.DATABASE_URL ?? 'postgres:///kanjimn?host=/var/run/postgresql',
+  connectionString: process.env.DATABASE_URL ?? 'postgres:///edugo?host=/var/run/postgresql',
   max: 10,
 });
 

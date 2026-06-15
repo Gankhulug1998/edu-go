@@ -59,7 +59,7 @@ app.use('*', async (c, next) => {
 // ───────────────── INFO ─────────────────
 app.get('/api', (c) =>
   c.json({
-    name: 'kanji-mn',
+    name: 'edu-go',
     storage: 'postgres (metadata) + minio (image bytes)',
     endpoints: {
       'GET /api/drafts':                              'list 30 drafts (summary)',
@@ -198,7 +198,7 @@ function generateImageDedup(
   prompt: string,
   size: '1024x1024' | '1024x1536' | '1536x1024'
 ): Promise<{ buffer: Buffer; mime: string }> {
-  const key = `${character} ${slot}`;
+  const key = `${character}:${slot}`;
   const existing = inflightImages.get(key);
   if (existing) return existing;
   const p = generateImage(prompt, size);
@@ -378,7 +378,7 @@ app.use('/*', serveStatic({ root: './public' }));
 
 const port = Number(process.env.PORT ?? 3000);
 serve({ fetch: app.fetch, port }, () => {
-  console.log(`▶ kanji-mn running on http://localhost:${port}`);
+  console.log(`▶ edu-go running on http://localhost:${port}`);
   console.log(`  UI:  http://localhost:${port}/`);
   console.log(`  API: http://localhost:${port}/api`);
 });

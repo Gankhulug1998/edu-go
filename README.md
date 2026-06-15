@@ -1,4 +1,4 @@
-# Kanji.mn
+# Edu Go
 
 Хятад иероглифын сургалтын карт автомат үүсгэгч — Монгол хэлээр тайлбарлана. 30 бэлэн ханз, AI-аар зураг generate хийх боломжтой.
 
@@ -43,8 +43,8 @@ npm run dev
 ```
 
 Startup auto-creates the schema and seeds Postgres from `public/drafts.json`.
-DB connection: `DATABASE_URL` env (default: local unix socket `postgres:///kanjimn?host=/var/run/postgresql` — run `createdb kanjimn` once).
-Migrating from the old SQLite file: `npx tsx scripts/migrate-sqlite-to-pg.ts [data/kanjimn.db]`.
+DB connection: `DATABASE_URL` env (default: local unix socket `postgres:///edugo?host=/var/run/postgresql` — run `createdb edugo` once).
+Migrating from the old SQLite file: `npx tsx scripts/migrate-sqlite-to-pg.ts [data/edugo.db]`.
 
 ## Workflow
 
@@ -138,7 +138,7 @@ src/
   fonts.ts                      # Inter + Source Han loader
   icons.ts                      # inline SVG (book/speaker/star/...)
   types.ts                      # CardData + ImageSlot
-data/kanjimn.db                 # legacy SQLite (kept for migrate-sqlite-to-pg.ts)
+data/edugo.db                 # legacy SQLite (kept for migrate-sqlite-to-pg.ts)
 assets/fonts/                   # downloaded by `npm run fonts` (gitignored)
 scripts/
   download-fonts.sh             # Inter + Source Han Sans/Serif CN
@@ -190,4 +190,4 @@ Rules for content and image generation:
 - The 30 default characters are visually-decomposable compounds (林=木+木, 好=女+子, 家=宀+豕, etc.) — prompts emphasize the composition so images become memorable mnemonics, not generic art.
 - Variable fonts (Inter variable TTF) break Satori's bundled `opentype.js` parser; the project ships static-instance WOFFs per subset (`cyrillic`, `cyrillic-ext`, `latin`, `latin-ext`) for Inter.
 - Mongolian Ү (`U+04AE`) lives in `cyrillic-ext`, not the basic `cyrillic` subset — both files load.
-- The header pill defaults to `"Kanji.mn"`; override per-card via `data.title`.
+- The header pill defaults to `"Edu Go"`; override per-card via `data.title`.

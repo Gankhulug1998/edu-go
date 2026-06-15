@@ -1,5 +1,5 @@
 {
-  "name": "kanji-mn",
+  "name": "edu-go",
   "version": "0.1.0",
   "description": "API-driven Chinese hieroglyph learning card generator (Mongolian)",
   "type": "module",

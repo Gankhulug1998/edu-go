@@ -24,16 +24,16 @@ jobs:
         run: |
           ssh -i ~/.ssh/deploy_key "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" 'bash -s' <<'SCRIPT'
           set -euo pipefail
-          cd /opt/kanjimn
+          cd /opt/edugo
           git fetch origin main
           git reset --hard origin/main
           npm ci --no-audit --no-fund
           bash scripts/download-fonts.sh
-          systemctl restart kanjimn
+          systemctl restart edugo
           for i in $(seq 1 15); do
             sleep 2
             curl -fsS http://localhost:3100/health >/dev/null && break
-            [ "$i" = 15 ] && { echo "health check failed"; journalctl -u kanjimn -n 30 --no-pager; exit 1; }
+            [ "$i" = 15 ] && { echo "health check failed"; journalctl -u edugo -n 30 --no-pager; exit 1; }
           done
           # drafts.json өөрчлөлтийг DB рүү тусгана (is_done хадгалагдана)
           curl -fsS -X POST http://localhost:3100/api/admin/reseed

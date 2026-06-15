@@ -4,7 +4,7 @@
  * Бүх байтыг MinIO руу зөөж, баталгаажуулаад `data` BYTEA баганыг устгана.
  *
  * Серверт env тохируулсны дараа НЭГ удаа ажиллуулна:
- *   set -a; source /opt/kanjimn/.env; set +a
+ *   set -a; source /opt/edugo/.env; set +a
  *   npx tsx scripts/migrate-images-to-minio.ts
  *
  * Шаардлагатай env: DATABASE_URL (эсвэл default socket),

@@ -15,7 +15,7 @@ import {
 //
 // Env:
 //   S3_ENDPOINT     ж: http://127.0.0.1:9000  (MinIO host)
-//   S3_BUCKET       ж: kanjimn
+//   S3_BUCKET       ж: edugo
 //   S3_ACCESS_KEY   MinIO access key
 //   S3_SECRET_KEY   MinIO secret key
 //   S3_REGION       заавал биш (default: us-east-1 — MinIO үл хэрэгсэнэ)

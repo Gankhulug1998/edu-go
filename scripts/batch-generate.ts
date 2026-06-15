@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Batch-generate AI images for kanji-mn drafts.
+ * Batch-generate AI images for edu-go drafts.
  *
  * Iterates through drafts via the API and POSTs to
  * /api/drafts/:character/generate-image/:slot for each missing image.
@@ -31,7 +31,7 @@
  *   30 drafts × 3 slots ≈ $3.60–4.20 for a full run.
  *
  * REQUIREMENTS
- *   - kanji-mn server running (default: http://localhost:3000)
+ *   - edu-go server running (default: http://localhost:3000)
  *   - OPENAI_API_KEY exported in the server's environment
  */
 import process from 'node:process';

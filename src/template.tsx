@@ -27,7 +27,7 @@ export const CARD_WIDTH = 1400;
 export const CARD_HEIGHT = 1050;
 
 export function Card({ data, images = {} }: { data: CardData; images?: ResolvedImages }) {
-  const title = data.title ?? 'Kanji.mn';
+  const title = data.title ?? 'Edu Go';
   const mnemonic = data.mnemonic ?? {
     parts: data.structure.parts.map((p) => p.char),
     result: data.structure.result.char,
