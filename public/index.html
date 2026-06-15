@@ -301,7 +301,7 @@
     updateJsonView();
     await refreshSidebar();
     await refreshHistory();
-    clearPreview();
+    await showSavedPreview();
 
     const cur = document.querySelector(`.draft-item[data-char="${cssEscape(character)}"]`);
     if (cur) cur.scrollIntoView({ block:'nearest', behavior:'smooth' });
@@ -537,6 +537,52 @@
     document.getElementById('next-after').classList.add('hidden');
     document.getElementById('error').classList.add('hidden');
     document.getElementById('meta').textContent = '';
+  }
+
+  // Ханз сонгоход өмнө нь хадгалсан картыг АВТОМАТААР preview-д үзүүлнэ —
+  // Generate дарах шаардлагагүй. Дахин generate/OpenAI дуудахгүй.
+  async function showSavedPreview() {
+    const ch = currentChar;
+    if (!ch) return;
+    // 1) Хамгийн сүүлийн хадгалсан render байвал шууд үзүүлнэ (compute/cost-гүй).
+    let renders = [];
+    try { renders = await api.renders(ch); } catch (_) {}
+    if (ch !== currentChar) return;           // хооронд нь өөр ханз сонгосон бол таслана
+    if (renders && renders.length) {
+      // Хамгийн сүүлд хадгалсан render-ийг шууд үзүүлнэ (instant, cost-гүй).
+      // Засвар хийсний дараа шинэчлэхийг хүсвэл Generate дарна.
+      showRenderUrl(`/api/renders/${renders[0].id}`, renders[0].format, renders[0].size);
+      return;
+    }
+    // 2) Render түүх алга ч контент (done / хадгалсан зураг) байвал нэг удаа render
+    //    хийнэ — зураг кэшлэгдсэн тул OpenAI дуудахгүй, хурдан.
+    const d = currentDraft;
+    const hasContent = d && (d.isDone ||
+      (d.hasImages && (d.hasImages.main || d.hasImages.evolution || d.hasImages.icon)));
+    if (hasContent) { await generate(); return; }
+    // 3) Огт generate хийгээгүй бол placeholder (Generate дар).
+    clearPreview();
+  }
+
+  // Save-аас уншсан render-ийг preview-д үзүүлэх (blob биш, шууд URL).
+  function showRenderUrl(url, format, size) {
+    if (lastUrl) { URL.revokeObjectURL(lastUrl); lastUrl = null; }
+    document.getElementById('placeholder').classList.add('hidden');
+    document.getElementById('error').classList.add('hidden');
+    const img = document.getElementById('preview-img');
+    const iframe = document.getElementById('preview-svg');
+    if (format === 'svg') {
+      iframe.src = url; iframe.classList.remove('hidden'); img.classList.add('hidden');
+    } else {
+      img.src = url; img.classList.remove('hidden'); iframe.classList.add('hidden');
+    }
+    const dl = document.getElementById('download');
+    dl.href = url;
+    dl.download = `${currentChar}.${format === 'jpeg' ? 'jpg' : format}`;
+    dl.classList.remove('hidden');
+    document.getElementById('next-after').classList.remove('hidden');
+    document.getElementById('meta').textContent =
+      `${size ? (size / 1024).toFixed(1) + ' KB · ' : ''}хадгалсан · ${(format || 'png').toUpperCase()}`;
   }
 
   async function generate() {
