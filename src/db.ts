@@ -2,7 +2,7 @@ import pg from 'pg';
 import { readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { CardData } from './types.js';
+import type { CardData, CardLevel, CardCategory } from './types.js';
 import { putObject, getObject, deleteObject, imageKey, storageEnabled, isNotFoundError } from './storage.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -105,6 +105,9 @@ export interface DraftSummary {
   isDone: boolean;
   hasImages: { main: boolean; evolution: boolean; icon: boolean };
   updatedAt: number;
+  /** Түвшин/ангилал — sidebar-г бүлэглэхэд (data доторх утга). */
+  level?: CardLevel;
+  category?: CardCategory;
 }
 
 export interface DraftFull {
@@ -125,15 +128,20 @@ const DRAFT_SELECT = `
 
 export async function listDrafts(): Promise<DraftSummary[]> {
   const { rows } = await pool.query(`${DRAFT_SELECT} ORDER BY d.position`);
-  return rows.map((r) => ({
-    character: r.character,
-    position: r.position,
-    pinyin: (r.data as CardData).pinyin,
-    meaning: (r.data as CardData).meaning,
-    isDone: r.is_done,
-    hasImages: { main: r.has_main, evolution: r.has_evolution, icon: r.has_icon },
-    updatedAt: Number(r.updated_at),
-  }));
+  return rows.map((r) => {
+    const data = r.data as CardData;
+    return {
+      character: r.character,
+      position: r.position,
+      pinyin: data.pinyin,
+      meaning: data.meaning,
+      isDone: r.is_done,
+      hasImages: { main: r.has_main, evolution: r.has_evolution, icon: r.has_icon },
+      updatedAt: Number(r.updated_at),
+      level: data.level,
+      category: data.category,
+    };
+  });
 }
 
 export async function getDraft(character: string): Promise<DraftFull | null> {
