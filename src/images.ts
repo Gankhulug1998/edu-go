@@ -90,6 +90,31 @@ function defaultSize(kind: 'main' | 'evolution' | 'icon'): '1024x1024' | '1024x1
   return '1024x1024';
 }
 
+/**
+ * If a slot needs OpenAI generation, return its prompt + size; otherwise null.
+ * Lets callers (e.g. the render endpoint) generate the image once and persist it,
+ * instead of re-calling OpenAI on every render.
+ */
+export function aiSpecForSlot(
+  slot: ImageSlot,
+  kind: 'main' | 'evolution' | 'icon',
+  data: CardData
+): { prompt: string; size: '1024x1024' | '1024x1536' | '1536x1024' } | null {
+  if (slot.kind === 'prompt') {
+    return { prompt: slot.prompt, size: slot.size ?? defaultSize(kind) };
+  }
+  if (slot.kind === 'auto') {
+    const ctx: ResolveContext = {
+      character: data.character,
+      meaning: data.meaning,
+      pinyin: data.pinyin,
+      parts: data.structure.parts.map((p) => p.char),
+    };
+    return { prompt: autoPrompt(kind, ctx), size: defaultSize(kind) };
+  }
+  return null;
+}
+
 // ────────────────────────────────────────────────────────────────────────────
 // Auto-prompts (used when slot.kind === 'auto')
 // ────────────────────────────────────────────────────────────────────────────
@@ -123,17 +148,26 @@ function autoPrompt(kind: 'main' | 'evolution' | 'icon', ctx: ResolveContext): s
 // ────────────────────────────────────────────────────────────────────────────
 
 /**
- * Public: generate an image and return a raw PNG Buffer (not a data URL).
+ * Public: generate an image and return its raw bytes + mime.
+ * gpt-image-* yields PNG natively; dall-e-3's URL path yields whatever the CDN serves.
  * Useful for server endpoints that want to store the binary directly.
  */
+export async function generateImage(
+  prompt: string,
+  size: '1024x1024' | '1024x1536' | '1536x1024' = '1024x1024'
+): Promise<{ buffer: Buffer; mime: string }> {
+  const dataUrl = await generateOpenAI(prompt, size);
+  const m = dataUrl.match(/^data:([^;]+);base64,(.+)$/);
+  if (!m) throw new Error('expected data URL from generateOpenAI');
+  return { buffer: Buffer.from(m[2], 'base64'), mime: m[1] };
+}
+
+/** Public: same as {@link generateImage} but returns only the raw bytes. */
 export async function generateImagePng(
   prompt: string,
   size: '1024x1024' | '1024x1536' | '1536x1024' = '1024x1024'
 ): Promise<Buffer> {
-  const dataUrl = await generateOpenAI(prompt, size);
-  const m = dataUrl.match(/^data:[^;]+;base64,(.+)$/);
-  if (!m) throw new Error('expected data URL from generateOpenAI');
-  return Buffer.from(m[1], 'base64');
+  return (await generateImage(prompt, size)).buffer;
 }
 
 async function generateOpenAI(prompt: string, size: '1024x1024' | '1024x1536' | '1536x1024'): Promise<string> {
