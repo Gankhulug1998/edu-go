@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edu Go — studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg:#fafafa; --surface:#ffffff; --surface-2:#f4f4f5; --surface-ink:#18181b;
+      --border:#e4e4e7; --border-2:#d4d4d8; --divider:#f1f1f3;
+      --text:#18181b; --text-muted:#52525b; --text-soft:#71717a; --text-subtle:#a1a1aa;
+      --ink:#18181b; --ink-hover:#27272a;
+      --accent:#5b57d1; --accent-hover:#4f4bc4; --accent-weak:#eef0fb; --accent-ring:rgba(91,87,209,0.30);
+      --success:#15803c; --success-weak:#f0fdf4; --success-border:#bbf7d0;
+      --danger:#b91c1c; --danger-weak:#fef2f2; --danger-border:#fecaca;
+    }
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+      font-size:13px; line-height:1.45; letter-spacing:-0.006em;
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    .han{ font-family:"Noto Serif SC","Source Han Serif","PingFang SC","Hiragino Sans GB",serif; }
+    .mono{ font-family:ui-monospace,"Cascadia Code",Menlo,Consolas,monospace; font-size:12px; line-height:1.5; letter-spacing:-0.01em; }
+    .spin{ animation:spin .9s linear infinite; }
+    @keyframes spin{ to{ transform:rotate(360deg); } }
+    .checker{
+      background-color:var(--bg);
+      background-image:radial-gradient(var(--border) 1px, transparent 1px);
+      background-size:16px 16px;
+    }
+    .draft-item{ box-shadow:inset 2px 0 0 transparent; }
+    .draft-item.active{ background:var(--accent-weak); box-shadow:inset 2px 0 0 var(--accent); }
+    .chev{ transition:transform .12s ease; }
+    .chev.open{ transform:rotate(90deg); }
+    details > summary{ cursor:pointer; list-style:none; }
+    details > summary::-webkit-details-marker{ display:none; }
+    .save-pulse{ animation:pulse .6s ease-out; }
+    @keyframes pulse{ 0%{ background-color:var(--accent-weak); } 100%{ background-color:transparent; } }
+    .saved-flash{ color:var(--success); font-size:11px; opacity:0; transition:opacity .3s; }
+    .saved-flash.show{ opacity:1; }
+    input[type=text],input[type=search],textarea,select{ background:var(--surface); }
+    .field{
+      margin-top:4px; width:100%; background:var(--surface);
+      border:1px solid var(--border-2); border-radius:6px;
+      padding:6px 10px; font-size:13px; color:var(--text);
+      transition:box-shadow .12s, border-color .12s;
+    }
+    .field::placeholder{ color:var(--text-subtle); }
+    .field:hover{ border-color:var(--text-subtle); }
+    .field:focus{ outline:none; border-color:var(--accent); box-shadow:0 0 0 2px var(--accent-ring); }
+    details[open] > summary .chev{ transform:rotate(90deg); }
+  </style>
+</head>
+<body class="bg-[var(--bg)] min-h-screen text-[var(--text)]">
+
+  <header class="bg-[var(--surface)] border-b border-[var(--border)] sticky top-0 z-10">
+    <div class="max-w-[1800px] mx-auto px-6 h-12 flex items-center gap-3">
+
+      <a class="flex items-center gap-2 select-none">
+        <span class="grid place-items-center w-5 h-5 rounded-[5px] bg-[var(--accent)] text-white">
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M8 3v10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="text-[13px] font-semibold tracking-[-0.01em] text-[var(--text)]">Edu&nbsp;Go</span>
+        <span class="text-[11px] text-[var(--text-subtle)] font-normal">Studio</span>
+      </a>
+
+      <div class="hidden sm:flex items-center gap-1 text-[11px] text-[var(--text-subtle)] border-l border-[var(--border)] pl-3 tabular-nums">
+        <span id="done-count" class="font-medium text-[var(--text)]">0</span>
+        <span class="text-[var(--text-subtle)]">/</span>
+        <span id="total-count">0</span>
+        <span>бэлэн</span>
+      </div>
+
+      <span id="saved-flash" class="saved-flash">хадгалагдсан</span>
+      <div class="flex-1"></div>
+
+      <button id="reset-draft" class="text-[12px] text-[var(--text-subtle)] hover:text-[var(--danger)] px-2 h-7 rounded-md hover:bg-[var(--surface-2)] transition-colors" title="Энэ ханзыг seed-руу буцаах + upload устгах">Reset draft</button>
+
+      <label class="flex items-center gap-2 text-[12px] text-[var(--text-muted)] select-none">
+        <input type="checkbox" id="noai" class="accent-[var(--accent)] w-3.5 h-3.5" checked>
+        AI зураггүй
+      </label>
+
+      <select id="format" class="h-7 rounded-md border border-[var(--border-2)] bg-[var(--surface)] px-2 text-[12px] text-[var(--text)] hover:border-[var(--text-subtle)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)]">
+        <option value="png">PNG</option>
+        <option value="svg">SVG</option>
+        <option value="webp">WebP</option>
+        <option value="jpeg">JPEG</option>
+      </select>
+
+      <button id="prev-btn" class="grid place-items-center w-7 h-7 rounded-md text-[var(--text-muted)] hover:bg-[var(--surface-2)] transition-colors" title="Өмнөх (←)">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10 4l-4 4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button id="next-btn" class="grid place-items-center w-7 h-7 rounded-md text-[var(--text-muted)] hover:bg-[var(--surface-2)] transition-colors" title="Дараах (→)">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <span class="w-px h-5 bg-[var(--border)] mx-0.5"></span>
+
+      <button id="generate" class="h-7 bg-[var(--ink)] hover:bg-[var(--ink-hover)] text-white px-3 rounded-md text-[12px] font-medium inline-flex items-center gap-1.5 disabled:opacity-50 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)]">
+        <span>Generate</span>
+        <svg id="gen-spinner" class="spin hidden" width="13" height="13" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="white" stroke-width="3" stroke-dasharray="40 60"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-[1800px] mx-auto px-4 py-4 grid gap-3" style="grid-template-columns: 230px 460px 1fr;">
+
+    <!-- ───────── SIDEBAR ───────── -->
+    <aside class="bg-[var(--surface)] rounded-lg border border-[var(--border)] overflow-hidden flex flex-col" style="height: calc(100vh - 72px); position: sticky; top: 56px;">
+      <div class="px-2 py-2 border-b border-[var(--border)] bg-[var(--surface)] space-y-1.5">
+        <div class="relative">
+          <svg class="absolute left-2 top-1/2 -translate-y-1/2 text-[var(--text-subtle)]" width="14" height="14" viewBox="0 0 16 16" fill="none">
+            <circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="m11 11 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <input id="draft-search" type="search" placeholder="ханз · утга · пиньин"
+            class="w-full h-7 text-[12px] border border-[var(--border-2)] rounded-md pl-7 pr-2 bg-[var(--surface)] placeholder:text-[var(--text-subtle)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)] focus:border-[var(--accent)]" />
+        </div>
+        <div class="text-[11px] text-[var(--text-subtle)] px-1 flex items-center gap-1 tabular-nums">
+          <span><span id="sidebar-count">0</span> ханз · <span id="sidebar-done">0</span> бэлэн</span>
+          <span class="flex-1"></span>
+          <button id="sidebar-toggle-all" class="text-[var(--accent)] hover:text-[var(--accent-hover)] font-medium">бүгдийг хураах</button>
+        </div>
+      </div>
+      <div id="drafts-list" class="overflow-y-auto flex-1"></div>
+    </aside>
+
+    <!-- ───────── FORM ───────── -->
+    <section class="space-y-3">
+
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <div class="flex items-baseline gap-3">
+          <span id="cur-char" class="han text-[40px] leading-none font-semibold text-[var(--text)]"></span>
+          <div class="text-[12px] text-[var(--text-muted)]">
+            <div><b id="cur-pinyin" class="font-medium text-[var(--text)]"></b> · <span id="cur-meaning"></span></div>
+            <div class="text-[11px] text-[var(--text-subtle)] tabular-nums">#<span id="cur-idx">-</span> / <span id="cur-total">-</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Үндсэн</h2>
+        <div class="grid grid-cols-3 gap-3">
+          <label class="block">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Иероглиф</span>
+            <input id="character" type="text" class="field han !text-[22px] text-center">
+          </label>
+          <label class="block">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Пиньин</span>
+            <input id="pinyin" type="text" class="field">
+          </label>
+          <label class="block">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Утга</span>
+            <input id="meaning" type="text" class="field">
+          </label>
+        </div>
+      </div>
+
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <div class="flex items-center justify-between">
+          <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Бүтэц</h2>
+          <button id="add-part" class="text-[11px] font-medium h-7 px-2 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text-muted)] hover:bg-[var(--surface-2)] transition-colors">+ part</button>
+        </div>
+        <div id="parts" class="space-y-2"></div>
+        <div class="border-t border-[var(--border)] pt-3 grid grid-cols-2 gap-3">
+          <label class="block">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Үр дүн ханз</span>
+            <input id="result-char" type="text" class="field han !text-lg text-center">
+          </label>
+          <label class="block">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Үр дүн label</span>
+            <input id="result-label" type="text" class="field">
+          </label>
+        </div>
+      </div>
+
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Санааны түүх</h2>
+        <textarea id="story" rows="3" class="field leading-[1.5]"></textarea>
+      </div>
+
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Жишээ үг</h2>
+        <div class="grid grid-cols-3 gap-3">
+          <label class="block">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Үг</span>
+            <input id="ex-word" type="text" class="field han !text-lg">
+          </label>
+          <label class="block">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Пиньин</span>
+            <input id="ex-pinyin" type="text" class="field">
+          </label>
+          <label class="block">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Орчуулга</span>
+            <input id="ex-trans" type="text" class="field">
+          </label>
+        </div>
+      </div>
+
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Зураг</h2>
+        <p class="text-[11px] text-[var(--text-subtle)] leading-relaxed">3 slot тус бүрд: prompt-ыг copy → гадаа generate → upload. Prompt-ыг засаж бичсэн нь DB-д PATCH-аар хадгална.</p>
+        <div id="slot-main"      data-slot="main"      class="image-slot border border-[var(--border)] rounded-lg p-3 bg-[var(--surface)]"></div>
+        <div id="slot-evolution" data-slot="evolution" class="image-slot border border-[var(--border)] rounded-lg p-3 bg-[var(--surface)]"></div>
+        <div id="slot-icon"      data-slot="icon"      class="image-slot border border-[var(--border)] rounded-lg p-3 bg-[var(--surface)]"></div>
+      </div>
+
+      <details class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4">
+        <summary class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)] flex items-center gap-1.5">
+          <svg class="chev text-[var(--text-subtle)]" width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Raw API payload
+        </summary>
+        <pre id="json-view" class="mono text-[12px] leading-[1.5] mt-3 bg-[var(--surface-ink)] text-zinc-100 p-3 rounded-md overflow-auto max-h-96"></pre>
+      </details>
+
+      <details class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4">
+        <summary class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)] flex items-center gap-1.5">
+          <svg class="chev text-[var(--text-subtle)]" width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Render history
+        </summary>
+        <ul id="history-list" class="text-[12px] mt-3 space-y-1"></ul>
+      </details>
+    </section>
+
+    <!-- ───────── PREVIEW ───────── -->
+    <section class="space-y-4" style="position: sticky; top: 56px; align-self: start;">
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Preview</h2>
+          <div id="meta" class="text-[11px] text-[var(--text-subtle)] tabular-nums"></div>
+        </div>
+        <div id="preview-wrap" class="checker rounded-md overflow-hidden border border-[var(--border)] min-h-[500px] flex items-center justify-center">
+          <p id="placeholder" class="text-[var(--text-subtle)] text-[12px] text-center px-6 leading-relaxed">
+            Зүүнээс ханз сонгоод <b class="text-[var(--text-muted)] font-medium">Generate</b> дар.<br>
+            <span class="text-[11px]">Бүх state DB-д хадгалагдана.</span>
+          </p>
+          <img id="preview-img" class="hidden max-w-full" alt="preview">
+          <iframe id="preview-svg" class="hidden w-full h-[900px] bg-[var(--surface)]" frameborder="0"></iframe>
+        </div>
+        <div class="flex items-center gap-3 mt-3">
+          <a id="download" class="hidden h-8 bg-[var(--ink)] hover:bg-[var(--ink-hover)] text-white px-3 rounded-md text-[12px] font-medium inline-flex items-center gap-1.5 transition-colors" download>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v7M5 7l3 3 3-3M3 13h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download
+          </a>
+          <button id="next-after" class="hidden h-8 px-3 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] text-[12px] font-medium hover:bg-[var(--surface-2)] inline-flex items-center gap-1.5 transition-colors">
+            Дараагийн ханз
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div id="error" class="hidden text-[var(--danger)] text-[12px] bg-[var(--danger-weak)] border border-[var(--danger-border)] rounded-md px-3 py-2 flex-1"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+  // ───────────────── STATE ─────────────────
+  let drafts = [];           // summary list from /api/drafts
+  let currentChar = null;    // current draft character
+  let currentDraft = null;   // full DraftFull
+  let saveTimer = null;
+  const SLOT_LABEL = {
+    main:      'Гол зураг — forest scene',
+    evolution: 'Санааны түүх — evolution diagram',
+    icon:      'Утгын дүрс — icon',
+  };
+
+  // ───────────────── API CLIENT ─────────────────
+  const enc = encodeURIComponent;
+  const api = {
+    list:   () => fetch('/api/drafts').then(r => r.json()),
+    get:    (c) => fetch(`/api/drafts/${enc(c)}`).then(r => r.json()),
+    patch:  (c, body) => fetch(`/api/drafts/${enc(c)}`, {
+      method:'PATCH', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body),
+    }).then(r => r.json()),
+    reset:  (c) => fetch(`/api/drafts/${enc(c)}/reset`, { method:'POST' }).then(r => r.json()),
+    upload: (c, slot, file) => {
+      const fd = new FormData(); fd.append('file', file);
+      return fetch(`/api/drafts/${enc(c)}/images/${slot}`, { method:'PUT', body: fd }).then(r => r.json());
+    },
+    deleteImage: (c, slot) => fetch(`/api/drafts/${enc(c)}/images/${slot}`, { method:'DELETE' }).then(r => r.json()),
+    imageUrl:    (c, slot, bust='') => `/api/images/${enc(c)}/${slot}${bust ? `?t=${bust}` : ''}`,
+    render: (c, format, noai) => fetch(`/api/drafts/${enc(c)}/render?format=${format}${noai?'&noai=1':''}`, { method:'POST' }),
+    renders: (c) => fetch(`/api/drafts/${enc(c)}/renders`).then(r => r.json()),
+  };
+
+  function debouncedPatch(patch) {
+    if (!currentChar) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(async () => {
+      const updated = await api.patch(currentChar, patch);
+      if (updated && updated.character) {
+        currentDraft = updated;
+        flashSaved();
+        updateJsonView();
+      }
+    }, 500);
+  }
+
+  function flashSaved() {
+    const el = document.getElementById('saved-flash');
+    el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 800);
+  }
+
+  // ───────────────── SIDEBAR (Түвшин → Ангилал бүлэглэл) ─────────────────
+  let packsManifest = null;
+  const groupCollapsed = {};   // 'L1' эсвэл 'L1/baigal' → true бол хураасан
+
+  async function loadPacks() {
+    if (packsManifest) return packsManifest;
+    try { packsManifest = await fetch('/packs.json').then(r => r.json()); }
+    catch (_) { packsManifest = { levels: [], categories: [] }; }
+    return packsManifest;
+  }
+
+  function draftMatches(d, q) {
+    if (!q) return true;
+    return (d.character || '').includes(q)
+        || (d.meaning || '').toLowerCase().includes(q)
+        || (d.pinyin || '').toLowerCase().includes(q);
+  }
+
+  function draftLi(d) {
+    const imgBadge = d.hasImages.main ? '<span title="зураг" class="w-1.5 h-1.5 rounded-full bg-[var(--accent)] shrink-0"></span>' : '';
+    const right = d.isDone
+      ? '<span class="text-[var(--success)] shrink-0"><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5l3 3 6-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
+      : `<span class="text-[var(--text-subtle)] text-[11px] tabular-nums">${d.position + 1}</span>`;
+    return `<li data-char="${escapeAttr(d.character)}" class="draft-item flex items-center gap-2 pl-5 pr-3 h-9 cursor-pointer hover:bg-[var(--surface-2)] ${d.character === currentChar ? 'active' : ''}">
+      <span class="han text-[15px] w-6 text-center text-[var(--text)]">${escapeHtml(d.character)}</span>
+      <div class="flex-1 min-w-0">
+        <div class="text-[12px] font-medium truncate text-[var(--text)]">${escapeHtml(d.meaning)}</div>
+        <div class="text-[11px] text-[var(--text-subtle)] truncate">${escapeHtml(d.pinyin)}</div>
+      </div>${imgBadge}${right}</li>`;
+  }
+
+  async function refreshSidebar() {
+    drafts = await api.list();
+    const doneN = drafts.filter(d => d.isDone).length;
+    document.getElementById('total-count').textContent = drafts.length;
+    document.getElementById('cur-total').textContent = drafts.length;
+    document.getElementById('done-count').textContent = doneN;
+    document.getElementById('sidebar-count').textContent = drafts.length;
+    document.getElementById('sidebar-done').textContent = doneN;
+    await loadPacks();
+    renderSidebar();
+  }
+
+  function renderSidebar() {
+    const pm = packsManifest || { levels: [], categories: [] };
+    const q = (document.getElementById('draft-search')?.value || '').trim().toLowerCase();
+    const searching = q.length > 0;
+    const levelName = (id) => pm.levels.find(l => l.id === id)?.name || (id ? `Түвшин ${id}` : 'Ангилалгүй');
+    const catMeta = (slug) => pm.categories.find(c => c.slug === slug) || { name: slug || 'Бусад', icon: '•' };
+    const catOrder = pm.categories.map(c => c.slug);
+
+    // Идэвхтэй ханзны бүлгийг үргэлж задалж байрлуулна (scroll хийхэд харагдахаар).
+    if (currentChar) {
+      const cd = drafts.find(d => d.character === currentChar);
+      if (cd) { delete groupCollapsed['L' + (cd.level ?? 0)]; delete groupCollapsed['L' + (cd.level ?? 0) + '/' + (cd.category ?? 'other')]; }
+    }
+
+    const byLevel = {};
+    for (const d of drafts) {
+      const lv = d.level ?? 0, cat = d.category ?? 'other';
+      ((byLevel[lv] ??= {})[cat] ??= []).push(d);
+    }
+    const levels = Object.keys(byLevel).map(Number).sort((a, b) => a - b);
+
+    const chev = (open) => `<svg class="chev ${open ? 'open' : ''} text-[var(--text-subtle)] inline-block align-[-1px] mr-1.5" width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    let html = '';
+    for (const lv of levels) {
+      const cats = byLevel[lv];
+      const catKeys = [...catOrder.filter(s => cats[s]), ...Object.keys(cats).filter(s => !catOrder.includes(s))];
+      const visCats = catKeys
+        .map(cat => ({ cat, items: cats[cat].filter(d => draftMatches(d, q)), total: cats[cat].length }))
+        .filter(c => !searching || c.items.length);
+      if (searching && !visCats.length) continue;
+      const allItems = catKeys.flatMap(c => cats[c]);
+      const lvKey = 'L' + lv, lvOpen = searching || !groupCollapsed[lvKey];
+      html += `<div class="border-b border-[var(--border)]">
+        <div data-grp="${lvKey}" class="grp-head flex items-center justify-between px-3 h-7 bg-[var(--surface-2)] cursor-pointer select-none text-[11px] font-medium text-[var(--text-muted)] uppercase tracking-[0.05em]">
+          <span class="inline-flex items-center">${chev(lvOpen)}${escapeHtml(levelName(lv))}</span>
+          <span class="text-[var(--text-subtle)] font-normal normal-case tabular-nums">${allItems.length} · ${allItems.filter(d => d.isDone).length} бэлэн</span>
+        </div>`;
+      if (lvOpen) {
+        for (const { cat, items, total } of visCats) {
+          const cm = catMeta(cat), cKey = lvKey + '/' + cat, cOpen = searching || !groupCollapsed[cKey];
+          html += `<div>
+            <div data-grp="${cKey}" class="grp-head flex items-center justify-between pl-5 pr-3 h-7 bg-[var(--surface)] cursor-pointer select-none text-[12px] font-medium text-[var(--text-soft)]">
+              <span class="inline-flex items-center">${chev(cOpen)}${escapeHtml(cm.name)}</span>
+              <span class="text-[var(--text-subtle)] font-normal tabular-nums">${searching ? items.length + '/' : ''}${total}</span>
+            </div>
+            ${cOpen ? `<ul class="divide-y divide-[var(--divider)]">${items.map(draftLi).join('')}</ul>` : ''}
+          </div>`;
+        }
+      }
+      html += `</div>`;
+    }
+    if (!html) html = '<div class="p-4 text-[13px] text-[var(--text-subtle)] text-center">Олдсонгүй</div>';
+
+    const box = document.getElementById('drafts-list');
+    box.innerHTML = html;
+    box.querySelectorAll('.grp-head').forEach(h => h.onclick = () => {
+      groupCollapsed[h.dataset.grp] = !groupCollapsed[h.dataset.grp];
+      renderSidebar();
+    });
+    box.querySelectorAll('.draft-item').forEach(li => li.onclick = () => loadDraft(li.dataset.char));
+  }
+
+  // Хайлт + бүгдийг хураах/задлах
+  document.getElementById('draft-search')?.addEventListener('input', () => renderSidebar());
+  document.getElementById('sidebar-toggle-all')?.addEventListener('click', (e) => {
+    const levels = [...new Set(drafts.map(d => 'L' + (d.level ?? 0)))];
+    const anyOpen = levels.some(k => !groupCollapsed[k]);
+    if (anyOpen) { levels.forEach(k => groupCollapsed[k] = true); e.target.textContent = 'бүгдийг задлах'; }
+    else { Object.keys(groupCollapsed).forEach(k => delete groupCollapsed[k]); e.target.textContent = 'бүгдийг хураах'; }
+    renderSidebar();
+  });
+
+  // ───────────────── LOAD DRAFT ─────────────────
+  async function loadDraft(character) {
+    const d = await api.get(character);
+    if (d.error) { alert(d.error); return; }
+    currentChar = character;
+    currentDraft = d;
+
+    const data = d.data;
+    document.getElementById('cur-char').textContent    = data.character;
+    document.getElementById('cur-pinyin').textContent  = data.pinyin;
+    document.getElementById('cur-meaning').textContent = data.meaning;
+    document.getElementById('cur-idx').textContent     = d.position + 1;
+
+    setVal('character',  data.character);
+    setVal('pinyin',     data.pinyin);
+    setVal('meaning',    data.meaning);
+    setVal('result-char', data.structure.result.char);
+    setVal('result-label', data.structure.result.label);
+    setVal('story',      data.story);
+    setVal('ex-word',    data.example.word);
+    setVal('ex-pinyin',  data.example.pinyin);
+    setVal('ex-trans',   data.example.translation);
+
+    renderParts(data.structure.parts);
+    ['main','evolution','icon'].forEach(renderSlot);
+    updateJsonView();
+    await refreshSidebar();
+    await refreshHistory();
+    await showSavedPreview();
+
+    const cur = document.querySelector(`.draft-item[data-char="${cssEscape(character)}"]`);
+    if (cur) cur.scrollIntoView({ block:'nearest', behavior:'smooth' });
+  }
+
+  // ───────────────── PARTS ─────────────────
+  function renderParts(parts) {
+    const c = document.getElementById('parts');
+    c.innerHTML = '';
+    parts.forEach((p, i) => {
+      const row = document.createElement('div');
+      row.className = 'flex items-center gap-2';
+      row.innerHTML = `
+        <input type="text" data-idx="${i}" data-key="char" value="${escapeAttr(p.char)}"
+          class="field han !w-14 !mt-0 !text-base text-center">
+        <input type="text" data-idx="${i}" data-key="label" value="${escapeAttr(p.label)}"
+          class="field !mt-0 flex-1" placeholder="label">
+        <button data-rm="${i}" class="grid place-items-center w-7 h-7 rounded-md text-[var(--text-subtle)] hover:text-[var(--danger)] hover:bg-[var(--danger-weak)] transition-colors shrink-0">×</button>
+      `;
+      c.appendChild(row);
+    });
+    c.querySelectorAll('input').forEach((el) => {
+      el.oninput = () => {
+        const idx = +el.dataset.idx;
+        currentDraft.data.structure.parts[idx][el.dataset.key] = el.value;
+        debouncedPatch({ structure: currentDraft.data.structure });
+        updateJsonView();
+      };
+    });
+    c.querySelectorAll('[data-rm]').forEach((b) => {
+      b.onclick = () => {
+        if (currentDraft.data.structure.parts.length <= 1) return;
+        currentDraft.data.structure.parts.splice(+b.dataset.rm, 1);
+        renderParts(currentDraft.data.structure.parts);
+        debouncedPatch({ structure: currentDraft.data.structure });
+        updateJsonView();
+      };
+    });
+  }
+  document.getElementById('add-part').onclick = () => {
+    if (!currentDraft) return;
+    currentDraft.data.structure.parts.push({ char:'木', label:'' });
+    renderParts(currentDraft.data.structure.parts);
+    debouncedPatch({ structure: currentDraft.data.structure });
+    updateJsonView();
+  };
+
+  // ───────────────── SLOTS (prompt + upload) ─────────────────
+  function renderSlot(slotKey) {
+    const root = document.querySelector(`[data-slot="${slotKey}"]`);
+    const prompt = currentDraft?.data?.prompts?.[slotKey] ?? '';
+    const has = currentDraft?.hasImages?.[slotKey];
+    const imgSrc = has ? api.imageUrl(currentChar, slotKey, currentDraft.updatedAt) : null;
+
+    root.innerHTML = `
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-[12px] font-medium text-[var(--text)]">${SLOT_LABEL[slotKey]}</span>
+        ${has ? '<span class="inline-flex items-center gap-1 text-[11px] text-[var(--success)] bg-[var(--success-weak)] border border-[var(--success-border)] px-1.5 py-0.5 rounded">uploaded</span>' : ''}
+      </div>
+
+      <details class="mb-2" ${prompt && !has ? 'open' : ''}>
+        <summary class="text-[11px] font-medium text-[var(--text-soft)] hover:text-[var(--text)] select-none">Prompt (засаж + Copy)</summary>
+        <div class="mt-2 space-y-1">
+          <textarea data-prompt-slot="${slotKey}" rows="4"
+            class="mono w-full text-[12px] border border-[var(--border-2)] rounded-md p-2 bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)] focus:border-[var(--accent)]">${escapeHtml(prompt)}</textarea>
+          <div class="flex items-center gap-2">
+            <button data-copy-slot="${slotKey}" class="text-[11px] font-medium h-7 px-2.5 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-2)] transition-colors">Copy</button>
+            <span data-copy-flash="${slotKey}" class="text-[11px] text-[var(--success)] saved-flash">copied</span>
+          </div>
+        </div>
+      </details>
+
+      <div class="flex items-center gap-3 flex-wrap">
+        <label class="inline-flex items-center gap-1.5 cursor-pointer text-[12px] font-medium h-7 px-2.5 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-2)] transition-colors">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 11V3M5 6l3-3 3 3M3 12h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Upload
+          <input type="file" accept="image/*" data-upload-slot="${slotKey}" class="hidden">
+        </label>
+        <button data-aigen-slot="${slotKey}" class="text-[12px] font-medium h-7 px-2.5 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-2)] inline-flex items-center gap-1.5 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+          <span data-aigen-label="${slotKey}" class="inline-flex items-center gap-1.5">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 2.5l.9 2.6 2.6.9-2.6.9L8 9.5l-.9-2.6-2.6-.9 2.6-.9zM12.5 9.5l.45 1.3 1.3.45-1.3.45-.45 1.3-.45-1.3-1.3-.45 1.3-.45z" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linejoin="round"/></svg>
+            AI generate
+          </span>
+          <svg data-aigen-spin="${slotKey}" class="spin hidden" width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="40 60"/>
+          </svg>
+        </button>
+        ${imgSrc ? `
+          <img src="${imgSrc}" class="w-12 h-12 object-cover rounded-md border border-[var(--border)]" data-thumb-slot="${slotKey}">
+          <button data-delete-slot="${slotKey}" class="text-[11px] text-[var(--text-subtle)] hover:text-[var(--danger)] hover:bg-[var(--danger-weak)] px-2 py-1 rounded-md transition-colors">устгах</button>
+        ` : '<span class="text-[11px] text-[var(--text-subtle)]">зураг алга</span>'}
+      </div>
+    `;
+
+    // Prompt textarea — debounced PATCH
+    const ta = root.querySelector('[data-prompt-slot]');
+    ta.oninput = (e) => {
+      currentDraft.data.prompts ??= {};
+      currentDraft.data.prompts[slotKey] = e.target.value;
+      debouncedPatch({ prompts: currentDraft.data.prompts });
+      updateJsonView();
+    };
+
+    // Copy button
+    root.querySelector('[data-copy-slot]').onclick = async () => {
+      const text = currentDraft?.data?.prompts?.[slotKey] ?? '';
+      try {
+        await navigator.clipboard.writeText(text);
+        const flash = root.querySelector('[data-copy-flash]');
+        flash.classList.add('show');
+        setTimeout(() => flash.classList.remove('show'), 1200);
+      } catch (e) {
+        alert('Clipboard error: ' + e.message);
+      }
+    };
+
+    // Upload
+    root.querySelector('[data-upload-slot]').onchange = async (e) => {
+      const f = e.target.files?.[0];
+      if (!f) return;
+      const res = await api.upload(currentChar, slotKey, f);
+      if (res.error) { alert(res.error); return; }
+      currentDraft = await api.get(currentChar);
+      renderSlot(slotKey);
+      await refreshSidebar();
+    };
+
+    // Delete
+    const del = root.querySelector('[data-delete-slot]');
+    if (del) {
+      del.onclick = async () => {
+        if (!confirm('Энэ зургийг устгах уу?')) return;
+        await api.deleteImage(currentChar, slotKey);
+        currentDraft = await api.get(currentChar);
+        renderSlot(slotKey);
+        await refreshSidebar();
+      };
+    }
+
+    // AI generate via OpenAI (uses prompt stored on draft)
+    const ai = root.querySelector(`[data-aigen-slot="${slotKey}"]`);
+    if (ai) {
+      ai.onclick = async () => {
+        const label = root.querySelector(`[data-aigen-label="${slotKey}"]`);
+        const spin  = root.querySelector(`[data-aigen-spin="${slotKey}"]`);
+        ai.disabled = true; spin.classList.remove('hidden'); label.textContent = 'үүсгэж байна (~15-30s)';
+        try {
+          const res = await fetch(`/api/drafts/${enc(currentChar)}/generate-image/${slotKey}`, { method: 'POST' });
+          const j = await res.json();
+          if (!res.ok) throw new Error(j.error || `HTTP ${res.status}`);
+          currentDraft = await api.get(currentChar);
+          renderSlot(slotKey);
+          await refreshSidebar();
+        } catch (e) {
+          alert('AI generate алдаа: ' + e.message + '\n\nOPENAI_API_KEY серверт тохируулагдсан эсэхээ шалга.');
+        } finally {
+          if (root.querySelector(`[data-aigen-slot="${slotKey}"]`)) {
+            // slot was re-rendered; old refs invalid — skip
+          }
+        }
+      };
+    }
+  }
+
+  // ───────────────── TEXT FIELD WIRING ─────────────────
+  const FIELD_MAP = {
+    character:    (v) => ({ character: v }),
+    pinyin:       (v) => ({ pinyin: v }),
+    meaning:      (v) => ({ meaning: v }),
+    story:        (v) => ({ story: v }),
+    'result-char':  (v) => ({ structure: { ...currentDraft.data.structure, result: { ...currentDraft.data.structure.result, char: v } } }),
+    'result-label': (v) => ({ structure: { ...currentDraft.data.structure, result: { ...currentDraft.data.structure.result, label: v } } }),
+    'ex-word':    (v) => ({ example: { ...currentDraft.data.example, word: v } }),
+    'ex-pinyin':  (v) => ({ example: { ...currentDraft.data.example, pinyin: v } }),
+    'ex-trans':   (v) => ({ example: { ...currentDraft.data.example, translation: v } }),
+  };
+
+  Object.entries(FIELD_MAP).forEach(([id, builder]) => {
+    document.getElementById(id).oninput = () => {
+      if (!currentDraft) return;
+      const v = val(id);
+      // Update local copy for UI consistency
+      const patch = builder(v);
+      Object.assign(currentDraft.data, deepMerge(currentDraft.data, patch));
+      debouncedPatch(patch);
+      updateJsonView();
+    };
+  });
+
+  function deepMerge(base, patch) {
+    if (base && typeof base === 'object' && patch && typeof patch === 'object' && !Array.isArray(patch)) {
+      const out = { ...base };
+      for (const k of Object.keys(patch)) out[k] = deepMerge(base[k], patch[k]);
+      return out;
+    }
+    return patch;
+  }
+
+  // ───────────────── JSON VIEW ─────────────────
+  function updateJsonView() {
+    if (!currentDraft) return;
+    document.getElementById('json-view').textContent = JSON.stringify(currentDraft.data, null, 2);
+  }
+
+  // ───────────────── HISTORY ─────────────────
+  async function refreshHistory() {
+    if (!currentChar) return;
+    const renders = await api.renders(currentChar);
+    const ul = document.getElementById('history-list');
+    if (!renders.length) { ul.innerHTML = '<li class="text-[var(--text-subtle)]">history алга</li>'; return; }
+    ul.innerHTML = renders.map(r => `
+      <li class="flex items-center gap-3">
+        <a href="/api/renders/${r.id}" target="_blank" class="text-[var(--accent)] hover:text-[var(--accent-hover)] font-medium tabular-nums">#${r.id}</a>
+        <span class="text-[var(--text-subtle)] uppercase">${r.format}</span>
+        <span class="text-[var(--text-subtle)] tabular-nums">${(r.size/1024).toFixed(1)} KB</span>
+        <span class="text-[var(--text-subtle)] text-[10px] tabular-nums">${new Date(r.renderedAt).toLocaleString()}</span>
+      </li>
+    `).join('');
+  }
+
+  // ───────────────── RESET ─────────────────
+  document.getElementById('reset-draft').onclick = async () => {
+    if (!currentChar) return;
+    if (!confirm(`"${currentChar}" ханзыг seed-руу буцаах уу? Текст засвар + uploaded зурагнууд устах болно.`)) return;
+    await api.reset(currentChar);
+    await loadDraft(currentChar);
+  };
+
+  // ───────────────── GENERATE ─────────────────
+  let lastUrl = null;
+  function clearPreview() {
+    if (lastUrl) { URL.revokeObjectURL(lastUrl); lastUrl = null; }
+    document.getElementById('preview-img').classList.add('hidden');
+    document.getElementById('preview-svg').classList.add('hidden');
+    document.getElementById('placeholder').classList.remove('hidden');
+    document.getElementById('download').classList.add('hidden');
+    document.getElementById('next-after').classList.add('hidden');
+    document.getElementById('error').classList.add('hidden');
+    document.getElementById('meta').textContent = '';
+  }
+
+  // Ханз сонгоход өмнө нь хадгалсан картыг АВТОМАТААР preview-д үзүүлнэ —
+  // Generate дарах шаардлагагүй. Дахин generate/OpenAI дуудахгүй.
+  async function showSavedPreview() {
+    const ch = currentChar;
+    if (!ch) return;
+    // 1) Хамгийн сүүлийн хадгалсан render байвал шууд үзүүлнэ (compute/cost-гүй).
+    let renders = [];
+    try { renders = await api.renders(ch); } catch (_) {}
+    if (ch !== currentChar) return;           // хооронд нь өөр ханз сонгосон бол таслана
+    if (renders && renders.length) {
+      // Хамгийн сүүлд хадгалсан render-ийг шууд үзүүлнэ (instant, cost-гүй).
+      // Засвар хийсний дараа шинэчлэхийг хүсвэл Generate дарна.
+      showRenderUrl(`/api/renders/${renders[0].id}`, renders[0].format, renders[0].size);
+      return;
+    }
+    // 2) Render түүх алга ч контент (done / хадгалсан зураг) байвал нэг удаа render
+    //    хийнэ — зураг кэшлэгдсэн тул OpenAI дуудахгүй, хурдан.
+    const d = currentDraft;
+    const hasContent = d && (d.isDone ||
+      (d.hasImages && (d.hasImages.main || d.hasImages.evolution || d.hasImages.icon)));
+    if (hasContent) { await generate(); return; }
+    // 3) Огт generate хийгээгүй бол placeholder (Generate дар).
+    clearPreview();
+  }
+
+  // Save-аас уншсан render-ийг preview-д үзүүлэх (blob биш, шууд URL).
+  function showRenderUrl(url, format, size) {
+    if (lastUrl) { URL.revokeObjectURL(lastUrl); lastUrl = null; }
+    document.getElementById('placeholder').classList.add('hidden');
+    document.getElementById('error').classList.add('hidden');
+    const img = document.getElementById('preview-img');
+    const iframe = document.getElementById('preview-svg');
+    if (format === 'svg') {
+      iframe.src = url; iframe.classList.remove('hidden'); img.classList.add('hidden');
+    } else {
+      img.src = url; img.classList.remove('hidden'); iframe.classList.add('hidden');
+    }
+    const dl = document.getElementById('download');
+    dl.href = url;
+    dl.download = `${currentChar}.${format === 'jpeg' ? 'jpg' : format}`;
+    dl.classList.remove('hidden');
+    document.getElementById('next-after').classList.remove('hidden');
+    document.getElementById('meta').textContent =
+      `${size ? (size / 1024).toFixed(1) + ' KB · ' : ''}хадгалсан · ${(format || 'png').toUpperCase()}`;
+  }
+
+  async function generate() {
+    if (!currentChar) return;
+    const btn = document.getElementById('generate');
+    const spinner = document.getElementById('gen-spinner');
+    const errBox = document.getElementById('error');
+    errBox.classList.add('hidden');
+    btn.disabled = true; spinner.classList.remove('hidden');
+
+    const format = document.getElementById('format').value;
+    const noai = document.getElementById('noai').checked;
+    const t0 = performance.now();
+
+    try {
+      const res = await api.render(currentChar, format, noai);
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || `HTTP ${res.status}`);
+      }
+      const blob = await res.blob();
+      if (lastUrl) URL.revokeObjectURL(lastUrl);
+      lastUrl = URL.createObjectURL(blob);
+
+      document.getElementById('placeholder').classList.add('hidden');
+      const img = document.getElementById('preview-img');
+      const iframe = document.getElementById('preview-svg');
+      if (format === 'svg') {
+        iframe.src = lastUrl; iframe.classList.remove('hidden'); img.classList.add('hidden');
+      } else {
+        img.src = lastUrl; img.classList.remove('hidden'); iframe.classList.add('hidden');
+      }
+      const dl = document.getElementById('download');
+      dl.href = lastUrl;
+      dl.download = `${currentChar}.${format === 'jpeg' ? 'jpg' : format}`;
+      dl.classList.remove('hidden');
+      document.getElementById('next-after').classList.remove('hidden');
+
+      document.getElementById('meta').textContent =
+        `${(blob.size / 1024).toFixed(1)} KB · ${Math.round(performance.now() - t0)} ms · ${format.toUpperCase()}`;
+
+      await refreshSidebar();
+      await refreshHistory();
+    } catch (e) {
+      errBox.textContent = e.message;
+      errBox.classList.remove('hidden');
+    } finally {
+      btn.disabled = false; spinner.classList.add('hidden');
+    }
+  }
+  document.getElementById('generate').onclick = generate;
+
+  // ───────────────── NAV ─────────────────
+  function nav(delta) {
+    if (!currentChar) return;
+    const idx = drafts.findIndex(d => d.character === currentChar);
+    const target = drafts[idx + delta];
+    if (target) loadDraft(target.character);
+  }
+  document.getElementById('prev-btn').onclick = () => nav(-1);
+  document.getElementById('next-btn').onclick = () => nav(1);
+  document.getElementById('next-after').onclick = () => nav(1);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft')  nav(-1);
+    if (e.key === 'ArrowRight') nav(1);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); generate(); }
+  });
+
+  // ───────────────── HELPERS ─────────────────
+  function val(id) { return document.getElementById(id).value.trim(); }
+  function setVal(id, v) { document.getElementById(id).value = v ?? ''; }
+  function escapeAttr(s) { return String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]); }
+  function escapeHtml(s) { return escapeAttr(s); }
+  function cssEscape(s) {
+    if (window.CSS && CSS.escape) return CSS.escape(s);
+    return String(s).replace(/[^a-zA-Z0-9_-]/g, ch => '\\' + ch);
+  }
+
+  // ───────────────── INIT ─────────────────
+  (async () => {
+    await refreshSidebar();
+    if (drafts.length) await loadDraft(drafts[0].character);
+  })();
+  </script>
+</body>
+</html>

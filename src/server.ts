@@ -2,8 +2,14 @@ import { Hono } from 'hono';
 import { compress } from 'hono/compress';
 import { serve } from '@hono/node-server';
 import { serveStatic } from '@hono/node-server/serve-static';
+import { getCookie, setCookie, deleteCookie } from 'hono/cookie';
 import { renderCard, renderSvg } from './render.js';
 import { generateImage, aiSpecForSlot } from './images.js';
+import {
+  hashPassword, verifyPassword, createUser, getUserByEmail,
+  upsertOAuthUser, createSession, getSessionUser, deleteSession,
+  getProgress, setProgress, removeProgress, SESSION_COOKIE,
+} from './auth.js';
 import {
   seedIfEmpty,
   reseed,
@@ -372,6 +378,162 @@ function validate(d: any): string | null {
   if (!d.example?.word || !d.example?.pinyin || !d.example?.translation) return 'example required';
   return null;
 }
+
+// ───────────────── LEARNER CARD IMAGE (public, cached GET for the gallery) ─────────────────
+// Serves a card's rendered PNG. Returns the latest saved render if any; otherwise
+// renders once with noAI (free — never calls OpenAI) and caches it. Browser-cacheable.
+app.get('/api/cards/:character/image', async (c) => {
+  const character = c.req.param('character');
+  const draft = await getDraft(character);
+  if (!draft) return c.json({ error: 'not found' }, 404);
+
+  const recent = await listRenders(character, 1);
+  if (recent.length) {
+    const r = await getRender(recent[0].id);
+    if (r) {
+      const mime = r.format === 'svg' ? 'image/svg+xml'
+        : r.format === 'webp' ? 'image/webp' : r.format === 'jpeg' ? 'image/jpeg' : 'image/png';
+      return c.body(r.data as any, 200, { 'Content-Type': mime, 'Cache-Control': 'public, max-age=600' });
+    }
+  }
+
+  // No saved render → render once (noAI, free) using already-stored/cheap slots, then cache.
+  const images: NonNullable<CardData['images']> = {};
+  for (const slot of ['main', 'evolution', 'icon'] as const) {
+    if (draft.hasImages[slot]) {
+      const row = await getImage(character, slot);
+      if (row) { images[slot] = { kind: 'base64', mime: row.mime as any, data: row.data.toString('base64') }; continue; }
+    }
+    const cfg = draft.data.images?.[slot];
+    if (cfg && (cfg.kind === 'url' || cfg.kind === 'base64' || cfg.kind === 'emoji')) images[slot] = cfg;
+    else if (slot === 'icon') images[slot] = { kind: 'emoji', emoji: '🌲' };
+  }
+  try {
+    const png = await renderCard({ ...draft.data, images }, { format: 'png', noAI: true });
+    await addRender(character, 'png', png);
+    return c.body(png as any, 200, { 'Content-Type': 'image/png', 'Cache-Control': 'public, max-age=600' });
+  } catch (e: any) {
+    console.error(e);
+    return c.json({ error: e?.message ?? 'render failed' }, 500);
+  }
+});
+
+// ───────────────── LEARNER AUTH ─────────────────
+const isProd = process.env.NODE_ENV === 'production';
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const GOOGLE_ID = process.env.GOOGLE_CLIENT_ID;
+const GOOGLE_SECRET = process.env.GOOGLE_CLIENT_SECRET;
+
+function setSessionCookie(c: any, token: string) {
+  setCookie(c, SESSION_COOKIE, token, {
+    httpOnly: true, sameSite: 'Lax', secure: isProd, path: '/', maxAge: 30 * 86400,
+  });
+}
+function currentUser(c: any) {
+  return getSessionUser(getCookie(c, SESSION_COOKIE));
+}
+function googleRedirectUri(c: any) {
+  return process.env.GOOGLE_REDIRECT_URI || `${new URL(c.req.url).origin}/api/auth/google/callback`;
+}
+
+app.get('/api/auth/config', (c) => c.json({ google: !!(GOOGLE_ID && GOOGLE_SECRET) }));
+
+app.post('/api/auth/signup', async (c) => {
+  const body = await c.req.json().catch(() => ({}));
+  const email = String(body?.email ?? '').trim().toLowerCase();
+  const password = String(body?.password ?? '');
+  const name = body?.name ? String(body.name).trim().slice(0, 80) : null;
+  if (!EMAIL_RE.test(email)) return c.json({ error: 'Имэйл буруу байна' }, 400);
+  if (password.length < 6) return c.json({ error: 'Нууц үг дор хаяж 6 тэмдэгт байх ёстой' }, 400);
+  if (await getUserByEmail(email)) return c.json({ error: 'Энэ имэйл аль хэдийн бүртгэлтэй' }, 409);
+  const user = await createUser(email, name, hashPassword(password), 'email');
+  setSessionCookie(c, (await createSession(user.id)).token);
+  return c.json({ user });
+});
+
+app.post('/api/auth/login', async (c) => {
+  const body = await c.req.json().catch(() => ({}));
+  const email = String(body?.email ?? '').trim().toLowerCase();
+  const password = String(body?.password ?? '');
+  const u = await getUserByEmail(email);
+  if (!u || !verifyPassword(password, u.passwordHash)) {
+    return c.json({ error: 'Имэйл эсвэл нууц үг буруу' }, 401);
+  }
+  setSessionCookie(c, (await createSession(u.id)).token);
+  return c.json({ user: { id: u.id, email: u.email, name: u.name, provider: u.provider, createdAt: u.createdAt } });
+});
+
+app.post('/api/auth/logout', async (c) => {
+  await deleteSession(getCookie(c, SESSION_COOKIE));
+  deleteCookie(c, SESSION_COOKIE, { path: '/' });
+  return c.json({ ok: true });
+});
+
+app.get('/api/auth/me', async (c) => c.json({ user: (await currentUser(c)) ?? null }));
+
+// Google OAuth (inert unless GOOGLE_CLIENT_ID/SECRET set; needs domain + HTTPS in prod)
+app.get('/api/auth/google', (c) => {
+  if (!GOOGLE_ID) return c.json({ error: 'Google нэвтрэлт тохируулагдаагүй' }, 503);
+  const p = new URLSearchParams({
+    client_id: GOOGLE_ID, redirect_uri: googleRedirectUri(c), response_type: 'code',
+    scope: 'openid email profile', access_type: 'online', prompt: 'select_account',
+  });
+  return c.redirect(`https://accounts.google.com/o/oauth2/v2/auth?${p}`);
+});
+
+app.get('/api/auth/google/callback', async (c) => {
+  if (!GOOGLE_ID || !GOOGLE_SECRET) return c.json({ error: 'Google нэвтрэлт тохируулагдаагүй' }, 503);
+  const code = c.req.query('code');
+  if (!code) return c.redirect('/?auth=google_failed');
+  try {
+    const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
+      method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        code, client_id: GOOGLE_ID, client_secret: GOOGLE_SECRET,
+        redirect_uri: googleRedirectUri(c), grant_type: 'authorization_code',
+      }),
+    });
+    const tok: any = await tokenRes.json();
+    if (!tok.access_token) throw new Error('no access_token');
+    const profileRes = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
+      headers: { Authorization: `Bearer ${tok.access_token}` },
+    });
+    const profile: any = await profileRes.json();
+    if (!profile.email) throw new Error('no email');
+    const user = await upsertOAuthUser(profile.email, profile.name ?? null, 'google');
+    setSessionCookie(c, (await createSession(user.id)).token);
+    return c.redirect('/?auth=ok');
+  } catch (e) {
+    console.error('google oauth', e);
+    return c.redirect('/?auth=google_failed');
+  }
+});
+
+// ───────────────── LEARNER PROGRESS (requires login) ─────────────────
+app.get('/api/me/progress', async (c) => {
+  const user = await currentUser(c);
+  if (!user) return c.json({ error: 'нэвтрээгүй' }, 401);
+  return c.json({ progress: await getProgress(user.id) });
+});
+
+app.put('/api/me/progress/:character', async (c) => {
+  const user = await currentUser(c);
+  if (!user) return c.json({ error: 'нэвтрээгүй' }, 401);
+  const body = await c.req.json().catch(() => ({}));
+  const status = body?.status === 'known' ? 'known' : 'studied';
+  await setProgress(user.id, c.req.param('character'), status);
+  return c.json({ ok: true, status });
+});
+
+app.delete('/api/me/progress/:character', async (c) => {
+  const user = await currentUser(c);
+  if (!user) return c.json({ error: 'нэвтрээгүй' }, 401);
+  await removeProgress(user.id, c.req.param('character'));
+  return c.json({ ok: true });
+});
+
+// Admin studio moves to /admin (learner app is served at /)
+app.get('/admin', serveStatic({ path: './public/admin.html' }));
 
 // Static frontend (must come LAST so /api/* matches first)
 app.use('/*', serveStatic({ root: './public' }));

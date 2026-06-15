@@ -47,6 +47,32 @@ export async function initDb(): Promise<void> {
       rendered_at BIGINT  NOT NULL
     );
     CREATE INDEX IF NOT EXISTS idx_renders_char ON renders(character, rendered_at DESC);
+
+    -- ───────────────── LEARNER ACCOUNTS ─────────────────
+    CREATE TABLE IF NOT EXISTS users (
+      id            SERIAL  PRIMARY KEY,
+      email         TEXT    UNIQUE NOT NULL,
+      name          TEXT,
+      password_hash TEXT,
+      provider      TEXT    NOT NULL DEFAULT 'email',
+      created_at    BIGINT  NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS sessions (
+      token       TEXT    PRIMARY KEY,
+      user_id     INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      expires_at  BIGINT  NOT NULL,
+      created_at  BIGINT  NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_sessions_user ON sessions(user_id);
+
+    CREATE TABLE IF NOT EXISTS progress (
+      user_id     INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      character   TEXT    NOT NULL,
+      status      TEXT    NOT NULL DEFAULT 'studied',
+      updated_at  BIGINT  NOT NULL,
+      PRIMARY KEY (user_id, character)
+    );
   `);
 
   // ── Idempotent migration for DBs created before the MinIO switch ──

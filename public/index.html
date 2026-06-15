@@ -2,827 +2,576 @@
 <html lang="mn">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Edu Go — studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Edu Go — Хятад ханз зургаар, түүхээр сур</title>
+  <meta name="description" content="Хятад ханзыг бүтэц, зураг, түүхээр нь сур. 362 ханз, 2 түвшин — Duolingo шиг дулаан, аялал мэт зам." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{
-      --bg:#fafafa; --surface:#ffffff; --surface-2:#f4f4f5; --surface-ink:#18181b;
-      --border:#e4e4e7; --border-2:#d4d4d8; --divider:#f1f1f3;
-      --text:#18181b; --text-muted:#52525b; --text-soft:#71717a; --text-subtle:#a1a1aa;
-      --ink:#18181b; --ink-hover:#27272a;
-      --accent:#5b57d1; --accent-hover:#4f4bc4; --accent-weak:#eef0fb; --accent-ring:rgba(91,87,209,0.30);
-      --success:#15803c; --success-weak:#f0fdf4; --success-border:#bbf7d0;
-      --danger:#b91c1c; --danger-weak:#fef2f2; --danger-border:#fecaca;
+      --bg:#FBF8F4; --bg-tint:#F6F1EA;
+      --surface:#FFFFFF; --surface-2:#FAF6F0; --surface-sunken:#F1EFEA;
+      --border:#ECE4D8; --border-strong:#E0D5C5; --divider:#F1EBE1;
+      --text:#1C1A17; --text-muted:#5B5B66; --text-soft:#82828E; --text-subtle:#A7A6AF;
+      --primary:#F2A007; --primary-strong:#E08600; --primary-weak:#FEF3DC; --primary-soft:#FBF1E2;
+      --primary-ring:rgba(242,160,7,.32); --primary-ink:#7A4E00;
+      --brand:#5B57D1; --brand-hover:#4F4BC4; --brand-weak:#EEF0FB; --brand-soft:#F4F4FD;
+      --brand-ring:rgba(91,87,209,.32); --brand-ink:#312E8A;
+      --t1:#0E9F6E; --t1-weak:#DEF7EC; --t2:#5B57D1; --t2-weak:#EEF0FB; --t3:#D946A0; --t3-weak:#FBE8F4;
+      --success:#15803C; --success-weak:#EFFAF1; --success-border:#BBF7D0;
+      --danger:#B91C1C; --danger-weak:#FEF2F2; --danger-border:#FECACA;
+      --ease-out:cubic-bezier(.22,1,.36,1);
     }
-    body{
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
-      font-size:13px; line-height:1.45; letter-spacing:-0.006em;
-      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-    }
-    .han{ font-family:"Noto Serif SC","Source Han Serif","PingFang SC","Hiragino Sans GB",serif; }
-    .mono{ font-family:ui-monospace,"Cascadia Code",Menlo,Consolas,monospace; font-size:12px; line-height:1.5; letter-spacing:-0.01em; }
-    .spin{ animation:spin .9s linear infinite; }
-    @keyframes spin{ to{ transform:rotate(360deg); } }
-    .checker{
-      background-color:var(--bg);
-      background-image:radial-gradient(var(--border) 1px, transparent 1px);
-      background-size:16px 16px;
-    }
-    .draft-item{ box-shadow:inset 2px 0 0 transparent; }
-    .draft-item.active{ background:var(--accent-weak); box-shadow:inset 2px 0 0 var(--accent); }
-    .chev{ transition:transform .12s ease; }
-    .chev.open{ transform:rotate(90deg); }
-    details > summary{ cursor:pointer; list-style:none; }
-    details > summary::-webkit-details-marker{ display:none; }
-    .save-pulse{ animation:pulse .6s ease-out; }
-    @keyframes pulse{ 0%{ background-color:var(--accent-weak); } 100%{ background-color:transparent; } }
-    .saved-flash{ color:var(--success); font-size:11px; opacity:0; transition:opacity .3s; }
-    .saved-flash.show{ opacity:1; }
-    input[type=text],input[type=search],textarea,select{ background:var(--surface); }
-    .field{
-      margin-top:4px; width:100%; background:var(--surface);
-      border:1px solid var(--border-2); border-radius:6px;
-      padding:6px 10px; font-size:13px; color:var(--text);
-      transition:box-shadow .12s, border-color .12s;
-    }
+    *{ -webkit-tap-highlight-color:transparent; }
+    body{ font-family:'Inter',-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif; background:var(--bg); color:var(--text); letter-spacing:-0.011em; }
+    .han{ font-family:'Noto Serif SC','Source Han Serif','PingFang SC','Hiragino Sans GB',serif; }
+    .hans{ font-family:'Noto Sans SC',sans-serif; }
+    .mono{ font-family:ui-monospace,'JetBrains Mono',Menlo,monospace; font-variant-numeric:tabular-nums; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; gap:.5rem; font-weight:600; border-radius:.75rem; transition:all .18s var(--ease-out); white-space:nowrap; cursor:pointer; }
+    .btn:active{ transform:scale(.98); }
+    .btn-primary{ height:2.75rem; padding:0 1.5rem; background:var(--primary); color:var(--text); box-shadow:0 8px 24px -8px rgba(242,160,7,.5); }
+    .btn-primary:hover{ background:var(--primary-strong); }
+    .btn-brand{ height:2.75rem; padding:0 1.5rem; background:var(--brand); color:#fff; }
+    .btn-brand:hover{ background:var(--brand-hover); }
+    .btn-ghost{ height:2.75rem; padding:0 1.25rem; border:1px solid var(--border-strong); color:var(--text); background:var(--surface); }
+    .btn-ghost:hover{ background:var(--surface-2); }
+    .btn-sm{ height:2.25rem; padding:0 1rem; border-radius:.625rem; }
+    .field{ height:2.75rem; width:100%; border:1px solid var(--border-strong); background:var(--surface); border-radius:.75rem; padding:0 .875rem; font-size:14px; color:var(--text); transition:border-color .15s, box-shadow .15s; }
     .field::placeholder{ color:var(--text-subtle); }
-    .field:hover{ border-color:var(--text-subtle); }
-    .field:focus{ outline:none; border-color:var(--accent); box-shadow:0 0 0 2px var(--accent-ring); }
-    details[open] > summary .chev{ transform:rotate(90deg); }
+    .field:focus{ outline:none; border-color:var(--brand); box-shadow:0 0 0 3px var(--brand-ring); }
+    .card{ background:var(--surface); border:1px solid var(--border); border-radius:1rem; }
+    .lift{ transition:transform .2s var(--ease-out), box-shadow .2s var(--ease-out); }
+    .lift:hover{ transform:translateY(-4px); box-shadow:0 18px 40px -20px rgba(28,26,23,.28); }
+    .eyebrow{ font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.14em; color:var(--brand-ink); }
+    .chip{ display:inline-flex; align-items:center; gap:.375rem; border-radius:999px; padding:.25rem .75rem; font-size:12px; font-weight:600; }
+    a{ color:inherit; }
+    ::-webkit-scrollbar{ width:10px; height:10px; } ::-webkit-scrollbar-thumb{ background:var(--border-strong); border-radius:99px; border:2px solid var(--bg); }
+    @keyframes fadeUp{ from{ opacity:0; transform:translateY(12px); } to{ opacity:1; transform:none; } }
+    .fade-up{ animation:fadeUp .5s var(--ease-out) both; }
+    @keyframes shimmer{ 0%{ background-position:-200% 0; } 100%{ background-position:200% 0; } }
+    .skeleton{ background:linear-gradient(90deg,var(--surface-2) 25%,var(--surface-sunken) 37%,var(--surface-2) 63%); background-size:200% 100%; animation:shimmer 1.4s infinite; }
+    .thumb-img{ opacity:0; transition:opacity .4s var(--ease-out), transform .4s var(--ease-out); transform:scale(1.03); }
+    .thumb-img.loaded{ opacity:1; transform:none; }
+    @keyframes pop{ 0%{ transform:scale(.6);} 60%{ transform:scale(1.18);} 100%{ transform:scale(1);} }
+    .pop{ animation:pop .3s var(--ease-out); }
+    @keyframes floatY{ 0%,100%{ transform:translateY(0) rotate(var(--rot,0)); } 50%{ transform:translateY(-7px) rotate(var(--rot,0)); } }
+    .floaty{ animation:floatY 5.5s ease-in-out infinite; }
+    .overlay{ animation:ovl .2s ease both; } @keyframes ovl{ from{opacity:0} to{opacity:1} }
+    .panel-in{ animation:panel .24s var(--ease-out) both; } @keyframes panel{ from{opacity:0; transform:translateY(10px) scale(.97);} to{opacity:1; transform:none;} }
+    @media (prefers-reduced-motion: reduce){ *{ animation:none!important; transition:none!important; } }
+    [hidden]{ display:none!important; }
   </style>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: {
+      sans:['Inter','-apple-system','Segoe UI','Arial','sans-serif'],
+      han:['"Noto Serif SC"','serif'], hans:['"Noto Sans SC"','sans-serif'], mono:['ui-monospace','Menlo','monospace'],
+    } } } };
+  </script>
 </head>
-<body class="bg-[var(--bg)] min-h-screen text-[var(--text)]">
+<body class="min-h-screen">
 
-  <header class="bg-[var(--surface)] border-b border-[var(--border)] sticky top-0 z-10">
-    <div class="max-w-[1800px] mx-auto px-6 h-12 flex items-center gap-3">
-
-      <a class="flex items-center gap-2 select-none">
-        <span class="grid place-items-center w-5 h-5 rounded-[5px] bg-[var(--accent)] text-white">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M3 8h10M8 3v10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
-          </svg>
+  <!-- ───────── NAV ───────── -->
+  <nav id="nav" class="sticky top-0 z-40 h-14 border-b border-[var(--border)] bg-[var(--surface)]/85 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto h-full px-5 sm:px-8 flex items-center gap-3">
+      <a href="#/" class="flex items-center gap-2 select-none mr-2">
+        <span class="grid place-items-center w-7 h-7 rounded-[8px] bg-[var(--primary)] text-[var(--text)] shadow-[0_4px_10px_-4px_rgba(242,160,7,.6)]">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </span>
-        <span class="text-[13px] font-semibold tracking-[-0.01em] text-[var(--text)]">Edu&nbsp;Go</span>
-        <span class="text-[11px] text-[var(--text-subtle)] font-normal">Studio</span>
+        <span class="font-bold text-[17px] tracking-[-0.02em]">Edu Go</span>
       </a>
-
-      <div class="hidden sm:flex items-center gap-1 text-[11px] text-[var(--text-subtle)] border-l border-[var(--border)] pl-3 tabular-nums">
-        <span id="done-count" class="font-medium text-[var(--text)]">0</span>
-        <span class="text-[var(--text-subtle)]">/</span>
-        <span id="total-count">0</span>
-        <span>бэлэн</span>
-      </div>
-
-      <span id="saved-flash" class="saved-flash">хадгалагдсан</span>
+      <div class="hidden md:flex items-center gap-1 ml-2" id="nav-links"></div>
       <div class="flex-1"></div>
-
-      <button id="reset-draft" class="text-[12px] text-[var(--text-subtle)] hover:text-[var(--danger)] px-2 h-7 rounded-md hover:bg-[var(--surface-2)] transition-colors" title="Энэ ханзыг seed-руу буцаах + upload устгах">Reset draft</button>
-
-      <label class="flex items-center gap-2 text-[12px] text-[var(--text-muted)] select-none">
-        <input type="checkbox" id="noai" class="accent-[var(--accent)] w-3.5 h-3.5" checked>
-        AI зураггүй
-      </label>
-
-      <select id="format" class="h-7 rounded-md border border-[var(--border-2)] bg-[var(--surface)] px-2 text-[12px] text-[var(--text)] hover:border-[var(--text-subtle)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)]">
-        <option value="png">PNG</option>
-        <option value="svg">SVG</option>
-        <option value="webp">WebP</option>
-        <option value="jpeg">JPEG</option>
-      </select>
-
-      <button id="prev-btn" class="grid place-items-center w-7 h-7 rounded-md text-[var(--text-muted)] hover:bg-[var(--surface-2)] transition-colors" title="Өмнөх (←)">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10 4l-4 4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <button id="next-btn" class="grid place-items-center w-7 h-7 rounded-md text-[var(--text-muted)] hover:bg-[var(--surface-2)] transition-colors" title="Дараах (→)">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-
-      <span class="w-px h-5 bg-[var(--border)] mx-0.5"></span>
-
-      <button id="generate" class="h-7 bg-[var(--ink)] hover:bg-[var(--ink-hover)] text-white px-3 rounded-md text-[12px] font-medium inline-flex items-center gap-1.5 disabled:opacity-50 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)]">
-        <span>Generate</span>
-        <svg id="gen-spinner" class="spin hidden" width="13" height="13" viewBox="0 0 24 24" fill="none">
-          <circle cx="12" cy="12" r="10" stroke="white" stroke-width="3" stroke-dasharray="40 60"/>
-        </svg>
+      <div id="nav-auth" class="flex items-center gap-2"></div>
+      <button id="nav-burger" class="md:hidden grid place-items-center w-9 h-9 rounded-lg hover:bg-[var(--surface-2)]" aria-label="Цэс">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
       </button>
     </div>
-  </header>
+    <div id="mobile-menu" hidden class="md:hidden border-t border-[var(--border)] bg-[var(--surface)] px-5 py-3 space-y-1"></div>
+  </nav>
 
-  <main class="max-w-[1800px] mx-auto px-4 py-4 grid gap-3" style="grid-template-columns: 230px 460px 1fr;">
+  <main id="app"></main>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="fixed bottom-5 inset-x-0 z-[60] flex flex-col items-center gap-2 pointer-events-none px-4"></div>
 
-    <!-- ───────── SIDEBAR ───────── -->
-    <aside class="bg-[var(--surface)] rounded-lg border border-[var(--border)] overflow-hidden flex flex-col" style="height: calc(100vh - 72px); position: sticky; top: 56px;">
-      <div class="px-2 py-2 border-b border-[var(--border)] bg-[var(--surface)] space-y-1.5">
-        <div class="relative">
-          <svg class="absolute left-2 top-1/2 -translate-y-1/2 text-[var(--text-subtle)]" width="14" height="14" viewBox="0 0 16 16" fill="none">
-            <circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="m11 11 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-          <input id="draft-search" type="search" placeholder="ханз · утга · пиньин"
-            class="w-full h-7 text-[12px] border border-[var(--border-2)] rounded-md pl-7 pr-2 bg-[var(--surface)] placeholder:text-[var(--text-subtle)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)] focus:border-[var(--accent)]" />
-        </div>
-        <div class="text-[11px] text-[var(--text-subtle)] px-1 flex items-center gap-1 tabular-nums">
-          <span><span id="sidebar-count">0</span> ханз · <span id="sidebar-done">0</span> бэлэн</span>
-          <span class="flex-1"></span>
-          <button id="sidebar-toggle-all" class="text-[var(--accent)] hover:text-[var(--accent-hover)] font-medium">бүгдийг хураах</button>
-        </div>
-      </div>
-      <div id="drafts-list" class="overflow-y-auto flex-1"></div>
-    </aside>
+<script>
+// ═══════════════════════════ STATE ═══════════════════════════
+const S = { drafts: [], byChar: {}, packs: { levels: [], categories: [] }, user: null, progress: {}, googleAuth: false, loaded: false };
+const enc = encodeURIComponent;
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $ = (s, r=document) => r.querySelector(s);
+const cardImg = (ch) => `/api/cards/${enc(ch)}/image`;
 
-    <!-- ───────── FORM ───────── -->
-    <section class="space-y-3">
+const LEVELS = [
+  { id:1, slug:'anhan', name:'Анхан шат', tag:'HSK 1', color:'var(--t1)', weak:'var(--t1-weak)' },
+  { id:2, slug:'dund',  name:'Дунд шат',  tag:'HSK 2', color:'var(--t2)', weak:'var(--t2-weak)' },
+];
 
-      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
-        <div class="flex items-baseline gap-3">
-          <span id="cur-char" class="han text-[40px] leading-none font-semibold text-[var(--text)]"></span>
-          <div class="text-[12px] text-[var(--text-muted)]">
-            <div><b id="cur-pinyin" class="font-medium text-[var(--text)]"></b> · <span id="cur-meaning"></span></div>
-            <div class="text-[11px] text-[var(--text-subtle)] tabular-nums">#<span id="cur-idx">-</span> / <span id="cur-total">-</span></div>
-          </div>
-        </div>
-      </div>
+// ═══════════════════════════ API ═══════════════════════════
+const api = {
+  drafts: () => fetch('/api/drafts').then(r=>r.json()),
+  packs:  () => fetch('/packs.json').then(r=>r.json()),
+  me:     () => fetch('/api/auth/me').then(r=>r.json()).catch(()=>({user:null})),
+  config: () => fetch('/api/auth/config').then(r=>r.json()).catch(()=>({google:false})),
+  serverProgress: () => fetch('/api/me/progress').then(r=>r.ok?r.json():{progress:{}}).then(d=>d.progress||{}),
+  draft:  (c) => fetch(`/api/drafts/${enc(c)}`).then(r=>r.json()),
+  login:  (b) => fetch('/api/auth/login',  { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(b) }),
+  signup: (b) => fetch('/api/auth/signup', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(b) }),
+  logout: () => fetch('/api/auth/logout', { method:'POST' }),
+  setProg:(c,s) => fetch(`/api/me/progress/${enc(c)}`, { method:'PUT', headers:{'Content-Type':'application/json'}, body:JSON.stringify({status:s}) }),
+};
 
-      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
-        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Үндсэн</h2>
-        <div class="grid grid-cols-3 gap-3">
-          <label class="block">
-            <span class="text-[11px] font-medium text-[var(--text-soft)]">Иероглиф</span>
-            <input id="character" type="text" class="field han !text-[22px] text-center">
-          </label>
-          <label class="block">
-            <span class="text-[11px] font-medium text-[var(--text-soft)]">Пиньин</span>
-            <input id="pinyin" type="text" class="field">
-          </label>
-          <label class="block">
-            <span class="text-[11px] font-medium text-[var(--text-soft)]">Утга</span>
-            <input id="meaning" type="text" class="field">
-          </label>
-        </div>
-      </div>
+// ═══════════════════════════ PROGRESS ═══════════════════════════
+const LS_KEY = 'edugo_progress';
+function loadLocalProgress(){ try { return JSON.parse(localStorage.getItem(LS_KEY)||'{}'); } catch { return {}; } }
+function saveLocalProgress(){ try { localStorage.setItem(LS_KEY, JSON.stringify(S.progress)); } catch {} }
+const statusOf = (ch) => S.progress[ch] || null;       // null | 'studied' | 'known'
+const nextStatus = (s) => s===null ? 'studied' : s==='studied' ? 'known' : null;
 
-      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
-        <div class="flex items-center justify-between">
-          <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Бүтэц</h2>
-          <button id="add-part" class="text-[11px] font-medium h-7 px-2 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text-muted)] hover:bg-[var(--surface-2)] transition-colors">+ part</button>
-        </div>
-        <div id="parts" class="space-y-2"></div>
-        <div class="border-t border-[var(--border)] pt-3 grid grid-cols-2 gap-3">
-          <label class="block">
-            <span class="text-[11px] font-medium text-[var(--text-soft)]">Үр дүн ханз</span>
-            <input id="result-char" type="text" class="field han !text-lg text-center">
-          </label>
-          <label class="block">
-            <span class="text-[11px] font-medium text-[var(--text-soft)]">Үр дүн label</span>
-            <input id="result-label" type="text" class="field">
-          </label>
-        </div>
-      </div>
+async function cycleStatus(ch){
+  const cur = statusOf(ch);
+  const nxt = nextStatus(cur);
+  if (nxt) S.progress[ch] = nxt; else delete S.progress[ch];
+  if (S.user){ if (nxt) api.setProg(ch, nxt); else fetch(`/api/me/progress/${enc(ch)}`,{method:'DELETE'}); }
+  else { saveLocalProgress(); if (cur===null) nudgeGuest(); }
+  return statusOf(ch);
+}
+let nudged = false;
+function nudgeGuest(){ if (nudged) return; nudged = true; toast('Явцаа үүрд хадгалахын тулд нэвтэрнэ үү', 'nudge'); }
 
-      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
-        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Санааны түүх</h2>
-        <textarea id="story" rows="3" class="field leading-[1.5]"></textarea>
-      </div>
+function levelStats(levelId){
+  const all = S.drafts.filter(d=>d.level===levelId);
+  const known = all.filter(d=>statusOf(d.character)==='known').length;
+  const seen  = all.filter(d=>statusOf(d.character)).length;
+  return { total: all.length, known, seen };
+}
+function catStats(levelId, catSlug){
+  const all = S.drafts.filter(d=>d.level===levelId && d.category===catSlug);
+  return { total: all.length, known: all.filter(d=>statusOf(d.character)==='known').length };
+}
+const totalKnown = () => S.drafts.filter(d=>statusOf(d.character)==='known').length;
 
-      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
-        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Жишээ үг</h2>
-        <div class="grid grid-cols-3 gap-3">
-          <label class="block">
-            <span class="text-[11px] font-medium text-[var(--text-soft)]">Үг</span>
-            <input id="ex-word" type="text" class="field han !text-lg">
-          </label>
-          <label class="block">
-            <span class="text-[11px] font-medium text-[var(--text-soft)]">Пиньин</span>
-            <input id="ex-pinyin" type="text" class="field">
-          </label>
-          <label class="block">
-            <span class="text-[11px] font-medium text-[var(--text-soft)]">Орчуулга</span>
-            <input id="ex-trans" type="text" class="field">
-          </label>
-        </div>
-      </div>
+// ═══════════════════════════ ROUTER ═══════════════════════════
+function parseRoute(){
+  const h = location.hash.replace(/^#/, '') || '/';
+  const [path, qs] = h.split('?');
+  const q = Object.fromEntries(new URLSearchParams(qs||''));
+  return { path, q };
+}
+function go(hash){ location.hash = hash; }
+window.addEventListener('hashchange', render);
 
-      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
-        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Зураг</h2>
-        <p class="text-[11px] text-[var(--text-subtle)] leading-relaxed">3 slot тус бүрд: prompt-ыг copy → гадаа generate → upload. Prompt-ыг засаж бичсэн нь DB-д PATCH-аар хадгална.</p>
-        <div id="slot-main"      data-slot="main"      class="image-slot border border-[var(--border)] rounded-lg p-3 bg-[var(--surface)]"></div>
-        <div id="slot-evolution" data-slot="evolution" class="image-slot border border-[var(--border)] rounded-lg p-3 bg-[var(--surface)]"></div>
-        <div id="slot-icon"      data-slot="icon"      class="image-slot border border-[var(--border)] rounded-lg p-3 bg-[var(--surface)]"></div>
-      </div>
+// ═══════════════════════════ RENDER ═══════════════════════════
+function render(){
+  if (!S.loaded) return;
+  renderNav();
+  const { path, q } = parseRoute();
+  const app = $('#app');
+  let html, after;
+  if (path === '/' ) ({html, after} = viewHome());
+  else if (path === '/learn') ({html, after} = viewLearn(q));
+  else if (path === '/gallery') ({html, after} = viewGallery(q));
+  else ({html, after} = viewHome());
+  app.innerHTML = html;
+  window.scrollTo({ top:0, behavior: location.hash.includes('card=')?'auto':'instant' });
+  if (after) after();
+  // deep-linked card modal
+  if (q.card && S.byChar[q.card]) openCard(q.card);
+  observeThumbs();
+}
 
-      <details class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4">
-        <summary class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)] flex items-center gap-1.5">
-          <svg class="chev text-[var(--text-subtle)]" width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Raw API payload
-        </summary>
-        <pre id="json-view" class="mono text-[12px] leading-[1.5] mt-3 bg-[var(--surface-ink)] text-zinc-100 p-3 rounded-md overflow-auto max-h-96"></pre>
-      </details>
-
-      <details class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4">
-        <summary class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)] flex items-center gap-1.5">
-          <svg class="chev text-[var(--text-subtle)]" width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Render history
-        </summary>
-        <ul id="history-list" class="text-[12px] mt-3 space-y-1"></ul>
-      </details>
-    </section>
-
-    <!-- ───────── PREVIEW ───────── -->
-    <section class="space-y-4" style="position: sticky; top: 56px; align-self: start;">
-      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4">
-        <div class="flex items-center justify-between mb-3">
-          <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Preview</h2>
-          <div id="meta" class="text-[11px] text-[var(--text-subtle)] tabular-nums"></div>
-        </div>
-        <div id="preview-wrap" class="checker rounded-md overflow-hidden border border-[var(--border)] min-h-[500px] flex items-center justify-center">
-          <p id="placeholder" class="text-[var(--text-subtle)] text-[12px] text-center px-6 leading-relaxed">
-            Зүүнээс ханз сонгоод <b class="text-[var(--text-muted)] font-medium">Generate</b> дар.<br>
-            <span class="text-[11px]">Бүх state DB-д хадгалагдана.</span>
-          </p>
-          <img id="preview-img" class="hidden max-w-full" alt="preview">
-          <iframe id="preview-svg" class="hidden w-full h-[900px] bg-[var(--surface)]" frameborder="0"></iframe>
-        </div>
-        <div class="flex items-center gap-3 mt-3">
-          <a id="download" class="hidden h-8 bg-[var(--ink)] hover:bg-[var(--ink-hover)] text-white px-3 rounded-md text-[12px] font-medium inline-flex items-center gap-1.5 transition-colors" download>
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v7M5 7l3 3 3-3M3 13h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Download
-          </a>
-          <button id="next-after" class="hidden h-8 px-3 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] text-[12px] font-medium hover:bg-[var(--surface-2)] inline-flex items-center gap-1.5 transition-colors">
-            Дараагийн ханз
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div id="error" class="hidden text-[var(--danger)] text-[12px] bg-[var(--danger-weak)] border border-[var(--danger-border)] rounded-md px-3 py-2 flex-1"></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script>
-  // ───────────────── STATE ─────────────────
-  let drafts = [];           // summary list from /api/drafts
-  let currentChar = null;    // current draft character
-  let currentDraft = null;   // full DraftFull
-  let saveTimer = null;
-  const SLOT_LABEL = {
-    main:      'Гол зураг — forest scene',
-    evolution: 'Санааны түүх — evolution diagram',
-    icon:      'Утгын дүрс — icon',
+// ═══════════════════════════ NAV ═══════════════════════════
+function renderNav(){
+  const { path } = parseRoute();
+  const link = (href,label) => {
+    const active = (href==='#/learn' && path==='/learn') || (href==='#/gallery' && path==='/gallery');
+    return `<a href="${href}" class="px-3 h-9 inline-flex items-center text-sm rounded-lg ${active?'text-[var(--text)] font-semibold':'text-[var(--text-muted)] hover:text-[var(--text)]'}">${label}</a>`;
   };
-
-  // ───────────────── API CLIENT ─────────────────
-  const enc = encodeURIComponent;
-  const api = {
-    list:   () => fetch('/api/drafts').then(r => r.json()),
-    get:    (c) => fetch(`/api/drafts/${enc(c)}`).then(r => r.json()),
-    patch:  (c, body) => fetch(`/api/drafts/${enc(c)}`, {
-      method:'PATCH', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body),
-    }).then(r => r.json()),
-    reset:  (c) => fetch(`/api/drafts/${enc(c)}/reset`, { method:'POST' }).then(r => r.json()),
-    upload: (c, slot, file) => {
-      const fd = new FormData(); fd.append('file', file);
-      return fetch(`/api/drafts/${enc(c)}/images/${slot}`, { method:'PUT', body: fd }).then(r => r.json());
-    },
-    deleteImage: (c, slot) => fetch(`/api/drafts/${enc(c)}/images/${slot}`, { method:'DELETE' }).then(r => r.json()),
-    imageUrl:    (c, slot, bust='') => `/api/images/${enc(c)}/${slot}${bust ? `?t=${bust}` : ''}`,
-    render: (c, format, noai) => fetch(`/api/drafts/${enc(c)}/render?format=${format}${noai?'&noai=1':''}`, { method:'POST' }),
-    renders: (c) => fetch(`/api/drafts/${enc(c)}/renders`).then(r => r.json()),
-  };
-
-  function debouncedPatch(patch) {
-    if (!currentChar) return;
-    clearTimeout(saveTimer);
-    saveTimer = setTimeout(async () => {
-      const updated = await api.patch(currentChar, patch);
-      if (updated && updated.character) {
-        currentDraft = updated;
-        flashSaved();
-        updateJsonView();
-      }
-    }, 500);
+  $('#nav-links').innerHTML = link('#/learn','Сурах') + link('#/gallery','Картууд');
+  const authEl = $('#nav-auth');
+  if (S.user){
+    const initial = (S.user.name||S.user.email||'?').trim()[0].toUpperCase();
+    authEl.innerHTML = `
+      <div class="hidden sm:flex chip bg-[var(--primary-weak)] text-[var(--primary-ink)]">★ ${totalKnown()} мэдсэн</div>
+      <button id="acct-btn" class="grid place-items-center w-9 h-9 rounded-full bg-[var(--primary-weak)] text-[var(--primary-ink)] font-bold text-sm">${esc(initial)}</button>`;
+    $('#acct-btn').onclick = openAccountMenu;
+  } else {
+    authEl.innerHTML = `
+      <button class="btn btn-ghost btn-sm hidden sm:inline-flex" onclick="openAuth('login')">Нэвтрэх</button>
+      <button class="btn btn-primary btn-sm" onclick="openAuth('signup')">Эхлэх</button>`;
   }
+  // mobile menu
+  $('#mobile-menu').innerHTML = ['<a href="#/learn" class="block h-12 flex items-center text-[15px] font-medium">Сурах</a>',
+    '<a href="#/gallery" class="block h-12 flex items-center text-[15px] font-medium">Картууд</a>',
+    S.user ? '<button onclick="doLogout()" class="block h-12 flex items-center text-[15px] font-medium text-[var(--danger)]">Гарах</button>'
+           : '<button onclick="openAuth(\'login\')" class="btn btn-ghost w-full mt-2">Нэвтрэх</button><button onclick="openAuth(\'signup\')" class="btn btn-primary w-full mt-2">Үнэгүй эхлэх</button>'].join('');
+}
+$('#nav-burger').onclick = () => { const m=$('#mobile-menu'); m.hidden = !m.hidden; };
+document.addEventListener('click', e=>{ if(!e.target.closest('#nav')) $('#mobile-menu').hidden=true; });
 
-  function flashSaved() {
-    const el = document.getElementById('saved-flash');
-    el.classList.add('show');
-    setTimeout(() => el.classList.remove('show'), 800);
-  }
-
-  // ───────────────── SIDEBAR (Түвшин → Ангилал бүлэглэл) ─────────────────
-  let packsManifest = null;
-  const groupCollapsed = {};   // 'L1' эсвэл 'L1/baigal' → true бол хураасан
-
-  async function loadPacks() {
-    if (packsManifest) return packsManifest;
-    try { packsManifest = await fetch('/packs.json').then(r => r.json()); }
-    catch (_) { packsManifest = { levels: [], categories: [] }; }
-    return packsManifest;
-  }
-
-  function draftMatches(d, q) {
-    if (!q) return true;
-    return (d.character || '').includes(q)
-        || (d.meaning || '').toLowerCase().includes(q)
-        || (d.pinyin || '').toLowerCase().includes(q);
-  }
-
-  function draftLi(d) {
-    const imgBadge = d.hasImages.main ? '<span title="зураг" class="w-1.5 h-1.5 rounded-full bg-[var(--accent)] shrink-0"></span>' : '';
-    const right = d.isDone
-      ? '<span class="text-[var(--success)] shrink-0"><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5l3 3 6-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
-      : `<span class="text-[var(--text-subtle)] text-[11px] tabular-nums">${d.position + 1}</span>`;
-    return `<li data-char="${escapeAttr(d.character)}" class="draft-item flex items-center gap-2 pl-5 pr-3 h-9 cursor-pointer hover:bg-[var(--surface-2)] ${d.character === currentChar ? 'active' : ''}">
-      <span class="han text-[15px] w-6 text-center text-[var(--text)]">${escapeHtml(d.character)}</span>
-      <div class="flex-1 min-w-0">
-        <div class="text-[12px] font-medium truncate text-[var(--text)]">${escapeHtml(d.meaning)}</div>
-        <div class="text-[11px] text-[var(--text-subtle)] truncate">${escapeHtml(d.pinyin)}</div>
-      </div>${imgBadge}${right}</li>`;
-  }
-
-  async function refreshSidebar() {
-    drafts = await api.list();
-    const doneN = drafts.filter(d => d.isDone).length;
-    document.getElementById('total-count').textContent = drafts.length;
-    document.getElementById('cur-total').textContent = drafts.length;
-    document.getElementById('done-count').textContent = doneN;
-    document.getElementById('sidebar-count').textContent = drafts.length;
-    document.getElementById('sidebar-done').textContent = doneN;
-    await loadPacks();
-    renderSidebar();
-  }
-
-  function renderSidebar() {
-    const pm = packsManifest || { levels: [], categories: [] };
-    const q = (document.getElementById('draft-search')?.value || '').trim().toLowerCase();
-    const searching = q.length > 0;
-    const levelName = (id) => pm.levels.find(l => l.id === id)?.name || (id ? `Түвшин ${id}` : 'Ангилалгүй');
-    const catMeta = (slug) => pm.categories.find(c => c.slug === slug) || { name: slug || 'Бусад', icon: '•' };
-    const catOrder = pm.categories.map(c => c.slug);
-
-    // Идэвхтэй ханзны бүлгийг үргэлж задалж байрлуулна (scroll хийхэд харагдахаар).
-    if (currentChar) {
-      const cd = drafts.find(d => d.character === currentChar);
-      if (cd) { delete groupCollapsed['L' + (cd.level ?? 0)]; delete groupCollapsed['L' + (cd.level ?? 0) + '/' + (cd.category ?? 'other')]; }
-    }
-
-    const byLevel = {};
-    for (const d of drafts) {
-      const lv = d.level ?? 0, cat = d.category ?? 'other';
-      ((byLevel[lv] ??= {})[cat] ??= []).push(d);
-    }
-    const levels = Object.keys(byLevel).map(Number).sort((a, b) => a - b);
-
-    const chev = (open) => `<svg class="chev ${open ? 'open' : ''} text-[var(--text-subtle)] inline-block align-[-1px] mr-1.5" width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-    let html = '';
-    for (const lv of levels) {
-      const cats = byLevel[lv];
-      const catKeys = [...catOrder.filter(s => cats[s]), ...Object.keys(cats).filter(s => !catOrder.includes(s))];
-      const visCats = catKeys
-        .map(cat => ({ cat, items: cats[cat].filter(d => draftMatches(d, q)), total: cats[cat].length }))
-        .filter(c => !searching || c.items.length);
-      if (searching && !visCats.length) continue;
-      const allItems = catKeys.flatMap(c => cats[c]);
-      const lvKey = 'L' + lv, lvOpen = searching || !groupCollapsed[lvKey];
-      html += `<div class="border-b border-[var(--border)]">
-        <div data-grp="${lvKey}" class="grp-head flex items-center justify-between px-3 h-7 bg-[var(--surface-2)] cursor-pointer select-none text-[11px] font-medium text-[var(--text-muted)] uppercase tracking-[0.05em]">
-          <span class="inline-flex items-center">${chev(lvOpen)}${escapeHtml(levelName(lv))}</span>
-          <span class="text-[var(--text-subtle)] font-normal normal-case tabular-nums">${allItems.length} · ${allItems.filter(d => d.isDone).length} бэлэн</span>
-        </div>`;
-      if (lvOpen) {
-        for (const { cat, items, total } of visCats) {
-          const cm = catMeta(cat), cKey = lvKey + '/' + cat, cOpen = searching || !groupCollapsed[cKey];
-          html += `<div>
-            <div data-grp="${cKey}" class="grp-head flex items-center justify-between pl-5 pr-3 h-7 bg-[var(--surface)] cursor-pointer select-none text-[12px] font-medium text-[var(--text-soft)]">
-              <span class="inline-flex items-center">${chev(cOpen)}${escapeHtml(cm.name)}</span>
-              <span class="text-[var(--text-subtle)] font-normal tabular-nums">${searching ? items.length + '/' : ''}${total}</span>
-            </div>
-            ${cOpen ? `<ul class="divide-y divide-[var(--divider)]">${items.map(draftLi).join('')}</ul>` : ''}
-          </div>`;
-        }
-      }
-      html += `</div>`;
-    }
-    if (!html) html = '<div class="p-4 text-[13px] text-[var(--text-subtle)] text-center">Олдсонгүй</div>';
-
-    const box = document.getElementById('drafts-list');
-    box.innerHTML = html;
-    box.querySelectorAll('.grp-head').forEach(h => h.onclick = () => {
-      groupCollapsed[h.dataset.grp] = !groupCollapsed[h.dataset.grp];
-      renderSidebar();
-    });
-    box.querySelectorAll('.draft-item').forEach(li => li.onclick = () => loadDraft(li.dataset.char));
-  }
-
-  // Хайлт + бүгдийг хураах/задлах
-  document.getElementById('draft-search')?.addEventListener('input', () => renderSidebar());
-  document.getElementById('sidebar-toggle-all')?.addEventListener('click', (e) => {
-    const levels = [...new Set(drafts.map(d => 'L' + (d.level ?? 0)))];
-    const anyOpen = levels.some(k => !groupCollapsed[k]);
-    if (anyOpen) { levels.forEach(k => groupCollapsed[k] = true); e.target.textContent = 'бүгдийг задлах'; }
-    else { Object.keys(groupCollapsed).forEach(k => delete groupCollapsed[k]); e.target.textContent = 'бүгдийг хураах'; }
-    renderSidebar();
-  });
-
-  // ───────────────── LOAD DRAFT ─────────────────
-  async function loadDraft(character) {
-    const d = await api.get(character);
-    if (d.error) { alert(d.error); return; }
-    currentChar = character;
-    currentDraft = d;
-
-    const data = d.data;
-    document.getElementById('cur-char').textContent    = data.character;
-    document.getElementById('cur-pinyin').textContent  = data.pinyin;
-    document.getElementById('cur-meaning').textContent = data.meaning;
-    document.getElementById('cur-idx').textContent     = d.position + 1;
-
-    setVal('character',  data.character);
-    setVal('pinyin',     data.pinyin);
-    setVal('meaning',    data.meaning);
-    setVal('result-char', data.structure.result.char);
-    setVal('result-label', data.structure.result.label);
-    setVal('story',      data.story);
-    setVal('ex-word',    data.example.word);
-    setVal('ex-pinyin',  data.example.pinyin);
-    setVal('ex-trans',   data.example.translation);
-
-    renderParts(data.structure.parts);
-    ['main','evolution','icon'].forEach(renderSlot);
-    updateJsonView();
-    await refreshSidebar();
-    await refreshHistory();
-    await showSavedPreview();
-
-    const cur = document.querySelector(`.draft-item[data-char="${cssEscape(character)}"]`);
-    if (cur) cur.scrollIntoView({ block:'nearest', behavior:'smooth' });
-  }
-
-  // ───────────────── PARTS ─────────────────
-  function renderParts(parts) {
-    const c = document.getElementById('parts');
-    c.innerHTML = '';
-    parts.forEach((p, i) => {
-      const row = document.createElement('div');
-      row.className = 'flex items-center gap-2';
-      row.innerHTML = `
-        <input type="text" data-idx="${i}" data-key="char" value="${escapeAttr(p.char)}"
-          class="field han !w-14 !mt-0 !text-base text-center">
-        <input type="text" data-idx="${i}" data-key="label" value="${escapeAttr(p.label)}"
-          class="field !mt-0 flex-1" placeholder="label">
-        <button data-rm="${i}" class="grid place-items-center w-7 h-7 rounded-md text-[var(--text-subtle)] hover:text-[var(--danger)] hover:bg-[var(--danger-weak)] transition-colors shrink-0">×</button>
-      `;
-      c.appendChild(row);
-    });
-    c.querySelectorAll('input').forEach((el) => {
-      el.oninput = () => {
-        const idx = +el.dataset.idx;
-        currentDraft.data.structure.parts[idx][el.dataset.key] = el.value;
-        debouncedPatch({ structure: currentDraft.data.structure });
-        updateJsonView();
-      };
-    });
-    c.querySelectorAll('[data-rm]').forEach((b) => {
-      b.onclick = () => {
-        if (currentDraft.data.structure.parts.length <= 1) return;
-        currentDraft.data.structure.parts.splice(+b.dataset.rm, 1);
-        renderParts(currentDraft.data.structure.parts);
-        debouncedPatch({ structure: currentDraft.data.structure });
-        updateJsonView();
-      };
-    });
-  }
-  document.getElementById('add-part').onclick = () => {
-    if (!currentDraft) return;
-    currentDraft.data.structure.parts.push({ char:'木', label:'' });
-    renderParts(currentDraft.data.structure.parts);
-    debouncedPatch({ structure: currentDraft.data.structure });
-    updateJsonView();
-  };
-
-  // ───────────────── SLOTS (prompt + upload) ─────────────────
-  function renderSlot(slotKey) {
-    const root = document.querySelector(`[data-slot="${slotKey}"]`);
-    const prompt = currentDraft?.data?.prompts?.[slotKey] ?? '';
-    const has = currentDraft?.hasImages?.[slotKey];
-    const imgSrc = has ? api.imageUrl(currentChar, slotKey, currentDraft.updatedAt) : null;
-
-    root.innerHTML = `
-      <div class="flex items-center justify-between mb-2">
-        <span class="text-[12px] font-medium text-[var(--text)]">${SLOT_LABEL[slotKey]}</span>
-        ${has ? '<span class="inline-flex items-center gap-1 text-[11px] text-[var(--success)] bg-[var(--success-weak)] border border-[var(--success-border)] px-1.5 py-0.5 rounded">uploaded</span>' : ''}
+// ═══════════════════════════ COMPONENTS ═══════════════════════════
+function progressRing(pct, color, size=64){
+  const r = size/2 - 5, c = 2*Math.PI*r, off = c*(1-pct/100);
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" class="-rotate-90">
+    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--surface-sunken)" stroke-width="5"/>
+    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="5" stroke-linecap="round"
+      stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="${off.toFixed(1)}" style="transition:stroke-dashoffset .6s var(--ease-out)"/>
+  </svg>`;
+}
+function thumb(ch, cls=''){
+  return `<div class="relative w-full aspect-[4/3] bg-[var(--surface-2)] skeleton ${cls}">
+    <img data-src="${cardImg(ch)}" alt="${esc(ch)}" loading="lazy" decoding="async" class="thumb-img absolute inset-0 w-full h-full object-cover object-top">
+  </div>`;
+}
+function trackCard(lvl){
+  const st = levelStats(lvl.id), pct = st.total? Math.round(st.known/st.total*100):0;
+  const cats = S.packs.categories.filter(c=>S.drafts.some(d=>d.level===lvl.id&&d.category===c.slug));
+  const icons = cats.slice(0,8).map(c=>`<span class="w-8 h-8 grid place-items-center rounded-lg bg-[var(--surface-2)] text-base">${c.icon||'•'}</span>`).join('');
+  const more = cats.length>8 ? `<span class="w-8 h-8 grid place-items-center rounded-lg bg-[var(--surface-2)] text-xs font-semibold text-[var(--text-soft)]">+${cats.length-8}</span>`:'';
+  return `<a href="#/gallery?level=${lvl.id}" class="card lift block p-5 sm:p-6 border-2" style="border-color:${pct>0?'var(--primary)':'var(--border)'}">
+    <div class="flex items-start gap-4">
+      <div class="relative shrink-0 grid place-items-center">${progressRing(pct, lvl.color)}<span class="absolute mono text-sm font-bold">${pct}%</span></div>
+      <div class="min-w-0 flex-1">
+        <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full" style="background:${lvl.color}"></span><span class="eyebrow" style="color:${lvl.color}">${lvl.tag} · ${esc(lvl.name)}</span></div>
+        <div class="text-lg font-bold tracking-[-0.01em] mt-0.5">${esc(lvl.name)}</div>
+        <div class="mono text-sm text-[var(--text-soft)] mt-0.5">${st.known} / ${st.total} ханз мэдсэн</div>
       </div>
+    </div>
+    <div class="flex items-center gap-1.5 mt-4">${icons}${more}</div>
+    <div class="flex items-center justify-between mt-4 pt-4 border-t border-[var(--divider)]">
+      <span class="text-sm text-[var(--text-muted)]">${cats.length} ангилал</span>
+      <span class="text-sm font-semibold text-[var(--primary-strong)]">${pct>0?'Үргэлжлүүлэх':'Эхлэх'} →</span>
+    </div>
+  </a>`;
+}
 
-      <details class="mb-2" ${prompt && !has ? 'open' : ''}>
-        <summary class="text-[11px] font-medium text-[var(--text-soft)] hover:text-[var(--text)] select-none">Prompt (засаж + Copy)</summary>
-        <div class="mt-2 space-y-1">
-          <textarea data-prompt-slot="${slotKey}" rows="4"
-            class="mono w-full text-[12px] border border-[var(--border-2)] rounded-md p-2 bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)] focus:border-[var(--accent)]">${escapeHtml(prompt)}</textarea>
-          <div class="flex items-center gap-2">
-            <button data-copy-slot="${slotKey}" class="text-[11px] font-medium h-7 px-2.5 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-2)] transition-colors">Copy</button>
-            <span data-copy-flash="${slotKey}" class="text-[11px] text-[var(--success)] saved-flash">copied</span>
-          </div>
+// ═══════════════════════════ VIEW: HOME ═══════════════════════════
+function viewHome(){
+  const teaser = S.drafts.filter(d=>d.isDone).slice(0,6);
+  const teaserCells = (teaser.length?teaser:S.drafts.slice(0,6)).map(d=>
+    `<a href="#/gallery?card=${enc(d.character)}" class="card overflow-hidden lift block">${thumb(d.character)}</a>`).join('');
+  const values = [
+    ['🧩','Бүтцээр сур','木 + 木 = 林. Ханзыг хэсэг болгон задлаад л санана.'],
+    ['📖','Санааны түүх','Монгол тайлбар, дүрс — цээжлэхэд хялбар, мартахад хэцүү.'],
+    ['🌱','Явцаа хадга','Нэвтэрч "үзсэн / мэдсэн" тэмдэглээд цаашид үргэлжлүүл.'],
+  ].map(([i,t,d])=>`<div class="card p-6 lift">
+      <div class="w-12 h-12 grid place-items-center rounded-full bg-[var(--brand-weak)] text-xl">${i}</div>
+      <h3 class="text-lg font-semibold mt-4">${t}</h3><p class="text-[15px] text-[var(--text-muted)] leading-[1.6] mt-1.5">${d}</p></div>`).join('');
+  const steps = [['01','Зам сонго','HSK1 эсвэл HSK2 түвшнээ эхэл.'],['02','Картаар үз','Ангилал бүрийн ханзыг зураг, бүтэц, түүхээр.'],['03','Тэмдэглэ','"Мэдсэн" гэж тэмдэглээд цуглуулгаа өсгө.']]
+    .map(([n,t,d])=>`<div class="flex-1"><div class="text-3xl font-bold text-[var(--primary)] mono">${n}</div><div class="text-lg font-semibold mt-2">${t}</div><div class="text-[15px] text-[var(--text-muted)] mt-1">${d}</div></div>`).join('<div class="hidden md:block self-center text-[var(--border-strong)]">·····</div>');
+
+  const html = `
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(60% 50% at 72% 0%, rgba(91,87,209,.10), transparent 70%)"></div>
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-20 grid lg:grid-cols-[1.1fr_.9fr] gap-12 items-center relative">
+      <div class="fade-up">
+        <span class="chip bg-[var(--primary-weak)] text-[var(--primary-ink)]">✦ ${S.drafts.length} ханз · 2 түвшин</span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-[-0.025em] leading-[1.05] mt-5">Хятад ханзыг<br><span class="relative whitespace-nowrap">зургаар, түүхээр<span class="absolute left-0 -bottom-1 h-3 w-full -z-10" style="background:var(--primary-weak)"></span></span> сур.</h1>
+        <p class="text-[16px] sm:text-lg text-[var(--text-muted)] leading-[1.6] mt-5 max-w-md">木 + 木 = 林. Бүтцийг нь хараад л санана. Duolingo шиг дулаан, аялал мэт зам.</p>
+        <div class="flex flex-wrap gap-3 mt-7">
+          <button class="btn btn-primary" onclick="${S.user?`go('#/learn')`:`openAuth('signup')`}">Үнэгүй эхлэх →</button>
+          <a href="#/gallery" class="btn btn-ghost">Картууд үзэх</a>
         </div>
-      </details>
+        <p class="text-[13px] text-[var(--text-soft)] mt-4">Бүртгэлгүй ч үзэж болно · Хадгалахын тулд нэвтэр.</p>
+      </div>
+      <div class="relative h-[300px] sm:h-[380px] hidden sm:block">
+        <div class="absolute right-6 top-8 w-[78%] card overflow-hidden shadow-xl rotate-[4deg]" style="--rot:4deg">${thumb(S.drafts[1]?.character||'你')}</div>
+        <div class="absolute left-0 top-0 w-[78%] card overflow-hidden shadow-2xl floaty -rotate-[3deg]" style="--rot:-3deg">${thumb(S.drafts[0]?.character||'林')}</div>
+        <div class="absolute right-2 bottom-2 chip bg-[var(--primary-weak)] text-[var(--primary-ink)] shadow-lg text-sm"><span class="han">林</span> = ой</div>
+      </div>
+    </div>
+  </section>
 
+  <!-- TRACKS -->
+  <section class="bg-[var(--bg-tint)] border-y border-[var(--border)]">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-16">
+      <span class="eyebrow">Чиний зам</span>
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-[-0.02em] mt-1">Түвшингээ сонгоод эхэл</h2>
+      <div class="grid sm:grid-cols-2 gap-5 mt-7">${LEVELS.map(trackCard).join('')}</div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-20">
+    <h2 class="text-2xl sm:text-3xl font-bold tracking-[-0.02em]">Яагаад зургаар сурдаг вэ?</h2>
+    <div class="grid sm:grid-cols-3 gap-6 mt-8">${values}</div>
+  </section>
+
+  <!-- HOW -->
+  <section class="bg-[var(--bg-tint)] border-y border-[var(--border)]">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-[-0.02em]">Яаж ажилладаг вэ</h2>
+      <div class="flex flex-col md:flex-row gap-8 md:gap-4 mt-8">${steps}</div>
+    </div>
+  </section>
+
+  <!-- GALLERY TEASER -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-20">
+    <div class="flex items-end justify-between"><h2 class="text-2xl sm:text-3xl font-bold tracking-[-0.02em]">Картын галерей</h2>
+      <a href="#/gallery" class="text-sm font-semibold text-[var(--primary-strong)]">Бүгдийг үзэх →</a></div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mt-7">${teaserCells}</div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 pb-16">
+    <div class="rounded-3xl p-10 md:p-14 text-center text-white relative overflow-hidden" style="background:linear-gradient(135deg,#6C68E0,#5B57D1 55%,#4A46BE)">
+      <h2 class="text-2xl sm:text-4xl font-bold tracking-[-0.02em]">Өнөөдөр эхний 5 ханзаа сур.</h2>
+      <p class="text-white/80 mt-3 max-w-lg mx-auto">Үнэгүй, бүртгэлгүй эхэлж болно. Дуртай бол явцаа хадгал.</p>
+      <button class="btn bg-white text-[var(--brand)] h-12 px-7 mt-7 hover:bg-white/90" onclick="${S.user?`go('#/learn')`:`openAuth('signup')`}">Эхлэх</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-[var(--border)] bg-[var(--bg-tint)]">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-10 grid sm:grid-cols-3 gap-8 text-sm">
+      <div><div class="flex items-center gap-2 font-bold text-[17px]"><span class="grid place-items-center w-6 h-6 rounded-md bg-[var(--primary)] text-[var(--text)]"><svg width="13" height="13" viewBox="0 0 16 16"><path d="M3 8h10M8 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Edu Go</div>
+        <p class="text-[var(--text-soft)] mt-2 leading-relaxed">Хятад ханзыг бүтэц, зураг, түүхээр.</p></div>
+      <div><div class="font-semibold mb-2">Холбоос</div><div class="space-y-1.5 text-[var(--text-muted)]"><a href="#/learn" class="block hover:text-[var(--text)]">Сурах</a><a href="#/gallery" class="block hover:text-[var(--text)]">Картууд</a></div></div>
+      <div><div class="font-semibold mb-2">Эх сурвалж</div><p class="text-[var(--text-soft)] leading-relaxed">Twemoji (CC-BY 4.0) · CC-CEDICT толь</p></div>
+    </div>
+    <div class="border-t border-[var(--border)] py-4 text-center text-[13px] text-[var(--text-subtle)]">© 2026 Edu Go</div>
+  </footer>`;
+  return { html };
+}
+
+// ═══════════════════════════ VIEW: LEARN ═══════════════════════════
+function viewLearn(q){
+  const html = `
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 py-10 sm:py-12">
+    ${S.user ? `<div class="card p-4 sm:p-5 flex items-center gap-4 mb-7" style="background:var(--surface-2)">
+        <div class="chip bg-[var(--primary-weak)] text-[var(--primary-ink)] text-sm">★ ${totalKnown()} ханз мэдсэн</div>
+        <div class="text-sm text-[var(--text-muted)]">Тавтай морил${S.user.name?', '+esc(S.user.name):''}! Үргэлжлүүлээрэй.</div></div>`
+      : `<div class="card p-4 sm:p-5 flex flex-wrap items-center gap-3 mb-7" style="background:var(--primary-soft);border-color:var(--primary-weak)">
+        <div class="text-sm text-[var(--text-muted)] flex-1">Нэвтэрч явцаа хадгалбал хаанаас үргэлжлүүлснээ санана.</div>
+        <button class="btn btn-primary btn-sm" onclick="openAuth('signup')">Нэвтрэх →</button></div>`}
+    <span class="eyebrow">Сурах</span>
+    <h1 class="text-2xl sm:text-3xl font-bold tracking-[-0.02em] mt-1 mb-6">Түвшингээ сонго</h1>
+    <div class="grid sm:grid-cols-2 gap-5">${LEVELS.map(trackCard).join('')}
+      <div class="card p-5 sm:p-6 border-2 border-dashed opacity-60 grid place-items-center text-center">
+        <div><div class="text-2xl">🔒</div><div class="font-semibold mt-2">Гүнзгий шат · HSK 3</div><div class="text-sm text-[var(--text-soft)] mt-1">Удахгүй</div></div></div>
+    </div>
+  </div>`;
+  return { html };
+}
+
+// ═══════════════════════════ VIEW: GALLERY ═══════════════════════════
+function viewGallery(q){
+  const level = Number(q.level)||1;
+  const lvl = LEVELS.find(l=>l.id===level)||LEVELS[0];
+  const cat = q.cat||'';
+  const status = q.status||'all';
+  const query = (q.q||'').toLowerCase();
+  // categories in this level
+  const cats = S.packs.categories.filter(c=>S.drafts.some(d=>d.level===level&&d.category===c.slug));
+  let items = S.drafts.filter(d=>d.level===level);
+  if (cat) items = items.filter(d=>d.category===cat);
+  if (query) items = items.filter(d=>d.character.includes(query)||(d.meaning||'').toLowerCase().includes(query)||(d.pinyin||'').toLowerCase().includes(query));
+  if (status==='unseen') items = items.filter(d=>!statusOf(d.character));
+  if (status==='studied') items = items.filter(d=>statusOf(d.character)==='studied');
+  if (status==='known') items = items.filter(d=>statusOf(d.character)==='known');
+
+  const setQ = (patch) => { const n={level, ...(cat?{cat}:{}), ...(status!=='all'?{status}:{}), ...(query?{q:query}:{}), ...patch}; Object.keys(n).forEach(k=>(n[k]===''||n[k]==null)&&delete n[k]); return '#/gallery?'+new URLSearchParams(n); };
+  const lvlSeg = LEVELS.map(l=>`<a href="${'#/gallery?level='+l.id}" class="px-4 h-9 inline-flex items-center rounded-full text-sm font-medium ${l.id===level?'bg-[var(--surface)] shadow-sm text-[var(--text)]':'text-[var(--text-soft)]'}">${l.tag}</a>`).join('');
+  const catRail = [`<a href="${setQ({cat:''})}" class="chip whitespace-nowrap ${!cat?'bg-[var(--brand-weak)] text-[var(--brand-ink)]':'bg-[var(--surface-2)] text-[var(--text-muted)]'}">Бүгд</a>`]
+    .concat(cats.map(c=>`<a href="${setQ({cat:c.slug})}" class="chip whitespace-nowrap ${cat===c.slug?'bg-[var(--brand-weak)] text-[var(--brand-ink)]':'bg-[var(--surface-2)] text-[var(--text-muted)]'}">${c.icon||''} ${esc(c.name)}</a>`)).join('');
+  const statusChips = [['all','Бүгд'],['unseen','Үзээгүй'],['studied','Үзсэн'],['known','Мэдсэн']]
+    .map(([k,l])=>`<a href="${setQ({status:k})}" class="chip ${status===k?'bg-[var(--primary-weak)] text-[var(--primary-strong)]':'bg-[var(--surface-2)] text-[var(--text-muted)]'}">${l}</a>`).join('');
+
+  const grid = items.length ? items.map(d=>{
+    const st = statusOf(d.character);
+    const ring = st==='known'?'bg-[var(--success)] text-white border-[var(--success)]':st==='studied'?'border-[var(--primary)] text-[var(--primary-strong)]':'border-[var(--border-strong)] text-transparent';
+    return `<div class="card overflow-hidden lift ${st==='known'?'opacity-80':''}" data-card="${esc(d.character)}">
+      <button class="block w-full" onclick="openCard('${esc(d.character)}')">${thumb(d.character)}</button>
+      <div class="flex items-center justify-between p-3 border-t border-[var(--divider)]">
+        <div class="min-w-0"><span class="han text-lg">${esc(d.character)}</span> <span class="text-[13px] font-medium text-[var(--brand)]">${esc(d.pinyin)}</span>
+          <div class="text-[12px] text-[var(--text-soft)] truncate">${esc(d.meaning)}</div></div>
+        <button class="shrink-0 w-7 h-7 rounded-full border-2 grid place-items-center ${ring}" title="Төлөв" onclick="event.stopPropagation();toggleStatus('${esc(d.character)}',this)">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5l3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div></div>`;
+  }).join('') : `<div class="col-span-full card p-12 text-center text-[var(--text-soft)]">Энэ шүүлтэд ханз алга. <a href="${setQ({status:'all',cat:'',q:''})}" class="text-[var(--brand)] font-medium">Цэвэрлэх</a></div>`;
+
+  const html = `
+  <div class="sticky top-14 z-20 bg-[var(--bg)]/90 backdrop-blur border-b border-[var(--border)]">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-3 space-y-2.5">
       <div class="flex items-center gap-3 flex-wrap">
-        <label class="inline-flex items-center gap-1.5 cursor-pointer text-[12px] font-medium h-7 px-2.5 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-2)] transition-colors">
-          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 11V3M5 6l3-3 3 3M3 12h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Upload
-          <input type="file" accept="image/*" data-upload-slot="${slotKey}" class="hidden">
-        </label>
-        <button data-aigen-slot="${slotKey}" class="text-[12px] font-medium h-7 px-2.5 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-2)] inline-flex items-center gap-1.5 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
-          <span data-aigen-label="${slotKey}" class="inline-flex items-center gap-1.5">
-            <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 2.5l.9 2.6 2.6.9-2.6.9L8 9.5l-.9-2.6-2.6-.9 2.6-.9zM12.5 9.5l.45 1.3 1.3.45-1.3.45-.45 1.3-.45-1.3-1.3-.45 1.3-.45z" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linejoin="round"/></svg>
-            AI generate
-          </span>
-          <svg data-aigen-spin="${slotKey}" class="spin hidden" width="14" height="14" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="40 60"/>
-          </svg>
-        </button>
-        ${imgSrc ? `
-          <img src="${imgSrc}" class="w-12 h-12 object-cover rounded-md border border-[var(--border)]" data-thumb-slot="${slotKey}">
-          <button data-delete-slot="${slotKey}" class="text-[11px] text-[var(--text-subtle)] hover:text-[var(--danger)] hover:bg-[var(--danger-weak)] px-2 py-1 rounded-md transition-colors">устгах</button>
-        ` : '<span class="text-[11px] text-[var(--text-subtle)]">зураг алга</span>'}
+        <div class="inline-flex bg-[var(--surface-sunken)] p-1 rounded-full">${lvlSeg}</div>
+        <div class="flex-1 min-w-[140px]"><input id="gal-search" class="field !h-9" placeholder="Ханз · пиньин · утга хайх" value="${esc(query)}"></div>
+        <div class="hidden sm:flex items-center gap-1.5">${statusChips}</div>
+        <span class="mono text-sm text-[var(--text-soft)]">${items.length} карт</span>
       </div>
-    `;
+      <div class="flex items-center gap-2 overflow-x-auto pb-1 -mb-1">${catRail}</div>
+      <div class="flex sm:hidden items-center gap-1.5 overflow-x-auto">${statusChips}</div>
+    </div>
+  </div>
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-7">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">${grid}</div>
+  </div>`;
 
-    // Prompt textarea — debounced PATCH
-    const ta = root.querySelector('[data-prompt-slot]');
-    ta.oninput = (e) => {
-      currentDraft.data.prompts ??= {};
-      currentDraft.data.prompts[slotKey] = e.target.value;
-      debouncedPatch({ prompts: currentDraft.data.prompts });
-      updateJsonView();
-    };
-
-    // Copy button
-    root.querySelector('[data-copy-slot]').onclick = async () => {
-      const text = currentDraft?.data?.prompts?.[slotKey] ?? '';
-      try {
-        await navigator.clipboard.writeText(text);
-        const flash = root.querySelector('[data-copy-flash]');
-        flash.classList.add('show');
-        setTimeout(() => flash.classList.remove('show'), 1200);
-      } catch (e) {
-        alert('Clipboard error: ' + e.message);
-      }
-    };
-
-    // Upload
-    root.querySelector('[data-upload-slot]').onchange = async (e) => {
-      const f = e.target.files?.[0];
-      if (!f) return;
-      const res = await api.upload(currentChar, slotKey, f);
-      if (res.error) { alert(res.error); return; }
-      currentDraft = await api.get(currentChar);
-      renderSlot(slotKey);
-      await refreshSidebar();
-    };
-
-    // Delete
-    const del = root.querySelector('[data-delete-slot]');
-    if (del) {
-      del.onclick = async () => {
-        if (!confirm('Энэ зургийг устгах уу?')) return;
-        await api.deleteImage(currentChar, slotKey);
-        currentDraft = await api.get(currentChar);
-        renderSlot(slotKey);
-        await refreshSidebar();
-      };
-    }
-
-    // AI generate via OpenAI (uses prompt stored on draft)
-    const ai = root.querySelector(`[data-aigen-slot="${slotKey}"]`);
-    if (ai) {
-      ai.onclick = async () => {
-        const label = root.querySelector(`[data-aigen-label="${slotKey}"]`);
-        const spin  = root.querySelector(`[data-aigen-spin="${slotKey}"]`);
-        ai.disabled = true; spin.classList.remove('hidden'); label.textContent = 'үүсгэж байна (~15-30s)';
-        try {
-          const res = await fetch(`/api/drafts/${enc(currentChar)}/generate-image/${slotKey}`, { method: 'POST' });
-          const j = await res.json();
-          if (!res.ok) throw new Error(j.error || `HTTP ${res.status}`);
-          currentDraft = await api.get(currentChar);
-          renderSlot(slotKey);
-          await refreshSidebar();
-        } catch (e) {
-          alert('AI generate алдаа: ' + e.message + '\n\nOPENAI_API_KEY серверт тохируулагдсан эсэхээ шалга.');
-        } finally {
-          if (root.querySelector(`[data-aigen-slot="${slotKey}"]`)) {
-            // slot was re-rendered; old refs invalid — skip
-          }
-        }
-      };
-    }
-  }
-
-  // ───────────────── TEXT FIELD WIRING ─────────────────
-  const FIELD_MAP = {
-    character:    (v) => ({ character: v }),
-    pinyin:       (v) => ({ pinyin: v }),
-    meaning:      (v) => ({ meaning: v }),
-    story:        (v) => ({ story: v }),
-    'result-char':  (v) => ({ structure: { ...currentDraft.data.structure, result: { ...currentDraft.data.structure.result, char: v } } }),
-    'result-label': (v) => ({ structure: { ...currentDraft.data.structure, result: { ...currentDraft.data.structure.result, label: v } } }),
-    'ex-word':    (v) => ({ example: { ...currentDraft.data.example, word: v } }),
-    'ex-pinyin':  (v) => ({ example: { ...currentDraft.data.example, pinyin: v } }),
-    'ex-trans':   (v) => ({ example: { ...currentDraft.data.example, translation: v } }),
+  const after = () => {
+    const s = $('#gal-search');
+    if (s){ let t; s.oninput = e=>{ clearTimeout(t); t=setTimeout(()=>{ go(setQ({q:e.target.value})); setTimeout(()=>{ const el=$('#gal-search'); if(el){el.focus(); el.setSelectionRange(el.value.length,el.value.length);} },0); }, 280); }; }
   };
+  return { html, after };
+}
 
-  Object.entries(FIELD_MAP).forEach(([id, builder]) => {
-    document.getElementById(id).oninput = () => {
-      if (!currentDraft) return;
-      const v = val(id);
-      // Update local copy for UI consistency
-      const patch = builder(v);
-      Object.assign(currentDraft.data, deepMerge(currentDraft.data, patch));
-      debouncedPatch(patch);
-      updateJsonView();
-    };
-  });
+// status toggle from gallery (updates the button in place, no full re-render)
+async function toggleStatus(ch, btn){
+  const st = await cycleStatus(ch);
+  const ring = st==='known'?'bg-[var(--success)] text-white border-[var(--success)]':st==='studied'?'border-[var(--primary)] text-[var(--primary-strong)]':'border-[var(--border-strong)] text-transparent';
+  btn.className = `shrink-0 w-7 h-7 rounded-full border-2 grid place-items-center pop ${ring}`;
+  renderNav();
+}
 
-  function deepMerge(base, patch) {
-    if (base && typeof base === 'object' && patch && typeof patch === 'object' && !Array.isArray(patch)) {
-      const out = { ...base };
-      for (const k of Object.keys(patch)) out[k] = deepMerge(base[k], patch[k]);
-      return out;
-    }
-    return patch;
-  }
+// ═══════════════════════════ CARD DETAIL MODAL ═══════════════════════════
+let modalChar = null;
+async function openCard(ch){
+  modalChar = ch;
+  const d = S.byChar[ch];
+  const root = $('#modal-root');
+  root.innerHTML = `<div class="fixed inset-0 z-50 overlay" onclick="if(event.target===this)closeCard()" style="background:rgba(26,26,34,.55);backdrop-filter:blur(3px)">
+    <div class="absolute inset-0 overflow-auto p-3 sm:p-6 flex items-start sm:items-center justify-center">
+      <div class="panel-in card w-full max-w-[920px] max-h-[92vh] overflow-auto shadow-2xl" onclick="event.stopPropagation()">
+        <div class="grid lg:grid-cols-[1.35fr_1fr] gap-5 p-3 sm:p-5">
+          <div class="rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--surface-2)]"><img src="${cardImg(ch)}" class="w-full" alt="${esc(ch)}"></div>
+          <div id="card-meta" class="min-w-0"><div class="h-40 skeleton rounded-xl"></div></div>
+        </div>
+        <div class="sticky bottom-0 bg-[var(--surface)] border-t border-[var(--border)] p-3 sm:px-5 flex items-center gap-2">
+          <button id="md-known" class="btn btn-primary btn-sm flex-1 sm:flex-none" onclick="markKnownNav()"></button>
+          <a class="btn btn-ghost btn-sm" href="${cardImg(ch)}" download="${esc(ch)}.png">PNG татах</a>
+          <div class="flex-1"></div>
+          <button class="btn btn-ghost btn-sm !px-3" onclick="navCard(-1)" title="Өмнөх (←)">←</button>
+          <button class="btn btn-ghost btn-sm !px-3" onclick="navCard(1)" title="Дараах (→)">→</button>
+          <button class="btn btn-ghost btn-sm !px-3" onclick="closeCard()" title="Хаах (Esc)">✕</button>
+        </div>
+      </div>
+    </div></div>`;
+  document.body.style.overflow='hidden';
+  updateKnownBtn();
+  // load full data
+  try {
+    const full = await api.draft(ch);
+    if (modalChar!==ch) return;
+    $('#card-meta').innerHTML = cardMetaHtml(full.data, d);
+  } catch {}
+}
+function cardMetaHtml(data, sum){
+  const cat = S.packs.categories.find(c=>c.slug===data.category);
+  const parts = (data.structure?.parts||[]).map(p=>`<span class="han">${esc(p.char)}</span><span class="text-[12px] text-[var(--text-soft)]">(${esc(p.label)})</span>`).join(' <span class="text-[var(--text-subtle)]">+</span> ');
+  const res = data.structure?.result;
+  return `<div class="space-y-4 p-1">
+    <div class="flex items-start gap-3">
+      <span class="han text-6xl sm:text-7xl leading-none">${esc(data.character)}</span>
+      <div class="pt-1"><div class="text-lg font-medium text-[var(--brand)]">${esc(data.pinyin)}</div><div class="text-[var(--text-muted)]">${esc(data.meaning)}</div></div>
+    </div>
+    <div class="flex flex-wrap gap-1.5">
+      ${data.level?`<span class="chip bg-[var(--surface-2)] text-[var(--text-muted)]">HSK${data.level}</span>`:''}
+      ${cat?`<span class="chip bg-[var(--brand-weak)] text-[var(--brand-ink)]">${cat.icon||''} ${esc(cat.name)}</span>`:''}
+    </div>
+    ${parts?`<div><div class="eyebrow mb-1.5">Бүтэц</div><div class="card p-3 bg-[var(--surface-2)] text-[15px] flex items-center gap-2 flex-wrap">${parts} <span class="text-[var(--text-subtle)]">=</span> <span class="han text-lg">${esc(res?.char||'')}</span><span class="text-[12px] text-[var(--text-soft)]">(${esc(res?.label||'')})</span></div></div>`:''}
+    ${data.story?`<div><div class="eyebrow mb-1.5">Санааны түүх</div><div class="rounded-xl border-l-2 border-[var(--primary)] bg-[var(--primary-soft)] p-3.5 text-[15px] leading-[1.7] text-[var(--text-muted)]">${esc(data.story)}</div></div>`:''}
+    ${data.example?.word?`<div><div class="eyebrow mb-1.5">Жишээ үг</div><div class="card p-3 bg-[var(--brand-soft)] flex items-baseline gap-2 flex-wrap"><span class="han text-xl">${esc(data.example.word)}</span><span class="text-[13px] font-medium text-[var(--brand)]">${esc(data.example.pinyin)}</span><span class="text-[var(--text-muted)]">— ${esc(data.example.translation)}</span></div></div>`:''}
+  </div>`;
+}
+function updateKnownBtn(){ const b=$('#md-known'); if(!b)return; const known=statusOf(modalChar)==='known';
+  b.innerHTML = known?'✓ Мэдсэн':'Мэдсэн гэж тэмдэглэх'; b.className=`btn btn-sm flex-1 sm:flex-none ${known?'btn-brand':'btn-primary'}`; }
+async function markKnownNav(){ const cur=statusOf(modalChar); S.progress[modalChar]= cur==='known'?(delete S.progress[modalChar],undefined):'known';
+  if(S.user){ if(statusOf(modalChar)==='known')api.setProg(modalChar,'known'); else fetch(`/api/me/progress/${enc(modalChar)}`,{method:'DELETE'}); } else { saveLocalProgress(); }
+  updateKnownBtn(); renderNav(); }
+function navCard(dir){ const idx=S.drafts.findIndex(d=>d.character===modalChar); const nx=S.drafts[idx+dir]; if(nx) openCard(nx.character); }
+function closeCard(){ $('#modal-root').innerHTML=''; document.body.style.overflow=''; modalChar=null;
+  const r=parseRoute(); if(r.q.card){ const n={...r.q}; delete n.card; go('#/'+(r.path.replace(/^\//,''))+(Object.keys(n).length?'?'+new URLSearchParams(n):'')); } }
+document.addEventListener('keydown', e=>{ if(!modalChar)return; if(e.key==='Escape')closeCard(); else if(e.key==='ArrowLeft')navCard(-1); else if(e.key==='ArrowRight')navCard(1); else if(e.key.toLowerCase()==='m')markKnownNav(); });
 
-  // ───────────────── JSON VIEW ─────────────────
-  function updateJsonView() {
-    if (!currentDraft) return;
-    document.getElementById('json-view').textContent = JSON.stringify(currentDraft.data, null, 2);
-  }
+// ═══════════════════════════ AUTH MODAL ═══════════════════════════
+function openAuth(mode='login'){
+  const root = $('#modal-root');
+  const g = S.googleAuth ? `<a href="/api/auth/google" class="btn btn-ghost w-full !h-11"><svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.6 9.2c0-.6-.05-1.18-.16-1.74H9v3.3h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.9c1.7-1.57 2.67-3.88 2.67-6.54z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.9-2.26c-.8.54-1.84.86-3.06.86-2.35 0-4.34-1.59-5.05-3.72H.93v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.95 10.7a5.4 5.4 0 0 1 0-3.4V4.97H.93a9 9 0 0 0 0 8.06l3.02-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58A9 9 0 0 0 .93 4.97L3.95 7.3C4.66 5.17 6.65 3.58 9 3.58z"/></svg>Google-ээр үргэлжлүүлэх</a><div class="flex items-center gap-3 my-3"><div class="flex-1 h-px bg-[var(--border)]"></div><span class="text-xs text-[var(--text-subtle)]">эсвэл</span><div class="flex-1 h-px bg-[var(--border)]"></div></div>` : '';
+  root.innerHTML = `<div class="fixed inset-0 z-50 overlay grid place-items-center p-4" onclick="if(event.target===this)closeModal()" style="background:rgba(26,26,34,.5);backdrop-filter:blur(3px)">
+    <div class="panel-in card w-full max-w-md p-7 shadow-2xl" onclick="event.stopPropagation()">
+      <div class="flex items-center gap-2 mb-1"><span class="grid place-items-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--text)]"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M3 8h10M8 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span class="font-bold text-lg">Edu Go</span></div>
+      <h2 id="auth-title" class="text-2xl font-bold tracking-[-0.02em] mt-3">${mode==='signup'?'Бүртгүүлэх':'Тавтай морил'}</h2>
+      <p class="text-[var(--text-muted)] text-[15px] mt-1">Явцаа хадгалж, ханз цуглуул.</p>
+      <div class="mt-5">${g}</div>
+      <form id="auth-form" class="space-y-3">
+        <div id="name-row" ${mode==='signup'?'':'hidden'}><label class="text-sm font-medium text-[var(--text-muted)]">Нэр <span class="text-[var(--text-subtle)]">(заавал биш)</span></label><input name="name" class="field mt-1" placeholder="Таны нэр"></div>
+        <div><label class="text-sm font-medium text-[var(--text-muted)]">Имэйл</label><input name="email" type="email" required class="field mt-1" placeholder="name@example.com"></div>
+        <div><label class="text-sm font-medium text-[var(--text-muted)]">Нууц үг</label><input name="password" type="password" required minlength="6" class="field mt-1" placeholder="••••••••"></div>
+        <div id="auth-err" hidden class="text-[13px] text-[var(--danger)] bg-[var(--danger-weak)] border border-[var(--danger-border)] rounded-lg px-3 py-2"></div>
+        <button id="auth-submit" class="btn btn-primary w-full !h-11">${mode==='signup'?'Бүртгүүлэх':'Нэвтрэх'}</button>
+      </form>
+      <p class="text-sm text-[var(--text-muted)] text-center mt-4">
+        <span id="auth-switch-q">${mode==='signup'?'Бүртгэлтэй юу?':'Шинэ хэрэглэгч үү?'}</span>
+        <button class="text-[var(--brand)] font-semibold" onclick="openAuth('${mode==='signup'?'login':'signup'}')">${mode==='signup'?'Нэвтрэх':'Бүртгүүлэх'}</button>
+      </p>
+      <button class="absolute top-4 right-4 w-8 h-8 grid place-items-center rounded-lg text-[var(--text-soft)] hover:bg-[var(--surface-2)]" onclick="closeModal()">✕</button>
+    </div></div>`;
+  document.body.style.overflow='hidden';
+  $('#auth-form').onsubmit = (e)=>submitAuth(e, mode);
+}
+async function submitAuth(e, mode){
+  e.preventDefault();
+  const f = e.target, btn=$('#auth-submit'), err=$('#auth-err');
+  const body = { email:f.email.value.trim(), password:f.password.value, name:f.name?.value?.trim()||undefined };
+  btn.disabled=true; btn.textContent='...'; err.hidden=true;
+  try {
+    const res = await (mode==='signup'?api.signup(body):api.login(body));
+    const data = await res.json();
+    if (!res.ok){ err.textContent=data.error||'Алдаа гарлаа'; err.hidden=false; btn.disabled=false; btn.textContent=mode==='signup'?'Бүртгүүлэх':'Нэвтрэх'; return; }
+    S.user = data.user;
+    // merge local progress to server
+    const local = loadLocalProgress();
+    for (const [ch,st] of Object.entries(local)){ if(!S.progress[ch]){ S.progress[ch]=st; api.setProg(ch,st); } }
+    try{ localStorage.removeItem(LS_KEY); }catch{}
+    S.progress = { ...S.progress, ...(await api.serverProgress()) };
+    closeModal(); toast('Тавтай морил! Явц хадгалагдлаа', 'ok'); render();
+  } catch(ex){ err.textContent='Сүлжээний алдаа'; err.hidden=false; btn.disabled=false; }
+}
+function openAccountMenu(){
+  const root=$('#modal-root');
+  root.innerHTML = `<div class="fixed inset-0 z-50" onclick="closeModal()"><div class="absolute right-4 top-14 panel-in card w-60 p-1.5 shadow-xl" onclick="event.stopPropagation()">
+    <div class="px-3 py-2.5"><div class="font-semibold truncate">${esc(S.user.name||'Сурагч')}</div><div class="text-[13px] text-[var(--text-soft)] truncate">${esc(S.user.email)}</div></div>
+    <div class="px-3 py-1.5 text-[13px] text-[var(--text-muted)] border-y border-[var(--divider)]">★ ${totalKnown()} мэдсэн · ${S.drafts.filter(d=>statusOf(d.character)).length} үзсэн</div>
+    <a href="#/learn" onclick="closeModal()" class="block px-3 h-9 flex items-center text-sm rounded-lg hover:bg-[var(--surface-2)]">Сурах</a>
+    <a href="#/gallery" onclick="closeModal()" class="block px-3 h-9 flex items-center text-sm rounded-lg hover:bg-[var(--surface-2)]">Картууд</a>
+    <button onclick="doLogout()" class="w-full text-left px-3 h-9 flex items-center text-sm rounded-lg hover:bg-[var(--surface-2)] text-[var(--danger)]">Гарах</button>
+  </div></div>`;
+}
+async function doLogout(){ await api.logout(); S.user=null; S.progress=loadLocalProgress(); closeModal(); render(); toast('Гарлаа','ok'); }
+function closeModal(){ $('#modal-root').innerHTML=''; document.body.style.overflow=''; }
 
-  // ───────────────── HISTORY ─────────────────
-  async function refreshHistory() {
-    if (!currentChar) return;
-    const renders = await api.renders(currentChar);
-    const ul = document.getElementById('history-list');
-    if (!renders.length) { ul.innerHTML = '<li class="text-[var(--text-subtle)]">history алга</li>'; return; }
-    ul.innerHTML = renders.map(r => `
-      <li class="flex items-center gap-3">
-        <a href="/api/renders/${r.id}" target="_blank" class="text-[var(--accent)] hover:text-[var(--accent-hover)] font-medium tabular-nums">#${r.id}</a>
-        <span class="text-[var(--text-subtle)] uppercase">${r.format}</span>
-        <span class="text-[var(--text-subtle)] tabular-nums">${(r.size/1024).toFixed(1)} KB</span>
-        <span class="text-[var(--text-subtle)] text-[10px] tabular-nums">${new Date(r.renderedAt).toLocaleString()}</span>
-      </li>
-    `).join('');
-  }
+// ═══════════════════════════ TOAST ═══════════════════════════
+function toast(msg, kind='ok'){
+  const el=document.createElement('div');
+  const c = kind==='nudge'?'bg-[var(--brand)] text-white':'bg-[var(--text)] text-[var(--surface)]';
+  el.className=`pointer-events-auto ${c} px-4 py-2.5 rounded-xl shadow-lg text-sm font-medium fade-up`;
+  el.textContent=msg; $('#toast-root').appendChild(el);
+  setTimeout(()=>{ el.style.transition='opacity .3s'; el.style.opacity='0'; setTimeout(()=>el.remove(),300); }, 2800);
+}
 
-  // ───────────────── RESET ─────────────────
-  document.getElementById('reset-draft').onclick = async () => {
-    if (!currentChar) return;
-    if (!confirm(`"${currentChar}" ханзыг seed-руу буцаах уу? Текст засвар + uploaded зурагнууд устах болно.`)) return;
-    await api.reset(currentChar);
-    await loadDraft(currentChar);
-  };
+// ═══════════════════════════ LAZY THUMBS ═══════════════════════════
+let io;
+function observeThumbs(){
+  io?.disconnect();
+  io = new IntersectionObserver((ents)=>{ ents.forEach(en=>{ if(en.isIntersecting){ const img=en.target; img.src=img.dataset.src; img.onload=()=>{ img.classList.add('loaded'); img.parentElement.classList.remove('skeleton'); }; img.onerror=()=>img.parentElement.classList.remove('skeleton'); io.unobserve(img); } }); }, { rootMargin:'200px' });
+  document.querySelectorAll('img[data-src]:not([src])').forEach(img=>io.observe(img));
+}
 
-  // ───────────────── GENERATE ─────────────────
-  let lastUrl = null;
-  function clearPreview() {
-    if (lastUrl) { URL.revokeObjectURL(lastUrl); lastUrl = null; }
-    document.getElementById('preview-img').classList.add('hidden');
-    document.getElementById('preview-svg').classList.add('hidden');
-    document.getElementById('placeholder').classList.remove('hidden');
-    document.getElementById('download').classList.add('hidden');
-    document.getElementById('next-after').classList.add('hidden');
-    document.getElementById('error').classList.add('hidden');
-    document.getElementById('meta').textContent = '';
-  }
-
-  // Ханз сонгоход өмнө нь хадгалсан картыг АВТОМАТААР preview-д үзүүлнэ —
-  // Generate дарах шаардлагагүй. Дахин generate/OpenAI дуудахгүй.
-  async function showSavedPreview() {
-    const ch = currentChar;
-    if (!ch) return;
-    // 1) Хамгийн сүүлийн хадгалсан render байвал шууд үзүүлнэ (compute/cost-гүй).
-    let renders = [];
-    try { renders = await api.renders(ch); } catch (_) {}
-    if (ch !== currentChar) return;           // хооронд нь өөр ханз сонгосон бол таслана
-    if (renders && renders.length) {
-      // Хамгийн сүүлд хадгалсан render-ийг шууд үзүүлнэ (instant, cost-гүй).
-      // Засвар хийсний дараа шинэчлэхийг хүсвэл Generate дарна.
-      showRenderUrl(`/api/renders/${renders[0].id}`, renders[0].format, renders[0].size);
-      return;
-    }
-    // 2) Render түүх алга ч контент (done / хадгалсан зураг) байвал нэг удаа render
-    //    хийнэ — зураг кэшлэгдсэн тул OpenAI дуудахгүй, хурдан.
-    const d = currentDraft;
-    const hasContent = d && (d.isDone ||
-      (d.hasImages && (d.hasImages.main || d.hasImages.evolution || d.hasImages.icon)));
-    if (hasContent) { await generate(); return; }
-    // 3) Огт generate хийгээгүй бол placeholder (Generate дар).
-    clearPreview();
-  }
-
-  // Save-аас уншсан render-ийг preview-д үзүүлэх (blob биш, шууд URL).
-  function showRenderUrl(url, format, size) {
-    if (lastUrl) { URL.revokeObjectURL(lastUrl); lastUrl = null; }
-    document.getElementById('placeholder').classList.add('hidden');
-    document.getElementById('error').classList.add('hidden');
-    const img = document.getElementById('preview-img');
-    const iframe = document.getElementById('preview-svg');
-    if (format === 'svg') {
-      iframe.src = url; iframe.classList.remove('hidden'); img.classList.add('hidden');
-    } else {
-      img.src = url; img.classList.remove('hidden'); iframe.classList.add('hidden');
-    }
-    const dl = document.getElementById('download');
-    dl.href = url;
-    dl.download = `${currentChar}.${format === 'jpeg' ? 'jpg' : format}`;
-    dl.classList.remove('hidden');
-    document.getElementById('next-after').classList.remove('hidden');
-    document.getElementById('meta').textContent =
-      `${size ? (size / 1024).toFixed(1) + ' KB · ' : ''}хадгалсан · ${(format || 'png').toUpperCase()}`;
-  }
-
-  async function generate() {
-    if (!currentChar) return;
-    const btn = document.getElementById('generate');
-    const spinner = document.getElementById('gen-spinner');
-    const errBox = document.getElementById('error');
-    errBox.classList.add('hidden');
-    btn.disabled = true; spinner.classList.remove('hidden');
-
-    const format = document.getElementById('format').value;
-    const noai = document.getElementById('noai').checked;
-    const t0 = performance.now();
-
-    try {
-      const res = await api.render(currentChar, format, noai);
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}));
-        throw new Error(data.error || `HTTP ${res.status}`);
-      }
-      const blob = await res.blob();
-      if (lastUrl) URL.revokeObjectURL(lastUrl);
-      lastUrl = URL.createObjectURL(blob);
-
-      document.getElementById('placeholder').classList.add('hidden');
-      const img = document.getElementById('preview-img');
-      const iframe = document.getElementById('preview-svg');
-      if (format === 'svg') {
-        iframe.src = lastUrl; iframe.classList.remove('hidden'); img.classList.add('hidden');
-      } else {
-        img.src = lastUrl; img.classList.remove('hidden'); iframe.classList.add('hidden');
-      }
-      const dl = document.getElementById('download');
-      dl.href = lastUrl;
-      dl.download = `${currentChar}.${format === 'jpeg' ? 'jpg' : format}`;
-      dl.classList.remove('hidden');
-      document.getElementById('next-after').classList.remove('hidden');
-
-      document.getElementById('meta').textContent =
-        `${(blob.size / 1024).toFixed(1)} KB · ${Math.round(performance.now() - t0)} ms · ${format.toUpperCase()}`;
-
-      await refreshSidebar();
-      await refreshHistory();
-    } catch (e) {
-      errBox.textContent = e.message;
-      errBox.classList.remove('hidden');
-    } finally {
-      btn.disabled = false; spinner.classList.add('hidden');
-    }
-  }
-  document.getElementById('generate').onclick = generate;
-
-  // ───────────────── NAV ─────────────────
-  function nav(delta) {
-    if (!currentChar) return;
-    const idx = drafts.findIndex(d => d.character === currentChar);
-    const target = drafts[idx + delta];
-    if (target) loadDraft(target.character);
-  }
-  document.getElementById('prev-btn').onclick = () => nav(-1);
-  document.getElementById('next-btn').onclick = () => nav(1);
-  document.getElementById('next-after').onclick = () => nav(1);
-
-  document.addEventListener('keydown', (e) => {
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-    if (e.key === 'ArrowLeft')  nav(-1);
-    if (e.key === 'ArrowRight') nav(1);
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); generate(); }
-  });
-
-  // ───────────────── HELPERS ─────────────────
-  function val(id) { return document.getElementById(id).value.trim(); }
-  function setVal(id, v) { document.getElementById(id).value = v ?? ''; }
-  function escapeAttr(s) { return String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]); }
-  function escapeHtml(s) { return escapeAttr(s); }
-  function cssEscape(s) {
-    if (window.CSS && CSS.escape) return CSS.escape(s);
-    return String(s).replace(/[^a-zA-Z0-9_-]/g, ch => '\\' + ch);
-  }
-
-  // ───────────────── INIT ─────────────────
-  (async () => {
-    await refreshSidebar();
-    if (drafts.length) await loadDraft(drafts[0].character);
-  })();
-  </script>
+// ═══════════════════════════ INIT ═══════════════════════════
+async function init(){
+  const [drafts, packs, me, config] = await Promise.all([api.drafts(), api.packs(), api.me(), api.config()]);
+  S.drafts = drafts; S.byChar = Object.fromEntries(drafts.map(d=>[d.character,d]));
+  S.packs = packs; S.user = me.user; S.googleAuth = !!config.google;
+  S.progress = S.user ? await api.serverProgress() : loadLocalProgress();
+  S.loaded = true;
+  // google redirect feedback
+  const p = parseRoute();
+  if (p.q.auth==='ok' && S.user) toast('Тавтай морил!','ok');
+  if (p.q.auth==='google_failed') toast('Google нэвтрэлт амжилтгүй','nudge');
+  render();
+}
+init();
+</script>
 </body>
 </html>
