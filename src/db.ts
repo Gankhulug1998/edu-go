@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { CardData } from './types.js';
+import { putObject, getObject, deleteObject, imageKey, storageEnabled, isNotFoundError } from './storage.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -31,7 +32,7 @@ export async function initDb(): Promise<void> {
       character   TEXT    NOT NULL REFERENCES drafts(character) ON DELETE CASCADE,
       slot        TEXT    NOT NULL CHECK(slot IN ('main','evolution','icon')),
       mime        TEXT    NOT NULL,
-      data        BYTEA   NOT NULL,
+      object_key  TEXT    NOT NULL,
       size        INTEGER NOT NULL,
       uploaded_at BIGINT  NOT NULL,
       PRIMARY KEY(character, slot)
@@ -46,6 +47,19 @@ export async function initDb(): Promise<void> {
       rendered_at BIGINT  NOT NULL
     );
     CREATE INDEX IF NOT EXISTS idx_renders_char ON renders(character, rendered_at DESC);
+  `);
+
+  // ── Idempotent migration for DBs created before the MinIO switch ──
+  // Add object_key if missing, and relax the old `data` NOT NULL so new
+  // object_key-only rows insert even before the bytes are backfilled to MinIO.
+  await pool.query(`ALTER TABLE images ADD COLUMN IF NOT EXISTS object_key TEXT;`);
+  await pool.query(`
+    DO $$ BEGIN
+      IF EXISTS (SELECT 1 FROM information_schema.columns
+                 WHERE table_name = 'images' AND column_name = 'data') THEN
+        ALTER TABLE images ALTER COLUMN data DROP NOT NULL;
+      END IF;
+    END $$;
   `);
 }
 
@@ -156,7 +170,9 @@ export async function resetDraft(character: string): Promise<DraftFull | null> {
     `UPDATE drafts SET data = $1, is_done = FALSE, updated_at = $2 WHERE character = $3`,
     [JSON.stringify(original), nowMs(), character]
   );
+  const { rows } = await pool.query(`SELECT object_key FROM images WHERE character = $1`, [character]);
   await pool.query(`DELETE FROM images WHERE character = $1`, [character]);
+  for (const r of rows) await tryDeleteObject(r.object_key); // MinIO объектуудыг цэвэрлэнэ
   return getDraft(character);
 }
 
@@ -182,38 +198,171 @@ export async function setImage(
   mime: string,
   data: Buffer
 ): Promise<void> {
+  const key = imageKey(character, slot);
+  await putObject(key, data, mime); // байтуудыг MinIO-д хадгална
   await pool.query(
-    `INSERT INTO images (character, slot, mime, data, size, uploaded_at)
+    `INSERT INTO images (character, slot, mime, object_key, size, uploaded_at)
      VALUES ($1, $2, $3, $4, $5, $6)
      ON CONFLICT (character, slot) DO UPDATE SET
        mime = EXCLUDED.mime,
-       data = EXCLUDED.data,
+       object_key = EXCLUDED.object_key,
        size = EXCLUDED.size,
        uploaded_at = EXCLUDED.uploaded_at`,
-    [character, slot, mime, data, data.length, nowMs()]
+    [character, slot, mime, key, data.length, nowMs()]
   );
 }
 
 export async function getImage(character: string, slot: string): Promise<ImageRow | null> {
   const { rows } = await pool.query(
-    `SELECT character, slot, mime, data, size, uploaded_at FROM images WHERE character = $1 AND slot = $2`,
+    `SELECT character, slot, mime, object_key, size, uploaded_at FROM images WHERE character = $1 AND slot = $2`,
     [character, slot]
   );
   const r = rows[0];
   if (!r) return null;
-  return {
+  const meta = {
     character: r.character,
     slot: r.slot,
     mime: r.mime,
-    data: r.data,
     size: r.size,
     uploadedAt: Number(r.uploaded_at),
   };
+
+  // 1) Үндсэн эх сурвалж: MinIO (object_key байгаа бол).
+  if (r.object_key) {
+    const got = await getObjectOrNull(r.object_key);
+    if (got) return { ...meta, data: got.buffer };
+    // object_key байгаа ч object алга → доорх legacy BYTEA руу шилжинэ (self-heal)
+  }
+
+  // 2) Fallback: хуучин BYTEA (migration дуусаагүй мөрүүд эсвэл object алга болсон).
+  //    Энэ нь cut-over үед (S3 тохируулаагүй/backfill ороогүй) зургийг тасрахаас сэргийлнэ.
+  const legacy = await readLegacyBytea(character, slot);
+  if (legacy) return { ...meta, data: legacy };
+  return null;
+}
+
+/** MinIO-оос object татна; алга бол (NoSuchKey/404) null буцаана, бусад алдааг дамжуулна. */
+async function getObjectOrNull(key: string): Promise<{ buffer: Buffer } | null> {
+  try {
+    return await getObject(key);
+  } catch (e) {
+    if (isNotFoundError(e)) return null;
+    throw e;
+  }
+}
+
+/** Хуучин BYTEA байтуудыг уншина; `data` багана устгагдсан бол null (алдаа шидэхгүй). */
+async function readLegacyBytea(character: string, slot: string): Promise<Buffer | null> {
+  try {
+    const { rows } = await pool.query(`SELECT data FROM images WHERE character = $1 AND slot = $2`, [
+      character, slot,
+    ]);
+    return (rows[0]?.data as Buffer) ?? null;
+  } catch {
+    return null; // `data` багана аль хэдийн устгагдсан (finalize-ийн дараа)
+  }
 }
 
 export async function removeImage(character: string, slot: string): Promise<boolean> {
-  const res = await pool.query(`DELETE FROM images WHERE character = $1 AND slot = $2`, [character, slot]);
-  return (res.rowCount ?? 0) > 0;
+  const { rows } = await pool.query(`SELECT object_key FROM images WHERE character = $1 AND slot = $2`, [
+    character, slot,
+  ]);
+  const r = rows[0];
+  if (!r) return false;
+  await pool.query(`DELETE FROM images WHERE character = $1 AND slot = $2`, [character, slot]);
+  await tryDeleteObject(r.object_key); // best-effort — orphan object нь хор хөнөөлгүй
+  return true;
+}
+
+/** Object устгал амжилтгүй болсон ч DB-г блоклохгүй (orphan нь хор хөнөөлгүй). */
+async function tryDeleteObject(key: string | null | undefined): Promise<void> {
+  if (!key) return;
+  try {
+    await deleteObject(key);
+  } catch (e) {
+    console.error(`deleteObject failed for ${key}:`, e);
+  }
+}
+
+// ───────────────── IMAGE STORAGE MIGRATION (Postgres BYTEA → MinIO) ─────────────────
+
+/** Хуучин `data` BYTEA багана одоо хүртэл байгаа эсэх. */
+async function hasDataColumn(): Promise<boolean> {
+  const { rows } = await pool.query(
+    `SELECT 1 FROM information_schema.columns WHERE table_name = 'images' AND column_name = 'data'`
+  );
+  return rows.length > 0;
+}
+
+/**
+ * Postgres BYTEA дотор хадгалагдсан хуучин зургуудыг MinIO руу зөөнө (additive,
+ * idempotent). object_key хоосон мөрүүдийг л боловсруулна — эхлүүлэх үед дуудна.
+ * @returns зөөгдсөн мөрийн тоо
+ */
+export async function backfillImagesToStorage(): Promise<number> {
+  if (!storageEnabled()) return 0;
+  if (!(await hasDataColumn())) return 0; // аль хэдийн бүрэн шилжсэн
+  const { rows } = await pool.query(
+    `SELECT character, slot, mime, data FROM images WHERE object_key IS NULL AND data IS NOT NULL`
+  );
+  let migrated = 0;
+  for (const r of rows) {
+    const key = imageKey(r.character, r.slot);
+    await putObject(key, r.data as Buffer, r.mime);
+    await pool.query(`UPDATE images SET object_key = $1 WHERE character = $2 AND slot = $3`, [
+      key, r.character, r.slot,
+    ]);
+    migrated++;
+  }
+  return migrated;
+}
+
+/**
+ * Бүрэн migration: бүх байтыг MinIO руу зөөж, баталгаажуулаад `data` BYTEA
+ * баганыг устгана. Серверт нэг удаа гар аргаар ажиллуулна (scripts/migrate-images-to-minio.ts).
+ */
+export async function finalizeImageStorageMigration(): Promise<{ migrated: number; verified: number; dropped: boolean }> {
+  if (!storageEnabled()) throw new Error('storage not configured — set S3_* env first');
+  const migrated = await backfillImagesToStorage();
+
+  const { rows: nullRows } = await pool.query(`SELECT COUNT(*)::int AS n FROM images WHERE object_key IS NULL`);
+  if (nullRows[0].n > 0) {
+    throw new Error(`${nullRows[0].n} image row(s) still missing object_key — aborting column drop`);
+  }
+
+  // Багана устгахаас ӨМНӨ MinIO-оос УНШИЖ баталгаажуулна — object_key flag биш,
+  // жинхэнэ байтууд найдвартай хадгалагдсаныг шалгана. Буруу bucket / дутуу
+  // migration / object алга бол энд таслан зогсооно (data-loss-аас сэргийлнэ).
+  const hadData = await hasDataColumn();
+  const { rows } = await pool.query(
+    hadData
+      ? `SELECT character, slot, object_key, size, data FROM images`
+      : `SELECT character, slot, object_key, size FROM images`
+  );
+  let verified = 0;
+  for (const r of rows) {
+    if (!r.object_key) throw new Error(`row ${r.character}/${r.slot} missing object_key — aborting`);
+    const { buffer } = await getObject(r.object_key); // object алга бол алдаа → таслана
+    if (hadData && r.data != null) {
+      // Хуучин мөр: MinIO хувь нь устгах гэж буй Postgres байттай ЯГ ижил эсэх.
+      if (!buffer.equals(r.data as Buffer)) {
+        throw new Error(`MinIO object ${r.object_key} does NOT match Postgres bytes — aborting DROP`);
+      }
+    } else if (buffer.length !== r.size) {
+      // Шинэ (object-only) мөр: хэмжээ таарч буй эсэх.
+      throw new Error(`MinIO object ${r.object_key} size ${buffer.length} != expected ${r.size} — aborting DROP`);
+    }
+    verified++;
+  }
+
+  // Бүх мөр байт-баталгаажсан → BYTEA баганыг аюулгүйгээр устгана.
+  let dropped = false;
+  if (hadData) {
+    await pool.query(`ALTER TABLE images ALTER COLUMN object_key SET NOT NULL`);
+    await pool.query(`ALTER TABLE images DROP COLUMN data`);
+    dropped = true;
+  }
+  return { migrated, verified, dropped };
 }
 
 // ───────────────── RENDERS ─────────────────
