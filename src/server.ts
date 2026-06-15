@@ -379,13 +379,40 @@ function validate(d: any): string | null {
   return null;
 }
 
-// ───────────────── LEARNER CARD IMAGE (public, cached GET for the gallery) ─────────────────
-// Serves a card's rendered PNG. Returns the latest saved render if any; otherwise
-// renders once with noAI (free — never calls OpenAI) and caches it. Browser-cacheable.
+// ───────────────── FREEMIUM GATE ─────────────────
+// Guests see a small free sample; the rest of the learning content (full card
+// data + rendered images) requires login. The catalog list (/api/drafts) stays
+// public so the gallery can show locked cards. Admin (/api/drafts/:c) is NOT gated.
+const FREE_LIMIT = 12;
+let _freeChars: Set<string> | null = null;
+async function freeCharSet(): Promise<Set<string>> {
+  if (_freeChars) return _freeChars;
+  const all = await listDrafts(); // sorted by position
+  _freeChars = new Set(all.slice(0, FREE_LIMIT).map((d) => d.character));
+  return _freeChars;
+}
+async function unlocked(c: any, character: string): Promise<boolean> {
+  if (await currentUser(c)) return true;
+  return (await freeCharSet()).has(character);
+}
+
+// ───────────────── LEARNER CARD (gated: full data) ─────────────────
+app.get('/api/cards/:character', async (c) => {
+  const character = c.req.param('character');
+  const draft = await getDraft(character);
+  if (!draft) return c.json({ error: 'not found' }, 404);
+  if (!(await unlocked(c, character))) return c.json({ error: 'locked', locked: true }, 403);
+  return c.json({ character, data: draft.data, isDone: draft.isDone });
+});
+
+// ───────────────── LEARNER CARD IMAGE (gated, cached GET for the gallery) ─────────────────
+// Returns the latest saved render if any; otherwise renders once with noAI
+// (free — never calls OpenAI) and caches it. Browser-cacheable.
 app.get('/api/cards/:character/image', async (c) => {
   const character = c.req.param('character');
   const draft = await getDraft(character);
   if (!draft) return c.json({ error: 'not found' }, 404);
+  if (!(await unlocked(c, character))) return c.json({ error: 'locked', locked: true }, 403);
 
   const recent = await listRenders(character, 1);
   if (recent.length) {
@@ -436,7 +463,7 @@ function googleRedirectUri(c: any) {
   return process.env.GOOGLE_REDIRECT_URI || `${new URL(c.req.url).origin}/api/auth/google/callback`;
 }
 
-app.get('/api/auth/config', (c) => c.json({ google: !!(GOOGLE_ID && GOOGLE_SECRET) }));
+app.get('/api/auth/config', (c) => c.json({ google: !!(GOOGLE_ID && GOOGLE_SECRET), freeLimit: FREE_LIMIT }));
 
 app.post('/api/auth/signup', async (c) => {
   const body = await c.req.json().catch(() => ({}));
