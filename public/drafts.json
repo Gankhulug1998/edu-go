@@ -156,7 +156,7 @@
     },
     "storyFormula": "☀️ + 🌙 = 💡",
     "level": 1,
-    "category": "baigal",
+    "category": "chanar",
     "tags": [
       "hsk1",
       "radical:日"
@@ -366,7 +366,7 @@
     },
     "storyFormula": "🏠 + 🐖 = 🏡",
     "level": 1,
-    "category": "xun",
+    "category": "gazar",
     "tags": [
       "hsk1",
       "radical:宀"
@@ -528,7 +528,7 @@
     },
     "storyFormula": "🚶 + 🚶 + 🚶 = 🧑‍🤝‍🧑",
     "level": 2,
-    "category": "xun",
+    "category": "chanar",
     "tags": [
       "triple",
       "radical:人"
@@ -684,7 +684,7 @@
       }
     },
     "level": 1,
-    "category": "zuils",
+    "category": "baigal",
     "tags": [
       "hsk1",
       "radical:木"
@@ -736,7 +736,7 @@
       }
     },
     "level": 2,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "radical:木"
     ]
@@ -788,7 +788,7 @@
     },
     "storyFormula": "☀️ + 🌱 = ⏰",
     "level": 1,
-    "category": "baigal",
+    "category": "tsag",
     "tags": [
       "radical:日"
     ]
@@ -839,7 +839,7 @@
       }
     },
     "level": 1,
-    "category": "baigal",
+    "category": "tsag",
     "tags": [
       "radical:日"
     ]
@@ -891,7 +891,7 @@
     },
     "storyFormula": "🏠 + 👶 = ✍️",
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1",
       "radical:宀"
@@ -944,7 +944,7 @@
     },
     "storyFormula": "🚶 + 💬 = 💌",
     "level": 2,
-    "category": "setgel",
+    "category": "uil",
     "tags": [
       "radical:亻"
     ]
@@ -995,7 +995,7 @@
       }
     },
     "level": 2,
-    "category": "biye",
+    "category": "uil",
     "tags": [
       "radical:口"
     ]
@@ -1047,7 +1047,7 @@
     },
     "storyFormula": "✋ + 👁 = 👀",
     "level": 1,
-    "category": "biye",
+    "category": "uil",
     "tags": [
       "hsk1",
       "radical:目"
@@ -1698,7 +1698,7 @@
       "meaning": "чи"
     },
     "level": 1,
-    "category": "xun",
+    "category": "xel",
     "tags": [
       "hsk1",
       "radical:亻"
@@ -1745,7 +1745,7 @@
       "meaning": "тэр"
     },
     "level": 1,
-    "category": "xun",
+    "category": "xel",
     "tags": [
       "hsk1",
       "radical:亻"
@@ -1792,7 +1792,7 @@
       "meaning": "-ууд (олон тоо)"
     },
     "level": 1,
-    "category": "xun",
+    "category": "xel",
     "tags": [
       "hsk1",
       "radical:亻"
@@ -2217,7 +2217,7 @@
       "meaning": "цаг (хугацаа)"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "tsag",
     "tags": [
       "hsk1",
       "radical:日"
@@ -2409,7 +2409,7 @@
       "meaning": "болор"
     },
     "level": 2,
-    "category": "chanar",
+    "category": "ediin",
     "tags": [
       "triple",
       "radical:日"
@@ -2462,7 +2462,7 @@
       "meaning": "бараа, чанар"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "triple",
       "radical:口"
@@ -2486,7 +2486,7 @@
       "translation": "сонирхол, хобби"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "setgel",
     "tags": [
       "hsk1"
     ],
@@ -2516,7 +2516,7 @@
       "translation": "наймдугаар сар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -2576,7 +2576,7 @@
       "translation": "аяга"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -2636,7 +2636,7 @@
       "translation": "Бээжин"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk1"
     ],
@@ -2666,7 +2666,7 @@
       "translation": "Бээжин"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "gazar",
     "tags": [
       "hsk1"
     ],
@@ -2696,7 +2696,7 @@
       "translation": "биш"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -2726,7 +2726,7 @@
       "translation": "зочин"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xun",
     "tags": [
       "hsk1"
     ],
@@ -2773,7 +2773,7 @@
       "translation": "цаг агаар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "baigal",
     "tags": [
       "hsk1"
     ],
@@ -2803,7 +2803,7 @@
       "translation": "хоол захиалах"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "xool",
     "tags": [
       "hsk1"
     ],
@@ -2833,7 +2833,7 @@
       "translation": "цай уух"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "xool",
     "tags": [
       "hsk1"
     ],
@@ -2885,7 +2885,7 @@
       "translation": "такси"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -2932,7 +2932,7 @@
       "translation": "автомашин"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -2992,7 +2992,7 @@
       "translation": "компьютер"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -3022,7 +3022,7 @@
       "translation": "ярих"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -3052,7 +3052,7 @@
       "translation": "бүгд, хүн бүр"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -3099,7 +3099,7 @@
       "translation": "миний"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -3129,7 +3129,7 @@
       "translation": "хэдэн цаг"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -3176,7 +3176,7 @@
       "translation": "компьютер"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "biye",
     "tags": [
       "hsk1"
     ],
@@ -3206,7 +3206,7 @@
       "translation": "зурагт"
     },
     "level": 1,
-    "category": "biye",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -3253,7 +3253,7 @@
       "translation": "кино"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -3283,7 +3283,7 @@
       "translation": "юм, эд зүйл"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk1"
     ],
@@ -3313,7 +3313,7 @@
       "translation": "баруун тал"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk1"
     ],
@@ -3343,7 +3343,7 @@
       "translation": "бүгд мөн"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -3403,7 +3403,7 @@
       "translation": "уучлаарай"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -3480,7 +3480,7 @@
       "translation": "хэд"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -3510,7 +3510,7 @@
       "translation": "хэд"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -3570,7 +3570,7 @@
       "translation": "хоёрдугаар сар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -3617,7 +3617,7 @@
       "translation": "цагаан будаа"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xool",
     "tags": [
       "hsk1"
     ],
@@ -3664,7 +3664,7 @@
       "translation": "хоолны газар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "gazar",
     "tags": [
       "hsk1"
     ],
@@ -3711,7 +3711,7 @@
       "translation": "онгоц"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -3741,7 +3741,7 @@
       "translation": "гар утас"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -3771,7 +3771,7 @@
       "translation": "минут"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -3818,7 +3818,7 @@
       "translation": "минут"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -3865,7 +3865,7 @@
       "translation": "баяртай"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -3895,7 +3895,7 @@
       "translation": "баяртай"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "setgel",
     "tags": [
       "hsk1"
     ],
@@ -3925,7 +3925,7 @@
       "translation": "нэг ширхэг"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -3955,7 +3955,7 @@
       "translation": "ажил"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xun",
     "tags": [
       "hsk1"
     ],
@@ -3985,7 +3985,7 @@
       "translation": "ажил"
     },
     "level": 1,
-    "category": "xun",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -4015,7 +4015,7 @@
       "translation": "гөлөг"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "amitan",
     "tags": [
       "hsk1"
     ],
@@ -4045,7 +4045,7 @@
       "translation": "хятад хэл"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -4092,7 +4092,7 @@
       "translation": "хятад хэл"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -4152,7 +4152,7 @@
       "translation": "энх тайван"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -4199,7 +4199,7 @@
       "translation": "маш сайн"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -4229,7 +4229,7 @@
       "translation": "ард тал"
     },
     "level": 1,
-    "category": "uil",
+    "category": "oron",
     "tags": [
       "hsk1"
     ],
@@ -4259,7 +4259,7 @@
       "translation": "ард тал"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "biye",
     "tags": [
       "hsk1"
     ],
@@ -4289,7 +4289,7 @@
       "translation": "гэртээ харих"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -4319,7 +4319,7 @@
       "translation": "хурал хийх"
     },
     "level": 1,
-    "category": "xun",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -4379,7 +4379,7 @@
       "translation": "буудал, зогсоол"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "gazar",
     "tags": [
       "hsk1"
     ],
@@ -4426,7 +4426,7 @@
       "translation": "хэдэн ширхэг"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -4486,7 +4486,7 @@
       "translation": "өнөөдөр"
     },
     "level": 1,
-    "category": "xun",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -4516,7 +4516,7 @@
       "translation": "өнөөдөр"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "baigal",
     "tags": [
       "hsk1"
     ],
@@ -4563,7 +4563,7 @@
       "translation": "есдүгээр сар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -4593,7 +4593,7 @@
       "translation": "эхлэх"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -4623,7 +4623,7 @@
       "translation": "харах"
     },
     "level": 1,
-    "category": "biye",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -4653,7 +4653,7 @@
       "translation": "нэг хэсэг"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -4683,7 +4683,7 @@
       "translation": "буцаж ирэх"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -4713,7 +4713,7 @@
       "translation": "багш"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -4743,7 +4743,7 @@
       "translation": "багш"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xun",
     "tags": [
       "hsk1"
     ],
@@ -4773,7 +4773,7 @@
       "translation": "боллоо"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -4803,7 +4803,7 @@
       "translation": "маш хүйтэн"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -4833,7 +4833,7 @@
       "translation": "дотор тал"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk1"
     ],
@@ -4880,7 +4880,7 @@
       "translation": "хасах (хэм)"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -4927,7 +4927,7 @@
       "translation": "зургаадугаар сар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -4957,7 +4957,7 @@
       "translation": "сайн уу?"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -5004,7 +5004,7 @@
       "translation": "юм авах"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -5034,7 +5034,7 @@
       "translation": "муур"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "amitan",
     "tags": [
       "hsk1"
     ],
@@ -5081,7 +5081,7 @@
       "translation": "байхгүй"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -5111,7 +5111,7 @@
       "translation": "хамаарал"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -5141,7 +5141,7 @@
       "translation": "хамаарал"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -5171,7 +5171,7 @@
       "translation": "цагаан будаа"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xool",
     "tags": [
       "hsk1"
     ],
@@ -5201,7 +5201,7 @@
       "translation": "хаана"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -5248,7 +5248,7 @@
       "translation": "тэр нэг"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -5278,7 +5278,7 @@
       "translation": "харин чи?"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -5308,7 +5308,7 @@
       "translation": "магадгүй"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -5338,7 +5338,7 @@
       "translation": "өнгөрсөн жил"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -5398,7 +5398,7 @@
       "translation": "найз"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xun",
     "tags": [
       "hsk1"
     ],
@@ -5428,7 +5428,7 @@
       "translation": "гоё, үзэсгэлэнтэй"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -5475,7 +5475,7 @@
       "translation": "гоё, үзэсгэлэнтэй"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -5505,7 +5505,7 @@
       "translation": "алим"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "xool",
     "tags": [
       "hsk1"
     ],
@@ -5552,7 +5552,7 @@
       "translation": "жимс"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "xool",
     "tags": [
       "hsk1"
     ],
@@ -5599,7 +5599,7 @@
       "translation": "долоодугаар сар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -5629,7 +5629,7 @@
       "translation": "урд тал"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk1"
     ],
@@ -5659,7 +5659,7 @@
       "translation": "хэдэн төгрөг"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -5736,7 +5736,7 @@
       "translation": "өнгөрсөн жил"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -5766,7 +5766,7 @@
       "translation": "маш халуун"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -5950,7 +5950,7 @@
       "translation": "гуравдугаар сар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -5997,7 +5997,7 @@
       "translation": "дэлгүүр"
     },
     "level": 1,
-    "category": "uil",
+    "category": "gazar",
     "tags": [
       "hsk1"
     ],
@@ -6027,7 +6027,7 @@
       "translation": "дэлгүүр"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "gazar",
     "tags": [
       "hsk1"
     ],
@@ -6057,7 +6057,7 @@
       "translation": "өглөө"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk1"
     ],
@@ -6087,7 +6087,7 @@
       "translation": "үдээс хойш"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -6117,7 +6117,7 @@
       "translation": "юу"
     },
     "level": 1,
-    "category": "xun",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -6164,7 +6164,7 @@
       "translation": "юу"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -6194,7 +6194,7 @@
       "translation": "аравдугаар сар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -6224,7 +6224,7 @@
       "translation": "үе, цаг"
     },
     "level": 1,
-    "category": "xun",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -6254,7 +6254,7 @@
       "translation": "биш"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -6284,7 +6284,7 @@
       "translation": "ном унших"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -6314,7 +6314,7 @@
       "translation": "хэн бэ"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -6374,7 +6374,7 @@
       "translation": "унтах"
     },
     "level": 1,
-    "category": "biye",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -6404,7 +6404,7 @@
       "translation": "унтах"
     },
     "level": 1,
-    "category": "biye",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -6464,7 +6464,7 @@
       "translation": "дөрөвдүгээр сар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -6494,7 +6494,7 @@
       "translation": "хэдэн настай"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -6524,7 +6524,7 @@
       "translation": "тэд (эм)"
     },
     "level": 1,
-    "category": "xun",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -6571,7 +6571,7 @@
       "translation": "ямар сайхан юм бэ!"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -6648,7 +6648,7 @@
       "translation": "ангийн найз"
     },
     "level": 1,
-    "category": "uil",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -6678,7 +6678,7 @@
       "translation": "сургууль"
     },
     "level": 1,
-    "category": "xun",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -6708,7 +6708,7 @@
       "translation": "байна уу"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -6738,7 +6738,7 @@
       "translation": "бид"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -6768,7 +6768,7 @@
       "translation": "тавдугаар сар"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -6798,7 +6798,7 @@
       "translation": "дуртай"
     },
     "level": 1,
-    "category": "uil",
+    "category": "setgel",
     "tags": [
       "hsk1"
     ],
@@ -6828,7 +6828,7 @@
       "translation": "дуртай"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "setgel",
     "tags": [
       "hsk1"
     ],
@@ -6875,7 +6875,7 @@
       "translation": "үдээс хойш"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk1"
     ],
@@ -6935,7 +6935,7 @@
       "translation": "ноён, багш"
     },
     "level": 1,
-    "category": "xun",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -6965,7 +6965,7 @@
       "translation": "сурагч, оюутан"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -7012,7 +7012,7 @@
       "translation": "одоо"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -7059,7 +7059,7 @@
       "translation": "одоо"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -7106,7 +7106,7 @@
       "translation": "цаг"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -7183,7 +7183,7 @@
       "translation": "хэдэн"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -7213,7 +7213,7 @@
       "translation": "үсэг бичих"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -7243,7 +7243,7 @@
       "translation": "баярлалаа"
     },
     "level": 1,
-    "category": "uil",
+    "category": "setgel",
     "tags": [
       "hsk1"
     ],
@@ -7320,7 +7320,7 @@
       "translation": "долоо хоног"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -7367,7 +7367,7 @@
       "translation": "суралцах"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -7397,7 +7397,7 @@
       "translation": "сургууль"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "gazar",
     "tags": [
       "hsk1"
     ],
@@ -7444,7 +7444,7 @@
       "translation": "хамт"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk1"
     ],
@@ -7474,7 +7474,7 @@
       "translation": "хувцас"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -7504,7 +7504,7 @@
       "translation": "хувцас"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -7534,7 +7534,7 @@
       "translation": "эмнэлэг"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xun",
     "tags": [
       "hsk1"
     ],
@@ -7564,7 +7564,7 @@
       "translation": "эмнэлэг"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "gazar",
     "tags": [
       "hsk1"
     ],
@@ -7611,7 +7611,7 @@
       "translation": "сандал"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -7658,7 +7658,7 @@
       "translation": "жаахан"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -7688,7 +7688,7 @@
       "translation": "сар (тэнгэрийн)"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -7718,7 +7718,7 @@
       "translation": "баяртай"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -7748,7 +7748,7 @@
       "translation": "яаж"
     },
     "level": 1,
-    "category": "setgel",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -7778,7 +7778,7 @@
       "translation": "ямар вэ"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "chanar",
     "tags": [
       "hsk1"
     ],
@@ -7825,7 +7825,7 @@
       "translation": "энэ нэг"
     },
     "level": 1,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk1"
     ],
@@ -7872,7 +7872,7 @@
       "translation": "Хятад"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk1"
     ],
@@ -7902,7 +7902,7 @@
       "translation": "Хятад"
     },
     "level": 1,
-    "category": "zuils",
+    "category": "gazar",
     "tags": [
       "hsk1"
     ],
@@ -7932,7 +7932,7 @@
       "translation": "эмнэлэгт хэвтэх"
     },
     "level": 1,
-    "category": "xun",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -7979,7 +7979,7 @@
       "translation": "ширээ"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "ediin",
     "tags": [
       "hsk1"
     ],
@@ -8026,7 +8026,7 @@
       "translation": "өчигдөр"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "tsag",
     "tags": [
       "hsk1"
     ],
@@ -8056,7 +8056,7 @@
       "translation": "сууна уу"
     },
     "level": 1,
-    "category": "baigal",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -8103,7 +8103,7 @@
       "translation": "хоол хийх"
     },
     "level": 1,
-    "category": "xun",
+    "category": "uil",
     "tags": [
       "hsk1"
     ],
@@ -8133,7 +8133,7 @@
       "translation": "за тэгье"
     },
     "level": 2,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -8163,7 +8163,7 @@
       "translation": "цагаан өнгө"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ongo",
     "tags": [
       "hsk2"
     ],
@@ -8193,7 +8193,7 @@
       "translation": "нэг зуу"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk2"
     ],
@@ -8223,7 +8223,7 @@
       "translation": "туслах"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -8300,7 +8300,7 @@
       "translation": "сонин"
     },
     "level": 2,
-    "category": "uil",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -8330,7 +8330,7 @@
       "translation": "сонин"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -8377,7 +8377,7 @@
       "translation": "жишээ нь"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -8407,7 +8407,7 @@
       "translation": "тохиромжтой"
     },
     "level": 2,
-    "category": "xun",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -8437,7 +8437,7 @@
       "translation": "хямд"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -8484,7 +8484,7 @@
       "translation": "бусад хүн"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -8514,7 +8514,7 @@
       "translation": "дуу дуулах"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -8561,7 +8561,7 @@
       "translation": "өмсөх"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -8608,7 +8608,7 @@
       "translation": "хөлөг онгоц"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -8660,7 +8660,7 @@
       "translation": "нэг удаа"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk2"
     ],
@@ -8690,7 +8690,7 @@
       "translation": "алдаа"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -8737,7 +8737,7 @@
       "translation": "сагсан бөмбөг"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -8767,7 +8767,7 @@
       "translation": "хөлбөмбөг"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -8797,7 +8797,7 @@
       "translation": "гэхдээ"
     },
     "level": 2,
-    "category": "xun",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -8827,7 +8827,7 @@
       "translation": "хүрэх"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -8904,7 +8904,7 @@
       "translation": "дүү"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xun",
     "tags": [
       "hsk2"
     ],
@@ -8934,7 +8934,7 @@
       "translation": "эхний"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk2"
     ],
@@ -8964,7 +8964,7 @@
       "translation": "сонсож ойлгох"
     },
     "level": 2,
-    "category": "setgel",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -8994,7 +8994,7 @@
       "translation": "өрөө"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "gazar",
     "tags": [
       "hsk2"
     ],
@@ -9041,7 +9041,7 @@
       "translation": "цаг хугацаа"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk2"
     ],
@@ -9088,7 +9088,7 @@
       "translation": "маш"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -9118,7 +9118,7 @@
       "translation": "маш"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -9148,7 +9148,7 @@
       "translation": "үйлчилгээ"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -9178,7 +9178,7 @@
       "translation": "үйлчлэгч"
     },
     "level": 2,
-    "category": "uil",
+    "category": "xun",
     "tags": [
       "hsk2"
     ],
@@ -9285,7 +9285,7 @@
       "translation": "ах"
     },
     "level": 2,
-    "category": "uil",
+    "category": "xun",
     "tags": [
       "hsk2"
     ],
@@ -9332,7 +9332,7 @@
       "translation": "май, чамд өгье"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -9379,7 +9379,7 @@
       "translation": "эсвэл"
     },
     "level": 2,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -9439,7 +9439,7 @@
       "translation": "дугаар"
     },
     "level": 2,
-    "category": "uil",
+    "category": "too",
     "tags": [
       "hsk2"
     ],
@@ -9469,7 +9469,7 @@
       "translation": "хар өнгө"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ongo",
     "tags": [
       "hsk2"
     ],
@@ -9499,7 +9499,7 @@
       "translation": "улаан өнгө"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ongo",
     "tags": [
       "hsk2"
     ],
@@ -9576,7 +9576,7 @@
       "translation": "хариулах"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -9606,7 +9606,7 @@
       "translation": "нисэх онгоцны буудал"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "gazar",
     "tags": [
       "hsk2"
     ],
@@ -9636,7 +9636,7 @@
       "translation": "өндөг"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "amitan",
     "tags": [
       "hsk2"
     ],
@@ -9683,7 +9683,7 @@
       "translation": "өндөг"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xool",
     "tags": [
       "hsk2"
     ],
@@ -9713,7 +9713,7 @@
       "translation": "нэг ширхэг"
     },
     "level": 2,
-    "category": "xun",
+    "category": "too",
     "tags": [
       "hsk2"
     ],
@@ -9743,7 +9743,7 @@
       "translation": "анги"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -9773,7 +9773,7 @@
       "translation": "анги"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "gazar",
     "tags": [
       "hsk2"
     ],
@@ -9820,7 +9820,7 @@
       "translation": "танилцуулах"
     },
     "level": 2,
-    "category": "xun",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -9850,7 +9850,7 @@
       "translation": "танилцуулах"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -9880,7 +9880,7 @@
       "translation": "саяхан"
     },
     "level": 2,
-    "category": "uil",
+    "category": "oron",
     "tags": [
       "hsk2"
     ],
@@ -9974,7 +9974,7 @@
       "translation": "яг мөн"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -10004,7 +10004,7 @@
       "translation": "кофе"
     },
     "level": 2,
-    "category": "uil",
+    "category": "xool",
     "tags": [
       "hsk2"
     ],
@@ -10051,7 +10051,7 @@
       "translation": "кофе"
     },
     "level": 2,
-    "category": "uil",
+    "category": "xool",
     "tags": [
       "hsk2"
     ],
@@ -10098,7 +10098,7 @@
       "translation": "эхлэх"
     },
     "level": 2,
-    "category": "xun",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -10128,7 +10128,7 @@
       "translation": "шалгалт"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -10205,7 +10205,7 @@
       "translation": "болно"
     },
     "level": 2,
-    "category": "uil",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -10235,7 +10235,7 @@
       "translation": "болно"
     },
     "level": 2,
-    "category": "xun",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -10265,7 +10265,7 @@
       "translation": "хичээлд суух"
     },
     "level": 2,
-    "category": "uil",
+    "category": "gazar",
     "tags": [
       "hsk2"
     ],
@@ -10312,7 +10312,7 @@
       "translation": "баяр баясгалан"
     },
     "level": 2,
-    "category": "setgel",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -10342,7 +10342,7 @@
       "translation": "баяр баясгалан"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "setgel",
     "tags": [
       "hsk2"
     ],
@@ -10372,7 +10372,7 @@
       "translation": "маш ядарсан"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -10419,7 +10419,7 @@
       "translation": "орхих"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -10449,7 +10449,7 @@
       "translation": "хоёр ширхэг"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk2"
     ],
@@ -10479,7 +10479,7 @@
       "translation": "гудамж"
     },
     "level": 2,
-    "category": "uil",
+    "category": "gazar",
     "tags": [
       "hsk2"
     ],
@@ -10526,7 +10526,7 @@
       "translation": "аялал"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -10556,7 +10556,7 @@
       "translation": "усанд сэлэх"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -10586,7 +10586,7 @@
       "translation": "арилжаа"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -10616,7 +10616,7 @@
       "translation": "маш удаан"
     },
     "level": 2,
-    "category": "setgel",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -10646,7 +10646,7 @@
       "translation": "маш завгүй"
     },
     "level": 2,
-    "category": "setgel",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -10693,7 +10693,7 @@
       "translation": "өдөр бүр"
     },
     "level": 2,
-    "category": "xun",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -10753,7 +10753,7 @@
       "translation": "үүдэн хаалга"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -10783,7 +10783,7 @@
       "translation": "сайн байна уу"
     },
     "level": 2,
-    "category": "setgel",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -10813,7 +10813,7 @@
       "translation": "сүү"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "amitan",
     "tags": [
       "hsk2"
     ],
@@ -10843,7 +10843,7 @@
       "translation": "сүү"
     },
     "level": 2,
-    "category": "xun",
+    "category": "xool",
     "tags": [
       "hsk2"
     ],
@@ -10873,7 +10873,7 @@
       "translation": "хажуу"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk2"
     ],
@@ -10920,7 +10920,7 @@
       "translation": "хажуу"
     },
     "level": 2,
-    "category": "uil",
+    "category": "oron",
     "tags": [
       "hsk2"
     ],
@@ -10967,7 +10967,7 @@
       "translation": "тээврийн тасалбар"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -11027,7 +11027,7 @@
       "translation": "босох"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -11057,7 +11057,7 @@
       "translation": "нэг мянга"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk2"
     ],
@@ -11164,7 +11164,7 @@
       "translation": "ажилд явах"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "gazar",
     "tags": [
       "hsk2"
     ],
@@ -11246,7 +11246,7 @@
       "translation": "өвдөх"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "biye",
     "tags": [
       "hsk2"
     ],
@@ -11276,7 +11276,7 @@
       "translation": "хэрэг явдал"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -11353,7 +11353,7 @@
       "translation": "гар утас"
     },
     "level": 2,
-    "category": "uil",
+    "category": "biye",
     "tags": [
       "hsk2"
     ],
@@ -11383,7 +11383,7 @@
       "translation": "бугуйн цаг"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -11443,7 +11443,7 @@
       "translation": "тиймээс"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -11490,7 +11490,7 @@
       "translation": "тэд (юм, амьтан)"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -11567,7 +11567,7 @@
       "translation": "асуудал"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -11597,7 +11597,7 @@
       "translation": "бүжиглэх"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -11627,7 +11627,7 @@
       "translation": "гадна тал"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk2"
     ],
@@ -11657,7 +11657,7 @@
       "translation": "дуусгах"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -11704,7 +11704,7 @@
       "translation": "сонирхолтой, хөгжилтэй"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -11751,7 +11751,7 @@
       "translation": "орой"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "tsag",
     "tags": [
       "hsk2"
     ],
@@ -11798,7 +11798,7 @@
       "translation": "учир нь"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -11828,7 +11828,7 @@
       "translation": "асуудал"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -11875,7 +11875,7 @@
       "translation": "найдах"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "setgel",
     "tags": [
       "hsk2"
     ],
@@ -11905,7 +11905,7 @@
       "translation": "найдах"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "setgel",
     "tags": [
       "hsk2"
     ],
@@ -11957,7 +11957,7 @@
       "translation": "гар угаах"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -12004,7 +12004,7 @@
       "translation": "тарвас"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xool",
     "tags": [
       "hsk2"
     ],
@@ -12034,7 +12034,7 @@
       "translation": "чиглэл"
     },
     "level": 2,
-    "category": "uil",
+    "category": "oron",
     "tags": [
       "hsk2"
     ],
@@ -12064,7 +12064,7 @@
       "translation": "шинэ жил"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -12141,7 +12141,7 @@
       "translation": "амрах"
     },
     "level": 2,
-    "category": "setgel",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -12218,7 +12218,7 @@
       "translation": "өнгө"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ongo",
     "tags": [
       "hsk2"
     ],
@@ -12248,7 +12248,7 @@
       "translation": "өнгө"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "ongo",
     "tags": [
       "hsk2"
     ],
@@ -12355,7 +12355,7 @@
       "translation": "хонины мах"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "amitan",
     "tags": [
       "hsk2"
     ],
@@ -12385,7 +12385,7 @@
       "translation": "хонины мах"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xool",
     "tags": [
       "hsk2"
     ],
@@ -12415,7 +12415,7 @@
       "translation": "эм уух"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "ediin",
     "tags": [
       "hsk2"
     ],
@@ -12445,7 +12445,7 @@
       "translation": "хүсэх"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "setgel",
     "tags": [
       "hsk2"
     ],
@@ -12492,7 +12492,7 @@
       "translation": "бас мөн"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -12522,7 +12522,7 @@
       "translation": "аль хэдийн"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -12552,7 +12552,7 @@
       "translation": "аль хэдийн"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -12629,7 +12629,7 @@
       "translation": "учир нь"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -12659,7 +12659,7 @@
       "translation": "үүлэрхэг өдөр"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "baigal",
     "tags": [
       "hsk2"
     ],
@@ -12706,7 +12706,7 @@
       "translation": "усанд сэлэх"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -12753,7 +12753,7 @@
       "translation": "баруун тал"
     },
     "level": 2,
-    "category": "uil",
+    "category": "oron",
     "tags": [
       "hsk2"
     ],
@@ -12783,7 +12783,7 @@
       "translation": "том загас"
     },
     "level": 2,
-    "category": "baigal",
+    "category": "amitan",
     "tags": [
       "hsk2"
     ],
@@ -12813,7 +12813,7 @@
       "translation": "шинэ жил"
     },
     "level": 2,
-    "category": "xun",
+    "category": "too",
     "tags": [
       "hsk2"
     ],
@@ -12843,7 +12843,7 @@
       "translation": "маш хол"
     },
     "level": 2,
-    "category": "uil",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -12984,7 +12984,7 @@
       "translation": "нэг хуудас"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "too",
     "tags": [
       "hsk2"
     ],
@@ -13031,7 +13031,7 @@
       "translation": "маш урт"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -13061,7 +13061,7 @@
       "translation": "нөхөр"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xun",
     "tags": [
       "hsk2"
     ],
@@ -13108,7 +13108,7 @@
       "translation": "нөхөр"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "xun",
     "tags": [
       "hsk2"
     ],
@@ -13185,7 +13185,7 @@
       "translation": "харсаар байх"
     },
     "level": 2,
-    "category": "biye",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -13232,7 +13232,7 @@
       "translation": "үнэхээр"
     },
     "level": 2,
-    "category": "biye",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -13279,7 +13279,7 @@
       "translation": "яг ... байгаа"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -13326,7 +13326,7 @@
       "translation": "мэдэх"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -13356,7 +13356,7 @@
       "translation": "мэдэх"
     },
     "level": 2,
-    "category": "uil",
+    "category": "gazar",
     "tags": [
       "hsk2"
     ],
@@ -13403,7 +13403,7 @@
       "translation": "бэлтгэх"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -13433,7 +13433,7 @@
       "translation": "бэлтгэх"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -13463,7 +13463,7 @@
       "translation": "өөрөө"
     },
     "level": 2,
-    "category": "biye",
+    "category": "xel",
     "tags": [
       "hsk2"
     ],
@@ -13493,7 +13493,7 @@
       "translation": "унадаг дугуй"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "uil",
     "tags": [
       "hsk2"
     ],
@@ -13570,7 +13570,7 @@
       "translation": "хамгийн сайн"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "chanar",
     "tags": [
       "hsk2"
     ],
@@ -13617,7 +13617,7 @@
       "translation": "зүүн тал"
     },
     "level": 2,
-    "category": "zuils",
+    "category": "oron",
     "tags": [
       "hsk2"
     ],

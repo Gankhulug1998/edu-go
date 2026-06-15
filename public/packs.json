@@ -23,17 +23,62 @@
     {
       "slug": "baigal",
       "name": "Байгаль",
-      "icon": "🌳"
+      "icon": "🌿"
+    },
+    {
+      "slug": "amitan",
+      "name": "Амьтан",
+      "icon": "🐾"
     },
     {
       "slug": "xun",
       "name": "Хүн ба гэр бүл",
-      "icon": "👥"
+      "icon": "👪"
     },
     {
       "slug": "biye",
       "name": "Бие ба эрхтэн",
-      "icon": "🫀"
+      "icon": "✋"
+    },
+    {
+      "slug": "xool",
+      "name": "Хоол ундаа",
+      "icon": "🍚"
+    },
+    {
+      "slug": "ediin",
+      "name": "Эд хэрэглэл ба тээвэр",
+      "icon": "🚗"
+    },
+    {
+      "slug": "gazar",
+      "name": "Газар ба барилга",
+      "icon": "🏙️"
+    },
+    {
+      "slug": "oron",
+      "name": "Орон зай ба чиглэл",
+      "icon": "🧭"
+    },
+    {
+      "slug": "tsag",
+      "name": "Цаг хугацаа",
+      "icon": "⏰"
+    },
+    {
+      "slug": "too",
+      "name": "Тоо ба хэмжих",
+      "icon": "🔢"
+    },
+    {
+      "slug": "ongo",
+      "name": "Өнгө",
+      "icon": "🎨"
+    },
+    {
+      "slug": "chanar",
+      "name": "Шинж чанар",
+      "icon": "✨"
     },
     {
       "slug": "uil",
@@ -46,14 +91,9 @@
       "icon": "💭"
     },
     {
-      "slug": "chanar",
-      "name": "Шинж чанар",
-      "icon": "✨"
-    },
-    {
-      "slug": "zuils",
-      "name": "Зүйл ба ойлголт",
-      "icon": "📦"
+      "slug": "xel",
+      "name": "Хэл зүй ба туслах үг",
+      "icon": "🔤"
     }
   ],
   "packs": [
@@ -233,7 +273,7 @@
       "title": "Гэр ба сурах",
       "description": "宀 'дээвэр' -тэй гэр ахуй, сурах холбоотой ханзнууд.",
       "level": 1,
-      "category": "zuils",
+      "category": "gazar",
       "icon": "🏠",
       "characters": [
         "家",
@@ -248,7 +288,7 @@
       "title": "HSK1 · Тоонууд",
       "description": "HSK1 · Тоонууд — HSK1 түвшний суурь үгс.",
       "level": 1,
-      "category": "zuils",
+      "category": "too",
       "icon": "🔢",
       "characters": [
         "一",
@@ -269,7 +309,7 @@
       "title": "HSK1 · Төлөөний үг",
       "description": "HSK1 · Төлөөний үг — HSK1 түвшний суурь үгс.",
       "level": 1,
-      "category": "zuils",
+      "category": "xel",
       "icon": "🙋",
       "characters": [
         "我",
@@ -290,7 +330,7 @@
       "title": "HSK1 · Цаг хугацаа",
       "description": "HSK1 · Цаг хугацаа — HSK1 түвшний суурь үгс.",
       "level": 1,
-      "category": "zuils",
+      "category": "tsag",
       "icon": "📅",
       "characters": [
         "年",
@@ -387,7 +427,7 @@
       "title": "HSK1 · Зүйл",
       "description": "HSK1 түвшний \"Зүйл\" ангиллын ханзнууд.",
       "level": 1,
-      "category": "zuils",
+      "category": "xel",
       "icon": "📦",
       "characters": [
         "本",
@@ -526,7 +566,7 @@
       "title": "HSK2 · Өнгө",
       "description": "HSK2 · Өнгө — HSK2 түвшний үгс.",
       "level": 2,
-      "category": "zuils",
+      "category": "ongo",
       "icon": "🎨",
       "characters": [
         "白",
@@ -558,7 +598,7 @@
       "title": "HSK2 · Спорт & чөлөөт цаг",
       "description": "HSK2 · Спорт & чөлөөт цаг — HSK2 түвшний үгс.",
       "level": 2,
-      "category": "zuils",
+      "category": "uil",
       "icon": "⚽",
       "characters": [
         "球",
@@ -631,7 +671,7 @@
       "title": "HSK2 · Зүйл",
       "description": "HSK2 түвшний \"Зүйл\" ангиллын ханзнууд.",
       "level": 2,
-      "category": "zuils",
+      "category": "uil",
       "icon": "📦",
       "characters": [
         "百",
