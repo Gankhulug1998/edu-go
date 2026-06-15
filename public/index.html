@@ -6,197 +6,252 @@
   <title>Edu Go — studio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
-    .han { font-family: "Noto Serif SC", "Source Han Serif", "PingFang SC", "Hiragino Sans GB", serif; }
-    .mono { font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace; }
-    .spin { animation: spin 0.9s linear infinite; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .checker {
-      background-image:
-        linear-gradient(45deg, #e5e7eb 25%, transparent 25%),
-        linear-gradient(-45deg, #e5e7eb 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, #e5e7eb 75%),
-        linear-gradient(-45deg, transparent 75%, #e5e7eb 75%);
-      background-size: 24px 24px;
-      background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+    :root{
+      --bg:#fafafa; --surface:#ffffff; --surface-2:#f4f4f5; --surface-ink:#18181b;
+      --border:#e4e4e7; --border-2:#d4d4d8; --divider:#f1f1f3;
+      --text:#18181b; --text-muted:#52525b; --text-soft:#71717a; --text-subtle:#a1a1aa;
+      --ink:#18181b; --ink-hover:#27272a;
+      --accent:#5b57d1; --accent-hover:#4f4bc4; --accent-weak:#eef0fb; --accent-ring:rgba(91,87,209,0.30);
+      --success:#15803c; --success-weak:#f0fdf4; --success-border:#bbf7d0;
+      --danger:#b91c1c; --danger-weak:#fef2f2; --danger-border:#fecaca;
     }
-    .draft-item.active { background:#dbeafe; border-left:3px solid #2563eb; }
-    .draft-item { border-left:3px solid transparent; }
-    details > summary { cursor: pointer; }
-    .save-pulse { animation: pulse 0.6s ease-out; }
-    @keyframes pulse {
-      0% { background-color: #fef3c7; }
-      100% { background-color: transparent; }
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+      font-size:13px; line-height:1.45; letter-spacing:-0.006em;
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
     }
-    .saved-flash { color:#059669; font-size:11px; opacity:0; transition: opacity 0.3s; }
-    .saved-flash.show { opacity:1; }
+    .han{ font-family:"Noto Serif SC","Source Han Serif","PingFang SC","Hiragino Sans GB",serif; }
+    .mono{ font-family:ui-monospace,"Cascadia Code",Menlo,Consolas,monospace; font-size:12px; line-height:1.5; letter-spacing:-0.01em; }
+    .spin{ animation:spin .9s linear infinite; }
+    @keyframes spin{ to{ transform:rotate(360deg); } }
+    .checker{
+      background-color:var(--bg);
+      background-image:radial-gradient(var(--border) 1px, transparent 1px);
+      background-size:16px 16px;
+    }
+    .draft-item{ box-shadow:inset 2px 0 0 transparent; }
+    .draft-item.active{ background:var(--accent-weak); box-shadow:inset 2px 0 0 var(--accent); }
+    .chev{ transition:transform .12s ease; }
+    .chev.open{ transform:rotate(90deg); }
+    details > summary{ cursor:pointer; list-style:none; }
+    details > summary::-webkit-details-marker{ display:none; }
+    .save-pulse{ animation:pulse .6s ease-out; }
+    @keyframes pulse{ 0%{ background-color:var(--accent-weak); } 100%{ background-color:transparent; } }
+    .saved-flash{ color:var(--success); font-size:11px; opacity:0; transition:opacity .3s; }
+    .saved-flash.show{ opacity:1; }
+    input[type=text],input[type=search],textarea,select{ background:var(--surface); }
+    .field{
+      margin-top:4px; width:100%; background:var(--surface);
+      border:1px solid var(--border-2); border-radius:6px;
+      padding:6px 10px; font-size:13px; color:var(--text);
+      transition:box-shadow .12s, border-color .12s;
+    }
+    .field::placeholder{ color:var(--text-subtle); }
+    .field:hover{ border-color:var(--text-subtle); }
+    .field:focus{ outline:none; border-color:var(--accent); box-shadow:0 0 0 2px var(--accent-ring); }
+    details[open] > summary .chev{ transform:rotate(90deg); }
   </style>
 </head>
-<body class="bg-slate-100 min-h-screen text-slate-900">
+<body class="bg-[var(--bg)] min-h-screen text-[var(--text)]">
 
-  <header class="bg-white border-b sticky top-0 z-10">
-    <div class="max-w-[1800px] mx-auto px-6 py-3 flex items-center gap-4">
-      <h1 class="text-xl font-bold text-blue-700">🀄 Edu Go <span class="text-slate-400 font-normal text-sm">studio</span></h1>
-      <div class="text-sm text-slate-600 bg-slate-100 px-3 py-1 rounded-full">
-        <span id="done-count" class="font-bold text-emerald-700">0</span>
-        <span class="text-slate-400">/</span>
+  <header class="bg-[var(--surface)] border-b border-[var(--border)] sticky top-0 z-10">
+    <div class="max-w-[1800px] mx-auto px-6 h-12 flex items-center gap-3">
+
+      <a class="flex items-center gap-2 select-none">
+        <span class="grid place-items-center w-5 h-5 rounded-[5px] bg-[var(--accent)] text-white">
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M8 3v10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="text-[13px] font-semibold tracking-[-0.01em] text-[var(--text)]">Edu&nbsp;Go</span>
+        <span class="text-[11px] text-[var(--text-subtle)] font-normal">Studio</span>
+      </a>
+
+      <div class="hidden sm:flex items-center gap-1 text-[11px] text-[var(--text-subtle)] border-l border-[var(--border)] pl-3 tabular-nums">
+        <span id="done-count" class="font-medium text-[var(--text)]">0</span>
+        <span class="text-[var(--text-subtle)]">/</span>
         <span id="total-count">0</span>
-        бэлэн
+        <span>бэлэн</span>
       </div>
-      <span id="saved-flash" class="saved-flash">✓ хадгалагдсан</span>
+
+      <span id="saved-flash" class="saved-flash">хадгалагдсан</span>
       <div class="flex-1"></div>
 
-      <button id="reset-draft" class="text-xs text-slate-500 hover:text-rose-600 underline" title="Энэ ханзыг seed-руу буцаах + upload устгах">↺ Reset draft</button>
+      <button id="reset-draft" class="text-[12px] text-[var(--text-subtle)] hover:text-[var(--danger)] px-2 h-7 rounded-md hover:bg-[var(--surface-2)] transition-colors" title="Энэ ханзыг seed-руу буцаах + upload устгах">Reset draft</button>
 
-      <label class="flex items-center gap-2 text-sm text-slate-700">
-        <input type="checkbox" id="noai" class="accent-blue-600" checked>
+      <label class="flex items-center gap-2 text-[12px] text-[var(--text-muted)] select-none">
+        <input type="checkbox" id="noai" class="accent-[var(--accent)] w-3.5 h-3.5" checked>
         AI зураггүй
       </label>
 
-      <select id="format" class="border rounded px-3 py-1.5 text-sm bg-white">
+      <select id="format" class="h-7 rounded-md border border-[var(--border-2)] bg-[var(--surface)] px-2 text-[12px] text-[var(--text)] hover:border-[var(--text-subtle)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)]">
         <option value="png">PNG</option>
         <option value="svg">SVG</option>
         <option value="webp">WebP</option>
         <option value="jpeg">JPEG</option>
       </select>
 
-      <button id="prev-btn" class="px-3 py-2 text-slate-600 hover:bg-slate-100 rounded text-lg" title="Өмнөх (←)">◀</button>
-      <button id="next-btn" class="px-3 py-2 text-slate-600 hover:bg-slate-100 rounded text-lg" title="Дараах (→)">▶</button>
+      <button id="prev-btn" class="grid place-items-center w-7 h-7 rounded-md text-[var(--text-muted)] hover:bg-[var(--surface-2)] transition-colors" title="Өмнөх (←)">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10 4l-4 4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button id="next-btn" class="grid place-items-center w-7 h-7 rounded-md text-[var(--text-muted)] hover:bg-[var(--surface-2)] transition-colors" title="Дараах (→)">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
 
-      <button id="generate" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
-        <span>▶ Generate</span>
-        <svg id="gen-spinner" class="spin hidden" width="16" height="16" viewBox="0 0 24 24" fill="none">
+      <span class="w-px h-5 bg-[var(--border)] mx-0.5"></span>
+
+      <button id="generate" class="h-7 bg-[var(--ink)] hover:bg-[var(--ink-hover)] text-white px-3 rounded-md text-[12px] font-medium inline-flex items-center gap-1.5 disabled:opacity-50 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)]">
+        <span>Generate</span>
+        <svg id="gen-spinner" class="spin hidden" width="13" height="13" viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="12" r="10" stroke="white" stroke-width="3" stroke-dasharray="40 60"/>
         </svg>
       </button>
     </div>
   </header>
 
-  <main class="max-w-[1800px] mx-auto px-4 py-4 grid gap-4" style="grid-template-columns: 230px 460px 1fr;">
+  <main class="max-w-[1800px] mx-auto px-4 py-4 grid gap-3" style="grid-template-columns: 230px 460px 1fr;">
 
     <!-- ───────── SIDEBAR ───────── -->
-    <aside class="bg-white rounded-xl border overflow-hidden flex flex-col" style="height: calc(100vh - 96px); position: sticky; top: 80px;">
-      <div class="px-2 py-2 border-b bg-slate-50 space-y-1">
-        <input id="draft-search" type="search" placeholder="🔍 ханз · утга · пиньин"
-          class="w-full text-sm border rounded px-2 py-1.5 bg-white" />
-        <div class="text-[11px] text-slate-500 px-1">
-          <span id="sidebar-count">0</span> ханз · <span id="sidebar-done">0</span> ✓ ·
-          <button id="sidebar-toggle-all" class="text-blue-600 hover:underline">бүгдийг хураах</button>
+    <aside class="bg-[var(--surface)] rounded-lg border border-[var(--border)] overflow-hidden flex flex-col" style="height: calc(100vh - 72px); position: sticky; top: 56px;">
+      <div class="px-2 py-2 border-b border-[var(--border)] bg-[var(--surface)] space-y-1.5">
+        <div class="relative">
+          <svg class="absolute left-2 top-1/2 -translate-y-1/2 text-[var(--text-subtle)]" width="14" height="14" viewBox="0 0 16 16" fill="none">
+            <circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="m11 11 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <input id="draft-search" type="search" placeholder="ханз · утга · пиньин"
+            class="w-full h-7 text-[12px] border border-[var(--border-2)] rounded-md pl-7 pr-2 bg-[var(--surface)] placeholder:text-[var(--text-subtle)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)] focus:border-[var(--accent)]" />
+        </div>
+        <div class="text-[11px] text-[var(--text-subtle)] px-1 flex items-center gap-1 tabular-nums">
+          <span><span id="sidebar-count">0</span> ханз · <span id="sidebar-done">0</span> бэлэн</span>
+          <span class="flex-1"></span>
+          <button id="sidebar-toggle-all" class="text-[var(--accent)] hover:text-[var(--accent-hover)] font-medium">бүгдийг хураах</button>
         </div>
       </div>
       <div id="drafts-list" class="overflow-y-auto flex-1"></div>
     </aside>
 
     <!-- ───────── FORM ───────── -->
-    <section class="space-y-4">
+    <section class="space-y-3">
 
-      <div class="bg-white rounded-xl p-5 border space-y-3">
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
         <div class="flex items-baseline gap-3">
-          <span id="cur-char" class="han text-5xl text-blue-900 font-bold"></span>
-          <div class="text-sm text-slate-500">
-            <div><b id="cur-pinyin"></b> · <span id="cur-meaning"></span></div>
-            <div class="text-xs">#<span id="cur-idx">-</span> / <span id="cur-total">-</span></div>
+          <span id="cur-char" class="han text-[40px] leading-none font-semibold text-[var(--text)]"></span>
+          <div class="text-[12px] text-[var(--text-muted)]">
+            <div><b id="cur-pinyin" class="font-medium text-[var(--text)]"></b> · <span id="cur-meaning"></span></div>
+            <div class="text-[11px] text-[var(--text-subtle)] tabular-nums">#<span id="cur-idx">-</span> / <span id="cur-total">-</span></div>
           </div>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl p-5 border space-y-3">
-        <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Үндсэн</h2>
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Үндсэн</h2>
         <div class="grid grid-cols-3 gap-3">
           <label class="block">
-            <span class="text-xs text-slate-500">Иероглиф</span>
-            <input id="character" type="text" class="han mt-1 w-full border rounded px-3 py-2 text-2xl text-center">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Иероглиф</span>
+            <input id="character" type="text" class="field han !text-[22px] text-center">
           </label>
           <label class="block">
-            <span class="text-xs text-slate-500">Пиньин</span>
-            <input id="pinyin" type="text" class="mt-1 w-full border rounded px-3 py-2">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Пиньин</span>
+            <input id="pinyin" type="text" class="field">
           </label>
           <label class="block">
-            <span class="text-xs text-slate-500">Утга</span>
-            <input id="meaning" type="text" class="mt-1 w-full border rounded px-3 py-2">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Утга</span>
+            <input id="meaning" type="text" class="field">
           </label>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl p-5 border space-y-3">
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
         <div class="flex items-center justify-between">
-          <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Бүтэц</h2>
-          <button id="add-part" class="text-xs px-2 py-1 rounded bg-slate-100 hover:bg-slate-200">+ part</button>
+          <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Бүтэц</h2>
+          <button id="add-part" class="text-[11px] font-medium h-7 px-2 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text-muted)] hover:bg-[var(--surface-2)] transition-colors">+ part</button>
         </div>
         <div id="parts" class="space-y-2"></div>
-        <div class="border-t pt-3 grid grid-cols-2 gap-3">
+        <div class="border-t border-[var(--border)] pt-3 grid grid-cols-2 gap-3">
           <label class="block">
-            <span class="text-xs text-slate-500">Үр дүн ханз</span>
-            <input id="result-char" type="text" class="han mt-1 w-full border rounded px-3 py-2 text-xl text-center">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Үр дүн ханз</span>
+            <input id="result-char" type="text" class="field han !text-lg text-center">
           </label>
           <label class="block">
-            <span class="text-xs text-slate-500">Үр дүн label</span>
-            <input id="result-label" type="text" class="mt-1 w-full border rounded px-3 py-2">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Үр дүн label</span>
+            <input id="result-label" type="text" class="field">
           </label>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl p-5 border space-y-3">
-        <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Санааны түүх</h2>
-        <textarea id="story" rows="3" class="w-full border rounded px-3 py-2 text-sm"></textarea>
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Санааны түүх</h2>
+        <textarea id="story" rows="3" class="field leading-[1.5]"></textarea>
       </div>
 
-      <div class="bg-white rounded-xl p-5 border space-y-3">
-        <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Жишээ үг</h2>
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Жишээ үг</h2>
         <div class="grid grid-cols-3 gap-3">
           <label class="block">
-            <span class="text-xs text-slate-500">Үг</span>
-            <input id="ex-word" type="text" class="han mt-1 w-full border rounded px-3 py-2 text-lg">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Үг</span>
+            <input id="ex-word" type="text" class="field han !text-lg">
           </label>
           <label class="block">
-            <span class="text-xs text-slate-500">Пиньин</span>
-            <input id="ex-pinyin" type="text" class="mt-1 w-full border rounded px-3 py-2">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Пиньин</span>
+            <input id="ex-pinyin" type="text" class="field">
           </label>
           <label class="block">
-            <span class="text-xs text-slate-500">Орчуулга</span>
-            <input id="ex-trans" type="text" class="mt-1 w-full border rounded px-3 py-2">
+            <span class="text-[11px] font-medium text-[var(--text-soft)]">Орчуулга</span>
+            <input id="ex-trans" type="text" class="field">
           </label>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl p-5 border space-y-3">
-        <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">🎨 AI prompt + 🖼 upload</h2>
-        <p class="text-xs text-slate-500">3 slot тус бүрд: prompt-ыг copy → гадаа generate → upload. Prompt-ыг засаж бичсэн нь DB-д PATCH-аар хадгална.</p>
-        <div id="slot-main"      data-slot="main"      class="image-slot border rounded-lg p-3 bg-slate-50"></div>
-        <div id="slot-evolution" data-slot="evolution" class="image-slot border rounded-lg p-3 bg-slate-50"></div>
-        <div id="slot-icon"      data-slot="icon"      class="image-slot border rounded-lg p-3 bg-slate-50"></div>
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4 space-y-3">
+        <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Зураг</h2>
+        <p class="text-[11px] text-[var(--text-subtle)] leading-relaxed">3 slot тус бүрд: prompt-ыг copy → гадаа generate → upload. Prompt-ыг засаж бичсэн нь DB-д PATCH-аар хадгална.</p>
+        <div id="slot-main"      data-slot="main"      class="image-slot border border-[var(--border)] rounded-lg p-3 bg-[var(--surface)]"></div>
+        <div id="slot-evolution" data-slot="evolution" class="image-slot border border-[var(--border)] rounded-lg p-3 bg-[var(--surface)]"></div>
+        <div id="slot-icon"      data-slot="icon"      class="image-slot border border-[var(--border)] rounded-lg p-3 bg-[var(--surface)]"></div>
       </div>
 
-      <details class="bg-white rounded-xl p-5 border">
-        <summary class="font-bold text-sm text-slate-500 uppercase tracking-wide">Raw API payload</summary>
-        <pre id="json-view" class="mono text-xs mt-3 bg-slate-900 text-slate-100 p-3 rounded overflow-auto max-h-96"></pre>
+      <details class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4">
+        <summary class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)] flex items-center gap-1.5">
+          <svg class="chev text-[var(--text-subtle)]" width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Raw API payload
+        </summary>
+        <pre id="json-view" class="mono text-[12px] leading-[1.5] mt-3 bg-[var(--surface-ink)] text-zinc-100 p-3 rounded-md overflow-auto max-h-96"></pre>
       </details>
 
-      <details class="bg-white rounded-xl p-5 border">
-        <summary class="font-bold text-sm text-slate-500 uppercase tracking-wide">📜 Render history (DB)</summary>
-        <ul id="history-list" class="text-xs mt-3 space-y-1"></ul>
+      <details class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4">
+        <summary class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)] flex items-center gap-1.5">
+          <svg class="chev text-[var(--text-subtle)]" width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Render history
+        </summary>
+        <ul id="history-list" class="text-[12px] mt-3 space-y-1"></ul>
       </details>
     </section>
 
     <!-- ───────── PREVIEW ───────── -->
-    <section class="space-y-4" style="position: sticky; top: 80px; align-self: start;">
-      <div class="bg-white rounded-xl border p-4">
+    <section class="space-y-4" style="position: sticky; top: 56px; align-self: start;">
+      <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-4">
         <div class="flex items-center justify-between mb-3">
-          <h2 class="font-bold text-sm text-slate-500 uppercase tracking-wide">Preview</h2>
-          <div id="meta" class="text-xs text-slate-500"></div>
+          <h2 class="text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--text-subtle)]">Preview</h2>
+          <div id="meta" class="text-[11px] text-[var(--text-subtle)] tabular-nums"></div>
         </div>
-        <div id="preview-wrap" class="checker rounded-lg overflow-hidden border min-h-[500px] flex items-center justify-center">
-          <p id="placeholder" class="text-slate-400 text-sm text-center px-6">
-            Зүүнээс ханз сонгоод <b>Generate</b> дар.<br>
-            <span class="text-xs">Бүх state DB-д хадгалагдана.</span>
+        <div id="preview-wrap" class="checker rounded-md overflow-hidden border border-[var(--border)] min-h-[500px] flex items-center justify-center">
+          <p id="placeholder" class="text-[var(--text-subtle)] text-[12px] text-center px-6 leading-relaxed">
+            Зүүнээс ханз сонгоод <b class="text-[var(--text-muted)] font-medium">Generate</b> дар.<br>
+            <span class="text-[11px]">Бүх state DB-д хадгалагдана.</span>
           </p>
           <img id="preview-img" class="hidden max-w-full" alt="preview">
-          <iframe id="preview-svg" class="hidden w-full h-[900px] bg-white" frameborder="0"></iframe>
+          <iframe id="preview-svg" class="hidden w-full h-[900px] bg-[var(--surface)]" frameborder="0"></iframe>
         </div>
         <div class="flex items-center gap-3 mt-3">
-          <a id="download" class="hidden bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded text-sm font-semibold" download>⬇ Download</a>
-          <button id="next-after" class="hidden bg-slate-200 hover:bg-slate-300 px-4 py-2 rounded text-sm">Дараагийн ханз →</button>
-          <div id="error" class="hidden text-red-600 text-sm bg-red-50 border border-red-200 rounded px-3 py-2 flex-1"></div>
+          <a id="download" class="hidden h-8 bg-[var(--ink)] hover:bg-[var(--ink-hover)] text-white px-3 rounded-md text-[12px] font-medium inline-flex items-center gap-1.5 transition-colors" download>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v7M5 7l3 3 3-3M3 13h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download
+          </a>
+          <button id="next-after" class="hidden h-8 px-3 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] text-[12px] font-medium hover:bg-[var(--surface-2)] inline-flex items-center gap-1.5 transition-colors">
+            Дараагийн ханз
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div id="error" class="hidden text-[var(--danger)] text-[12px] bg-[var(--danger-weak)] border border-[var(--danger-border)] rounded-md px-3 py-2 flex-1"></div>
         </div>
       </div>
     </section>
@@ -271,14 +326,15 @@
   }
 
   function draftLi(d) {
-    const imgBadge = d.hasImages.main ? '<span title="зураг" class="text-blue-600">🖼</span>' : '';
-    const right = d.isDone ? '<span class="text-emerald-600 font-bold">✓</span>'
-                           : `<span class="text-slate-300 text-xs">${d.position + 1}</span>`;
-    return `<li data-char="${escapeAttr(d.character)}" class="draft-item flex items-center gap-2 pl-5 pr-3 py-2 cursor-pointer hover:bg-slate-50 ${d.character === currentChar ? 'active' : ''}">
-      <span class="han text-xl w-7 text-center text-slate-800">${escapeHtml(d.character)}</span>
+    const imgBadge = d.hasImages.main ? '<span title="зураг" class="w-1.5 h-1.5 rounded-full bg-[var(--accent)] shrink-0"></span>' : '';
+    const right = d.isDone
+      ? '<span class="text-[var(--success)] shrink-0"><svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5l3 3 6-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
+      : `<span class="text-[var(--text-subtle)] text-[11px] tabular-nums">${d.position + 1}</span>`;
+    return `<li data-char="${escapeAttr(d.character)}" class="draft-item flex items-center gap-2 pl-5 pr-3 h-9 cursor-pointer hover:bg-[var(--surface-2)] ${d.character === currentChar ? 'active' : ''}">
+      <span class="han text-[15px] w-6 text-center text-[var(--text)]">${escapeHtml(d.character)}</span>
       <div class="flex-1 min-w-0">
-        <div class="text-sm font-semibold truncate">${escapeHtml(d.meaning)}</div>
-        <div class="text-xs text-slate-500 truncate">${escapeHtml(d.pinyin)}</div>
+        <div class="text-[12px] font-medium truncate text-[var(--text)]">${escapeHtml(d.meaning)}</div>
+        <div class="text-[11px] text-[var(--text-subtle)] truncate">${escapeHtml(d.pinyin)}</div>
       </div>${imgBadge}${right}</li>`;
   }
 
@@ -315,6 +371,7 @@
     }
     const levels = Object.keys(byLevel).map(Number).sort((a, b) => a - b);
 
+    const chev = (open) => `<svg class="chev ${open ? 'open' : ''} text-[var(--text-subtle)] inline-block align-[-1px] mr-1.5" width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
     let html = '';
     for (const lv of levels) {
       const cats = byLevel[lv];
@@ -325,26 +382,26 @@
       if (searching && !visCats.length) continue;
       const allItems = catKeys.flatMap(c => cats[c]);
       const lvKey = 'L' + lv, lvOpen = searching || !groupCollapsed[lvKey];
-      html += `<div class="border-b border-slate-200">
-        <div data-grp="${lvKey}" class="grp-head flex items-center justify-between px-3 py-2 bg-slate-100 cursor-pointer select-none text-xs font-bold text-slate-700 uppercase tracking-wide">
-          <span>${lvOpen ? '▾' : '▸'} ${escapeHtml(levelName(lv))}</span>
-          <span class="text-slate-400 font-normal normal-case">${allItems.length} · ${allItems.filter(d => d.isDone).length}✓</span>
+      html += `<div class="border-b border-[var(--border)]">
+        <div data-grp="${lvKey}" class="grp-head flex items-center justify-between px-3 h-7 bg-[var(--surface-2)] cursor-pointer select-none text-[11px] font-medium text-[var(--text-muted)] uppercase tracking-[0.05em]">
+          <span class="inline-flex items-center">${chev(lvOpen)}${escapeHtml(levelName(lv))}</span>
+          <span class="text-[var(--text-subtle)] font-normal normal-case tabular-nums">${allItems.length} · ${allItems.filter(d => d.isDone).length} бэлэн</span>
         </div>`;
       if (lvOpen) {
         for (const { cat, items, total } of visCats) {
           const cm = catMeta(cat), cKey = lvKey + '/' + cat, cOpen = searching || !groupCollapsed[cKey];
           html += `<div>
-            <div data-grp="${cKey}" class="grp-head flex items-center justify-between pl-4 pr-3 py-1.5 bg-slate-50 cursor-pointer select-none text-xs font-semibold text-slate-600">
-              <span>${cOpen ? '▾' : '▸'} ${cm.icon || ''} ${escapeHtml(cm.name)}</span>
-              <span class="text-slate-400 font-normal">${searching ? items.length + '/' : ''}${total}</span>
+            <div data-grp="${cKey}" class="grp-head flex items-center justify-between pl-5 pr-3 h-7 bg-[var(--surface)] cursor-pointer select-none text-[12px] font-medium text-[var(--text-soft)]">
+              <span class="inline-flex items-center">${chev(cOpen)}${escapeHtml(cm.name)}</span>
+              <span class="text-[var(--text-subtle)] font-normal tabular-nums">${searching ? items.length + '/' : ''}${total}</span>
             </div>
-            ${cOpen ? `<ul class="divide-y divide-slate-100">${items.map(draftLi).join('')}</ul>` : ''}
+            ${cOpen ? `<ul class="divide-y divide-[var(--divider)]">${items.map(draftLi).join('')}</ul>` : ''}
           </div>`;
         }
       }
       html += `</div>`;
     }
-    if (!html) html = '<div class="p-4 text-sm text-slate-400 text-center">Олдсонгүй</div>';
+    if (!html) html = '<div class="p-4 text-[13px] text-[var(--text-subtle)] text-center">Олдсонгүй</div>';
 
     const box = document.getElementById('drafts-list');
     box.innerHTML = html;
@@ -408,10 +465,10 @@
       row.className = 'flex items-center gap-2';
       row.innerHTML = `
         <input type="text" data-idx="${i}" data-key="char" value="${escapeAttr(p.char)}"
-          class="han w-16 border rounded px-2 py-1.5 text-lg text-center">
+          class="field han !w-14 !mt-0 !text-base text-center">
         <input type="text" data-idx="${i}" data-key="label" value="${escapeAttr(p.label)}"
-          class="flex-1 border rounded px-2 py-1.5 text-sm" placeholder="label">
-        <button data-rm="${i}" class="text-rose-500 hover:bg-rose-50 w-7 h-7 rounded text-lg">×</button>
+          class="field !mt-0 flex-1" placeholder="label">
+        <button data-rm="${i}" class="grid place-items-center w-7 h-7 rounded-md text-[var(--text-subtle)] hover:text-[var(--danger)] hover:bg-[var(--danger-weak)] transition-colors shrink-0">×</button>
       `;
       c.appendChild(row);
     });
@@ -450,37 +507,41 @@
 
     root.innerHTML = `
       <div class="flex items-center justify-between mb-2">
-        <span class="font-semibold text-sm">${SLOT_LABEL[slotKey]}</span>
-        ${has ? '<span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">✓ uploaded</span>' : ''}
+        <span class="text-[12px] font-medium text-[var(--text)]">${SLOT_LABEL[slotKey]}</span>
+        ${has ? '<span class="inline-flex items-center gap-1 text-[11px] text-[var(--success)] bg-[var(--success-weak)] border border-[var(--success-border)] px-1.5 py-0.5 rounded">uploaded</span>' : ''}
       </div>
 
       <details class="mb-2" ${prompt && !has ? 'open' : ''}>
-        <summary class="text-xs text-slate-600 hover:text-blue-600 select-none">🎨 Prompt (засаж + Copy)</summary>
+        <summary class="text-[11px] font-medium text-[var(--text-soft)] hover:text-[var(--text)] select-none">Prompt (засаж + Copy)</summary>
         <div class="mt-2 space-y-1">
           <textarea data-prompt-slot="${slotKey}" rows="4"
-            class="mono w-full text-xs border rounded p-2 bg-white">${escapeHtml(prompt)}</textarea>
+            class="mono w-full text-[12px] border border-[var(--border-2)] rounded-md p-2 bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-ring)] focus:border-[var(--accent)]">${escapeHtml(prompt)}</textarea>
           <div class="flex items-center gap-2">
-            <button data-copy-slot="${slotKey}" class="text-xs bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded">📋 Copy</button>
-            <span data-copy-flash="${slotKey}" class="text-xs text-emerald-600 saved-flash">copied</span>
+            <button data-copy-slot="${slotKey}" class="text-[11px] font-medium h-7 px-2.5 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-2)] transition-colors">Copy</button>
+            <span data-copy-flash="${slotKey}" class="text-[11px] text-[var(--success)] saved-flash">copied</span>
           </div>
         </div>
       </details>
 
       <div class="flex items-center gap-3 flex-wrap">
-        <label class="inline-flex items-center gap-2 cursor-pointer text-sm bg-slate-200 hover:bg-slate-300 px-3 py-1.5 rounded">
-          🖼 Upload
+        <label class="inline-flex items-center gap-1.5 cursor-pointer text-[12px] font-medium h-7 px-2.5 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-2)] transition-colors">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 11V3M5 6l3-3 3 3M3 12h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Upload
           <input type="file" accept="image/*" data-upload-slot="${slotKey}" class="hidden">
         </label>
-        <button data-aigen-slot="${slotKey}" class="text-sm bg-violet-600 hover:bg-violet-700 text-white px-3 py-1.5 rounded inline-flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
-          <span data-aigen-label="${slotKey}">🤖 AI generate</span>
+        <button data-aigen-slot="${slotKey}" class="text-[12px] font-medium h-7 px-2.5 rounded-md border border-[var(--border-2)] bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-2)] inline-flex items-center gap-1.5 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+          <span data-aigen-label="${slotKey}" class="inline-flex items-center gap-1.5">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 2.5l.9 2.6 2.6.9-2.6.9L8 9.5l-.9-2.6-2.6-.9 2.6-.9zM12.5 9.5l.45 1.3 1.3.45-1.3.45-.45 1.3-.45-1.3-1.3-.45 1.3-.45z" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linejoin="round"/></svg>
+            AI generate
+          </span>
           <svg data-aigen-spin="${slotKey}" class="spin hidden" width="14" height="14" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="12" r="10" stroke="white" stroke-width="3" stroke-dasharray="40 60"/>
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="40 60"/>
           </svg>
         </button>
         ${imgSrc ? `
-          <img src="${imgSrc}" class="w-14 h-14 object-cover rounded border" data-thumb-slot="${slotKey}">
-          <button data-delete-slot="${slotKey}" class="text-xs text-rose-500 hover:bg-rose-50 px-2 py-1 rounded">× устгах</button>
-        ` : '<span class="text-xs text-slate-400">зураг алга</span>'}
+          <img src="${imgSrc}" class="w-12 h-12 object-cover rounded-md border border-[var(--border)]" data-thumb-slot="${slotKey}">
+          <button data-delete-slot="${slotKey}" class="text-[11px] text-[var(--text-subtle)] hover:text-[var(--danger)] hover:bg-[var(--danger-weak)] px-2 py-1 rounded-md transition-colors">устгах</button>
+        ` : '<span class="text-[11px] text-[var(--text-subtle)]">зураг алга</span>'}
       </div>
     `;
 
@@ -599,13 +660,13 @@
     if (!currentChar) return;
     const renders = await api.renders(currentChar);
     const ul = document.getElementById('history-list');
-    if (!renders.length) { ul.innerHTML = '<li class="text-slate-400">history алга</li>'; return; }
+    if (!renders.length) { ul.innerHTML = '<li class="text-[var(--text-subtle)]">history алга</li>'; return; }
     ul.innerHTML = renders.map(r => `
       <li class="flex items-center gap-3">
-        <a href="/api/renders/${r.id}" target="_blank" class="text-blue-600 hover:underline">#${r.id}</a>
-        <span class="text-slate-500">${r.format}</span>
-        <span class="text-slate-500">${(r.size/1024).toFixed(1)} KB</span>
-        <span class="text-slate-400 text-[10px]">${new Date(r.renderedAt).toLocaleString()}</span>
+        <a href="/api/renders/${r.id}" target="_blank" class="text-[var(--accent)] hover:text-[var(--accent-hover)] font-medium tabular-nums">#${r.id}</a>
+        <span class="text-[var(--text-subtle)] uppercase">${r.format}</span>
+        <span class="text-[var(--text-subtle)] tabular-nums">${(r.size/1024).toFixed(1)} KB</span>
+        <span class="text-[var(--text-subtle)] text-[10px] tabular-nums">${new Date(r.renderedAt).toLocaleString()}</span>
       </li>
     `).join('');
   }
