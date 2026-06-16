@@ -22,7 +22,7 @@ export default function TabsLayout() {
       />
       <Tabs.Screen
         name="quiz"
-        options={{ title: 'Шалгалт', tabBarIcon: ({ color, size }) => <Ionicons name="ribbon-outline" size={size} color={color} /> }}
+        options={{ title: 'Дасгал', tabBarIcon: ({ color, size }) => <Ionicons name="barbell-outline" size={size} color={color} /> }}
       />
       <Tabs.Screen
         name="profile"

@@ -9,6 +9,7 @@ type AuthState = {
   signup: (email: string, password: string, name?: string) => Promise<void>;
   logout: () => Promise<void>;
   setStatus: (ch: string, status: string | null) => void;
+  refresh: () => Promise<void>;
 };
 
 const Ctx = createContext<AuthState | null>(null);
@@ -57,7 +58,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <Ctx.Provider value={{ user, loading, progress, login, signup, logout, setStatus }}>
+    <Ctx.Provider value={{ user, loading, progress, login, signup, logout, setStatus, refresh: refreshProgress }}>
       {children}
     </Ctx.Provider>
   );

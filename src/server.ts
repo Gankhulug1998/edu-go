@@ -9,6 +9,7 @@ import {
   hashPassword, verifyPassword, createUser, getUserByEmail,
   upsertOAuthUser, createSession, getSessionUser, deleteSession,
   getProgress, setProgress, removeProgress, SESSION_COOKIE,
+  gradeCard, getSrsState,
 } from './auth.js';
 import {
   seedIfEmpty,
@@ -566,6 +567,21 @@ app.delete('/api/me/progress/:character', async (c) => {
   if (!user) return c.json({ error: 'нэвтрээгүй' }, 401);
   await removeProgress(user.id, c.req.param('character'));
   return c.json({ ok: true });
+});
+
+// ── SRS (spaced repetition) + gamification stats ──
+app.get('/api/me/srs', async (c) => {
+  const user = await currentUser(c);
+  if (!user) return c.json({ error: 'нэвтрээгүй' }, 401);
+  return c.json(await getSrsState(user.id));
+});
+
+app.put('/api/me/srs/:character', async (c) => {
+  const user = await currentUser(c);
+  if (!user) return c.json({ error: 'нэвтрээгүй' }, 401);
+  const body = await c.req.json().catch(() => ({}));
+  const item = await gradeCard(user.id, c.req.param('character'), Number(body?.grade ?? 0));
+  return c.json({ ok: true, item });
 });
 
 // Admin studio moves to /admin (learner app is served at /)

@@ -59,6 +59,24 @@ export const api = {
     return d as { token: string; user: User };
   },
   logout: () => apiFetch('/api/auth/logout', { method: 'POST' }).catch(() => {}),
+  fullCard: (ch: string) => apiFetch(`/api/cards/${encodeURIComponent(ch)}`).then((r) => r.json()).then((d) => d.data as FullCard),
+  srs: () => apiFetch('/api/me/srs').then((r) => r.json() as Promise<SrsState>),
+  grade: (ch: string, grade: number) =>
+    apiFetch(`/api/me/srs/${encodeURIComponent(ch)}`, { method: 'PUT', body: JSON.stringify({ grade }) }).catch(() => {}),
+};
+
+export type FullCard = {
+  character: string; pinyin: string; meaning: string;
+  level?: number; category?: string; tags?: string[];
+  structure?: { parts: { char: string; label: string }[]; result: { char: string; label: string } };
+  story?: string; storyFormula?: string;
+  example?: { word: string; pinyin: string; translation: string };
+  images?: { icon?: { kind: string; emoji?: string } };
+};
+export type SrsItem = { box: number; dueAt: number | null; lapses: number; status: string };
+export type SrsState = {
+  items: Record<string, SrsItem>;
+  stats: { streak: number; today: { reviews: number; xp: number; goal: number }; totalXp: number; dueCount: number };
 };
 
 // Authenticated image source for <Image> (gallery / card render)

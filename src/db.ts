@@ -73,7 +73,26 @@ export async function initDb(): Promise<void> {
       updated_at  BIGINT  NOT NULL,
       PRIMARY KEY (user_id, character)
     );
+
+    -- Daily activity (streak / daily goal / XP)
+    CREATE TABLE IF NOT EXISTS daily_activity (
+      user_id  INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      day      DATE    NOT NULL,
+      reviews  INTEGER NOT NULL DEFAULT 0,
+      xp       INTEGER NOT NULL DEFAULT 0,
+      PRIMARY KEY (user_id, day)
+    );
   `);
+
+  // ── Spaced-repetition (SRS) state on progress (idempotent) ──
+  await pool.query(`
+    ALTER TABLE progress ADD COLUMN IF NOT EXISTS box        SMALLINT NOT NULL DEFAULT 0;
+    ALTER TABLE progress ADD COLUMN IF NOT EXISTS due_at     BIGINT;
+    ALTER TABLE progress ADD COLUMN IF NOT EXISTS streak     SMALLINT NOT NULL DEFAULT 0;
+    ALTER TABLE progress ADD COLUMN IF NOT EXISTS lapses     SMALLINT NOT NULL DEFAULT 0;
+    ALTER TABLE progress ADD COLUMN IF NOT EXISTS last_grade SMALLINT;
+  `);
+  await pool.query(`CREATE INDEX IF NOT EXISTS idx_progress_due ON progress(user_id, due_at);`);
 
   // ── Idempotent migration for DBs created before the MinIO switch ──
   // Add object_key if missing, and relax the old `data` NOT NULL so new
