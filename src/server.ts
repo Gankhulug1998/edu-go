@@ -456,8 +456,15 @@ function setSessionCookie(c: any, token: string) {
     httpOnly: true, sameSite: 'Lax', secure: isProd, path: '/', maxAge: 30 * 86400,
   });
 }
+// Native apps send the session token as `Authorization: Bearer <token>`;
+// the web app uses the httpOnly cookie. Accept either.
+function sessionToken(c: any): string | undefined {
+  const h = c.req.header('Authorization');
+  if (h && h.startsWith('Bearer ')) return h.slice(7).trim();
+  return getCookie(c, SESSION_COOKIE);
+}
 function currentUser(c: any) {
-  return getSessionUser(getCookie(c, SESSION_COOKIE));
+  return getSessionUser(sessionToken(c));
 }
 function googleRedirectUri(c: any) {
   return process.env.GOOGLE_REDIRECT_URI || `${new URL(c.req.url).origin}/api/auth/google/callback`;
@@ -474,8 +481,9 @@ app.post('/api/auth/signup', async (c) => {
   if (password.length < 6) return c.json({ error: 'Нууц үг дор хаяж 6 тэмдэгт байх ёстой' }, 400);
   if (await getUserByEmail(email)) return c.json({ error: 'Энэ имэйл аль хэдийн бүртгэлтэй' }, 409);
   const user = await createUser(email, name, hashPassword(password), 'email');
-  setSessionCookie(c, (await createSession(user.id)).token);
-  return c.json({ user });
+  const { token } = await createSession(user.id);
+  setSessionCookie(c, token);
+  return c.json({ user, token });
 });
 
 app.post('/api/auth/login', async (c) => {
@@ -486,8 +494,9 @@ app.post('/api/auth/login', async (c) => {
   if (!u || !verifyPassword(password, u.passwordHash)) {
     return c.json({ error: 'Имэйл эсвэл нууц үг буруу' }, 401);
   }
-  setSessionCookie(c, (await createSession(u.id)).token);
-  return c.json({ user: { id: u.id, email: u.email, name: u.name, provider: u.provider, createdAt: u.createdAt } });
+  const { token } = await createSession(u.id);
+  setSessionCookie(c, token);
+  return c.json({ token, user: { id: u.id, email: u.email, name: u.name, provider: u.provider, createdAt: u.createdAt } });
 });
 
 app.post('/api/auth/logout', async (c) => {
