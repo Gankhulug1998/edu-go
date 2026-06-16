@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { View, Text, ScrollView, Pressable, StyleSheet, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
-import { WebView } from 'react-native-webview';
+import { HanziWriter, useHanziWriter } from '@jamsch/react-native-hanzi-writer';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '@/lib/auth';
@@ -100,42 +100,51 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 function WriteView({ ch, onComplete }: { ch: string; onComplete: () => void }) {
-  const html = buildWriterHtml(ch);
-  return (
-    <WebView
-      originWhitelist={['*']}
-      source={{ html }}
-      style={{ flex: 1, backgroundColor: C.bg }}
-      javaScriptEnabled
-      domStorageEnabled
-      onMessage={(e) => { try { if (JSON.parse(e.nativeEvent.data)?.type === 'complete') onComplete(); } catch {} }}
-    />
-  );
-}
+  const [status, setStatus] = useState('');
+  const writer = useHanziWriter({
+    character: ch,
+    loader: (c: string) => fetch(`https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0.1/${c}.json`).then((r) => r.json()),
+  });
+  const animating = writer.animator.useStore((st: any) => st.state === 'playing');
+  const quizActive = writer.quiz.useStore((st: any) => st.active);
 
-function buildWriterHtml(ch: string) {
-  return `<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<style>html,body{margin:0;height:100%;font-family:-apple-system,'Segoe UI',sans-serif;background:#FBF8F4;color:#1C1A17;-webkit-user-select:none;user-select:none}
-.col{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
-#wrap{position:relative;width:280px;height:280px;border:2px solid #E0D5C5;border-radius:16px;background:#fff}
-#grid{position:absolute;inset:0} #t{position:absolute;inset:0}
-#status{height:24px;margin:16px 0;font-size:15px;font-weight:600;color:#82828E}
-.btns{display:flex;gap:10px} button{font:inherit;font-weight:600;border:none;border-radius:12px;padding:12px 18px;cursor:pointer}
-.ghost{background:#fff;border:1px solid #E0D5C5;color:#1C1A17}.pri{background:#F2A007;color:#1C1A17}
-.hint{color:#A7A6AF;font-size:12px;margin-top:12px}</style></head><body><div class="col">
-<div id="wrap"><svg id="grid" viewBox="0 0 280 280"><g stroke="#E0D5C5" stroke-width="1" stroke-dasharray="6 6"><line x1="140" y1="6" x2="140" y2="274"/><line x1="6" y1="140" x2="274" y2="140"/></g></svg><div id="t"></div></div>
-<div id="status"></div>
-<div class="btns"><button class="ghost" onclick="anim()">Дараалал үзүүлэх</button><button class="pri" onclick="quiz()">Бичиж дасгалла</button></div>
-<div class="hint">Зурлага бүрийг зөв дарааллаар нь зур.</div></div>
-<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
-<script>
-var CH=${JSON.stringify(ch)},st=document.getElementById('status'),w;
-function post(m){if(window.ReactNativeWebView)window.ReactNativeWebView.postMessage(JSON.stringify(m));}
-function mk(){document.getElementById('t').innerHTML='';w=HanziWriter.create('t',CH,{width:280,height:280,padding:12,showCharacter:false,showOutline:true,showHintAfterMisses:2,strokeColor:'#1C1A17',outlineColor:'#E0D5C5',drawingColor:'#F2A007',strokeAnimationSpeed:1.1,delayBetweenStrokes:160,charDataLoader:function(c,onLoad,onErr){fetch('https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0.1/'+c+'.json').then(function(r){if(!r.ok)throw 0;return r.json();}).then(onLoad).catch(function(){st.textContent='Энэ ханзны зурлага олдсонгүй.';onErr&&onErr();});}});setTimeout(anim,200);}
-function anim(){if(w){st.textContent='';w.animateCharacter();}}
-function quiz(){if(!w)return;st.textContent='Эхний зурлагаас эхэл…';w.quiz({leniency:1.0,showHintAfterMisses:2,onMistake:function(d){st.innerHTML='<span style="color:#B91C1C">Буруу — зурлага '+(d.strokeNum+1)+'-ийг дахин зур</span>';},onCorrectStroke:function(d){st.innerHTML='<span style="color:#15803C">Зөв! '+d.strokesRemaining+' зурлага үлдлээ</span>';},onComplete:function(d){st.innerHTML='<span style="color:#15803C;font-weight:700">✓ Бүгд зөв! ('+d.totalMistakes+' алдаа)</span>';post({type:'complete'});}});}
-mk();
-</script></body></html>`;
+  const animate = () => { setStatus(''); writer.animator.animateCharacter({ strokeDuration: 600, delayBetweenStrokes: 500 }); };
+  const startQuiz = () => {
+    setStatus('Эхний зурлагаас эхэл…');
+    writer.quiz.start({
+      leniency: 1,
+      showHintAfterMisses: 2,
+      onMistake: (d: any) => setStatus(`Буруу — зурлага ${(d?.strokeNum ?? 0) + 1}-ийг дахин зур`),
+      onCorrectStroke: (d: any) => setStatus(`Зөв! ${d?.strokesRemaining ?? ''} зурлага үлдлээ`),
+      onComplete: (res: any) => { setStatus(`✓ Бүгд зөв! (${res?.totalMistakes ?? 0} алдаа)`); onComplete(); },
+    });
+  };
+
+  return (
+    <View style={s.write}>
+      <View style={s.pad}>
+        <HanziWriter writer={writer} style={{ width: 280, height: 280 }}>
+          <HanziWriter.GridLines color={C.borderStrong} />
+          <HanziWriter.Svg>
+            <HanziWriter.Outline color={C.borderStrong} />
+            <HanziWriter.Character color={C.text} radicalColor={C.brand} />
+            <HanziWriter.QuizStrokes />
+            <HanziWriter.QuizMistakeHighlighter color={C.danger} strokeDuration={400} />
+          </HanziWriter.Svg>
+        </HanziWriter>
+      </View>
+      <Text style={s.writeStatus}>{status}</Text>
+      <View style={{ flexDirection: 'row', gap: 10 }}>
+        <Pressable style={[s.wBtn, s.wGhost]} onPress={animate} disabled={animating}>
+          <Text style={s.wGhostText}>Дараалал үзүүлэх</Text>
+        </Pressable>
+        <Pressable style={[s.wBtn, s.wPri]} onPress={startQuiz} disabled={quizActive}>
+          <Text style={s.wPriText}>Бичиж дасгалла</Text>
+        </Pressable>
+      </View>
+      <Text style={s.hint}>Зурлага бүрийг зөв дарааллаар нь зур.</Text>
+    </View>
+  );
 }
 
 const s = StyleSheet.create({
@@ -163,4 +172,13 @@ const s = StyleSheet.create({
   knownOff: { backgroundColor: C.primary },
   knownText: { fontWeight: '700', fontSize: 15 },
   navBtn: { width: 46, height: 46, borderRadius: radius.md, borderWidth: 1, borderColor: C.borderStrong, backgroundColor: C.surface, alignItems: 'center', justifyContent: 'center' },
+  write: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 16 },
+  pad: { width: 280, height: 280, borderWidth: 2, borderColor: C.borderStrong, borderRadius: radius.lg, backgroundColor: C.surface, overflow: 'hidden' },
+  writeStatus: { height: 24, marginVertical: 16, fontSize: 15, fontWeight: '600', color: C.soft },
+  wBtn: { height: 46, paddingHorizontal: 18, borderRadius: radius.md, alignItems: 'center', justifyContent: 'center' },
+  wGhost: { backgroundColor: C.surface, borderWidth: 1, borderColor: C.borderStrong },
+  wGhostText: { color: C.text, fontWeight: '600', fontSize: 15 },
+  wPri: { backgroundColor: C.primary },
+  wPriText: { color: C.text, fontWeight: '700', fontSize: 15 },
+  hint: { color: C.subtle, fontSize: 12, marginTop: 14 },
 });
