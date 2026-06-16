@@ -78,6 +78,7 @@ export function buildQuestions(full: FullCard[], catalog: Draft[]): QuizQuestion
   let prev: QMode | null = null;
   const out: QuizQuestion[] = [];
   for (const c of full) {
+    if (!c || !c.character || !c.meaning || !c.pinyin) continue; // skip locked/undefined cards
     const draft = draftByChar[c.character] || (c as unknown as Draft);
     const avail = modesFor(c);
     // interleave: avoid repeating the previous mode when possible
@@ -133,6 +134,29 @@ function makeQuestion(mode: QMode, c: FullCard, draft: Draft, catalog: Draft[]):
         answer: res, options: pad4([res, ...distractors(catalog, draft, 'character', res, 3)], res, catalog, 'character'), optionHan: true };
     }
   }
+}
+
+// ── Matching board (M6): match hanzi ↔ meaning (or pinyin) ──
+export type MatchBoard = { cards: FullCard[]; field: 'meaning' | 'pinyin'; left: string[]; right: string[] };
+
+export function buildMatchBoard(full: FullCard[], size = 6): MatchBoard | null {
+  const valid = full.filter((c) => c && c.character && c.meaning && c.pinyin);
+  if (valid.length < 2) return null;
+  // Prefer matching by meaning; occasionally by pinyin for variety — but only when values are distinct
+  // (ambiguous right-side labels would make the board unsolvable by reading alone).
+  const allDistinct = (f: 'meaning' | 'pinyin') => new Set(valid.map((c) => c[f])).size === valid.length;
+  const field: 'meaning' | 'pinyin' = Math.random() < 0.4 && allDistinct('pinyin') ? 'pinyin' : 'meaning';
+  const n = Math.min(size, valid.length);
+  const seen = new Set<string>();
+  const picked: FullCard[] = [];
+  for (const c of valid) {
+    if (seen.has(c[field])) continue; // keep right-side labels unambiguous
+    seen.add(c[field]);
+    picked.push(c);
+    if (picked.length >= n) break;
+  }
+  if (picked.length < 2) return null;
+  return { cards: picked, field, left: shuffle(picked.map((c) => c.character)), right: shuffle(picked.map((c) => c.character)) };
 }
 
 export function scoreMessage(pct: number): string {

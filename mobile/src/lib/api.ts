@@ -59,7 +59,11 @@ export const api = {
     return d as { token: string; user: User };
   },
   logout: () => apiFetch('/api/auth/logout', { method: 'POST' }).catch(() => {}),
-  fullCard: (ch: string) => apiFetch(`/api/cards/${encodeURIComponent(ch)}`).then((r) => r.json()).then((d) => d.data as FullCard),
+  fullCard: (ch: string) =>
+    apiFetch(`/api/cards/${encodeURIComponent(ch)}`).then(async (r) => {
+      if (!r.ok) throw new Error('card unavailable'); // locked (403) / missing — reject so callers can filter it out
+      return (await r.json()).data as FullCard;
+    }),
   srs: () => apiFetch('/api/me/srs').then((r) => r.json() as Promise<SrsState>),
   grade: (ch: string, grade: number) =>
     apiFetch(`/api/me/srs/${encodeURIComponent(ch)}`, { method: 'PUT', body: JSON.stringify({ grade }) }).catch(() => {}),

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { View, Text, Pressable, ScrollView, StyleSheet, ActivityIndicator, Animated } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -6,7 +6,7 @@ import * as Haptics from 'expo-haptics';
 import { useAuth } from '@/lib/auth';
 import { useCatalog, LEVELS } from '@/lib/catalog';
 import { api, SrsState } from '@/lib/api';
-import { selectCards, buildQuestions, scoreMessage, QuizQuestion, QMode } from '@/lib/quiz';
+import { selectCards, buildQuestions, buildMatchBoard, scoreMessage, QuizQuestion, QMode, MatchBoard } from '@/lib/quiz';
 import { C, radius } from '@/lib/theme';
 
 const COUNT = 12;
@@ -21,16 +21,20 @@ const MODE_META: Record<QMode, { label: string; color: string; weak: string }> =
   structure: { label: 'Бүтэц', color: C.brand, weak: C.brandWeak },
 };
 
-type Phase = 'setup' | 'loading' | 'play' | 'result';
+type Phase = 'setup' | 'loading' | 'play' | 'match' | 'result';
 
 export default function Quiz() {
   const { drafts } = useCatalog();
   const { user, refresh } = useAuth();
   const [phase, setPhase] = useState<Phase>('setup');
   const [stats, setStats] = useState<SrsState['stats'] | null>(null);
+  const [mode, setMode] = useState<'quiz' | 'match'>('quiz');
+  const [err, setErr] = useState<string | null>(null);
 
   const [scopeLevel, setScopeLevel] = useState<number | null>(null);
   const [qs, setQs] = useState<QuizQuestion[]>([]);
+  const [total, setTotal] = useState(0);
+  const [board, setBoard] = useState<MatchBoard | null>(null);
   const [i, setI] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
 
@@ -50,17 +54,36 @@ export default function Quiz() {
 
   const start = async (level: number | null) => {
     if (!drafts.length) return;
+    setErr(null);
     setPhase('loading');
-    let items: SrsState['items'] = {};
-    if (user) { try { const st = await api.srs(); items = st.items; setStats(st.stats); } catch {} }
-    const chosen = selectCards(drafts, items, COUNT, level ?? undefined);
-    const settled = await Promise.allSettled(chosen.map((d) => api.fullCard(d.character)));
-    const full = settled.flatMap((r) => (r.status === 'fulfilled' ? [r.value] : []));
-    const built = buildQuestions(full, drafts);
-    if (!built.length) { setPhase('setup'); return; }
-    setScopeLevel(level); setQs(built);
-    setI(0); setPicked(null); setScore(0); setXp(0); setCombo(0); setMaxCombo(0); setGain(0);
-    setPhase('play');
+    try {
+      let items: SrsState['items'] = {};
+      if (user) { try { const st = await api.srs(); items = st.items; setStats(st.stats); } catch {} }
+      const chosen = selectCards(drafts, items, COUNT, level ?? undefined);
+      const settled = await Promise.allSettled(chosen.map((d) => api.fullCard(d.character)));
+      // Drop rejected (locked/403) AND any nullish value before building — never feed undefined to the builders.
+      const full = settled.flatMap((r) => (r.status === 'fulfilled' && r.value ? [r.value] : []));
+      setScopeLevel(level);
+      setScore(0); setXp(0); setCombo(0); setMaxCombo(0); setGain(0);
+      if (mode === 'match') {
+        const b = buildMatchBoard(full, 6);
+        if (!b) { setErr(user ? 'Энэ хүрээнд хослуулах хангалттай карт алга.' : 'Нэвтэрвэл бүх карт нээгдэж, хослуулах боломжтой болно.'); setPhase('setup'); return; }
+        setBoard(b); setTotal(b.cards.length); setPhase('match');
+      } else {
+        const built = buildQuestions(full, drafts);
+        if (!built.length) { setErr(user ? 'Дасгал бэлдэх карт алга.' : 'Нэвтэрвэл бүх карт нээгдэж, дасгал хийх боломжтой болно.'); setPhase('setup'); return; }
+        setQs(built); setTotal(built.length); setI(0); setPicked(null); setPhase('play');
+      }
+    } catch {
+      setErr('Алдаа гарлаа. Дахин оролдоно уу.');
+      setPhase('setup');
+    }
+  };
+
+  const finishMatch = (r: { clean: number; xp: number; maxCombo: number }) => {
+    setScore(r.clean); setXp(r.xp); setMaxCombo(r.maxCombo);
+    if (user) { refresh(); loadStats(); }
+    setPhase('result');
   };
 
   const pick = (opt: string) => {
@@ -95,14 +118,25 @@ export default function Quiz() {
           <Text style={s.h1}>Дасгал</Text>
           <Text style={s.sub}>Зайны давталтаар (SRS) ханзаа удаан санах ой руугаа суулга.</Text>
 
+          <Segmented mode={mode} onChange={(m) => { setErr(null); setMode(m); }} />
+
+          {!!err && (
+            <View style={s.errBox}>
+              <Ionicons name="information-circle" size={18} color={C.danger} />
+              <Text style={s.errText}>{err}</Text>
+            </View>
+          )}
+
           <View style={s.hero}>
             <View style={s.heroTop}>
-              <View style={s.heroIcon}><Ionicons name="flash" size={20} color={C.primaryInk} /></View>
-              <Text style={s.heroLabel}>Ухаалаг давталт</Text>
+              <View style={s.heroIcon}><Ionicons name={mode === 'match' ? 'apps' : 'flash'} size={20} color={C.primaryInk} /></View>
+              <Text style={s.heroLabel}>{mode === 'match' ? 'Хослуулах самбар' : 'Ухаалаг давталт'}</Text>
             </View>
-            <Text style={s.heroBig}>{user ? (due > 0 ? `${due} карт` : 'Шинэ хичээл') : 'Туршиж үзэх'}</Text>
+            <Text style={s.heroBig}>{mode === 'match' ? 'Ханз ↔ Утга' : user ? (due > 0 ? `${due} карт` : 'Шинэ хичээл') : 'Туршиж үзэх'}</Text>
             <Text style={s.heroDesc}>
-              {user
+              {mode === 'match'
+                ? 'Ханз болон утгыг хосоор нь холбож, хурдан таних дадал эзэмш'
+                : user
                 ? due > 0 ? 'Давтах цаг болсон картууд хүлээж байна' : 'Өнөөдөр давтах карт алга — шинэ ханз сурцгаая'
                 : 'Нэвтэрвэл давталт, цуваа, оноо хадгалагдана'}
             </Text>
@@ -121,7 +155,7 @@ export default function Quiz() {
             </Pressable>
           </View>
 
-          <Text style={s.section}>Түвшингээр дасгал</Text>
+          <Text style={s.section}>{mode === 'match' ? 'Түвшингээр хослуул' : 'Түвшингээр дасгал'}</Text>
           <View style={{ gap: 12 }}>
             {LEVELS.map((lv) => (
               <ScopeCard key={lv.id} title={`${lv.tag} · ${lv.name}`} desc={`${drafts.filter((d) => d.level === lv.id).length} ханз`} color={lv.color} onPress={() => start(lv.id)} />
@@ -144,15 +178,20 @@ export default function Quiz() {
     );
   }
 
+  // ───────────── MATCH ─────────────
+  if (phase === 'match' && board) {
+    return <MatchScreen board={board} user={!!user} onGrade={(ch, g) => { if (user) api.grade(ch, g); }} onComplete={finishMatch} onExit={() => setPhase('setup')} />;
+  }
+
   // ───────────── RESULT ─────────────
   if (phase === 'result') {
-    const pct = qs.length ? Math.round((score / qs.length) * 100) : 0;
+    const pct = total ? Math.round((score / total) * 100) : 0;
     const ring = pct >= 70 ? C.success : pct >= 50 ? C.primary : C.danger;
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }} edges={['top']}>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24 }}>
           <View style={[s.scoreCircle, { borderColor: ring }]}>
-            <Text style={s.scoreNum}>{score}<Text style={s.scoreDen}>/{qs.length}</Text></Text>
+            <Text style={s.scoreNum}>{score}<Text style={s.scoreDen}>/{total}</Text></Text>
             <Text style={s.scorePct}>{pct}%</Text>
           </View>
           <Text style={s.resultMsg}>{scoreMessage(pct)}</Text>
@@ -328,6 +367,114 @@ function ScopeCard({ title, desc, color, onPress }: { title: string; desc: strin
   );
 }
 
+function Segmented({ mode, onChange }: { mode: 'quiz' | 'match'; onChange: (m: 'quiz' | 'match') => void }) {
+  const items = [['quiz', 'Асуулт', 'help-circle'], ['match', 'Хослуулах', 'apps']] as const;
+  return (
+    <View style={s.seg}>
+      {items.map(([m, label, icon]) => {
+        const active = mode === m;
+        return (
+          <Pressable key={m} style={[s.segBtn, active && s.segBtnActive]} onPress={() => onChange(m)}>
+            <Ionicons name={icon} size={16} color={active ? C.text : C.soft} />
+            <Text style={[s.segText, active && s.segTextActive]}>{label}</Text>
+          </Pressable>
+        );
+      })}
+    </View>
+  );
+}
+
+function MatchScreen({ board, user, onGrade, onComplete, onExit }: {
+  board: MatchBoard;
+  user: boolean;
+  onGrade: (ch: string, grade: number) => void;
+  onComplete: (r: { clean: number; xp: number; maxCombo: number }) => void;
+  onExit: () => void;
+}) {
+  const byChar = useMemo(() => Object.fromEntries(board.cards.map((c) => [c.character, c] as const)), [board]);
+  const n = board.cards.length;
+  const [matched, setMatched] = useState<Set<string>>(() => new Set());
+  const [selL, setSelL] = useState<string | null>(null);
+  const [selR, setSelR] = useState<string | null>(null);
+  const [wrong, setWrong] = useState<{ l: string; r: string } | null>(null);
+  const [comboView, setComboView] = useState(0);
+  const mistakes = useRef<Record<string, number>>({});
+  const combo = useRef(0);
+  const maxCombo = useRef(0);
+  const xp = useRef(0);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => { if (timer.current) clearTimeout(timer.current); }, []);
+
+  const evaluate = (l: string, r: string) => {
+    if (l === r) {
+      const miss = mistakes.current[l] || 0;
+      onGrade(l, miss > 0 ? 1 : 2);
+      if (miss > 0) combo.current = 0;
+      else { combo.current += 1; xp.current += 10 + Math.min(combo.current - 1, 5) * 2; }
+      maxCombo.current = Math.max(maxCombo.current, combo.current);
+      setComboView(combo.current);
+      try { Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success); } catch {}
+      const nm = new Set(matched); nm.add(l);
+      setMatched(nm); setSelL(null); setSelR(null);
+      if (nm.size >= n) {
+        const clean = board.cards.filter((c) => !((mistakes.current[c.character] || 0) > 0)).length;
+        timer.current = setTimeout(() => onComplete({ clean, xp: xp.current, maxCombo: maxCombo.current }), 420);
+      }
+    } else {
+      // Only the left (hanzi) card was actually mis-recalled; the right card just happened to be the wrong target.
+      mistakes.current[l] = (mistakes.current[l] || 0) + 1;
+      combo.current = 0; setComboView(0);
+      try { Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning); } catch {}
+      setWrong({ l, r });
+      timer.current = setTimeout(() => { setWrong(null); setSelL(null); setSelR(null); }, 680);
+    }
+  };
+
+  const tap = (side: 'l' | 'r', char: string) => {
+    if (wrong || matched.has(char)) return;
+    const l = side === 'l' ? char : selL;
+    const r = side === 'r' ? char : selR;
+    if (side === 'l') setSelL(char); else setSelR(char);
+    if (l && r) evaluate(l, r);
+  };
+
+  const renderTile = (side: 'l' | 'r', char: string, key: string) => {
+    const done = matched.has(char);
+    const sel = side === 'l' ? selL === char : selR === char;
+    const isWrong = !!wrong && (side === 'l' ? wrong.l === char : wrong.r === char);
+    const label = side === 'l' ? char : (byChar[char] as any)[board.field];
+    return (
+      <Pressable key={key} disabled={done} onPress={() => tap(side, char)} style={[s.tile, done && s.tileDone, sel && s.tileSel, isWrong && s.tileWrong]}>
+        {done ? <Ionicons name="checkmark-circle" size={24} color={C.success} />
+          : <Text numberOfLines={2} style={[side === 'l' ? s.tileHan : s.tileText, sel && { color: C.primaryInk }, isWrong && { color: C.danger }]}>{label}</Text>}
+      </Pressable>
+    );
+  };
+
+  return (
+    <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }} edges={['top']}>
+      <View style={s.topRow}>
+        <Pressable onPress={onExit} hitSlop={10}><Ionicons name="close" size={24} color={C.soft} /></Pressable>
+        <View style={s.progTrack}><View style={[s.progFill, { width: `${(matched.size / n) * 100}%` }]} /></View>
+        {comboView >= 2
+          ? <View style={s.comboPill}><Ionicons name="flash" size={13} color={C.primaryStrong} /><Text style={s.comboText}>×{comboView}</Text></View>
+          : <Text style={s.count}>{matched.size}/{n}</Text>}
+      </View>
+      <ScrollView contentContainerStyle={{ padding: 20, paddingTop: 10 }} keyboardShouldPersistTaps="handled">
+        <Text style={s.matchHint}>{board.field === 'pinyin' ? 'Ханзыг дуудлагатай нь хослуул' : 'Ханзыг утгатай нь хослуул'}</Text>
+        <View style={{ gap: 10, marginTop: 18 }}>
+          {board.left.map((lc, idx) => (
+            <View key={idx} style={s.matchRow}>
+              {renderTile('l', lc, `l${idx}`)}
+              {renderTile('r', board.right[idx], `r${idx}`)}
+            </View>
+          ))}
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
+
 const s = StyleSheet.create({
   h1: { fontSize: 28, fontWeight: '800', color: C.text },
   sub: { fontSize: 15, color: C.muted, lineHeight: 22, marginTop: 6 },
@@ -346,7 +493,24 @@ const s = StyleSheet.create({
   heroBtn: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8, height: 52, borderRadius: radius.md, backgroundColor: C.primary, marginTop: 18 },
   heroBtnText: { color: C.text, fontWeight: '800', fontSize: 16 },
 
+  seg: { flexDirection: 'row', backgroundColor: C.sunken, borderRadius: radius.md, padding: 4, marginTop: 18, gap: 4 },
+  segBtn: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6, height: 40, borderRadius: radius.sm },
+  segBtnActive: { backgroundColor: C.surface, shadowColor: '#000', shadowOpacity: 0.06, shadowRadius: 4, shadowOffset: { width: 0, height: 1 }, elevation: 1 },
+  segText: { fontSize: 14, fontWeight: '700', color: C.soft },
+  segTextActive: { color: C.text },
+  errBox: { flexDirection: 'row', alignItems: 'center', gap: 8, backgroundColor: C.dangerWeak, borderRadius: radius.md, paddingHorizontal: 14, paddingVertical: 11, marginTop: 14 },
+  errText: { flex: 1, fontSize: 13.5, color: C.danger, fontWeight: '600', lineHeight: 19 },
+
   section: { fontSize: 13, fontWeight: '800', color: C.soft, letterSpacing: 0.4, textTransform: 'uppercase', marginTop: 28, marginBottom: 12 },
+
+  matchHint: { fontSize: 15, fontWeight: '600', color: C.muted, textAlign: 'center' },
+  matchRow: { flexDirection: 'row', gap: 10 },
+  tile: { flex: 1, minHeight: 62, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 10, paddingVertical: 8, borderRadius: radius.md, borderWidth: 1.5, borderColor: C.border, backgroundColor: C.surface },
+  tileHan: { fontSize: 32, fontWeight: '700', color: C.text },
+  tileText: { fontSize: 14, fontWeight: '600', color: C.text, textAlign: 'center' },
+  tileSel: { borderColor: C.primary, backgroundColor: C.primaryWeak },
+  tileWrong: { borderColor: C.danger, backgroundColor: C.dangerWeak },
+  tileDone: { borderColor: C.border, backgroundColor: C.surface2, opacity: 0.5 },
   scope: { flexDirection: 'row', alignItems: 'center', gap: 12, backgroundColor: C.surface, borderWidth: 1, borderColor: C.border, borderRadius: radius.lg, padding: 16 },
   scopeDot: { width: 12, height: 12, borderRadius: 6 },
   scopeTitle: { fontSize: 16, fontWeight: '700', color: C.text },
