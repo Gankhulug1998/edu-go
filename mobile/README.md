@@ -1,7 +1,7 @@
 # Edu Go — iOS / Android аппликэйшн
 
 Сурагчдад зориулсан нэйтив апп (Expo · React Native · TypeScript). Одоо байгаа Edu Go
-backend (`http://84.247.165.220:3100`) болон auth-ыг дахин ашиглана.
+backend (`https://edugoapp.duckdns.org`) болон auth-ыг дахин ашиглана.
 
 ## Багц
 
@@ -34,10 +34,9 @@ eas submit --platform ios                     # App Store-д илгээх
 > **Apple Developer Program ($99/жил)** шаардлагатай (App Store / TestFlight-д тавихад).
 > EAS гарын үсэг (certificate / provisioning profile)-ийг автоматаар зохицуулна.
 
-## ⚠️ Production өмнө хийх
+## Production тэмдэглэл
 
-- **HTTPS:** iOS App Transport Security нь энгийн `http`-г блоклодог. Одоо `app.json`-д
-  `NSAllowsArbitraryLoads: true` тавьсан нь зөвхөн хөгжүүлэлт/туршилтад. App Store-д
-  тавихаас өмнө backend-ийг **домэйн + HTTPS** (ж: `https://edugo.mn`) болгож,
-  `src/lib/api.ts`-ийн `API_BASE`-ийг шинэчил.
+- **HTTPS:** backend `https://edugoapp.duckdns.org` (nginx + Let's Encrypt, серверт
+  `localhost:3100` руу proxy). Cleartext exception-ууд (`NSAllowsArbitraryLoads`,
+  `usesCleartextTraffic`) хасагдсан — App Store / Play Store-д бэлэн.
 - `app.json`: `ios.bundleIdentifier` (`mn.edugo.app`)-ийг өөрийн нэрээр солих боломжтой.

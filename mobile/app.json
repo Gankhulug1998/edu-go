@@ -12,10 +12,7 @@
       "supportsTablet": true,
       "bundleIdentifier": "mn.edugo.app",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false,
-        "NSAppTransportSecurity": {
-          "NSAllowsArbitraryLoads": true
-        }
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -39,10 +36,6 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 120
         }
-      ],
-      [
-        "expo-build-properties",
-        { "android": { "usesCleartextTraffic": true } }
       ]
     ],
     "experiments": {

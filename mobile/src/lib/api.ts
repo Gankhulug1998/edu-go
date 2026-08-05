@@ -1,9 +1,6 @@
 import * as SecureStore from 'expo-secure-store';
 
-// NOTE: production needs HTTPS (iOS App Transport Security). The current backend
-// is plain http on a bare IP, allowed in dev via NSAllowsArbitraryLoads (app.json).
-// Point this at a real https://edugo.mn domain before App Store release.
-export const API_BASE = 'http://84.247.165.220:3100';
+export const API_BASE = 'https://edugoapp.duckdns.org';
 
 const TOKEN_KEY = 'edugo_token';
 let _token: string | null = null;
